@@ -21,11 +21,10 @@ var paths={
 gulp.task('serve', function() {
 	bs.init({
 		server: {
-			baseDir: './dist/html/',			
-			index: 'index.html'			
+			baseDir: "./"		
+			//index: 'index.html'			
 		},
 		port:8000,
-		taskName: "chrome",
 		ui: false,
 		notify:false
 	});
