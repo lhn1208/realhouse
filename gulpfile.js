@@ -21,8 +21,8 @@ var paths={
 gulp.task('serve', function() {
 	bs.init({
 		server: {
-			baseDir: "./"		
-			//index: 'index.html'			
+			baseDir: "./",
+			index: 'guide.html'			
 		},
 		port:8000,
 		ui: false,
