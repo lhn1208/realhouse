@@ -2,10 +2,9 @@
 
 /* CSS 속성 선언순서 : display, overflow, float, position, z-index, width & height, margin & padding, font, color, border, background, align, etc */
 
-* {margin:0px; padding:0px; font-weight:normal; font-size:12px;}
+* {margin:0px; padding:0px; font-weight:normal; font-size:13px;}
 html {height:100%;}
 body{height:100%; font-size: 13px; line-height: normal; color:#464646; font-family: "Noto Sans KR","돋움","Dotum",sans-serif;}
-.txt-hidden{position:absolute; left:-9999px; width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999px; overflow:hidden;}
 /*Reset*/
 h1, h2, h3, h4, h5, h6 ,h7 {font-weight:normal;}
 img {border:none; vertical-align:middle;}
@@ -40,7 +39,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .h_btn.type{background-color:#5cadff;}
 .member_area{float: left; position: relative; margin-left:10px; margin-top:24px;}
 .member_area a{display: block; color: #6c6c6c;}
-.main_visual{position: relative; overflow: hidden; width: 100%; text-align: center;}
-.main_visual .inner{width: 1150px;}
-.main_visual .content{position: absolute; top:0; right:0; bottom: 0; left: 0; text-align: center;}
-.main_visual .tit{padding-top: 170px; font-size: 38px; color:#fff; z-index: 999;;}
+
+#main_container{position: relative;}
+#sub_container{position: relative;}
+#main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto;}
