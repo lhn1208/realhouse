@@ -8,6 +8,10 @@
             *{margin:0; padding:0;}
             .header{padding:20px 0; background:#36ad5b;}
             .header h1{margin-left: 15px; font-size: 20px; line-height: 20px; color: #fff;}
+            .note{margin:15px; padding:10px; border:2px dotted #000; background:#eee;}
+            .note h2{font-size:16px; margin-bottom:10px}
+            .note ul{margin-left:15px;}
+            .note li{font-size: 12px; font-weight: normal;}
             .guid_board .tit{margin: 25px 0 10px 15px; color:#111; font-size: 18px;}
             .table_box{margin:0 15px;}
             .table_box .tb{margin:7px 0 30px; }
@@ -24,7 +28,17 @@
     </head>
     <body>
         <div class="header">
-            <h1>모두인터네이셔널 가이드</h1>
+            <h1>리얼하우스 Web가이드</h1>
+        </div>
+        <div class="note">
+            <h2>공통</h2>
+            <ul>
+                <li>css설정 경로: <a href="./dist/html/include/set_css.html" target="_blank">dist/html/include/set_css.html</a></li>
+                <li>js설정 경로: <a href="./dist/html/include/set_js.html" target="_blank">dist/html/include/set_css.html</a></li>
+                <li>header: <a href="./dist/html/include/header.html" target="_blank">dist/html/include/header.html</a></li>
+                <li>footer_nav: <a href="./dist/html/include/footer_nav.html" target="_blank">dist/html/include/footer_nav.html</a></li>
+                <li>footer: <a href="./dist/html/include/footer.html" target="_blank">dist/html/include/footer.html</a></li>
+            </ul>
         </div>
         <div class="guid_board">
             <h2 class="tit">작업목록</h2>
@@ -32,16 +46,20 @@
                 <table class="tb" summary="publishing Sheet">
                         <caption>Publishing Sheet</caption>
                         <colgroup>
-                            <col width="15%">
-                            <col width="15%">
-                            <col width="15%">
-                            <col width="15%">
+                            <col width="8%">
+                            <col width="5%">
+                            <col width="12%">
+                            <col width="12%">
+                            <col width="12%">
+                            <col width="12%">
                             <col width="4%">
                             <col width="*">
                         </colgroup>
                         <thead>
                             <tr>
                                 <th>Page</th>
+                                <th>구분</th>
+                                <th>1Depth</th>
                                 <th>2Depth</th>
                                 <th>3Depth</th>
                                 <th>4Depth</th>
@@ -50,14 +68,26 @@
                             </tr>
                         </thead>
                         <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td>메인</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="url"><a href="./dist/html/index.html" target="_blank">dist/html/index.html</a></td>
-                                </tr>
+                            <tr>
+                                <td>7~10</td>
+                                <td>사용자</td>
+                                <td>메인창</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="url"><a href="./dist/html/pages/main.html" target="_blank">dist/html/pages/main.html</a></td>
+                            </tr>
+                            <tr>    
+                                <td>12~13</td>
+                                <td></td>
+                                <td>마이홈</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="url"><a href="./dist/html/pages/myhome.html" target="_blank">dist/html/pages/myhome.html</a></td>
+                            </tr>
                         </tbody>
                 </table>
             </div>
