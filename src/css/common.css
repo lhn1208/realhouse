@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* CSS 속성 선언순서 : display, overflow, float, position, z-index, width & height, margin & padding, font, color, border, background, align, etc */
-
 * {margin:0px; padding:0px; font-weight:normal; font-size:16px;}
 html {height:100%;}
 body{height:100%; font-size: 16px; line-height: normal; color:#6d6d6d; font-family: "Noto Sans KR","돋움","Dotum",sans-serif;}
@@ -28,11 +27,15 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .blind{font-size: 0; height: 1px; width:1px; position: absolute; left:-9999px; line-height: 0; text-indent: -9999px;}
 .wrapper{position: relative; overflow: hidden; min-width: 1150px;}
 /*select box*/
-.select_area .prettydropdown.arrow>ul>li{height: 30px; line-height: 28px; font-weight:600;}
-.select_area .prettydropdown.arrow>ul>li.selected span.checked{display:none;}
-.select_area .prettydropdown.arrow>ul>li.selected{height: 40px; line-height: 2.4;}
-.select_area .prettydropdown.arrow>ul>li.selected:after,.select_area .prettydropdown.arrow>ul.active>li.selected:after
-{background: url("../../images/common/ico_select.png") no-repeat; width:11px; height: 12px; top: 13px; bottom: 0; right: 12px;}
+
+.select_area .cate_top, .select_area .cate_list{border:1px solid #e6e6e6;}
+.select_area .cate_top{display: block; position: relative; height: 40px; padding:0 25px 0 10px; line-height: 2.4; border-bottom: none; cursor: pointer;}
+.select_area .cate_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 13px; bottom: 0; right: 12px;  background: url("../../images/common/ico_select.png") no-repeat;}
+.select_area .cate_list{position: absolute; top:39px; width:100%; line-height: 2.4; background-color: #fff; z-index: 5;}
+.select_area .cate_list button{width:100%; display: block; height: 30px; padding: 0 10px; text-align: left;}
+.select_area .cate_list button:hover{color: #fff; background-color: #3399ff;}
+.select_area .cate_list{display: none;}
+.select_area.active .cate_list{display: block;}
 
 /*header*/
 #header{position: relative; width:100%; font-family: "Noto Sans KR","돋움","Dotum",sans-serif; background:#fff; border-bottom:1px solid #e6e6e6;}

@@ -53,9 +53,5 @@ $(document).ready(function(){
     } 
   }); 
 
-    //select
-    $(document).ready(function(){  
-      $('select').prettyDropdown();
-    });
 
 });
