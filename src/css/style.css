@@ -11,8 +11,8 @@
 .set_area{height:60px; border-bottom:1px solid #e6e6e6;}
 .offer_main{width: 800px;}
 .offer_wrap{position: relative;}
-.offer_detail_wrap{width: 70%; padding-top:27px;}
-.offer_detail{width:800px; margin:0 auto; overflow-y:scroll;}
+.offer_detail_wrap{margin-right: 460px; padding-top:27px; overflow-y:scroll;}
+.offer_detail{width:800px; margin:0 auto; }
 .offer_main .view_list{position: relative; margin-bottom:75px;}
 .offer_main .view_list li{padding-left:540px; overflow: hidden;}
 .offer_main .view_list li:first-child{position: absolute; top:0; left:0; padding:0; width:532px; height: 360px;}
@@ -36,14 +36,11 @@
 .offer_main .info_head .btn_area .btn{margin-left: 15px; padding:10px 10px 10px 38px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161;}
 .offer_main .info_head .btn_area .type{background: url("../../images/sub/ico_btn_favor_off.png") no-repeat 10px #3399ff;}
 .offer_main .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #3399ff;}
-
 .offer_explain {margin-bottom:70px;}
 .offer_explain .explain_area{padding:15px; line-height: 2.1; font-size: 16px;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
 .offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
-
 .all_offer{position: absolute; top:0; right:0; width:460px;}
-
 /*마이홈*/
 .myhome .myspace{position: relative; padding:107px 0 54px 110px}
 .myhome .myspace .name{font-size:30px; color: #464646;}
@@ -55,7 +52,7 @@
 .myhome .event_area .tit{font-size:24px; color: #ff5050;}
 .myhome .event_area .content{padding-top:5px; font-size:20px;}
 .myhome .event_area .ev_btn{position: absolute; top:42px; right:23px;}
-.myhome .event_area .ev_btn .btn{padding:0 20px; font-size: 20px; }
+.myhome .event_area .ev_btn .btn{padding:0 20px; }
 .myhome .inquiry{margin-bottom: 40px;}
 .myhome .inquiry .sectoin_box1{padding:15px 22px 22px 26px}
 .myhome .inquiry .tit{margin-bottom:18px; font-size: 24px; color: #000;}
@@ -71,3 +68,10 @@
 .mypoint_area .mypoint em{font-size: 30px; color: #3399ff}
 .mypoint_area .btn_area{position: absolute; top:30px; right:28px; text-align: center;}
 .mypoint_area .btn_area .btn{display: inline-block; width:152px; margin-left: 18px; color: #464646;}
+/*나의 매수.매도*/
+.myrequest{position: relative; padding:110px 0 54px 54px}
+.myrequest .tit{margin-bottom:8px; font-size:30px; color: #ff5050;}
+.myrequest.sell .tit{color: #3399ff;}
+.myrequest .txt{font-size: 18px;}
+.myrequest .req_btn{position: absolute; top:120px; right:105px;}
+.myrequest .req_btn .btn{padding:0 25px;}

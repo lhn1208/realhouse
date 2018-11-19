@@ -12,8 +12,8 @@ var src='src',
 	dist='dist';
 
 var paths={
-	js: src + '/js/*.js',
-	css: src + '/css/*.css',
+	js: src + '/js/**/*.js',
+	css: src + '/css/**/*.css',
 	html: src + '/**/*.html'
 }
 

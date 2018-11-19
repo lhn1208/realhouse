@@ -1,4 +1,18 @@
 $(document).ready(function(){
+  //알림창
+  warn_show();
+  function warn_show(){
+    $('.main_info').animate({
+      top:'80px'
+    },500)
+  }
+  setTimeout(warn_remove,3000);
+  function warn_remove(){
+    $('.main_info').animate({
+      top:'-80px'
+    },500)
+  }
+
   //nav 
   var $nav_link=$("#nav li");
   $nav_link.click(function(){
@@ -6,14 +20,14 @@ $(document).ready(function(){
     return false;
   });
 
-  $(window).scroll(function() {
-    var sct=$(window).scrollTop();
-    if(sct>0){
-      $("#header").addClass("active");
-    }else{
-      $("#header").removeClass("active");
-    }
-  });
+  // $(window).scroll(function() {
+  //   var sct=$(window).scrollTop();
+  //   if(sct>0){
+  //     $("#header").addClass("active");
+  //   }else{
+  //     $("#header").removeClass("active");
+  //   }
+  // });
 
   //로그인시
   var $member=$("#header .member");
@@ -38,5 +52,10 @@ $(document).ready(function(){
         $schForm.removeClass("active");
     } 
   }); 
+
+    //select
+    $(document).ready(function(){  
+      $('select').prettyDropdown();
+    });
 
 });
