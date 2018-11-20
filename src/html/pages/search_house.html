@@ -12,14 +12,116 @@
     <include src="../include/header.html"></include>
     <div id=sub_container>
         <div class="set_area">
-
+            
         </div>
-        <div class="offer_wrap">
+        <div class="offer_wrap" >
+             <!--right:전체매물-->
+             <div class="all_offer">
+                <button class="btn_close"><span class="blind">닫기</span></button>
+                <div class="items_area">
+                    <div class="header">전체매물(21)</div>
+                    <ul class="items_list">
+                        <li class="target">
+                            <a href="#">
+                                <span class="img_area">
+                                    <span class="seen">SEEN</span>
+                                    <img src="../../../images/sub/offering_item_img.jpg">
+                                </span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">매매 3억5000</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico pick"></i>
+                                    <strong class="tit">전세/월세 3억5000</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">단기임대 50/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li> 
+                        <!--사진 미등록-->
+                        <li class="no_img">
+                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
+                            <a href="#">
+                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <div class="item_info">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="no_img">
+                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
+                            <a href="#">
+                                <div class="item_info type">
+                                    <i class="favor_ico"></i>
+                                    <strong class="tit">월세 5000/50</strong>
+                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                    <p class="locate">잠실주공1단지 104동잠실 </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>                 
+                </div>
+            </div> 
+            <!--//전체매물-->
+
             <!--지도-->
+            <div class="offer_map" style="display:none;">
+            <div id="daumRoughmapContainer1542711182969" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1542711182969",
+                    "key" : "qxk4",
+                    "mapWidth" : "1420",
+                    "mapHeight" : "1080"
+                }).render();
+            </script>
+            </div>
+
             <!--//지도-->
             <!--매물상세-->
-            <div class="offer_detail_wrap">
-                <button class="btn_close"><span class="blind">닫기</span></span></button>
+            <div class="offer_detail_wrap" style="display:block;">
                 <div class="offer_detail">
                     <div class="offer_main">
                         <ul class="view_list">
@@ -28,7 +130,7 @@
                             <li>                                
                                 <a href="#">
                                     <div class="cover"><p class="cnt">15개</p>사진 전체보기</div>
-                                    <img src="../../../images/sub/offering_main_img.jpg">
+                                    <img src="../../../images/sub/offering_img2.jpg">
                                 </a>
                             </li>
                         </ul>
@@ -64,6 +166,7 @@
                                 <div class="btn_area">
                                     <button class="btn">방문요청</button>
                                     <button class="btn type">관심등록</button>
+                                    <!-- 관심등록 했을경우-->
                                     <!-- <button class="btn type on">관심등록</button> -->
                                 </div>
                             </div>
@@ -195,7 +298,7 @@
                                 서울시 송파구 잠실동(잠실주공1단지)
                             </div>
                             <div class="map">                              
-                                <span class="ico_area">30m</span>
+                                <span class="ico_area">100m</span>
                                 <div id="daumRoughmapContainer1542695389817" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                                 <script charset="UTF-8">
                                     new daum.roughmap.Lander({
@@ -212,83 +315,9 @@
                 </div>
             </div>
             <!--//매물상세-->
-            <!--right:전체매물-->
-            <!-- <div class="all_offer">
-                <div class="items_area">
-                    <div class="header">전체매물(21)</div>
-                    <ul class="items_list">
-                        <li class="target">
-                            <a href="#" class="img_area">
-                                <img src="../../../images/sub/offering_item_img.jpg">
-                            </a>
-                            <div class="item_info">
-                                <i class="favor_ico"></i>
-                                <strong class="tit">매매 3억5000</strong>
-                                <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
-                                <p class="locate">잠실주공1단지 104동잠실 </p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="img_area">
-                                <img src="../../../images/sub/offering_item_img.jpg">
-                            </a>
-                            <div class="item_info">
-                                <i class="favor_ico pick"></i>
-                                <strong class="tit">전세/월세 3억5000</strong>
-                                <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
-                                <p class="locate">잠실주공1단지 104동잠실 </p>
-                            </div>
-                        </li> 
-                        <li>
-                            <a href="#" class="img_area">
-                                <img src="../../../images/sub/offering_item_img.jpg">
-                            </a>
-                            <div class="item_info">
-                                <i class="favor_ico"></i>
-                                <strong class="tit">단기임대 50/50</strong>
-                                <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
-                                <p class="locate">잠실주공1단지 104동잠실 </p>
-                            </div>
-                        </li> 
-                        <li>
-                            <a href="#" class="img_area">
-                                <img src="../../../images/sub/offering_item_img.jpg">
-                            </a>
-                            <div class="item_info">
-                                <i class="favor_ico"></i>
-                                <strong class="tit">월세 5000/50</strong>
-                                <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
-                                <p class="locate">잠실주공1단지 104동잠실 </p>
-                            </div>
-                        </li> 
-                    </ul>                 
-                </div>
-            </div> -->
-            <!--//전체매물-->
+           
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <include src="../include/footer.html"></include>
 </div>
 </body>

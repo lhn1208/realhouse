@@ -9,21 +9,21 @@
 
 /*매물검색*/
 .set_area{height:60px; border-bottom:1px solid #e6e6e6;}
-.offer_main{width: 800px;}
 .offer_wrap{position: relative;}
-.offer_detail_wrap{position: relative; margin-right: 460px; padding:27px 0 130px; overflow-y:scroll;}
-.offer_detail_wrap .btn_close{position: absolute; top:0; right:0; width:59px; height: 59px; background:url("../../images/sub/ico_close.jpg") no-repeat;}
+.all_offer{position: absolute; top:0; right:0; width:460px; z-index: 110; height: 1088px;}
+.all_offer .btn_close{position: absolute; top:0; right:480px; width:59px; height: 59px; background:url("../../images/sub/ico_close.jpg") no-repeat; z-index:100;}
+.offer_detail_wrap{position: relative; height: 1088px; margin-right: 460px; padding:27px 0 130px;  overflow-x:hidden; overflow-y:scroll;}
 .offer_detail{width:800px; margin:0 auto; }
+.offer_main{width: 800px;}
 .offer_main .view_list{position: relative; margin-bottom:75px;}
 .offer_main .view_list li{width:260px; height:174px; margin-left:540px; box-sizing: border-box; overflow: hidden;}
 .offer_main .view_list li:first-child{position: absolute; top:0; left:0; margin:0; width:532px; height: 360px;}
-.offer_main .view_list li:last-child{margin-top:10px;}
+.offer_main .view_list li:last-child{margin-top:12px;}
 .offer_main .view_list li a{display: block; position: relative; width: 100%; }
 .offer_main .view_list li .cover{position: absolute; top:0; left:0; width:100%; height:100%; padding-top:54px; font-size: 18px; color: #fff; background: rgba(0,0,0,.7); text-align: center;}
 .offer_main .view_list li .cover .cnt{font-size: 24px;}
-.offer_main .view_list.no_img li{display: block; padding-top:84px; font-size: 12px; border:1px solid #e6e6e6; background-color: #fafafa; text-align: center;}
-.offer_main .view_list.no_img li:first-child{padding-top:174px}
-
+.offer_main .view_list.no_img li{display: block; padding-top:80px; font-size: 12px; border:1px solid #e6e6e6; background-color: #fafafa; text-align: center;}
+.offer_main .view_list.no_img li:first-child{padding-top:174px;}
 .offer_main .offer_mark{margin-bottom:55px; padding-left:24px; text-align: right;}
 .offer_main .offer_mark:after{display: block; content:""; clear: both;}
 .offer_main .offer_mark dl{float: left; padding: 0 40px; line-height: 1.4; border-right:1px solid #e6e6e6;}
@@ -42,13 +42,12 @@
 .offer_main .info_head .btn_area .btn{margin-left: 15px; padding:10px 10px 10px 38px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161;}
 .offer_main .info_head .btn_area .type{background: url("../../images/sub/ico_btn_favor_off.png") no-repeat 10px #3399ff;}
 .offer_main .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #3399ff;}
-.offer_explain {margin-bottom:70px;}
+.offer_explain {margin-bottom:65px;}
 .offer_explain .explain_area{padding:15px; line-height: 2.1;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
 .offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
 .offer_locate .locate_box .map{position: relative;}
-.offer_locate .locate_box .ico_area{position: absolute; top:194px; left:50%; margin-left:-44px; padding:33px 29px; color: #fff; background:url("../../images/sub/ico_map_location.png"); z-index: 50; }
-.all_offer{position: absolute; top:0; right:0; width:460px;}
+.offer_locate .locate_box .ico_area{position: absolute; top:194px; left:50%; width: 90px; height: 90px; margin-left:-44px; padding-top: 30px; color: #fff; background:url("../../images/sub/ico_map_location.png") no-repeat; z-index: 50; text-align: center;}
 /*마이홈*/
 .myhome .myspace{position: relative; padding:107px 0 54px 110px}
 .myhome .myspace .name{font-size:30px; color: #464646;}
