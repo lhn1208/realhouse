@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-.content_head1 .tit{margin-bottom: 35px; font-size: 30px; font-weight: 500; color:#464646;}
 
+.content_head1 .tit{margin-bottom: 35px; font-size: 30px; font-weight: 500; color:#464646;}
+.content_head2 .tit{margin-bottom: 25px; font-size: 26px; color: #464646;}
 .icon_type1{/*padding:4px 15px ;*/ line-height: 1.2; color:#fff; border-radius: 15px; background-color: #ff5050;}
-.content_head .tit{margin-bottom: 25px; font-size: 26px; color: #464646;}
 .box_wrap{border:1px solid #e6e6e6;}
 .box_border_wrap{border:1px solid #e6e6e6; border-radius: 5px;}
 .txt_red{color:#ff5050}
@@ -53,8 +53,8 @@
 .items_area .items_list .favor_ico{position: absolute; top:5px; right:5px; width:26px; height: 24px; background:url("../../images/sub/ico_favor_off.png") no-repeat; cursor: pointer;}
 .items_area .items_list .favor_ico.pick{ background:url("../../images/sub/ico_favor_on.png") no-repeat;}
 .items_area .items_list .item_info .tit{display: block; margin-bottom:4px; font-size:22px; font-weight: bold; color: #000;}
-.items_area .items_list .item_info .mark{width:270px; height: 20px; margin:10px 0; overflow: hidden;}
-.items_area .items_list .item_info .mark span{padding:0 10px; margin-right:5px; font-size: 12px; color: #000; background-color:#e6e6e6; border-radius: 10px;}
+.items_area .items_list .item_info .mark{width:270px; height: 20px; margin:8px 0; overflow: hidden;}
+.items_area .items_list .item_info .mark span{padding:0 10px; margin-right:5px; line-height: 1.8; font-size: 12px; color: #000; background-color:#e6e6e6; border-radius: 10px; vertical-align: top;}
 .items_area .items_list .item_info .mark span.type{background-color:#fdc689;}
 .items_area .items_list .item_info .locate{text-overflow:ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
 
@@ -91,6 +91,6 @@
 .table_style2 .table{margin-bottom:50px; width:800px; border:1px solid #e6e6e6;}
 .table_style2 .table tr{border-top:1px solid #e6e6e6;}
 .table_style2 .table:first-child{border-top:none;}
-.table_style2 .table th,.table_style2 .table td{padding-top:20px; padding-bottom:20px; font-size: 16px;}
+.table_style2 .table th,.table_style2 .table td{padding-top:20px; padding-bottom:20px;}
 .table_style2 .table th{padding-left: 20px; font-size: 16px; color: #9c9c9c; text-align: right;}
 .table_style2 .table td{padding-left:15px; color: #464646; text-align: left;}

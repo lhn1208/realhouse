@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <include src="../include/set_css.html"></include>
-    <include src="../include/set_js.html"></include>
+    <link href="../../css/font.min.css" rel="stylesheet">
+    <link href="../../css/common.min.css" rel="stylesheet">
+    <link href="../../css/style.min.css" rel="stylesheet">
+    <link href="../../css/layout.min.css" rel="stylesheet">
+    <script src="../../js/3.3.1.min.js"></script>	
+    <script src="../../js/common.min.js"></script>	
+    <script src="../../js/sub.min.js"></script>	
+    <script src="../../js/plugin/cycle2.min.js"></script>	
+    <!-- 지도 스크립트 -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
     <title>realhouse</title>
 </head>
 <body>
 <div class="wrapper">
-     <include src="../include/header.html"></include>
+     <header id="header">
+         <div class="header_inner">
+             <h1 class="logo"><a href="#"><img src="../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+             <div class="h_right">
+                 <nav id="nav">
+                     <ul class="nav_menu">
+                         <li><a href="#">마이홈</a></li>
+                         <li><a href="#">매물검색</a></li>
+                         <li><a href="#">나의 매수</a></li>
+                         <li><a href="#">나의 매도</a></li>
+                     </ul>
+                 </nav>
+                 <button class="h_btn">알림2</button>
+                 <button class="h_btn type">공인중개사</button>
+                 <div class="member_area">
+                     <!--로그인 전-->
+                     <div class="member">
+                         <a href="#" class="choose">
+                             로그인 · 회원가입
+                         </a>
+                     </div>
+                     <!--//로그인 전-->
+                     <!--로그인시-->
+                     <!-- <div class="member">
+                         <a href="#" class="name">
+                             홍길동님
+                         </a>
+                         <div class="login_layout">
+                             <ul>
+                                 <li><a href="">내 계정 설정</a></li>
+                                 <li><a href="">로그아웃</a></li>
+                             </ul>
+                         </div> 
+                     </div> -->
+                     <!--//로그인시-->
+                 </div>
+             </div>
+         </div>
+     </header>
     <div id=sub_container class="sub_container">  
         <div class="container_inner">     
             <div class="myhome">
@@ -157,49 +203,6 @@
                                     <span class="red">지도에서 매물찾기</span>
                                 </div>
                             </div>
-                            <div class="txt_box box_border_wrap">
-                                <div class="item">
-                                    같이 방문하게 되어<br>허위매물이<br>있을 수 없습니다.
-                                    <span class="skyblue">지도에서 매물찾기 </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--//매물이 없을때-->
-                </div>
-                <!--//관심매물-->
-                <!--포인트-->
-                <div class="mypoint_area">
-                    <div class="box_border_wrap">
-                        <strong>포인트</strong>
-                        <span class="mypoint"><em>100,000</em>원</span>
-                        <div class="btn_area btn_white">
-                            <button class="btn">중개수수료 결제</button>
-                            <button class="btn">포인 내역</button>
-                            <button class="btn">이용 안내</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//포인트-->
-                <!--앱 다운로드-->
-                <div class="app_download">
-                    <div class="box box_border_wrap">
-                        <p class="txt">리얼하우스 앱을 다운받으세요!!!</p>
-                        <div class="app_area">
-                            <a href="#" class="app"><img src="../../../images/main/app_appstore.png"></a>
-                            <a href="#" class="app"><img src="../../../images/main/app_google.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--//앱 다운로드-->
-            </div>
-        </div>
-    </div>
-    <include src="../include/footer_nav.html"></include>
-    <include src="../include/footer.html"></include>
-</div>
-</body>
-</html>         </div>
                             <div class="txt_box box_border_wrap">
                                 <div class="item">
                                     같이 방문하게 되어<br>허위매물이<br>있을 수 없습니다.

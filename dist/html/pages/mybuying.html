@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <include src="../include/set_css.html"></include>
-    <include src="../include/set_js.html"></include>
+    <link href="../../css/font.min.css" rel="stylesheet">
+    <link href="../../css/common.min.css" rel="stylesheet">
+    <link href="../../css/style.min.css" rel="stylesheet">
+    <link href="../../css/layout.min.css" rel="stylesheet">
+    <script src="../../js/3.3.1.min.js"></script>	
+    <script src="../../js/common.min.js"></script>	
+    <script src="../../js/sub.min.js"></script>	
+    <script src="../../js/plugin/cycle2.min.js"></script>	
+    <!-- 지도 스크립트 -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
     <title>realhouse</title>
 </head>
 <body>
 <div class="wrapper">
-     <include src="../include/header.html"></include>
+     <header id="header">
+         <div class="header_inner">
+             <h1 class="logo"><a href="#"><img src="../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+             <div class="h_right">
+                 <nav id="nav">
+                     <ul class="nav_menu">
+                         <li><a href="#">마이홈</a></li>
+                         <li><a href="#">매물검색</a></li>
+                         <li><a href="#">나의 매수</a></li>
+                         <li><a href="#">나의 매도</a></li>
+                     </ul>
+                 </nav>
+                 <button class="h_btn">알림2</button>
+                 <button class="h_btn type">공인중개사</button>
+                 <div class="member_area">
+                     <!--로그인 전-->
+                     <div class="member">
+                         <a href="#" class="choose">
+                             로그인 · 회원가입
+                         </a>
+                     </div>
+                     <!--//로그인 전-->
+                     <!--로그인시-->
+                     <!-- <div class="member">
+                         <a href="#" class="name">
+                             홍길동님
+                         </a>
+                         <div class="login_layout">
+                             <ul>
+                                 <li><a href="">내 계정 설정</a></li>
+                                 <li><a href="">로그아웃</a></li>
+                             </ul>
+                         </div> 
+                     </div> -->
+                     <!--//로그인시-->
+                 </div>
+             </div>
+         </div>
+     </header>
     <div id=sub_container class="sub_container">  
         <div class="container_inner">     
             <div class="mybuying">                
@@ -62,40 +108,6 @@
                             <button class="active">1</button>
                             <button>2</button>
                             <button>3</button>
-                            <button>4</button>
-                            <button class="next"></button>
-                        </div>
-                    </div>
-                    <!--중개의뢰가 없을경우-->
-                    <!-- <div class="content">
-                        <div class="none">
-                            <p class="style">진행중인 매수/임차 중개의뢰가 없습니다.</p>
-                            헛걸음은 없는 리얼하우스로 시간과 경비를 절감하세요. 
-                        </div>
-    
-                    </div> -->
-                    <!--//중개의뢰가 없을경우-->
-                </div>
-                <!--//매수현황-->
-                <!--하단info-->
-                <div class="info_box">
-                    <em>※ 매수/임차 중개의뢰방법 </em>
-                    <ul>
-                        <li>1. 매물을 검색 후 <span class="txt_red">마음에 드는 매물을 관심매물로 등록</span>합니다.</li>
-                        <li>2. <span class="txt_blue">[신규의뢰 요청]</span>이나 매물정보 페이지에 있는 <span class="txt_blue">[방문요청]</span>을 클릭합니다.</li>
-                        <li>3. 관심매물 중 <span class="txt_red">방문하고 싶은 매물을 선택</span>하고 <span class="txt_red">평점을 보고 마음에 드는 중개사를 선택</span> 후 <span class="txt_red">중개업소 방문시간을 선택</span>하면 중개의뢰가 완료됩니다.</li>
-                        <li>4. 중개사가 승인 후 확인 차 바로 전화를 드리며 방문일에 방문하시면 요청한 모든 매물을 방문하실 수 있습니다.</li>
-                    </ul>
-                </div>
-                 <!--//하단info-->
-            </div>
-        </div>
-    </div>
-    <include src="../include/footer_nav.html"></include>
-    <include src="../include/footer.html"></include>
-</div>
-</body>
-</html>                        <button>3</button>
                             <button>4</button>
                             <button class="next"></button>
                         </div>

@@ -19,13 +19,26 @@
             <!--//지도-->
             <!--매물상세-->
             <div class="offer_detail_wrap">
+                <button class="btn_close"><span class="blind">닫기</span></span></button>
                 <div class="offer_detail">
                     <div class="offer_main">
                         <ul class="view_list">
                             <li class="main"><a href="#"><img src="../../../images/sub/offering_main_img.jpg"></a></li>
                             <li><a href="#"><img src="../../../images/sub/offering_img1.jpg"></a></li>
-                            <li><a href="#"><img src="../../../images/sub/offering_img2.jpg"></a></li>
+                            <li>                                
+                                <a href="#">
+                                    <div class="cover"><p class="cnt">15개</p>사진 전체보기</div>
+                                    <img src="../../../images/sub/offering_main_img.jpg">
+                                </a>
+                            </li>
                         </ul>
+                        <!--사진이 없을때-->
+                        <ul class="view_list no_img">
+                            <li class="main">NO PHOTO</li>
+                            <li>NO PHOTO</li>
+                            <li>NO PHOTO</li>
+                        </ul>
+                        <!--//사진이 없을때-->
                         <div class="offer_mark">
                             <dl>
                                 <dt>월세보증금/월세</dt>
@@ -56,8 +69,8 @@
                             </div>
                         </div>
                         <!--매물 테이블-->
-                        <div class="info_tb_area">
-                            <table class="info_tb">
+                        <div class="table_style2">
+                            <table class="table">
                                 <colgroup>
                                     <col width="15%">
                                     <col width="35%">
@@ -110,12 +123,12 @@
                     </div>
                     <!--매물정보-->
                     <div class="offer_info">
-                        <div class="content_head">
-                            <h2>매물정보</h2>
+                        <div class="content_head2">
+                            <h2 class="tit">매물정보</h2>
                         </div>
                          <!--매물 테이블-->
-                         <div class="info_tb_area">
-                            <table class="info_tb">
+                         <div class="table_style2">
+                            <table class="table">
                                 <colgroup>
                                     <col width="15%">
                                     <col width="35%">
@@ -161,8 +174,8 @@
                     <!--//매물정보-->
                     <!--매물설명-->
                     <div class="offer_explain">
-                        <div class="content_head">
-                            <h2>매물설명</h2>
+                        <div class="content_head2">
+                            <h2 class="tit">매물설명</h2>
                         </div>
                         <div class="explain_area box_wrap">
                             공인중개사가 작성한 설명이 나타납니다. 
@@ -174,22 +187,33 @@
                     <!--//매물설명-->
                     <!--위치-->
                     <div class="offer_locate">
-                        <div class="content_head">
-                            <h2>위치</h2>
+                        <div class="content_head2">
+                            <h2 class="tit">위치</h2>
                         </div>
                         <div class="locate_box">
                             <div class="locate_header">
                                 서울시 송파구 잠실동(잠실주공1단지)
                             </div>
-                            <div class="map" style="width:800px;height: 500px;"></div>
+                            <div class="map">                              
+                                <span class="ico_area">30m</span>
+                                <div id="daumRoughmapContainer1542695389817" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                <script charset="UTF-8">
+                                    new daum.roughmap.Lander({
+                                        "timestamp" : "1542695389817",
+                                        "key" : "qxch",
+                                        "mapWidth" : "800",
+                                        "mapHeight" : "500"
+                                    }).render();
+                                </script>
+                            </div>
                         </div>
                     </div>
                     <!--//위치-->
                 </div>
             </div>
             <!--//매물상세-->
-            <!--전체매물-->
-            <div class="all_offer">
+            <!--right:전체매물-->
+            <!-- <div class="all_offer">
                 <div class="items_area">
                     <div class="header">전체매물(21)</div>
                     <ul class="items_list">
@@ -243,7 +267,7 @@
                         </li> 
                     </ul>                 
                 </div>
-            </div>
+            </div> -->
             <!--//전체매물-->
         </div>
     </div>

@@ -57,7 +57,7 @@ gulp.task('compile_css', function(){
 gulp.task('compile_html', function(){
 	return gulp.src(paths.html)
 	.pipe(plumber({errorHandler : onError}))
-	.pipe(gulp.dest(dist + '/'))
+	.pipe(gulp.dest(dist + '/html'))
 	.pipe( bs.reload({stream: true}) );
 });
 
