@@ -9,8 +9,8 @@
 .txt_red{color:#ff5050}
 .txt_blue{color:#3399ff;}
 /*버튼*/
-.btn_green .btn{line-height: 2.6; font-size: 20px; color: #fff; border-radius:30px; background-color: #3ec729;}
-.btn_white .btn{line-height: 2.6; color:#464646; border:1px solid #e6e6e6; border-radius:30px; background-color: #fff;}
+.btn_green .btn{display: block; line-height: 2.6; font-size: 20px; font-weight: 500; color: #fff; border-radius:30px; background-color: #3ec729;}
+.btn_white .btn{display: block; line-height: 2.6; font-weight: 500; color:#464646; border:1px solid #e6e6e6; border-radius:30px; background-color: #fff;}
 
 .area_style:after{display: block; content:""; clear: both;}
 .area_style .area{float:left; position: relative; width:563px; overflow: hidden; border:1px solid #e6e6e6; border-radius: 5px;}
