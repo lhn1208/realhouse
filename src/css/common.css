@@ -124,7 +124,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 #main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}
 
 /*footer*/
-#footer{position: relative; font-family: "Noto Sans KR","돋움","Dotum",sans-serif; background:#fff;}
+#footer{position: relative; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif; background:#fff;}
 #footer .footer_nav_area{height: 64px; border-top:1px solid #e6e6e6;}
 #footer .footer_inner{position: relative; width:1150px; margin:0 auto;}
 #footer .logo{position: absolute; top:0; left: 18px;}
@@ -133,7 +133,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 #footer_nav a:after{display:inline-block; content:'|'; clear:both; height: 18px; padding-left:26px; overflow: hidden;}
 #footer_nav .type:after{display: none;}
 #footer_nav a:first-of-type{padding-left:0; background:none;}
-#footer_nav .type{font-weight: 500; color:#3399ff;}
+#footer_nav .type{font-family: "Noto Sans KR Medium"; color:#3399ff;}
 #footer .sns_links{position: absolute; top:-8px; right:15px;}
 #footer .sns_links .link{display:inline-block; padding-left:20px;}
 #footer .sns_links .link:first-of-type{padding-left: 0;}
