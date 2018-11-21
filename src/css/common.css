@@ -91,7 +91,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .main_info .info{ padding:15px 25px 15px 70px; font-size: 20px; color:#fff; border-radius:30px; background:url("../../images/main/ico_warn.png") no-repeat 30px 18px #ff5050;}
 
 /*intro,공지 공통*/
-.main_container .area .area_tit{border-bottom:1px solid #e6e6e6;}
+.main_container .area .area_tit{font-weight: 500; border-bottom:1px solid #e6e6e6;}
 /* //intro,공지 공통 */
 
 .main_container .intro{margin-top:50px; margin-bottom: 60px;}
@@ -129,7 +129,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 #footer_nav a:after{display:inline-block; content:'|'; clear:both; height: 18px; padding-left:26px; overflow: hidden;}
 #footer_nav .type:after{display: none;}
 #footer_nav a:first-of-type{padding-left:0; background:none;}
-#footer_nav .type{color:#3399ff;}
+#footer_nav .type{font-weight: 500; color:#3399ff;}
 #footer .sns_links{position: absolute; top:-8px; right:15px;}
 #footer .sns_links .link{display:inline-block; padding-left:20px;}
 #footer .sns_links .link:first-of-type{padding-left: 0;}
@@ -138,6 +138,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .footer_content .company{padding-bottom:15px; font-size: 16px; font-weight: bold;}
 .footer_content address{line-height: 1.6; font-size: 16px;}
 .footer_content address .pd_r{padding-right:10px; font-size: 16px;}
-.footer_content .custorm{position: absolute; top:40px; right:8px; line-height: 1.3; font-size:12px;}
+.footer_content .custorm{position: absolute; top:40px; right:8px; line-height: 1.3; font-size:14px;}
+.footer_content .custorm .tit{font-weight: 500;}
 .footer_content .custorm .number{display: block; font-size: 30px; font-weight: bold; color:#3399ff; }
 #footer .copyright{line-height: 3.4; text-align: center;}

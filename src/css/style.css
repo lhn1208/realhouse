@@ -3,16 +3,17 @@
 .app_download{padding-top: 108px; background:url("../../images/main/app_bg.png") no-repeat 854px 0;}
 .app_download:after{display: block; content:""; clear: both;}
 .app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
-.app_download .txt{float: left; padding-top:8px; font-size: 24px; color:#000;}
+.app_download .txt{float: left; padding-top:8px; font-weight: 500; font-size: 24px; color:#000;}
 .app_download .app_area{float: right;}
 .app_download .app_area .app{display:inline-block;}
 
 /*매물검색*/
 .set_area{height:60px; border-bottom:1px solid #e6e6e6;}
 .offer_wrap{position: relative;}
-.all_offer{position: absolute; top:0; right:0; width:460px; z-index: 110; height: 1088px;}
+.all_offer{position: absolute; top:0; right:0; width:460px; z-index: 110;}
+/* .offer_left{position: absolute; top:0; left: 0;} */
+.offer_detail_wrap{margin-right: 460px; padding:27px 0 130px;  overflow-x:hidden; overflow-y:scroll;}
 .all_offer .btn_close{position: absolute; top:0; right:480px; width:59px; height: 59px; background:url("../../images/sub/ico_close.jpg") no-repeat; z-index:100;}
-.offer_detail_wrap{position: relative; height: 1088px; margin-right: 460px; padding:27px 0 130px;  overflow-x:hidden; overflow-y:scroll;}
 .offer_detail{width:800px; margin:0 auto; }
 .offer_main{width: 800px;}
 .offer_main .view_list{position: relative; margin-bottom:75px;}
@@ -48,6 +49,8 @@
 .offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
 .offer_locate .locate_box .map{position: relative;}
 .offer_locate .locate_box .ico_area{position: absolute; top:194px; left:50%; width: 90px; height: 90px; margin-left:-44px; padding-top: 30px; color: #fff; background:url("../../images/sub/ico_map_location.png") no-repeat; z-index: 50; text-align: center;}
+
+
 /*마이홈*/
 .myhome .myspace{position: relative; padding:107px 0 54px 110px}
 .myhome .myspace .name{font-size:30px; color: #464646;}
