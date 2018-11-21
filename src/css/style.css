@@ -3,7 +3,7 @@
 .app_download{padding-top: 108px; background:url("../../images/main/app_bg.png") no-repeat 854px 0;}
 .app_download:after{display: block; content:""; clear: both;}
 .app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
-.app_download .txt{float: left; padding-top:8px; font-weight: 500; font-size: 24px; color:#000;}
+.app_download .txt{float: left; padding-top:8px;  font-family: "Noto Sans KR Medium"; font-size: 24px; color:#000;}
 .app_download .app_area{float: right;}
 .app_download .app_area .app{display:inline-block;}
 
