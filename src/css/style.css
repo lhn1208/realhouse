@@ -31,17 +31,17 @@
 .offer_main .offer_mark dt{ font-size:16px; color:#9c9c9c;}
 .offer_main .offer_mark dd{font-size: 30px; color: #000;}
 .offer_main .offer_mark dd span{font-size:16px; color:#9c9c9c;}
-.offer_main .info_head{padding:0px 0px 14px 10px; font-size: 20px; color: #464646;}
-.offer_main .info_head:after{display:block; content: ""; clear: both;}
-.offer_main .info_head .left{float: left; font-size: 20px;}
-.offer_main .info_head .right{float: right;}
-.offer_main .info_head .type{padding-right:22px; font-size: 20px; color: #3399ff;}
-.offer_main .info_head .info_layout{margin-left: 5px;}
-.offer_main .info_head .visit{display: inline-block; padding-right:23px; line-height: 1.8; background:url("../../images/sub/ico_howto.png") no-repeat right;}
-.offer_main .info_head .btn_area{display: inline-block;}
-.offer_main .info_head .btn_area .btn{margin-left: 15px; padding:10px 10px 10px 38px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161;}
-.offer_main .info_head .btn_area .type{background: url("../../images/sub/ico_btn_favor_off.png") no-repeat 10px #3399ff;}
-.offer_main .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #3399ff;}
+.offer_main .info_area .info_head{padding:0px 0px 14px 10px; font-size: 20px; color: #464646;}
+.offer_main .info_area .info_head:after{display:block; content: ""; clear: both;}
+.offer_main .info_area .info_head .left{float: left; font-size: 20px;}
+.offer_main .info_area .info_head .right{float: right;}
+.offer_main .info_area .info_head .type{padding-right:22px; font-size: 20px; color: #3399ff;}
+.offer_main .info_area .info_head .info_layout{margin-left: 5px;}
+.offer_main .info_area .info_head .visit{display: inline-block; padding-right:23px; line-height: 1.8; background:url("../../images/sub/ico_howto.png") no-repeat right;}
+.offer_main .info_area .info_head .btn_area{display: inline-block;}
+.offer_main .info_area .info_head .btn_area .btn{margin-left: 15px; padding:10px 10px 10px 38px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161;}
+.offer_main .info_area .info_head .btn_area .type{background: url("../../images/sub/ico_btn_favor_off.png") no-repeat 10px #3399ff;}
+.offer_main .info_area .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #3399ff;}
 .offer_explain {margin-bottom:65px;}
 .offer_explain .explain_area{padding:15px; line-height: 2.1;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
