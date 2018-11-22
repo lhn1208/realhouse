@@ -8,15 +8,20 @@
     <title>realhouse</title>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper sch_house">
     <include src="../include/header.html"></include>
     <div id=sub_container>
         <div class="set_area">
-
+            <div class="set_left">
+                설정
+            </div>
+            <div class="set_right">
+                
+            </div>
         </div>
         <div class="offer_wrap" >
              <!--right:전체매물-->
-            <div class="all_offer">
+            <!-- <div class="all_offer">
                 <button class="btn_close"><span class="blind">닫기</span></button>
                 <div class="items_area">
                     <div class="header">전체매물(21)</div>
@@ -99,7 +104,7 @@
                         </li>
                     </ul>                 
                 </div>
-            </div>  
+            </div>   -->
             <!--//전체매물-->
 
             <!--지도-->
@@ -153,12 +158,20 @@
                                 <dd>원룸(개방형)/1개</dd>
                             </dl>
                         </div>
+                        <div class="amount_control">                            
+                            <div class="am_tit">금액조절</div>
+                            <div class="am_right">
+                              <span><em class="txt_red">월세:</em> 1억5000/30</span>
+                              <span><em class="txt_red">월세:</em> 1억8000/20</span>
+                              <span><em class="txt_red">단기임대:</em> 100/100</span>
+                            </div>
+                        </div>
                         <div class="info_area">
                             <div class="info_head">
                                 <div class="left">
                                     <em class="type">아파트</em>
                                     잠실주공1단지 102동
-                                    <span class="info_type">급매</span>
+                                    <span class="icon_type1">급매</span>
                                 </div>
                                 <div class="right">
                                     <a href="#" class="visit">방문요청 방법</a>
@@ -299,6 +312,7 @@
                             </div>
                             <div class="map">                              
                                 <span class="ico_area">100m</span>
+                                <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
                                 <div id="daumRoughmapContainer1542695389817" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                                 <script charset="UTF-8">
                                     new daum.roughmap.Lander({
