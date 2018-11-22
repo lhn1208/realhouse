@@ -122,7 +122,15 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 
 #sub_container{position: relative;}
 #main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}
-
+/*로그인*/
+.wrapper .cover{position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 9999;}
+.login_box{position: absolute; top:295px; left:50%; margin-left:-280px; width:560px; height:518px; background:#fff; border-radius:5px; z-index: 10000; text-align: center;}
+.login_box .login_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
+.login_box .login_tit{padding:60px 0; font-size: 30px; font-family: "Noto Sans KR Medium"; color: #9c9c9c;}
+.login_box .login_area label{display: block;}
+.login_box .login_area .login_id_area{border:1px solid #e6e6e6;}
+.login_box .login_area label .login_form{width:200px; height: 55px; padding-left: 10px;}
+.login_box .login_area label .login_form.pw{width:464px; border-top:none;}
 /*footer*/
 #footer{position: relative; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif; background:#fff;}
 #footer .footer_nav_area{height: 64px; border-top:1px solid #e6e6e6;}
