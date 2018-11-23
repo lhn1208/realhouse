@@ -25,6 +25,7 @@ hr { display: none; }
 a {text-decoration:none; color:#000;}
 input,select { vertical-align:middle;}
 legend {display:none;}
+input[type="checkbox"]{display: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 
 form {position:relative}
 button {display:inline-block; zoom:1; position:relative; overflow:visible; margin:0px; padding:0px; border:0px; background:transparent; cursor:pointer; vertical-align:middle;}
@@ -32,14 +33,14 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .wrapper{position: relative; overflow: hidden; min-width: 1150px;}
 /*select box*/
 
-.select_area .cate_top, .select_area .cate_list{border:1px solid #e6e6e6;}
-.select_area .cate_top{display: block; position: relative; height: 40px; padding:0 25px 0 10px; line-height: 2.4; border-bottom: none; cursor: pointer;}
-.select_area .cate_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 13px; bottom: 0; right: 12px;  background: url("../../images/common/ico_select.png") no-repeat;}
-.select_area .cate_list{position: absolute; top:39px; width:100%; line-height: 2.4; background-color: #fff; z-index: 5;}
-.select_area .cate_list button{width:100%; display: block; height: 30px; padding: 0 10px; text-align: left;}
-.select_area .cate_list button:hover{color: #fff; background-color: #3399ff;}
-.select_area .cate_list{display: none;}
-.select_area.active .cate_list{display: block;}
+.select_area .select_top, .select_area .select_list{border:1px solid #e6e6e6;}
+.select_area .select_top{display: block; position: relative; height: 40px; padding:0 25px 0 10px; line-height: 2.4; border-bottom: none; cursor: pointer;}
+.select_area .select_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 13px; bottom: 0; right: 12px;  background: url("../../images/common/ico_select.png") no-repeat;}
+.select_area .select_list{position: absolute; top:39px; width:100%; line-height: 2.4; background-color: #fff; z-index: 5;}
+.select_area .select_list button{width:100%; display: block; height: 30px; padding: 0 10px; text-align: left;}
+.select_area .select_list button:hover{color: #fff; background-color: #3399ff;}
+.select_area .select_list{display: none;}
+.select_area.active .select_list{display: block;}
 
 /*header*/
 #header{position: relative; width:100%; background:#fff; border-bottom:1px solid #e6e6e6;}
@@ -123,14 +124,45 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 #sub_container{position: relative;}
 #main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}
 /*로그인*/
-.wrapper .cover{position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 9999;}
-.login_box{position: absolute; top:295px; left:50%; margin-left:-280px; width:560px; height:518px; background:#fff; border-radius:5px; z-index: 10000; text-align: center;}
-.login_box .login_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
-.login_box .login_tit{padding:60px 0; font-size: 30px; font-family: "Noto Sans KR Medium"; color: #9c9c9c;}
-.login_box .login_area label{display: block;}
-.login_box .login_area .login_id_area{border:1px solid #e6e6e6;}
-.login_box .login_area label .login_form{width:200px; height: 55px; padding-left: 10px;}
-.login_box .login_area label .login_form.pw{width:464px; border-top:none;}
+.wrapper .cover{position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,1); z-index: 9999;}
+.layer_login{position: absolute; top:295px; left:50%; margin-left:-280px; width:560px; height:518px; background:#fff; border-radius:5px; z-index: 10000; text-align: center;}
+.layer_login .login_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
+.layer_login .login_section{width:464px; margin:0 auto;}
+.layer_login .login_tit{padding:60px 0; font-size: 30px; font-family: "Noto Sans KR Medium"; color: #9c9c9c;}
+.layer_login .login_box{width:464px; margin-bottom: 35px;}
+.login_box .login_form{border:1px solid #e6e6e6; border-top:none;}
+.login_box .login_form:first-of-type{border-top: 1px solid #e6e6e6;}
+.login_box .login_form label{display: block;}
+.login_box .login_form input{height: 55px; padding:0 12px; font-size: 14px; border:none;}
+.login_box .login_form input::placeholder{font-size: 14px; color: #9c9c9c;}
+.login_box .login_list:after{display: block; content: ""; clear: both;}
+.login_box .login_list li:first-child{width:196px;}
+.login_box .login_list li{float: left; width: 133px;}
+.login_box .login_list .email_address{width:116px; padding: 0 12px 0 2px; background: none;}
+.login_list .select_area{position: relative;}
+.login_list .select_area button{display: block; width: 100%; padding: 0 12px; font-size: 14px; color: #000; text-align: left;}
+.select_area .email_top{display: block; position: relative; height: 55px;}
+.select_area .email_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 23px; bottom: 0; right: 26px;  background: url("../../images/common/ico_select.png") no-repeat;}
+.select_area .email_list{position: absolute; top:55px; width:100%; line-height: 2.4; background-color: #fff; outline:1px solid #3399ff; z-index: 5;}
+.select_area .email_list button{height: 25px;}
+.select_area .email_list button:hover{color: #fff; background-color: #3399ff;}
+.select_area .email_list{display: none;}
+.select_area.active .email_top{outline:1px solid #3399ff; }
+.select_area.active .email_list{display: block;}
+.login_box .login_form label .pw_input{width:100%;}
+.login_box .login_set{padding-top:10px;}
+.login_box .login_set:after{display: block; content: ""; clear: both;}
+.login_box .login_set li{float: left; font-size: 14px; color: #6d6d6d;}
+.login_box .login_set li a{font-size: 14px; color: #6d6d6d;}
+.login_box .login_set li .login_option +label {font-size: 14px;}
+.login_box .login_set li .login_option +label .chk_set{display: inline-block; width:24px; height: 24px; margin-right:8px; border:2px solid #e6e6e6; border-radius: 5px; vertical-align: -6px;}
+.login_box .login_set li .login_option:checked +label .chk_set{border:2px solid red;}
+.login_box .login_set li:last-child{float: right;}
+.login_section .login_btn_area .btn{height: 55px; border-radius: 5px; font-size: 20px; font-family: "Noto Sans KR Medium"}
+.login_section .login_btn_area .btn_login{width:100%; color:#fff; background-color:#ff5050;}
+.login_section .login_btn_area .btn_kakao{width:227px; color: #000; background-color: #f7e506;}
+.login_section .login_btn_area .btn_email{width:227px; color: #fff; background-color: #0070c0;}
+
 /*footer*/
 #footer{position: relative; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif; background:#fff;}
 #footer .footer_nav_area{height: 64px; border-top:1px solid #e6e6e6;}

@@ -61,9 +61,9 @@
 
 .process .process_head{position: relative;}
 .process .select_area{position: absolute; top:9px; right:0;}
-.process .select_area.active .cate_top{color: #464646; border:1px solid #464646;}
-.process .select_area .cate_top{width: 150px; padding-right:44px; border:1px solid #e6e6e6; color: #666666;}
-.process .select_area .cate_list{padding-bottom: 5px; border:1px solid #464646;}
+.process .select_area.active .select_top{color: #464646; border:1px solid #464646;}
+.process .select_area .select_top{width: 150px; padding-right:32px; border:1px solid #e6e6e6; color: #666666; text-align: left;}
+.process .select_area .select_list{padding-bottom: 5px; border:1px solid #464646;}
 .process .tab{border-bottom:1px solid #e6e6e6; text-align: center;}
 .process .tab:after{display:block; content:""; clear: both;}
 .process .tab li{float:left; width:185px; height:60px; background-color: #fff; border-top:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}

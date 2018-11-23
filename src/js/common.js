@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   // $(window).scroll(function() {
   //   var sct=$(window).scrollTop();
-  //   if(sct>0){
+  //   if(sct>0){ 
   //     $("#header").addClass("active");
   //   }else{
   //     $("#header").removeClass("active");
@@ -50,8 +50,32 @@ $(document).ready(function(){
     $('html').click(function(e){  
       if(!$(e.target).hasClass("search_input")){
         $schForm.removeClass("active");
-    } 
-  }); 
+      } 
+   }); 
 
+  //로그인 email
+  var $selectArea=$(".select_area");
+  var $emailTop= $(".email_top");
+  var $emailList=$(".email_list");
+  var $email=$(".email_address");
+  var $emailList_btn=$emailList.find("button");
+  $emailTop.click(function(){
+    $selectArea.addClass("active");
+  })
+  $emailList_btn.click(function(){
+    var $btnVal=$(this).text();
+    console.log($(this).val());
+    if($(this).val()=="direct"){
+      $email.val("");
+      $email.prop( "disabled", false);
+      $email.focus();
+    }
+    else{
+      //$email.val()
+      $email.val($btnVal);
+    }
+    $selectArea.removeClass("active");
+  });
+ 
 
 });

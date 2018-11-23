@@ -11,23 +11,65 @@
 <div class="wrapper">
     <div class="cover"></div>
     <!--로그인-->
-    <div class="login_box">
+    <div class="layer_login">
         <a href="#" class="login_close"><span class="blind">닫기</span></a>
-        <h1 class="login_tit">로그인</h1>
-        <div class="login_area">
-            <fieldset>
-                <legend>아이디 및 비밀번호 입력</legend>
-                <label for="login_id" class="login_id_area">
-                    <input id="login_id" class="login_form" type="text" title="로그인 입력" placeholder="이메일 입력">
-                    <input id="login_id" class="login_form" type="text" title="로그인 입력" placeholder="이메일 입력">
-                    <div class="email_area">
+        <div class="login_section">
+            <h1 class="login_tit">로그인</h1>
+            <div class="login_box">
+                <fieldset>
+                    <legend>아이디 및 비밀번호 입력</legend>
+                    <div class="login_form">
+                        <ul class="login_list">
+                            <li>
+                                <label for="login_email" >
+                                    <input id="login_email" class="login_input" type="text" title="이메일 입력" placeholder="이메일 입력">                   
+                                </label>
+                            </li>
+                            <li>@<input class="email_address" type="text" disabled></li>
+                            <li>
+                                <div class="select_area">                                
+                                    <button class="email_top">이메일 선택</button>
+                                    <div class="email_list">
+                                        <button>naver.com</button>
+                                        <button>daum.net</button>
+                                        <button>hanmail.net</button>
+                                        <button>Hotmail.com</button>
+                                        <button>gmail.com</button>
+                                        <button>nate.com</button>
+                                        <button>yahoo.co.kr</button>
+                                        <button>paran.com</button>
+                                        <button>emapas.com</button>
+                                        <button>dreamwiz.com</button>
+                                        <button>lycos.co.kr</button>
+                                        <button>korea.com</button>
+                                        <button value="direct">직접입력</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </label>
-                <label for="login_pw">
-                    <input id="login_pw" class="login_form pw" type="password" title="비밀번호 입력" placeholder="비밀번호 입력">
-                </label>
-            </fieldset>
+                    <div class="login_form">
+                        <label for="login_pw">
+                            <input id="login_pw" class="pw_input" type="password" title="비밀번호 입력" placeholder="비밀번호 입력">
+                        </label>
+                    </div> 
+                </fieldset>
+                <!--로그인상태유지, 아이디/비밀번호 찾기-->
+                <ul class="login_set">
+                    <li>
+                        <input type="checkbox" class="login_option" id="login_option">
+                        <label for="login_option"><span class="chk_set"></span>로그인 상태유지</label>
+                    </li>
+                    <li><a href="#">아이디/비밀번호 찾기</a></li>
+                </ul>
+                <!--//로그인상태유지, 아이디/비밀번호 찾기-->
+            </div>            
+            <div class="login_btn_area">
+                <button class="btn btn_login">로그인</button>
+                <button class="btn btn_kakao">카카오톡으로 시작</button><button class="btn btn_email">이메일로 회원가입</button>
+            </div>
         </div>
+        
     </div>
     <!--//로그인-->
     <include src="../include/header.html"></include>

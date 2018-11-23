@@ -1,8 +1,8 @@
 $(document).ready(function(){
     //select
     var $selectArea=$(".select_area");
-    var $cateTop= $(".cate_top");
-    var $cateList=$(".cate_list");
+    var $cateTop= $(".select_top");
+    var $cateList=$(".select_list");
     var $cateList_btn=$cateList.find("button");
     $cateTop.click(function(){
         $selectArea.addClass("active");
