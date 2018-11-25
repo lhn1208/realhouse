@@ -52,30 +52,56 @@ $(document).ready(function(){
         $schForm.removeClass("active");
       } 
    }); 
-
-  //로그인 email
-  var $selectArea=$(".select_area");
-  var $emailTop= $(".email_top");
-  var $emailList=$(".email_list");
-  var $email=$(".email_address");
-  var $emailList_btn=$emailList.find("button");
-  $emailTop.click(function(){
-    $selectArea.addClass("active");
+  
+  //로그인 및 회원가입 클릭시 레이어 팝업
+  var $layerLogin=$(".layer_member");
+  var $cover= $(".main_cover");
+  var $body=$('body');
+  $("#member_login").click(function(){
+    $cover.addClass("active");
+    $layerLogin.addClass("active");
+    $body.addClass("scroll_hidden");
   })
-  $emailList_btn.click(function(){
+
+  //layer
+  $layerLogin.find(".member_close").click(function(){
+    $cover.removeClass("active");
+    $layerLogin.removeClass("active");
+    $body.removeClass("scroll_hidden");	
+	 	return false;
+  })
+
+  //로그인 email,휴대폰번호 selectbox
+  var $selectArea=$(".member_select_area");
+  var $selectTop= $selectArea.find(".member_select_top");
+  var $selectList= $selectArea.find(".member_select_list");
+  var $email=$(".email_address");
+  var $selectList_link=$selectList.find("a");
+  $selectTop.click(function(e){
+    $(this).parents(".member_select_area").addClass("active");
+  })
+  
+  $selectList_link.click(function(){
     var $btnVal=$(this).text();
-    console.log($(this).val());
-    if($(this).val()=="direct"){
-      $email.val("");
-      $email.prop( "disabled", false);
-      $email.focus();
+    var selectEmail_id=$(this).parents(".member_select_area").attr("id");
+    var link_val= $(this).attr('value');
+    //이메일 직접입력
+    if(link_val=="direct"){
+      $(this).parent().siblings($selectTop).text($btnVal);
+      if(selectEmail_id == "select_email"){
+        $email.val("");
+        $email.focus();
+        }
     }
     else{
-      //$email.val()
-      $email.val($btnVal);
+      $(this).parent().siblings($selectTop).text($btnVal);
+      //selectbox가 이메일일때만 실행
+      if(selectEmail_id == "select_email"){
+        $email.val($btnVal);
+      }
     }
-    $selectArea.removeClass("active");
+    $(this).parents(".member_select_area").removeClass("active");
   });
- 
+  
 
 });
