@@ -20,14 +20,14 @@ $(document).ready(function(){
     return false;
   });
 
-  // $(window).scroll(function() {
-  //   var sct=$(window).scrollTop();
-  //   if(sct>0){ 
-  //     $("#header").addClass("active");
-  //   }else{
-  //     $("#header").removeClass("active");
-  //   }
-  // });
+  $(window).scroll(function() {
+    var sct=$(window).scrollTop();
+    if(sct>0){ 
+      $("#header").addClass("active");
+    }else{
+      $("#header").removeClass("active");
+    }
+  });
 
   //로그인시
   var $member=$("#header .member");
@@ -62,7 +62,6 @@ $(document).ready(function(){
     $layerLogin.addClass("active");
     $body.addClass("scroll_hidden");
   })
-
   //layer
   $layerLogin.find(".member_close").click(function(){
     $cover.removeClass("active");
@@ -70,6 +69,11 @@ $(document).ready(function(){
     $body.removeClass("scroll_hidden");	
 	 	return false;
   })
+  var layerH=$(".layer_member").outerHeight();
+  var top = Math.ceil((window.screen.height - layerH)/2);
+  console.log(window.screen.height);
+  $(".layer_member").css("top",top+"px");
+
 
   //로그인 email,휴대폰번호 selectbox
   var $selectArea=$(".member_select_area");
@@ -78,7 +82,8 @@ $(document).ready(function(){
   var $email=$(".email_address");
   var $selectList_link=$selectList.find("a");
   $selectTop.click(function(e){
-    $(this).parents(".member_select_area").addClass("active");
+    $(this).parents(".member_select_area").addClass("open");
+    return false;
   })
   
   $selectList_link.click(function(){
@@ -100,7 +105,13 @@ $(document).ready(function(){
         $email.val($btnVal);
       }
     }
-    $(this).parents(".member_select_area").removeClass("active");
+    $(this).parents(".member_select_area").removeClass("open");
+    return false;
+  });
+  $('html').click(function(e){  
+    if(!$(e.target).hasClass("open")){
+        $selectArea.removeClass("open");
+      } 
   });
   
 

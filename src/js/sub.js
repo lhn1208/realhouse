@@ -5,15 +5,23 @@ $(document).ready(function(){
     var $selectList=$selectArea.find(".select_list");
     var $selectList_link=$selectList.find("a");
     $selectTop.click(function(){
-        $(this).parents(".select_area").addClass("active");
+        $(this).parents(".select_area").addClass("open");
+        return false;
     })
     $selectList_link.click(function(){
         var $btnVal=$(this).text();
         $(this).parent().siblings($selectTop).text($btnVal);
         $(this).parent().siblings($selectTop).css("color","#464646")
-        $(this).parents(".select_area").removeClass("active");
+        $(this).parents(".select_area").removeClass("open");
+        return false;
+    });
+    $('html').click(function(e){  
+        if(!$(e.target).hasClass("open")){
+            $selectArea.removeClass("open");
+         } 
     });
 
+    //button
     var $btn=$(".btn_type1");
     $btn.click(function(){
         if($(this).hasClass("on")){
