@@ -1,13 +1,10 @@
 @charset "utf-8";
 
 /* CSS 속성 선언순서 : display, overflow, float, position, z-index, width & height, margin & padding, font, color, border, background, align, etc */
-/*
-font-family: "Noto Sans KR Regular"
-font-family: "Noto Sans KR Medium"
-*/
+
 * {margin:0px; padding:0px; font-weight:normal; font-size:16px;}
 html {height:100%;}
-body{height:100%; font-size: 16px; line-height: normal; color:#6d6d6d; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif;}
+body{height:100%; font-size: 16px; line-height: normal; color:#5f5f5f; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif;}
 body *{box-sizing: border-box; }
 /*Reset*/
 h1, h2, h3, h4, h5, h6 ,h7 {font-weight:normal;}
@@ -38,8 +35,8 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .select_area .select_top{display: block; position: relative; height: 40px; padding:0 25px 0 10px; line-height: 2.4; cursor: pointer;}
 .select_area .select_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 13px; bottom: 0; right: 12px;  background: url("../../images/common/ico_select.png") no-repeat;}
 .select_area .select_list{display: none; position: absolute; top:39px; width:100%; line-height: 2.4; background-color: #fff; z-index: 5;}
-.select_area .select_list a{width:100%; display: block; height: 30px; padding: 0 10px; line-height: 1.5; color: #464646; text-align: left;}
-.select_area .select_list a:hover{color: #fff; background-color: #3399ff;}
+.select_area .select_list a{width:100%; display: block; height: 30px; padding: 0 10px; line-height: 1.5; color: #373737; text-align: left;}
+.select_area .select_list a:hover{color: #fff; background-color: #378cff;}
 .select_area.active .select_list{display: block;}
 /*chekbox*/
 .checkbox +label {font-size: 14px;}
@@ -56,8 +53,8 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 #nav{float:left;}
 .nav_menu li{float:left; padding-right:40px; line-height:4.5;}
 .nav_menu li a{display: block; font-size: 15px;}
-.nav_menu li:hover a, .nav_menu li.on a{color:#3399ff; border-bottom:2px solid #3399ff;}
-.h_btn{float: left; margin-top: 22px; margin-right: 20px; padding:2px 20px 4px ; line-height: 1.5; font-size: 13px; color:#fff; border-radius: 15px; background-color: #ff5050;}
+.nav_menu li:hover a, .nav_menu li.on a{color:#378cff; border-bottom:2px solid #378cff;}
+.h_btn{display: inline-block; float: left; margin-top: 22px; margin-right: 20px; padding:5px 20px 7px ; line-height: 1; font-size: 13px; color:#fff; border-radius: 15px; background-color: #ff5050;}
 .h_btn.type{background-color:#5cadff;}
 .member_area{float: left; position: relative; width:100px; margin-left:10px; margin-top:24px;}
 .member_area a.choose{display: block; color: #6c6c6c; font-size: 13px;}
@@ -107,19 +104,19 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .main_container .intro a{display: block; }
 .main_container .intro a:hover{box-shadow: 0px 10px 10px -5px #d6d6d6; }
 .main_container .intro .area.type1 .area_tit{color: #ff5050;}
-.main_container .intro .area.type2 .area_tit{color: #3399ff;}
+.main_container .intro .area.type2 .area_tit{color: #378cff;}
 .main_container .intro .area .area_tit .date{position: absolute; top:0px; right:24px; color: #9c9c9c;}
 .main_container .intro .area .content{padding:30px 25px; font-size: 20px; color: #6d6d6d;}
 .main_container .notice{margin-bottom:50px;}
 .main_container .notice .area{height: 210px; overflow: hidden;}
 .main_container .notice .area .area_tit{color: #000;}
 .main_container .notice .area .more{position: absolute; top:20px; right:24px; padding-right:15px; color: #9c9c9c; background:url("../../images/main/ico_arr_more.png") right no-repeat;}
-.main_container .notice .area .more:hover{color:#3399ff; background:url("../../images/main/ico_arr_more_on.png") right no-repeat;}
+.main_container .notice .area .more:hover{color:#378cff; background:url("../../images/main/ico_arr_more_on.png") right no-repeat;}
 .main_container .notice .board{height: 120px; padding:25px 25px 0; overflow: hidden;}
 .main_container .notice .board li{line-height: 1.8; text-overflow:ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
 .main_container .notice .board li a{display: block; color:#6d6d6d;}
 .main_container .notice .board li a:after{display: block; content:""; clear: both;}
-.main_container .notice .board li a:hover span{color:#3399ff;}
+.main_container .notice .board li a:hover span{color:#378cff;}
 .main_container .notice .board li a:hover span.date{color:#6d6d6d;}
 .main_container .notice .board li span{float:left; font-size:18px;}
 .main_container .notice .board li span.date{float:right; font-size: 16px;}
@@ -139,25 +136,25 @@ body.scroll_hidden{overflow: hidden;}
 .member_box .member_form{position: relative; font-size: 14px; border:1px solid #e6e6e6; border-top:none;}
 .member_box .member_form:first-of-type{border-top: 1px solid #e6e6e6;}
 .member_box .member_form label{display: block;}
-.member_box .member_form input{width:100%; height: 55px; padding:0 12px; font-size: 14px; border:none;}
+.member_box .member_form input{width:100%; height: 55px; padding:0 12px; font-size: 14px; font-family: "Noto Sans KR Regular"; color:#000;  border:none;}
 .member_box .member_form input::placeholder,
 .member_box .member_form input::-webkit-input-placeholder{font-size: 14px; color: #9c9c9c;}
 .member_box .member_form input:-ms-input-placeholder{color: #9c9c9c; font-size: 14px !important;}
 .member_box .member_form .member_list:after{display: block; content: ""; clear: both;}
 .member_box .member_form .member_list li{float: left;}
 .member_box .member_list li .input_email{width:180px;}
-.member_box .member_list .email_address{width:126px; padding: 0 12px 0 2px; vertical-align: 0; background: none;}
+.member_box .member_list .email_address{width:126px; padding: 0 12px 0 2px; color: #000; vertical-align: 0; background: none; font-family: "Noto Sans KR Regular";}
 .member_form .member_select_area{position: relative; width:140px;}
 .member_form .member_select_area a{display: block; width: 100%; padding: 0 12px; line-height: 1.8; font-size: 14px; color: #000; text-align: left;}
 .member_form .member_select_area .member_select_top{display: block; position: relative; height: 55px; line-height: 4; border:none;}
 .member_form .member_select_area .member_select_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 23px; bottom: 0; right: 26px;  background: url("../../images/common/ico_select.png") no-repeat;}
-.member_form .member_select_area .member_select_list{position: absolute; top:55px; width:100%; line-height: 2.4; background-color: #fff; outline:1px solid #3399ff; z-index: 5;}
+.member_form .member_select_area .member_select_list{position: absolute; top:55px; width:100%; line-height: 2.4; background-color: #fff; outline:1px solid #378cff; z-index: 5;}
 .member_form .member_select_area .member_select_list a{height: 25px;}
-.member_form .member_select_area .member_select_list a:hover{color: #fff; background-color: #3399ff;}
+.member_form .member_select_area .member_select_list a:hover{color: #fff; background-color: #378cff;}
 .member_form .member_select_area .member_select_list{display: none;}
-.member_form .member_select_area.active .member_select_top{outline:1px solid #3399ff; }
+.member_form .member_select_area.active .member_select_top{outline:1px solid #378cff; }
 .member_form .member_select_area.active .member_select_list{display: block;}
-.member_box .member_form label .pw_input{width:100%; font-size: 24px;}
+.member_box .member_form label .pw_input{width:100%; font-size: 16px;}
 .member_box .login_set{padding-top:10px;}
 .member_box .login_set:after{display: block; content: ""; clear: both;}
 .member_box .login_set li{float: left; font-size: 14px; color: #6d6d6d;}
@@ -170,7 +167,7 @@ body.scroll_hidden{overflow: hidden;}
 .member_section .login_btn_area .btn_email{width:227px; color: #fff; background-color: #0070c0;}
 .member_section .desc{padding:26px 0; font-size: 14px;}
 .member_box .member_agree_area{padding:23px 0 26px; font-size:14px; text-align:left;}
-.member_box .member_agree_area em{padding-bottom: 3px; font-size:14px; color: #3399ff; border-bottom:1px solid #3399ff;}
+.member_box .member_agree_area em{padding-bottom: 3px; font-size:14px; color: #378cff; border-bottom:1px solid #378cff;}
 .member_box .member_agree_area .checkbox +label .chk_set{vertical-align: -8px;}
 .layer_member .member_btn .btn{width:100%; line-height: 2.8; font-size: 20px; font-family: "Noto Sans KR Medium"; color:#fff; background-color: #e6e6e6;}
 .layer_member .member_btn .btn.on{background-color: #ff5050;}
@@ -179,18 +176,18 @@ body.scroll_hidden{overflow: hidden;}
 .member_form .phone_list .member_select_area{width: 84px; z-index: 10;}
 .member_form .phone_list .input_phone{width: 378px; padding-right: 144px;}
 .member_form .btn_certify{position: absolute; top:10px; right:12px; width:90px; height:36px; padding:10px 0; font-size: 12px; color:#fff; background-color: #e6e6e6; border-radius: 5px;}
-.member_form .btn_certify.on{background-color: #3399ff;}
+.member_form .btn_certify.on{background-color: #378cff;}
 .member_form .count{position: absolute; font-size: 14px; top:16px; right: 114px;}
 .layer_member .cerify_info{padding:26px 0; text-align: left; font-size: 14px; line-height: 2;}
 .layer_member .cerify_info p{font-size: 14px;}
 /*아이디/비밀번호찾기*/
 .member_box.find_user{margin-bottom:32px;}
-.member_box .member_form .member_info{height: 55px; padding-left:10px; padding-right: 100px; line-height: 3.8; font-size: 14px; background-color: #ffefef; color:#464646; text-align: left;}
-.member_box .member_form .member_info .btn_member{position: absolute; top:10px; right:12px; width:90px; height: 36px; padding:0; line-height: 3; font-size: 12px; color:#fff; background-color: #ff5050; border-radius: 5px;}
-.layer_member .member_btn.type .btn.on{background-color: #3399ff;}
+.member_box .member_form .member_info{height: 55px; padding-left:10px; padding-right: 100px; line-height: 3.8; font-size: 14px; background-color: #ffefef; color:#373737; text-align: left;}
+.member_box .member_form .member_info .btn_member{position: absolute; top:10px; right:12px; width:90px; height: 36px; padding:0; line-height: 3; font-size: 12px; color:#fff; background-color: #ff5050; border-radius: 5px; text-align: center;}
+.layer_member .member_btn.type .btn.on{background-color: #378cff;}
 .member_box .member_form .member_email{padding-right: 144px;}
 .member_box .member_form .member_info .btn_member.emial_certify{background-color: #3ec729;}
-.member_box .member_form .member_info .btn_member.pw_chg{background-color: #3399ff;}
+.member_box .member_form .member_info .btn_member.pw_chg{background-color: #378cff;}
 /*footer*/  
 #footer, #footer_nav_section{position: relative; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif; background:#fff;}
 #footer_nav_section .footer_nav_area{width:1150px; height: 64px; margin:0 auto; border-top:1px solid #e6e6e6;}
@@ -201,7 +198,7 @@ body.scroll_hidden{overflow: hidden;}
 #footer_nav a:after{display:inline-block; content:'|'; clear:both; height: 18px; padding-left:26px; overflow: hidden;}
 #footer_nav .type:after{display: none;}
 #footer_nav a:first-of-type{padding-left:0; background:none;}
-#footer_nav .type{font-family: "Noto Sans KR Medium"; color:#3399ff;}
+#footer_nav .type{font-family: "Noto Sans KR Medium"; color:#378cff;}
 #footer_nav_section .sns_links{position: absolute; top:-8px; right:15px;}
 #footer_nav_section .sns_links .link{display:inline-block; padding-left:20px;}
 #footer_nav_section .sns_links .link:first-of-type{padding-left: 0;}
@@ -212,5 +209,5 @@ body.scroll_hidden{overflow: hidden;}
 .footer_content address .pd_r{padding-right:10px; font-size: 16px;}
 .footer_content .custorm{position: absolute; top:40px; right:8px; line-height: 1.3; font-size:14px; text-align: right;}
 .footer_content .custorm .tit{font-family: "Noto Sans KR Medium"}
-.footer_content .custorm .number{display: block; font-size: 30px; font-weight: bold; color:#3399ff; }
+.footer_content .custorm .number{display: block; font-size: 30px; font-weight: bold; color:#378cff; }
 #footer .copyright{line-height: 3.4; text-align: center;}
