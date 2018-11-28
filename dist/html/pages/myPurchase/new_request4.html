@@ -15,30 +15,31 @@
     <title>realhouse</title>
 </head>
 <body>
-<header class="header2">
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
     <div class="header_inner">
         <button class="btn_close"><span class="blind">닫기</span></button>
-        <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
         <h2 class="header_tit">매수/임차 중개의뢰</h2>
     </div>
-</header>
-<div class="wrapper">
-    <div id=sub_container class="sub_container">   
-        <header class="sub_header">
-            <div class="header_inner">
-                <div class="process_idx">
-                    <em>1</em>
-                    <em>2</em>
-                    <em>3</em>
-                    <em class="on">4</em><span>방문시간 선택</span>
-                </div>
-                <div class="btn_process">
-                    <button class="btn btn_prev">이전</button>
-                    <button class="btn on">확인</button>
-                    <!--확인 비활성화--><!--<button class="btn off">확인</button>-->
-                </div>
+    <div class="header_section">
+        <div class="header_inner">
+            <div class="process_idx">
+                <em>1</em>
+                <em class="on">2</em><span>방문요청 매물 선택</span>
+                <em>3</em>
+                <em>4</em>
             </div>
-        </header>     
+            <div class="btn_process">
+                <button class="btn btn_prev">이전</button>
+                <button class="btn btn_next on">다음</button>
+                <!--버튼 비활성화--><!--<button class="btn btn_next">다음</button>-->
+            </div>
+        </div>
+    </div>  
+</header>
+  
+<div class="wrapper">
+    <div id=sub_container class="sub_container">           
         <div class="container_inner">     
             <div class="new_request">
                 <div class="table_style1">
@@ -233,5 +234,24 @@
         </div>           
     </div>
 </div>
+<footer id="footer">
+    <div class="footer_content">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
+</footer>
 </body>
 </html>

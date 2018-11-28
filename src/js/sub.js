@@ -1,4 +1,22 @@
 $(document).ready(function(){
+    //sub_header
+    var $header= $(".sub_header");
+    $(window).scroll(function() {
+        var sct=$(window).scrollTop();
+        if(sct>0){ 
+            $header.addClass("active");
+        }else{
+            $header.removeClass("active");
+        }
+    });
+    $(".offer_detail_wrap").scroll(function() {
+        var sct=$(".offer_detail_wrap").scrollTop();
+        if(sct>0){ 
+            $header.addClass("active");
+        }else{
+            $header.removeClass("active");
+        }
+    });
     //select
     var $selectArea=$(".select_area");
     var $selectTop= $selectArea.find(".select_top");

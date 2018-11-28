@@ -11,8 +11,9 @@
 .wrapper.sch_house{min-width: 1300px;}
 .set_area{height:60px; border-bottom:1px solid #e6e6e6;}
 .offer_wrap{position: relative;}
-.all_offer{position: absolute; top:0; right:0; width:460px; z-index: 110;}
-.offer_detail_wrap{margin-right: 460px; height: 1000px; padding:27px 0 130px; overflow-x:hidden; overflow-y:scroll;}
+.all_offer{position: absolute; top:0; right:0; width:460px; padding-top:129px; z-index: 110; }
+.all_offer .items_area{height: 760px; overflow-x: hidden; overflow-y: scroll;}
+.offer_detail_wrap{margin-right: 460px; height: 760px; padding:154px 0 130px; overflow-x:hidden; overflow-y:scroll;}
 .all_offer .btn_close{position: absolute; top:0; right:480px; width:59px; height: 59px; background:url("../../images/sub/ico_close_w59.jpg") no-repeat; z-index:100;}
 .offer_detail{width:800px; margin:0 auto; }
 .offer_main{width: 800px; margin-bottom: 50px;}
@@ -21,8 +22,8 @@
 .offer_main .view_list li:first-child{position: absolute; top:0; left:0; margin:0; width:532px; height: 360px;}
 .offer_main .view_list li:last-child{margin-top:12px;}
 .offer_main .view_list li a{display: block; position: relative; width: 100%; }
-.offer_main .view_list li .cover{position: absolute; top:0; left:0; width:100%; height:100%; padding-top:54px; font-size: 18px; color: #fff; background: rgba(0,0,0,.7); text-align: center; font-family: "Noto Sans KR Medium";}
-.offer_main .view_list li .cover .cnt{font-size: 24px;}
+.offer_main .view_list li .cover{position: absolute; top:0; left:0; width:100%; height:100%; padding-top:100px; font-size: 18px; color: #fff; background: url("../../images/sub/ico_img_more.png") no-repeat 105px 50px rgba(0,0,0,.7); text-align: center; font-family: "Noto Sans KR Medium";}
+.offer_main .view_list li .cover .cnt{font-size: 18px;}
 .offer_main .view_list.no_img li{display: block; padding-top:80px; font-size: 12px; border:1px solid #e6e6e6; background-color: #fafafa; text-align: center;}
 .offer_main .view_list.no_img li:first-child{padding-top:174px;}
 .offer_main .offer_mark{margin-bottom:55px; padding-left:24px; text-align: right;}
@@ -87,7 +88,7 @@
 .myrequest .req_btn{position: absolute; top:120px; right:105px;}
 .myrequest .req_btn .btn{padding:0 25px;}
 .mybuying .process{margin-bottom:65px;}
-.new_request{padding-top:50px;}
+.new_request{padding-top:154px; min-height: 675px;}
 .offer_wrap .offer_none{display: flex; align-items: center; justify-content:center; height: 840px; text-align: center;}
 .new_request .box_border_wrap{margin-bottom:50px; background: #fffbfb;}
 

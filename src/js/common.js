@@ -20,12 +20,13 @@ $(document).ready(function(){
     return false;
   });
 
+  var $header= $("#header");
   $(window).scroll(function() {
     var sct=$(window).scrollTop();
     if(sct>0){ 
-      $("#header").addClass("active");
+      $header.addClass("active");
     }else{
-      $("#header").removeClass("active");
+      $header.removeClass("active");
     }
   });
 
@@ -71,7 +72,6 @@ $(document).ready(function(){
   })
   var layerH=$(".layer_member").outerHeight();
   var top = Math.ceil((window.screen.height - layerH)/2);
-  console.log(window.screen.height);
   $(".layer_member").css("top",top+"px");
 
 
