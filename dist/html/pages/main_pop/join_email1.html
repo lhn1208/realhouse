@@ -27,17 +27,19 @@
                     <legend>이름, 이메일, 비밀번호 입력</legend>
                     <div class="member_form">
                         <label for="member_name">
-                            <input id="member_name" type="text" title="이름(실명 입력)" placeholder="이름(실명 입력)">
+                            <input id="member_name" type="text" title="이름(실명 입력)">
+                            <span class="placeholder">이름(실명 입력)</span>
                         </label>
                     </div> 
                     <div class="member_form">
                         <ul class="member_list">
                             <li>
                                 <label for="member_email" >
-                                    <input id="member_email" class="input_email" type="text" title="이메일 입력" placeholder="이메일 입력">                   
+                                    <input id="member_email" class="input_email" type="text" title="이메일 입력">
+                                    <span class="placeholder">이메일 입력</span>  
                                 </label>
+                                <div class="email_address">@</div>
                             </li>
-                            <li>@<input class="email_address" type="text"></li>
                             <li>
                                 <div class="member_select_area" id="select_email">                                
                                     <a href="#" class="member_select_top">이메일 선택</a>
@@ -62,12 +64,14 @@
                     </div>
                     <div class="member_form">
                         <label for="member_pw">
-                            <input id="member_pw" class="pw_input" type="password" title="비밀번호 입력(영문, 숫자 포함 6자리 이상)" placeholder="비밀번호 입력(영문, 숫자 포함 6자리 이상)">
+                            <input id="member_pw" class="pw_input" type="password" title="비밀번호 입력(영문, 숫자 포함 6자리 이상)">
+                            <span class="placeholder">비밀번호 입력(영문, 숫자 포함 6자리 이상)</span>  
                         </label>
                     </div> 
                     <div class="member_form">
                         <label for="member_pw_chk">
-                            <input id="member_pw_chk" class="pw_input" type="password" title="비밀번호 재입력" placeholder="비밀번호 재입력">
+                            <input id="member_pw_chk" class="pw_input" type="password" title="비밀번호 재입력">
+                            <span class="placeholder">비밀번호 재입력</span>  
                         </label>
                     </div> 
                 </fieldset>

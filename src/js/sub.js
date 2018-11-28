@@ -38,9 +38,8 @@ $(document).ready(function(){
             $selectArea.removeClass("open");
          } 
     });
-
     //button
-    var $btn=$(".btn_type1");
+    var $btn=$(".btn_type1").not(".new_request .check");
     $btn.click(function(){
         if($(this).hasClass("on")){
             $(this).removeClass("on")
@@ -48,4 +47,13 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
+    //중복선택 불가
+    var $req_btn=$(".new_request .check")
+    $req_btn.click(function(){
+        if($req_btn.hasClass("on")){
+            $(this).removeClass("on")
+        }else{
+            $(this).addClass("on")
+        }
+    });
 });

@@ -20,17 +20,17 @@
                     <legend>이름, 이메일 입력 및 인증번호 전송</legend>
                     <div class="member_form">
                         <label for="member_name">
-                            <input id="member_name" type="text" title="이름(실명 입력)" placeholder="이름(실명 입력)" value="홍길동">
+                            <input id="member_name" type="text" title="이름(실명 입력)" value="홍길동">
                         </label>
                     </div> 
                     <div class="member_form">
                         <ul class="member_list">
                             <li>
                                 <label for="member_email" >
-                                    <input id="member_email" class="input_email" type="text" title="이메일 입력" placeholder="이메일 입력" value="test">                   
+                                    <input id="member_email" class="input_email" type="text" title="이메일 입력"  value="test@naver.com">  
                                 </label>
+                                <div class="email_address"></div>   
                             </li>
-                            <li>@<input class="email_address" type="text" value="naver.com"></li>
                             <li>
                                 <div class="member_select_area" id="select_email">                                
                                     <a href="#" class="member_select_top">이메일 선택</a>
@@ -38,7 +38,7 @@
                                         <a href="#">naver.com</a>
                                         <a href="#">daum.net</a>
                                         <a href="#">hanmail.net</a>
-                                        <a href="#">Hotmail.com</a>
+                                        <a href="#">hotmail.com</a>
                                         <a href="#">gmail.com</a>
                                         <a href="#">nate.com</a>
                                         <a href="#">yahoo.co.kr</a>
@@ -70,7 +70,7 @@
                             </li>
                             <li>
                                 <label for="member_phone">
-                                    <input id="member_phone" class="input_phone" type="text" placeholder="휴대전화번호 입력" value="000-000-0000">
+                                    <input id="member_phone" class="input_phone" type="text" value="000-000-0000">
                                     <a href="#" class="btn_certify on">재전송</a>
                                 </label>
                             </li>
@@ -78,7 +78,8 @@
                     </div> 
                     <div class="member_form">
                         <label for="certify">
-                            <input id="certify" type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                            <input id="certify" type="text" title="인증번호 입력">
+                            <span class="placeholder">인증번호 입력</span>
                         </label>
                     </div> 
                 </fieldset>

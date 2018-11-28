@@ -74,6 +74,14 @@ $(document).ready(function(){
   var top = Math.ceil((window.screen.height - layerH)/2);
   $(".layer_member").css("top",top+"px");
 
+  //placehoder
+  $("input").focus(function(e){
+    $(this).siblings(".placeholder").css("display","none")
+  });
+  $("input").focusout(function(e){
+    console.log("aaaaaa");
+    $(this).siblings(".placeholder").css("display","block")
+  });
 
   //로그인 email,휴대폰번호 selectbox
   var $selectArea=$(".member_select_area");
@@ -87,23 +95,28 @@ $(document).ready(function(){
   })
   
   $selectList_link.click(function(){
+    var $inputEmail=$(".input_email");
     var $btnVal=$(this).text();
     var selectEmail_id=$(this).parents(".member_select_area").attr("id");
     var link_val= $(this).attr('value');
     //이메일 직접입력
     if(link_val=="direct"){
-      $(this).parent().siblings($selectTop).text($btnVal);
-      if(selectEmail_id == "select_email"){
-        $email.val("");
-        $email.focus();
-        }
+        $inputEmail.val("");
+        $email.removeAttr("style");
+        $inputEmail.removeAttr("style");
     }
+    //이메일 직접입력이 아닐때
     else{
-      $(this).parent().siblings($selectTop).text($btnVal);
       //selectbox가 이메일일때만 실행
       if(selectEmail_id == "select_email"){
-        $email.val($btnVal);
+        $inputEmail.val("");
+        $email.text("@ "+$btnVal);
+      }else{
+        //이메일이 아닐때
+        $(this).parent().siblings($selectTop).text($btnVal);
       }
+      $email.css("display","block");
+      $inputEmail.css("padding-right","148px")
     }
     $(this).parents(".member_select_area").removeClass("open");
     return false;

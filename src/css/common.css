@@ -2,7 +2,7 @@
 
 /* CSS 속성 선언순서 : display, overflow, float, position, z-index, width & height, margin & padding, font, color, border, background, align, etc */
 
-* {margin:0px; padding:0px; font-weight:normal; font-size:16px;}
+* {margin:0px; padding:0px; font-weight:normal; font-size:15px;}
 html {height:100%;}
 body{height:100%; font-size: 16px; line-height: normal; color:#5f5f5f; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif;}
 body *{box-sizing: border-box; }
@@ -41,9 +41,9 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 /*chekbox*/
 .checkbox +label{font-size: 15px;}
 .checkbox +label .chk_set{display: inline-block; width:22px; height: 22px; margin-right:6px; border:2px solid #e6e6e6; border-radius: 5px; vertical-align: -5px;}
-.checkbox:checked +label .chk_set{border:none; background: url("../../images/main/ico_chek.png") #8dc63f no-repeat center; }
+.checkbox:checked +label .chk_set{border:none; background: url("../../images/main/ico_chek.png") #378cff no-repeat center; }
 /*header*/
-#header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 10000; transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
+#header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 110; transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
 #header.active{box-shadow: 0px 6px 10px -5px #d6d6d6;}
 #header .header_inner{min-width: 1150px;; height: 69px; padding:0 35px;}
 #header .header_inner:after{display: block; content:""; clear: both;}
@@ -69,7 +69,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .member_area .member li a{display:block; padding-left:25px; line-height:3.5; font-size: 15px; color: #6d6d6d;}
 
 /*메인*/
-#main_container{position: relative;}
+#main_container{position: relative; margin-top:69px;}
 .main_visual{position: relative; width: 100%; height: 582px;}
 .main_visual .cycle-slideshow .slide{width: 100%; height: 582px; background-repeat: no-repeat; background-position: center; background-size:cover; text-align: center;}
 .main_visual .inner{width: 1150px;}
@@ -106,7 +106,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .main_container .intro .area.type1 .area_tit{color: #ff5050;}
 .main_container .intro .area.type2 .area_tit{color: #378cff;}
 .main_container .intro .area .area_tit .date{position: absolute; top:0px; right:24px; font-family: "Noto Sans KR Regular"; color: #9c9c9c;}
-.main_container .intro .area .content{padding:12px 25px; line-height: 2; color: #6d6d6d;}
+.main_container .intro .area .content{padding:12px 25px; line-height: 2; font-size: 16px; color: #6d6d6d;}
 .main_container .notice{margin-bottom:50px;}
 .main_container .notice .area{overflow: hidden;}
 .main_container .notice .area .area_tit{color: #373737;}
@@ -121,12 +121,12 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .main_container .notice .board li span{float:left; font-size:16px;}
 .main_container .notice .board li span.date{float:right; font-size: 15px; color: #9c9c9c;}
 
-#sub_container{position: relative;}
+#sub_container{position: relative; margin-top:69px;}
 #main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}
+.scroll_hidden{overflow-y: hidden;}
 /*로그인 및 회원가입*/
-body.scroll_hidden{overflow: hidden;}
-.wrapper .main_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 9999;}
-.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 10000; text-align: center;}
+.wrapper .main_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
+.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
 .wrapper .main_cover.active{display: block;}
 .layer_member.active{display: block;}
 .layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
@@ -136,29 +136,33 @@ body.scroll_hidden{overflow: hidden;}
 .member_box .member_form{position: relative; font-size: 14px; border:1px solid #e6e6e6; border-top:none;}
 .member_box .member_form:first-of-type{border-top: 1px solid #e6e6e6;}
 .member_box .member_form label{display: block;}
-.member_box .member_form input{width:100%; height: 55px; padding:0 12px; font-size: 14px; font-family: "Noto Sans KR Regular"; color:#000;  border:none;}
+.member_box .member_form input{width:100%; height: 55px; padding:0 12px; font-size: 15px; font-family: "Noto Sans KR Regular"; color:#373737;  border:none;}
+.member_box .member_form input:focus{border:1px solid #373737;outline:none;z-index:1}
 .member_box .member_form input::placeholder,
 .member_box .member_form input::-webkit-input-placeholder{font-size: 14px; color: #9c9c9c;}
 .member_box .member_form input:-ms-input-placeholder{color: #9c9c9c; font-size: 14px !important;}
 .member_box .member_form .member_list:after{display: block; content: ""; clear: both;}
-.member_box .member_form .member_list li{float: left;}
-.member_box .member_list li .input_email{width:180px;}
-.member_box .member_list .email_address{width:126px; padding: 0 12px 0 2px; color: #000; vertical-align: 0; background: none; font-family: "Noto Sans KR Regular";}
-.member_form .member_select_area{position: relative; width:140px;}
-.member_form .member_select_area a{display: block; width: 100%; padding: 0 12px; line-height: 1.8; font-size: 14px; color: #000; text-align: left;}
+.member_box .member_form .member_list li{position: relative; float: left;}
+.member_box .member_list li .input_email{width:334px;}
+.member_box .member_list .email_address{display:none; position: absolute; top:0; left: 190px; width:144px; height: 55px; padding: 0 4px 0 4px; line-height: 3.6; font-size: 15px; font-family: "Noto Sans KR Regular"; color: #373737; text-align: left;}
+
+.member_form .member_select_area{position: relative; width:128px;}
+.member_form .member_select_area a{display: block; width: 100%; padding: 0 12px; line-height: 1.8; font-size: 14px; color: #5f5f5f; text-align: left;}
 .member_form .member_select_area .member_select_top{display: block; position: relative; height: 55px; line-height: 4; border:none;}
 .member_form .member_select_area .member_select_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 23px; bottom: 0; right: 26px;  background: url("../../images/common/ico_select.png") no-repeat;}
-.member_form .member_select_area .member_select_list{position: absolute; top:55px; width:100%; line-height: 2.4; background-color: #fff; outline:1px solid #378cff; z-index: 5;}
+.member_form .member_select_area .member_select_list{position: absolute; top:55px; width:100%; line-height: 2.4; background-color: #fff; outline:1px solid #373737; z-index: 5;}
 .member_form .member_select_area .member_select_list a{height: 25px;}
 .member_form .member_select_area .member_select_list a:hover{color: #fff; background-color: #378cff;}
 .member_form .member_select_area .member_select_list{display: none;}
-.member_form .member_select_area.open .member_select_top{outline:1px solid #378cff; }
+.member_form .member_select_area.open .member_select_top{outline:1px solid #373737; }
 .member_form .member_select_area.open .member_select_list{display: block;}
-.member_box .member_form label .pw_input{width:100%; font-size: 16px;}
+.member_box .member_form label .pw_input{width:100%; font: large Verdana,sans-serif; letter-spacing: -1px; font-size: 28px; z-index: 2;}
+.member_box .member_form .placeholder{position: absolute; top:0; left:0; padding:0 12px; line-height: 3.8; font-size: 14px; color: #9c9c9c;}
+
 .member_box .login_set{padding-top:10px;}
 .member_box .login_set:after{display: block; content: ""; clear: both;}
-.member_box .login_set li{float: left; font-size: 14px; color: #6d6d6d;}
-.member_box .login_set li a{font-size: 14px; color: #6d6d6d;}
+.member_box .login_set li{float: left; font-size: 14px; color: #5f5f5f;}
+.member_box .login_set li a{font-size: 14px; color: #5f5f5f;}
 .member_box .login_set li:last-child{float: right;}
 .member_section .login_btn_area {padding-top:35px;}
 .member_section .login_btn_area .btn{height: 55px; border-radius: 5px; font-size: 20px; font-family: "Noto Sans KR Medium"}
