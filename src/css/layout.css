@@ -31,18 +31,18 @@
 /*라디오 버튼타입, 버튼*/
 .radio_btn +label,.btn_type1{display: inline-block; position: relative; width:105px; height: 40px; margin-right:4px; padding:7px 0; font-family: "Noto Sans KR Medium"; font-size: 14px; color: #9c9c9c; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
 .radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
-
+.btn_type2{display: inline-block; width:120px; height: 40px; padding:7px 0; font-family: "Noto Sans KR Medium"; font-size: 14px; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
 .radio_btn.check:checked +label,.btn_type1.check.on{padding-left: 16px; background-color: #ff6161;}
 .radio_btn.check:checked +label:after, .btn_type1.check.on:after{display: block; content:""; clear: both; position: absolute; top:14px; left:32px; width: 11px; height:10px; background: url("../../images/sub/bg_chked.png") no-repeat;}
 
 /*header*/
-.sub_header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 10000;}
+.sub_header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 105;}
 .sub_header .header_inner,.header_section .header_inner{width:1150px; height: 68px; margin:0 auto;}
 .sub_header:after{display: block; content:""; clear: both;}
 .sub_header .logo{float: left; padding:20px 10px 0 28px;}
 .sub_header .btn_close{position: absolute; top:0; right: 0; width:68px; height: 68px;; background:url("../../images/sub/ico_close_w68.jpg") no-repeat;}
 .sub_header .header_tit{float: left; line-height: 3.4; font-size: 20px; font-family: "Noto Sans KR Medium"; color: #373737;}
-.header_section{position: fixed; top:69px; width: 100%; border-bottom:1px solid #e6e6e6; background:#fff; background:#fff; z-index: 9990;}
+.header_section{position: fixed; top:69px; width: 100%; border-bottom:1px solid #e6e6e6; background:#fff; background:#fff; z-index: 103;}
 .header_section .header_inner{position: relative; height: 60px;}
 .header_section.active{box-shadow: 0px 6px 10px -5px #d6d6d6; transition: box-shadow 200ms ease-in-out; -webkit-transition: box-shadow 200ms ease-in-out;}
 
@@ -50,6 +50,11 @@
 .process_idx span{display: inline-block; margin-right:20px; font-size: 18px; color: #ff6161;}
 .process_idx em{padding:2px 11px 4px; margin-right:10px; font-size: 16px; color: #9c9c9c; border: 1px solid #e7e7e7;  border-radius:30px;}
 .process_idx em.on{color: #fff; background-color: #ff6161; border:none;}
+
+.sub_main_container{position: relative; padding:107px 0 54px 60px;}
+.sub_main_container .tit{display: inline-block; margin-bottom:8px; font-size:30px; font-family: "Noto Sans KR Medium"; color: #378cff;}
+.sub_main_container .desc{font-size: 18px; color: #5f5f5f;}
+.sub_main_container .right_btn{position: absolute; top:114px; right:62px;}
 
 /*매물 슬라이드*/
 .view_area{position: relative; margin-bottom:50px;}
@@ -164,3 +169,16 @@
 .table_style2 .table th,.table_style2 .table td{font-size: 15px; padding-top:14px; padding-bottom:14px;}
 .table_style2 .table th{padding-left: 20px; font-size: 16px; color: #9c9c9c; text-align: right;}
 .table_style2 .table td{padding-left:15px; color: #373737; text-align: left;}
+
+.table_style3 .table{width:1150px; background:#fff; border: 1px solid #e6e6e6;}
+.table_style3 .table tr{border-top:1px solid #e6e6e6;}
+.table_style3 .table:first-child{border-top:none;}
+.table_style3 .table th,.table_style3 .table td{padding-top:18px; padding-bottom:18px;}
+.table_style3 .table th{font-size: 15px; color: #373737; border-right:1px solid #e6e6e6; text-align: center;}
+.table_style3 .table td{position: relative; padding-left: 20px; text-align: left; color: #5f5f5f;}
+.table_style3 .table td .btn_area{position: absolute; top:10px; right:14px;}
+.table_style3 .table td .btn_setting{margin-left: 12px; color: #5f5f5f;}
+.table_style3 .table td .desc{margin-left:24px; color: #373737;}
+.table_style3 .table .pw_area{padding:0; padding-left: 20px;}
+.table_style3 .table .member_pw{font-size: 34px;}
+.table_style3 .table .member_pw:disabled{border:none; background:none;}

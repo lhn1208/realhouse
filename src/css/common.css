@@ -122,12 +122,12 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .main_container .notice .board li span.date{float:right; font-size: 15px; color: #9c9c9c;}
 
 #sub_container{position: relative; margin-top:69px;}
-#main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}
+#main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto; padding-bottom:60px;}#sub_container .container_inner{min-height: 700px;}
 .scroll_hidden{overflow-y: hidden;}
 /*로그인 및 회원가입*/
-.wrapper .main_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
+.wrapper .main_cover,.wrapper .cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
-.wrapper .main_cover.active{display: block;}
+.wrapper .main_cover.active,.wrapper .cover.active{display: block;}
 .layer_member.active{display: block;}
 .layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
 .layer_member .member_section{width:464px; margin:0 auto;}
@@ -186,7 +186,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .layer_member .cerify_info p{font-size: 15px;}
 /*아이디/비밀번호찾기*/
 .member_box.find_user{margin-bottom:32px;}
-.member_box .member_form .member_info{height: 55px; padding-left:10px; padding-right: 100px; line-height: 3.8; font-size: 14px; background-color: #ffefef; color:#373737; text-align: left;}
+.member_box .member_form .member_info{height: 55px; padding-left:10px; padding-right: 100px; line-height: 3.8; font-size: 15px; background-color: #fffbfb; color:#373737; text-align: left;}
 .member_box .member_form .member_info .btn_member{position: absolute; top:10px; right:12px; width:90px; height: 36px; padding:0; line-height: 2.8; font-size: 12px; color:#fff; background-color: #ff5050; border-radius: 5px; text-align: center;}
 .layer_member .member_btn.type .btn.on{background-color: #378cff;}
 .member_box .member_form .member_email{padding-right: 144px;}

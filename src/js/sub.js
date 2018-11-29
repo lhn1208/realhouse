@@ -39,7 +39,7 @@ $(document).ready(function(){
          } 
     });
     //button
-    var $btn=$(".btn_type1").not(".new_request .check");
+    var $btn=$(".btn_type1");
     $btn.click(function(){
         if($(this).hasClass("on")){
             $(this).removeClass("on")
