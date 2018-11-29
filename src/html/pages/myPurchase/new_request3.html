@@ -9,6 +9,21 @@
 </head>
 <body>
 <include src="../folder_include/sub_header.html"></include>    
+<div class="header_section">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em>2</em>
+            <em class="on">3</em><span>중개사 선택</span>
+            <em>4</em>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn btn_next on">다음</button>
+            <!--버튼 비활성화--><!--<button class="btn btn_next">다음</button>-->
+        </div>
+    </div>
+</div>  
 <div class="wrapper">
     <div id=sub_container class="sub_container">           
         <div class="container_inner">     
@@ -46,7 +61,8 @@
                                     <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
                                 </td>
                                 <td>
-                                    <button class="btn_type1 check on">선택</button>
+                                    <input id="chk_type1" type="radio" name="check" class="radio_btn check">
+                                    <label for="chk_type1"><span class="btn_radio">선택</span></label>
                                 </td>
                             </tr>
                         </tbody>
@@ -80,7 +96,8 @@
                                     <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
                                 </td>
                                 <td>
-                                    <button class="btn_type1 check">선택</button>
+                                    <input id="chk_type2" type="radio" name="check" class="radio_btn check">
+                                    <label for="chk_type2"><span class="btn_radio">선택</span></label>
                                 </td>
                             </tr>
                             <tr>
@@ -95,7 +112,8 @@
                                     <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
                                 </td>
                                 <td>
-                                    <button class="btn_type1 check">선택</button>
+                                    <input id="chk_type3" type="radio" name="check" class="radio_btn check">
+                                    <label for="chk_type3"><span class="btn_radio">선택</span></label>
                                 </td>
                             </tr>
                         </tbody>
@@ -129,7 +147,8 @@
                                     <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
                                 </td>
                                 <td>
-                                    <button class="btn_type1 check">선택</button>
+                                    <input id="chk_type4" type="radio" name="check" class="radio_btn check">
+                                    <label for="chk_type4"><span class="btn_radio">선택</span></label>
                                 </td>
                             </tr>
                             <tr>
@@ -144,7 +163,8 @@
                                     <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
                                 </td>
                                 <td>
-                                    <button class="btn_type1 check">선택</button>
+                                    <input id="chk_type5" type="radio" name="check" class="radio_btn check">
+                                    <label for="chk_type5"><span class="btn_radio">선택</span></label>
                                 </td>
                             </tr>
                         </tbody>

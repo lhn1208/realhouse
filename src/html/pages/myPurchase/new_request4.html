@@ -9,6 +9,21 @@
 </head>
 <body>
 <include src="../folder_include/sub_header.html"></include>  
+<div class="header_section">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em>1</em>
+            <em>2</em>
+            <em>3</em>
+            <em class="on">4</em><span>방문시간 선택</span>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn on">확인</button>
+            <!--버튼 비활성화--><!--<button class="btn off">확인</button>-->
+        </div>
+    </div>
+</div>  
 <div class="wrapper">
     <div id=sub_container class="sub_container">           
         <div class="container_inner">     
@@ -132,7 +147,7 @@
                                         </div>
                                     </div>
                                     <div class="select_area select_visit active">
-                                        <button class="select_top">시간 선택</button>
+                                        <a href="#" class="select_top">시간 선택</a href="#">
                                         <div class="select_time">
                                             <div class="btn_hour">
                                                 <div class="header">시간 선택</div>

@@ -78,10 +78,6 @@ $(document).ready(function(){
   $("input").focus(function(e){
     $(this).siblings(".placeholder").css("display","none")
   });
-  $("input").focusout(function(e){
-    console.log("aaaaaa");
-    $(this).siblings(".placeholder").css("display","block")
-  });
 
   //로그인 email,휴대폰번호 selectbox
   var $selectArea=$(".member_select_area");
