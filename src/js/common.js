@@ -71,7 +71,7 @@ $(document).ready(function(){
 	 	return false;
   })
   var layerH=$(".layer_member").outerHeight();
-  var top = Math.ceil((window.screen.height - layerH)/2);
+  var top = Math.ceil((window.screen.height - layerH)/2)-70;
   $(".layer_member").css("top",top+"px");
 
   //placehoder
