@@ -56,7 +56,7 @@ $(document).ready(function(){
   
   //로그인 및 회원가입 클릭시 레이어 팝업
   var $layerLogin=$(".layer_member");
-  var $cover= $(".main_cover");
+  var $cover= $(".main_cover,.sub_cover");
   var $body=$('body');
   $("#member_login").click(function(){
     $cover.addClass("active");

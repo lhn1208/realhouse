@@ -10,7 +10,7 @@
             .header h1{margin-left: 15px; font-size: 20px; line-height: 20px; color: #fff;}
             .note{margin:15px; padding:10px; border:2px dotted #000; background:#eee;}
             .note h2{font-size:16px; margin-bottom:10px}
-            .note ul{margin-left:15px; line-height: 1.4;}
+            .note ul{margin-left:15px; margin-bottom: 15px; line-height: 1.4;}
             .note li{font-size: 14px; font-weight: normal;}
             .guid_board .tit{margin: 25px 0 10px 15px; color:#111; font-size: 18px;}
             .table_box{margin:0 15px;}
@@ -28,764 +28,1174 @@
         </style>
     </head>
     <body>
-        <div class="header">
-            <h1>리얼하우스 Web가이드</h1>
+    <div class="header">
+        <h1>리얼하우스 Web가이드</h1>
+    </div>
+    <div class="note">
+        <h2>Css,Js</h2>
+        <ul>
+            <li>css설정 경로: <a href="./dist/html/include/set_css.html" target="_blank">dist/html/include/set_css.html</a></li>
+            <li>js설정 경로: <a href="./dist/html/include/set_js.html" target="_blank">dist/html/include/set_js.html</a></li>
+        </ul>
+        <h2>헤더(사용자)</h2>
+        <ul>
+            <li>헤더: <a href="./dist/html/include/header.html" target="_blank">dist/html/include/header.html</a></li>
+            <li>헤더 로그인시: <a href="./dist/html/include/header_login.html" target="_blank">dist/html/include/header_login.html</a></li>
+            <li>서브헤더1-매수/임차 중개의뢰: <a href="./dist/html/include/sub_header.html" target="_blank">dist/html/include/sub_header.html</a></li>
+            <li>서브헤더2-개인정보설정: <a href="./dist/html/include/sub_header2.html" target="_blank">dist/html/include/sub_header2.html</a></li>
+        </ul>
+        <h2>헤더(중개사)</h2>
+        <ul>
+            <li>헤더: <a href="./dist/html/include/agent_header.html" target="_blank">dist/html/include/agent_header.html</a></li>
+            <li>서브 헤더1-매수/임차 중개의뢰: <a href="./dist/html/include/agent_sub_header.html" target="_blank">dist/html/include/agent_sub_header.html</a></li>
+            <li>서브 헤더2-개인정보설정: <a href="./dist/html/include/agent_sub_header2.html" target="_blank">dist/html/include/agent_sub_header2.html</a></li>
+        </ul>
+        <h2>푸터(사용자)</h2>
+        <ul>
+            <li>푸터네비: <a href="./dist/html/include/footer_nav.html" target="_blank">dist/html/include/footer_nav.html</a></li>
+        </ul>
+        <h2>푸터(중개사)</h2>
+        <ul>
+                <li>푸터네비: <a href="./dist/html/include/agent_footer_nav.html" target="_blank">dist/html/include/agent_footer_nav.html</a></li>
+        </ul>
+        <h2>푸터(공통)</h2>
+        <ul>
+            <li>푸터: <a href="./dist/html/include/footer.html" target="_blank">dist/html/include/footer.html</a></li>
+        </ul>
+    </div>
+    <!--Resource-->
+    <div class="guid_board">
+        <h2 class="tit">CSS, JavaScript Resources</h2>
+        <div class="table_box">
+            <table class="tb" summary="CSS, JavaScript Resources">
+                <caption>CSS, JavaScript Resources</caption>
+                <colgroup>
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="30%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2">Type</th>
+                        <th>Directory</th>
+                        <th>Fimename</th>
+                        <th>memo</th>
+                    </tr>                      
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">Css</th>
+                        <td>공통</td>
+                        <td rowspan="4">/dist/css/</a></td>
+                        <td><a href="./dist/css/font.min.css" target="_blank">font.min.css</a></td>
+                        <td>폰트css</td>
+                    </tr>
+                    <tr>
+                        <td>공통</td>
+                        <td><a href="./dist/css/common.min.css" target="_blank">common.min.css</a></td>
+                        <td>공통,헤더,푸터,메인</td>
+                    </tr>
+                    <tr>
+                        <td>Sub</td>
+                        <td><a href="./dist/css/layout.min.css" target="_blank">layout.min.css</a></td>
+                        <td>Sub 공통레이아웃</td>
+                    </tr>
+                    <tr>
+                        <td>Sub</td>
+                        <td><a href="./dist/css/style.min.css" target="_blank">style.min.css</a></td>
+                        <td>Sub css</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Javascript</th>
+                        <td rowspan="3">공통</td>
+                        <td rowspan="2">/dist/js/</td>
+                        <td><a href="./dist/js/3.3.1.min.js" target="_blank">3.3.1.min.js</td>
+                        <td>jquery 3.3.1버전</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./dist/js/common.min.js" target="_blank">common.min.js</a></td>
+                        <td>공통,헤더,푸터,메인</td>
+                    </tr>
+                    <tr>
+                        <td>/dist/plugin/</td>
+                        <td><a href="./dist/js/cycle2.min.js" target="_blank">cycle2.min.js</a></td>
+                        <td>cycle2플러그인</td>
+                    </tr>
+                    <tr>
+                        <td>Sub</td>
+                        <td>/dist/js/</td>
+                        <td><a href="./dist/js/sub.min.js" target="_blank">sub.min.js</a></td>
+                        <td>Sub js</td>
+                    </tr>                        
+                </tbody>
+            </table>
         </div>
-        <div class="note">
-            <h2>공통</h2>
-            <ul>
-                <li>css설정 경로: <a href="./dist/html/include/set_css.html" target="_blank">dist/html/include/set_css.html</a></li>
-                <li>js설정 경로: <a href="./dist/html/include/set_js.html" target="_blank">dist/html/include/set_js.html</a></li>
-                <li>header: <a href="./dist/html/include/header.html" target="_blank">dist/html/include/header.html</a></li>
-                <li>header_login(로그인시): <a href="./dist/html/include/header_login.html" target="_blank">dist/html/include/header_login.html</a></li>
-                <li>sub_header1(서브헤더1, 매수/임차 중개의뢰): <a href="./dist/html/include/sub_header.html" target="_blank">dist/html/include/sub_header.html</a></li>
-                <li>sub_header2(서브헤더2, 개인정보설정): <a href="./dist/html/include/sub_header2.html" target="_blank">dist/html/include/sub_header2.html</a></li>
-                <li>agent_sub_header(중개사 서브 헤더): <a href="./dist/html/include/agent_sub_header.html" target="_blank">dist/html/include/agent_sub_header.html</a></li>
-                <li>footer_navi: <a href="./dist/html/include/footer_nav.html" target="_blank">dist/html/include/footer_nav.html</a></li>
-                <li>footer: <a href="./dist/html/include/footer.html" target="_blank">dist/html/include/footer.html</a></li>
-            </ul>
+    </div>
+    <!--//Resource-->
+    <div class="guid_board">
+        <h2 class="tit">Guide list</h2>
+        <div class="table_box">
+            <table class="tb" summary="Guide list">
+                <caption>Guide list</caption>
+                <colgroup>
+                    <col width="5%">
+            </table>
         </div>
-        <!--Resource-->
-        <div class="guid_board">
-            <h2 class="tit">CSS, JavaScript Resources</h2>
-            <div class="table_box">
-                <table class="tb" summary="CSS, JavaScript Resources">
-                    <caption>CSS, JavaScript Resources</caption>
+    </div>
+    <div class="guid_board">
+        <h2 class="tit">작업목록</h2>
+        <h3 class="tit">공통</h3>
+        <div class="table_box">
+            <table class="tb" summary="publishing Sheet">
+                    <caption>Publishing Sheet</caption>
                     <colgroup>
+                        <col width="5%">
+                        <col width="3%">
                         <col width="12%">
                         <col width="12%">
                         <col width="12%">
-                        <col width="30%">
+                        <col width="12%">
+                        <col width="4%">
                         <col width="*">
+                        <col width="12%">
+                        <col width="3%">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th colspan="2">Type</th>
-                            <th>Directory</th>
-                            <th>Fimename</th>
-                            <th>memo</th>
-                        </tr>                      
+                            <th>Page</th>
+                            <th>No</th>
+                            <th>1Depth</th>
+                            <th>2Depth</th>
+                            <th>3Depth</th>
+                            <th>4Depth</th>
+                            <th>구분</th>
+                            <th>URL</th>
+                            <th>Memo</th>
+                            <th>Date</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th rowspan="4">Css</th>
-                            <td>공통</td>
-                            <td rowspan="4">/dist/css/</a></td>
-                            <td><a href="./dist/css/font.min.css" target="_blank">font.min.css</a></td>
-                            <td>폰트css</td>
+                            <td></td>
+                            <td></td>
+                            <td>헤더</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/header.html" target="_blank">dist/html/user/header.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td>공통</td>
-                            <td><a href="./dist/css/common.min.css" target="_blank">common.min.css</a></td>
-                            <td>공통,헤더,푸터,메인</td>
+                            <td>213~214</td>
+                            <td>012</td>
+                            <td>메인</td>
+                            <td>로그인</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/login.html" target="_blank">dist/html/common/main_pop/login.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td>Sub</td>
-                            <td><a href="./dist/css/layout.min.css" target="_blank">layout.min.css</a></td>
-                            <td>Sub 공통레이아웃</td>
+                            <td>215~216</td>
+                            <td>103</td>
+                            <td></td>
+                            <td>이메일로 회원가입</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email1.html" target="_blank">dist/html/common/main_pop/join_email1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td>Sub</td>
-                            <td><a href="./dist/css/style.min.css" target="_blank">style.min.css</a></td>
-                            <td>Sub css</td>
+                            <td>215~216</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>정보입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email1_1.html" target="_blank">dist/html/common/main_pop/join_email1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <th rowspan="4">Javascript</th>
-                            <td rowspan="3">공통</td>
-                            <td rowspan="2">/dist/js/</td>
-                            <td><a href="./dist/js/3.3.1.min.js" target="_blank">3.3.1.min.js</td>
-                            <td>jquery 3.3.1버전</td>
+                            <td>217</td>
+                            <td>104</td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email2.html" target="_blank">dist/html/common/main_pop/join_email2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td><a href="./dist/js/common.min.js" target="_blank">common.min.js</a></td>
-                            <td>공통,헤더,푸터,메인</td>
+                            <td>218</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 전송시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email2_1.html" target="_blank">dist/html/common/main_pop/join_email2_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td>/dist/plugin/</td>
-                            <td><a href="./dist/js/cycle2.min.js" target="_blank">cycle2.min.js</a></td>
-                            <td>cycle2플러그인</td>
+                            <td>218</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 재전송</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email2_2.html" target="_blank">dist/html/common/main_pop/join_email2_2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
                         </tr>
                         <tr>
-                            <td>Sub</td>
-                            <td>/dist/js/</td>
-                            <td><a href="./dist/js/sub.min.js" target="_blank">sub.min.js</a></td>
-                            <td>Sub js</td>
-                        </tr>                        
+                            <td>218</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_email2_3.html" target="_blank">dist/html/common/main_pop/join_email2_3.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>219~220</td>
+                            <td>105</td>
+                            <td></td>
+                            <td>카카오톡으로 회원가입</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_kakao1.html" target="_blank">dist/html/common/main_pop/join_kakao1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>219~220</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 전송시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_1.html" target="_blank">dist/html/common/main_pop/join_kakao1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>219~220</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 재전송</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_2.html" target="_blank">dist/html/common/main_pop/join_kakao1_2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>219~220</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_3.html" target="_blank">dist/html/common/main_pop/join_kakao1_3.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>223</td>
+                            <td>108</td>
+                            <td></td>
+                            <td>아이디/비밀번호찾기<br>휴대전화 인증</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user1.html" target="_blank">dist/html/common/main_pop/find_user1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>223</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 전송시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user1_1.html" target="_blank">dist/html/common/main_pop/find_user1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>223</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 재전송</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user1_2.html" target="_blank">dist/html/common/main_pop/find_user1_2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>223</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user1_3.html" target="_blank">dist/html/common/main_pop/find_user1_3.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>224</td>
+                            <td>109</td>
+                            <td></td>
+                            <td>아이디/비밀번호찾기<br>이메일 인증</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_email1.html" target="_blank">dist/html/common/main_pop/find_user_email1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>224</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 전송시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_1.html" target="_blank">dist/html/common/main_pop/find_user_email1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>224</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 재전송</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_2.html" target="_blank">dist/html/common/main_pop/find_user_email1_2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>224</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_3.html" target="_blank">dist/html/common/main_pop/find_user_email1_3.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>225</td>
+                            <td>110</td>
+                            <td></td>
+                            <td>아이디/비밀번호찾기</td>
+                            <td>인증완료</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_login.html" target="_blank">dist/html/common/main_pop/find_user_login.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>229</td>
+                            <td>114</td>
+                            <td></td>
+                            <td></td>
+                            <td>비밀번호 변경</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_pw_chg1.html" target="_blank">dist/html/common/main_pop/find_user_pw_chg1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>229</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>비밀번호 입력시</td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/main_pop/find_user_pw_chg2.html" target="_blank">dist/html/common/main_pop/find_user_pw_chg2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>226</td>
+                            <td>111</td>
+                            <td>개인정보 설정</td>
+                            <td>비밀번호 인증</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_pw_chk.html" target="_blank">dist/html/common/member_pop/member_pw_chk.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>226</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>비밀번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_pw_chk1_1.html" target="_blank">dist/html/common/member_pop/member_pw_chk1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>227</td>
+                            <td>112</td>
+                            <td></td>
+                            <td>이름변경</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_name.html" target="_blank">dist/html/common/member_pop/member_chg_name.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>227</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>이름 입력</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_name1_1.html" target="_blank">dist/html/common/member_pop/member_chg_name1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>112-1</td>
+                            <td></td>
+                            <td>이메일 변경</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_email.html" target="_blank">dist/html/common/member_pop/member_chg_email.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>112-1</td>
+                            <td></td>
+                            <td></td>
+                            <td>이메일 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_email1_1.html" target="_blank">dist/html/common/member_pop/member_chg_email1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>228</td>
+                            <td>113</td>
+                            <td></td>
+                            <td>휴대전화 변경</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone.html" target="_blank">dist/html/common/member_pop/member_chg_phone.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>228</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 전송시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone1_1.html" target="_blank">dist/html/common/member_pop/member_chg_phone1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>228</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>인증번호 입력시</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone1_2.html" target="_blank">dist/html/common/member_pop/member_chg_phone1_2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>229</td>
+                            <td>114</td>
+                            <td></td>
+                            <td>비밀번호 변경</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_chg_pw.html" target="_blank">dist/html/common/member_pop/member_chg_pw.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>230</td>
+                            <td>115</td>
+                            <td></td>
+                            <td>회원 탈퇴 신청</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_withdrawal.html" target="_blank">dist/html/common/member_pop/member_withdrawal.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>230</td>
+                            <td>115</td>
+                            <td></td>
+                            <td></td>
+                            <td>동의체크</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/common/member_pop/member_withdrawal1_1.html" target="_blank">dist/html/common/member_pop/member_withdrawal1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
-              </table>
-            </div>
+            </table>
         </div>
-         <!--//Resource-->
-        <div class="guid_board">
-            <h2 class="tit">Guide list</h2>
-            <div class="table_box">
-                <table class="tb" summary="Guide list">
-                    <caption>Guide list</caption>
+        <h3 class="tit">사용자</h3>
+        <div class="table_box">
+            <table class="tb" summary="publishing Sheet">
+                    <caption>Publishing Sheet</caption>
                     <colgroup>
                         <col width="5%">
+                        <col width="3%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="4%">
+                        <col width="*">
+                        <col width="12%">
+                        <col width="3%">
                     </colgroup>
-                </table>
-            </div>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>No</th>
+                            <th>1Depth</th>
+                            <th>2Depth</th>
+                            <th>3Depth</th>
+                            <th>4Depth</th>
+                            <th>구분</th>
+                            <th>URL</th>
+                            <th>Memo</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5,7~10</td>
+                            <td>002</td>
+                            <td>메인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/_main1.html" target="_blank">dist/html/user/_main1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>
+                            <td>5,7~10</td>
+                            <td></td>
+                            <td></td>
+                            <td>자동 검색창,매물이 없을때</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/_main1_1.html" target="_blank">dist/html/user/_main1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>12~13</td>
+                            <td>004</td>
+                            <td>마이홈</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myhome1.html" target="_blank">dist/html/user/myhome1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>12~13</td>
+                            <td></td>
+                            <td></td>
+                            <td>매물이 없을때</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myhome1_1.html" target="_blank">dist/html/user/myhome1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>18</td>
+                            <td>006</td>
+                            <td>매물검색</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/search_house1.html" target="_blank">dist/html/user/search_house1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>18~25</td>
+                            <td>006</td>
+                            <td></td>
+                            <td>상세페이지</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/search_house2.html" target="_blank">dist/html/user/search_house2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>30</td>
+                            <td>009</td>
+                            <td></td>
+                            <td></td>
+                            <td>금액 선택</td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/user/search_pop/search_house_filter2.html" target="_blank">dist/html/user/search_pop/search_house_filter2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>43</td>
+                            <td>014</td>
+                            <td>나의매수</td>
+                            <td>진행중</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/mypurchase1.html" target="_blank">dist/html/user/myPurchase/mypurchase1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>44</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 없을경우</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/mypurchase1_1.html" target="_blank">dist/html/user/myPurchase/mypurchase1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>45~50</td>
+                            <td>015</td>
+                            <td></td>
+                            <td>매수/임차 진행현황</td>
+                            <td>방문 현황관리</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_present1.html" target="_blank">dist/html/user/myPurchase/purchase_present1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>51</td>
+                            <td>015</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>미승인</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_present1_1.html" target="_blank">dist/html/user/myPurchase/purchase_present1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td></td>
+                            <td>015</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>매물이 없을경우</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_present1_2.html" target="_blank">dist/html/user/myPurchase/purchase_present1_2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>52~54</td>
+                            <td>016</td>
+                            <td></td>
+                            <td></td>
+                            <td>의뢰인 관리</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_present2.html" target="_blank">dist/html/user/myPurchase/purchase_present2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>55</td>
+                            <td>017</td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 관리</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_present3.html" target="_blank">dist/html/user/myPurchase/purchase_present3.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>56</td>
+                            <td>018</td>
+                            <td></td>
+                            <td>계약종료</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/mypurchase_finish1.html" target="_blank">dist/html/user/myPurchase/mypurchase_finish1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>56</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 없을경우</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/mypurchase_finish1_1.html" target="_blank">dist/html/user/myPurchase/mypurchase_finish1_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>57~58</td>
+                            <td>019</td>
+                            <td></td>
+                            <td>매수/임차 계약(종료)현황</td>
+                            <td>종료</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_finish_present1.html" target="_blank">dist/html/user/myPurchase/purchase_finish_present.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>57~58</td>
+                            <td>019</td>
+                            <td></td>
+                            <td></td>
+                            <td>계약</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/purchase_finish_present2.html" target="_blank">dist/html/user/myPurchase/purchase_finish_present2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>59</td>
+                            <td>020</td>
+                            <td></td>
+                            <td>매수/임차 중개의뢰</td>
+                            <td>의뢰구분 선택</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request1.html" target="_blank">dist/html/user/myPurchase/new_request1.html</a></td>
+                            <td>54라인 click_ev추가, sub.js 42라인 수정</td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>60</td>
+                            <td>021</td>
+                            <td></td>
+                            <td></td>
+                            <td>방문요청 매물선택</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request2.html" target="_blank">dist/html/user/myPurchase/new_request2.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>61</td>
+                            <td>021</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>매물이 없을경우</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request2_1.html" target="_blank">dist/html/user/myPurchase/new_request2_1.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>62~63</td>
+                            <td>022</td>
+                            <td></td>
+                            <td></td>
+                            <td>중개사 선택</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request3.html" target="_blank">dist/html/user/myPurchase/new_request3.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>64</td>
+                            <td>023</td>
+                            <td></td>
+                            <td></td>
+                            <td>방문시간 선택</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request4.html" target="_blank">dist/html/user/myPurchase/new_request4.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>65</td>
+                            <td>024</td>
+                            <td></td>
+                            <td></td>
+                            <td>매수/임차 중개의뢰 완료</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/myPurchase/new_request5.html" target="_blank">dist/html/user/myPurchase/new_request5.html</a></td>
+                            <td></td>
+                            <td>11/26</td>
+                        </tr>
+                        <tr>    
+                            <td>66</td>
+                            <td>025</td>
+                            <td>나의 매도</td>
+                            <td>진행중</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/mySale1.html" target="_blank">dist/html/user/mySale/mySale1.html</a></td>
+                            <td>sub.js 26라인 수정</td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>66</td>
+                            <td>025</td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 없을경우</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/mySale1_1.html" target="_blank">dist/html/user/mySale/mySale1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>68~71</td>
+                            <td>026~027</td>
+                            <td></td>
+                            <td>매도/임대 진행현황</td>
+                            <td>중개현황</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_present1.html" target="_blank">dist/html/user/mySale/sale_present1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>68~71</td>
+                            <td>026~027</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>미승인</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_present1_1.html" target="_blank">dist/html/user/mySale/sale_present1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>68~71</td>
+                            <td>026~027</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>미등록</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_present1_2.html" target="_blank">dist/html/user/mySale/sale_present1_2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>72</td>
+                            <td>028</td>
+                            <td></td>
+                            <td>의뢰인 관리</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_present2.html" target="_blank">dist/html/user/mySale/sale_present2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>73</td>
+                            <td>029</td>
+                            <td></td>
+                            <td>중개의뢰 관리</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_present3.html" target="_blank">dist/html/user/mySale/sale_present3.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>74</td>
+                            <td>030</td>
+                            <td></td>
+                            <td>계약종료</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/mySale_finish1.html" target="_blank">dist/html/user/mySale/mySale_finish1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>74</td>
+                            <td>030</td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 없을경우</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/mySale_finish1_1.html" target="_blank">dist/html/user/mySale/mySale_finish1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>75</td>
+                            <td>031</td>
+                            <td></td>
+                            <td>매도/임대 계약(종료)현황</td>
+                            <td>종료</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_finish_present1.html" target="_blank">dist/html/user/mySale/sale_finish_present1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>    
+                            <td>76</td>
+                            <td>031</td>
+                            <td></td>
+                            <td></td>
+                            <td>계약</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/mySale/sale_finish_present2.html" target="_blank">dist/html/user/mySale/sale_finish_present2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>221</td>
+                            <td>106</td>
+                            <td>개인정보 설정</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/user/member_setting.html" target="_blank">dist/html/user/member_setting.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+            </table>
         </div>
-        <div class="guid_board">
-            <h2 class="tit">작업목록</h2>
-            <div class="table_box">
-                <table class="tb" summary="publishing Sheet">
-                        <caption>Publishing Sheet</caption>
-                        <colgroup>
-                            <col width="5%">
-                            <col width="3%">
-                            <col width="5%">
-                            <col width="12%">
-                            <col width="12%">
-                            <col width="12%">
-                            <col width="12%">
-                            <col width="4%">
-                            <col width="*">
-                            <col width="12%">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>Page</th>
-                                <th>No</th>
-                                <th>User</th>
-                                <th>1Depth</th>
-                                <th>2Depth</th>
-                                <th>3Depth</th>
-                                <th>4Depth</th>
-                                <th>구분</th>
-                                <th>URL</th>
-                                <th>memo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="user">
-                                <td></td>
-                                <td></td>
-                                <td>공통</td>
-                                <td>헤더</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/header.html" target="_blank">dist/html/pages/header.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>5,7~10</td>
-                                <td></td>
-                                <td>사용자</td>
-                                <td>메인</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/_main1.html" target="_blank">dist/html/pages/_main1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>5,7~10</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>자동 검색창,매물이 없을때</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/_main1_1.html" target="_blank">dist/html/pages/_main1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>12~13</td>
-                                <td></td>
-                                <td></td>
-                                <td>마이홈</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myhome1.html" target="_blank">dist/html/pages/myhome1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>12~13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>매물이 없을때</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myhome1_1.html" target="_blank">dist/html/pages/myhome1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>43</td>
-                                <td>014</td>
-                                <td></td>
-                                <td>나의매수</td>
-                                <td>진행중</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/mypurchase1.html" target="_blank">dist/html/pages/myPurchase/mypurchase1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>44</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>중개의뢰 없을경우</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/mypurchase1_1.html" target="_blank">dist/html/pages/myPurchase/mypurchase1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>59</td>
-                                <td>020</td>
-                                <td></td>
-                                <td></td>
-                                <td>매수/임차 중개의뢰</td>
-                                <td>의뢰구분 선택</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request1.html" target="_blank">dist/html/pages/myPurchase/new_request1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>60</td>
-                                <td>021</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>방문요청 매물선택</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request2.html" target="_blank">dist/html/pages/myPurchase/new_request2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>61</td>
-                                <td>021</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>매물이 없을경우</td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request2_1.html" target="_blank">dist/html/pages/myPurchase/new_request2_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>62~63</td>
-                                <td>022</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>중개사 선택</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request3.html" target="_blank">dist/html/pages/myPurchase/new_request3.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>64</td>
-                                <td>023</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>방문시간 선택</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request4.html" target="_blank">dist/html/pages/myPurchase/new_request4.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>65</td>
-                                <td>024</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>매수/임차 중개의뢰 완료</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/new_request5.html" target="_blank">dist/html/pages/myPurchase/new_request5.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>56</td>
-                                <td>018</td>
-                                <td></td>
-                                <td></td>
-                                <td>계약종료</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/mypurchase_finish1.html" target="_blank">dist/html/pages/myPurchase/mypurchase_finish1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>    
-                                <td>56</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>중개의뢰 없을경우</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/myPurchase/mypurchase_finish1_1.html" target="_blank">dist/html/pages/myPurchase/mypurchase_finish1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>213~214</td>
-                                <td>012</td>
-                                <td>공통</td>
-                                <td>메인</td>
-                                <td>로그인</td>
-                                <td></td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/login.html" target="_blank">dist/html/common/main_pop/login.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>215~216</td>
-                                <td>103</td>
-                                <td></td>
-                                <td></td>
-                                <td>이메일로 회원가입</td>
-                                <td></td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email1.html" target="_blank">dist/html/common/main_pop/join_email1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>215~216</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>정보입력시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email1_1.html" target="_blank">dist/html/common/main_pop/join_email1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>217</td>
-                                <td>104</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email2.html" target="_blank">dist/html/common/main_pop/join_email2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>218</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 전송시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email2_1.html" target="_blank">dist/html/common/main_pop/join_email2_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>218</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 재전송</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email2_2.html" target="_blank">dist/html/common/main_pop/join_email2_2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>218</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 입력시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_email2_3.html" target="_blank">dist/html/common/main_pop/join_email2_3.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>219~220</td>
-                                <td>105</td>
-                                <td></td>
-                                <td></td>
-                                <td>카카오톡으로 회원가입</td>
-                                <td></td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_kakao1.html" target="_blank">dist/html/common/main_pop/join_kakao1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>219~220</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 전송시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_1.html" target="_blank">dist/html/common/main_pop/join_kakao1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>219~220</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 재전송</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_2.html" target="_blank">dist/html/common/main_pop/join_kakao1_2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>219~220</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 입력시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/join_kakao1_3.html" target="_blank">dist/html/common/main_pop/join_kakao1_3.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>223</td>
-                                <td>108</td>
-                                <td></td>
-                                <td></td>
-                                <td>아이디/비밀번호찾기<br>휴대전화 인증</td>
-                                <td></td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user1.html" target="_blank">dist/html/common/main_pop/find_user1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>223</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 전송시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user1_1.html" target="_blank">dist/html/common/main_pop/find_user1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>223</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 재전송</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user1_2.html" target="_blank">dist/html/common/main_pop/find_user1_2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>223</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 입력시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user1_3.html" target="_blank">dist/html/common/main_pop/find_user1_3.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>224</td>
-                                <td>109</td>
-                                <td></td>
-                                <td></td>
-                                <td>아이디/비밀번호찾기<br>이메일 인증</td>
-                                <td></td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_email1.html" target="_blank">dist/html/common/main_pop/find_user_email1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>224</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 전송시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_1.html" target="_blank">dist/html/common/main_pop/find_user_email1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>224</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 재전송</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_2.html" target="_blank">dist/html/common/main_pop/find_user_email1_2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>224</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 입력시</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_email1_3.html" target="_blank">dist/html/common/main_pop/find_user_email1_3.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>225</td>
-                                <td>110</td>
-                                <td></td>
-                                <td></td>
-                                <td>아이디/비밀번호찾기</td>
-                                <td>인증완료</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_login.html" target="_blank">dist/html/common/main_pop/find_user_login.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>229</td>
-                                <td>114</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>비밀번호 변경</td>
-                                <td></td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_pw_chg1.html" target="_blank">dist/html/common/main_pop/find_user_pw_chg1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>229</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>비밀번호 입력시</td>
-                                <td>layer</td>
-                                <td class="url"><a href="./dist/html/common/main_pop/find_user_pw_chg2.html" target="_blank">dist/html/common/main_pop/find_user_pw_chg2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>221</td>
-                                <td>106</td>
-                                <td>사용자</td>
-                                <td>개인정보 설정</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/pages/member_setting.html" target="_blank">dist/html/pages/member_setting.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>222</td>
-                                <td>107</td>
-                                <td>중개사</td>
-                                <td>개인정보 설정</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/agent/agent_setting.html" target="_blank">dist/html/agent/agent_setting.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>226</td>
-                                <td>111</td>
-                                <td>공통</td>
-                                <td></td>
-                                <td>비밀번호 인증</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_pw_chk.html" target="_blank">dist/html/common/member_pop/member_pw_chk.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>226</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>비밀번호 입력시</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_pw_chk1_1.html" target="_blank">dist/html/common/member_pop/member_pw_chk1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>227</td>
-                                <td>112</td>
-                                <td></td>
-                                <td></td>
-                                <td>이름변경</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_name.html" target="_blank">dist/html/common/member_pop/member_chg_name.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>227</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>이름 입력</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_name1_1.html" target="_blank">dist/html/common/member_pop/member_chg_name1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>112-1</td>
-                                <td></td>
-                                <td></td>
-                                <td>이메일 변경</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_email.html" target="_blank">dist/html/common/member_pop/member_chg_email.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>112-1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>이메일 입력시</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_email1_1.html" target="_blank">dist/html/common/member_pop/member_chg_email1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>228</td>
-                                <td>113</td>
-                                <td></td>
-                                <td></td>
-                                <td>휴대전화 변경</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone.html" target="_blank">dist/html/common/member_pop/member_chg_phone.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>228</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 전송시</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone1_1.html" target="_blank">dist/html/common/member_pop/member_chg_phone1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>228</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>인증번호 입력시</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_phone1_2.html" target="_blank">dist/html/common/member_pop/member_chg_phone1_2.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>229</td>
-                                <td>114</td>
-                                <td></td>
-                                <td></td>
-                                <td>비밀번호 변경</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_chg_pw.html" target="_blank">dist/html/common/member_pop/member_chg_pw.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>230</td>
-                                <td>115</td>
-                                <td></td>
-                                <td></td>
-                                <td>회원 탈퇴 신청</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_withdrawal.html" target="_blank">dist/html/common/member_pop/member_withdrawal.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>230</td>
-                                <td>115</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>동의체크</td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/common/member_pop/member_withdrawal1_1.html" target="_blank">dist/html/common/member_pop/member_withdrawal1_1.html</a></td>
-                                <td></td>
-                            </tr>
-                            <tr class="user">
-                                <td>231</td>
-                                <td>116</td>
-                                <td>중개사</td>
-                                <td></td>
-                                <td>퇴사 신청</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="url"><a href="./dist/html/agent/member_pop/agent_withdrawal.html" target="_blank">dist/html/agent/member_pop/agent_withdrawal.html</a></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                </table>
-            </div>
+        <h3 class="tit">중개사</h3>
+        <div class="table_box">
+            <table class="tb" summary="publishing Sheet">
+                    <caption>Publishing Sheet</caption>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="3%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="12%">
+                        <col width="4%">
+                        <col width="*">
+                        <col width="12%">
+                        <col width="3%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>No</th>
+                            <th>1Depth</th>
+                            <th>2Depth</th>
+                            <th>3Depth</th>
+                            <th>4Depth</th>
+                            <th>구분</th>
+                            <th>URL</th>
+                            <th>Memo</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>222</td>
+                            <td>107</td>
+                            <td>개인정보 설정</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/agent_setting.html" target="_blank">dist/html/agent/agent_setting.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>231</td>
+                            <td>116</td>
+                            <td></td>
+                            <td>퇴사 신청</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/agent/member_pop/agent_withdrawal.html" target="_blank">dist/html/agent/member_pop/agent_withdrawal.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>228</td>
+                            <td>117</td>
+                            <td></td>
+                            <td>사진 등록/수정</td>
+                            <td></td>
+                            <td></td>
+                            <td>layer</td>
+                            <td class="url"><a href="./dist/html/agent/member_pop/agent_picture_upload.html" target="_blank">dist/html/agent/member_pop/agent_picture_upload.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>041</td>
+                            <td>메인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/_main.html" target="_blank">dist/html/agent/_main.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>120</td>
+                            <td>054</td>
+                            <td>나의매수</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/myPurchase/mypurchase1.html" target="_blank">dist/html/agent/myPurchase/mypurchase1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>065</td>
+                            <td></td>
+                            <td>매수/임차 중개의뢰 등록</td>
+                            <td>중개의뢰 정보입력</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/myPurchase/new_request1.html" target="_blank">dist/html/agent/myPurchase/new_request1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>065</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>정보 입력시</td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/myPurchase/new_request1_1.html" target="_blank">dist/html/agent/myPurchase/new_request1_1.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>151</td>
+                            <td>065</td>
+                            <td></td>
+                            <td></td>
+                            <td>중개의뢰 완료</td>
+                            <td></td>
+                            <td></td>
+                            <td class="url"><a href="./dist/html/agent/myPurchase/new_request2.html" target="_blank">dist/html/agent/myPurchase/new_request2.html</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+            </table>
         </div>
+    </div>
     </body>
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //sub_header
-    var $header= $(".header_section");
+    var $header= $(".header_section, .header_shadow");
     $(window).scroll(function() {
         var sct=$(window).scrollTop();
         if(sct>0){ 
@@ -23,7 +23,7 @@ $(document).ready(function(){
     var $selectList=$selectArea.find(".select_list");
     var $selectList_link=$selectList.find("a");
     $selectTop.click(function(){
-        $(this).parents(".select_area").addClass("open");
+        $(this).parent().addClass("open");
         return false;
     })
     $selectList_link.click(function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
          } 
     });
     //button
-    var $btn=$(".btn_type1");
+    var $btn=$(".click_ev .btn_type1");
     $btn.click(function(){
         if($(this).hasClass("on")){
             $(this).removeClass("on")
@@ -47,4 +47,6 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
+    //매물검색
+    
 });
