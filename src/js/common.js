@@ -74,31 +74,40 @@ $(document).ready(function(){
   var top = Math.ceil((window.screen.height - layerH)/2)-70;
   $(".layer_member").css("top",top+"px");
 
-  //placehoder
-  $("input").on('input',function(e){
-    $(this).siblings(".placeholder").css("display","none")
+var $input= $("input[type='text'],input[type='password']");
+var $placeholder;
+  $input.on('input',function(e){
+    $placeholder= $(this).siblings(".placeholder");
+    $placeholder.css("display","none")
+    if($(this).val()==""){
+      $placeholder.css("display","block")
+    }
   });
-//placehoder
-  // if($("input[type='text']").val()!=""){
-  //   console.log($("input[type='text']").val());
-  //   $(this).siblings(".placeholder").addClass("aaaaaaaa");
-  // }
-  // $("input[type='text']").on('input',function(e){
-  //   $(this).siblings(".placeholder").css("display","none")
-  //   if($(this).val()==""){
-  //     $(this).siblings(".placeholder").css("display","block")
-  //   }
-  // });
-
-
+  $input.each(function(){
+    $placeholder= $(this).siblings(".placeholder");
+    $placeholder.css("display","none")
+    if($(this).val()!=""){
+      console.log($(this).val());
+      $placeholder.css("display","none");
+    }else{
+      $placeholder.css("display","block");
+    }
+  })
+  
   //로그인 email,휴대폰번호 selectbox
   var $selectArea=$(".member_select_area");
   var $selectTop= $selectArea.find(".member_select_top");
   var $selectList= $selectArea.find(".member_select_list");
   var $email=$(".email_address");
   var $selectList_link=$selectList.find("a");
+  var parent_selTop;
   $selectTop.click(function(e){
-    $(this).parents(".member_select_area").addClass("open");
+    var parent_selTop=$(this).parents(".member_select_area");
+    if(parent_selTop.hasClass("open")){
+      parent_selTop.removeClass("open")
+    }else{
+      parent_selTop.addClass("open");
+    }
     return false;
   })
   

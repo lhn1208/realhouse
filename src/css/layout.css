@@ -53,8 +53,6 @@ button:focus{outline:none;}
 .radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
 .radio_btn.check:checked +label{padding-left: 16px; background-color: #ff6161;}
 .radio_btn.check:checked +label:after{display: block; content:""; clear: both; position: absolute; top:14px; left:32px; width: 11px; height:10px; background: url("../../images/sub/bg_chked.png") no-repeat;}
-/* .btn_type2{display: inline-block; width:120px; height: 40px; padding:7px 0; font-family: "Noto Sans KR Medium"; font-size: 14px; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
-.btn_type2.btn{color: #373737;} */
 
 /*header*/
 .sub_header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 105;}
@@ -65,6 +63,8 @@ button:focus{outline:none;}
 .sub_header .header_tit{float: left; line-height: 3.4; font-size: 20px; font-family: "Noto Sans KR Medium"; color: #373737;}
 .header_section{position: fixed; top:69px; width: 100%; border-bottom:1px solid #e6e6e6; background:#fff; background:#fff; z-index: 103;}
 .header_section .header_inner{position: relative; height: 60px;}
+.header_shadow{transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
+.header_shadow.active{box-shadow: 0px 6px 10px -5px #d6d6d6;}
 
 .process_idx{line-height: 3.3;}
 .process_idx span{display: inline-block; margin-right:20px; font-size: 18px; color: #ff6161;}
@@ -94,6 +94,7 @@ button:focus{outline:none;}
 .view_area .button{position: absolute; top:128px; width:52px; height:52px; background-size: auto; z-index: 102;}
 .view_area .button.next{right:-20px; background-image:url("../../images/sub/arr_slide_next.png");}
 .view_area .button.prev{left:-20px; background-image:url("../../images/sub/arr_slide_prev.png");}
+.view_area .button.prev.disabled,.view_area .button.next.disabled{display: none;}
 .view_area .view_all{display: block; position: absolute; top:-64px; right:8px; padding-right: 18px; font-size: 16px; font-family: "Noto Sans KR Medium"; color: #378cff; background:url("../../images/sub/arr_link.png") no-repeat 97px 6px;}
 .view_cont_area .offer_none .txt_box{display: inline-block; margin-left: 18px; }
 .view_cont_area .offer_none .txt_box:first-of-type{margin-left:0;}
