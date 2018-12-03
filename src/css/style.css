@@ -85,7 +85,7 @@
 .offer_locate .locate_box .btn_map.road_view{color: #fff; background-color: #ff6161;}
 .offer_map{position: relative; margin-top:130px;}
 .offer_map .ico_offer_aera{position: absolute; left:50%;height: 36px; z-index: 105; background-color: #fff; border-radius: 50px;}
-.offer_map .ico_offer_aera.position1{top:164px;}
+.offer_map .ico_offer_aera.position1{top:190px; left:400px}
 .offer_map .ico_offer_aera.position2{top:330px; left:170px;}
 .offer_map .ico_offer_aera.position3{top:330px; left:500px;}
 .offer_map .ico_offer_aera.position4{top:130px; left:500px;}
@@ -161,7 +161,7 @@
 .table_style2.table_agent .table td .radio_btn.check:checked+label{color:#fff;}
 .table_agent .more_info{height:80px; line-height: 5; font-family: "Noto Sans KR Medium"; background-color: #f9fcfd; border:1px solid #e6e6e6; border-top:none; text-align: center;}
 .table_agent .more_info .link_more{padding-right:28px; color: #ff6161; background: url("./../../images/sub/arr_more_info.png") no-repeat 60px 6px;}
-.mypresent .req_btn .btn{width:200px;}
+.mypresent .req_btn .btn{width:200px; font-size: 20px;}
 .mypresent .myagent_area{margin-bottom: 55px;}
 .mypresent .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
 .mypresent .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; border-radius: 50px; overflow: hidden;}
@@ -170,13 +170,15 @@
 .mypresent .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}
 .mypresent .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
 .mypresent .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
-.mypresent .table_style1 .table td{color: #5f5f5f;}
-.mypresent .table_style1 .table td.info{color: #373737;}
-.mypresent .table_style1 td .agency{display: inline-block; margin-right: 34px; color: #5f5f5f;}
-.mypresent .table_style1 td .state{display: inline-block; margin-right: 118px; color: #5f5f5f;}
-.mypresent .table_style1 .add_req .add_req_th{color: #fff; background-color: #0ec4bf;}
-.mypresent .table_style1 .btn_round .btn_grade{padding:0 24px; background-color: #0ec4bf}
-.mypresent .table_style1 .add_req .btn_add_req{margin-left: 14px;}
+.mypresent .myagent_table .table th{border:1px solid #e6e6e6;}
+.mypresent .myagent_table .table td{color: #5f5f5f; border:1px solid #e6e6e6} */
+.mypresent .myagent_table .table td.info{color: #373737;}
+.mypresent .myagent_table td .agency{display: inline-block; margin-right: 34px; color: #5f5f5f;}
+.mypresent .myagent_table td .state{display: inline-block; margin-right: 118px; color: #5f5f5f;}
+.mypresent .myagent_table .add_req .add_req_th{color: #fff; background-color: #0ec4bf;}
+.mypresent .myagent_table .btn_round .btn_grade{padding:0 24px; background-color: #0ec4bf}
+.mypresent .myagent_table .add_req .btn_add_req{margin-left: 14px;}
+
 
 .process .content_present{border:1px solid #e6e6e6; padding:56px 0;}
 .process .content_present .present_manage{width:868px; margin:0 auto;}
@@ -215,7 +217,6 @@
 .no_present li:first-child{padding:0; min-height: auto;}
 .process .client_manage{margin-bottom:40px;}
 .client_manage .manage_table .table th{background-color: #fff; border-right: none;}
-.client_manage .manage_table .table th .icon_type1{position: absolute; top:21px; left:116px; padding:2px 8px;}
 .client_manage .manage_table .table td .icon_type1{margin-left: 8px; width:52px; padding:2px 0; text-align: center;}
 .client_manage .manage_table .check.off{color: #fff; background-color: #ebebeb;}
 .client_manage .manage_table .btn_type1.check.on:after{top:16px; left: 17px;}

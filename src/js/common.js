@@ -75,9 +75,21 @@ $(document).ready(function(){
   $(".layer_member").css("top",top+"px");
 
   //placehoder
-  $("input").focus(function(e){
+  $("input").on('input',function(e){
     $(this).siblings(".placeholder").css("display","none")
   });
+//placehoder
+  // if($("input[type='text']").val()!=""){
+  //   console.log($("input[type='text']").val());
+  //   $(this).siblings(".placeholder").addClass("aaaaaaaa");
+  // }
+  // $("input[type='text']").on('input',function(e){
+  //   $(this).siblings(".placeholder").css("display","none")
+  //   if($(this).val()==""){
+  //     $(this).siblings(".placeholder").css("display","block")
+  //   }
+  // });
+
 
   //로그인 email,휴대폰번호 selectbox
   var $selectArea=$(".member_select_area");

@@ -20,16 +20,18 @@
                     <legend>이름, 이메일, 비밀번호 입력</legend>
                     <div class="member_form">
                         <label for="member_name">
-                            <input id="member_name" type="text" title="이름(실명 입력)" placeholder="이름(실명 입력)" value="홍길동">
+                            <input id="member_name" type="text" title="이름(실명 입력)" value="홍길동">
+                            <span class="placeholder">이름(실명 입력)</span>
                         </label>
                     </div> 
                     <div class="member_form">
                         <ul class="member_list">
                             <li>
                                 <label for="member_email" >
-                                    <input id="member_email" class="input_email" type="text" title="이메일 입력" placeholder="이메일 입력" value="test@naver.com">  
+                                    <input id="member_email" class="input_email" type="text" title="이메일 입력" value="test@naver.com">
+                                    <span class="placeholder">이메일 입력</span>  
                                 </label>
-                                <div class="email_address"></div>
+                                <div class="email_address">@</div>
                             </li>
                             <li>
                                 <div class="member_select_area" id="select_email">                                
@@ -55,18 +57,20 @@
                     </div>
                     <div class="member_form">
                         <label for="member_pw">
-                            <input id="member_pw" class="pw_input" type="password" title="비밀번호 입력(영문, 숫자 포함 6자리 이상)" placeholder="비밀번호 입력(영문, 숫자 포함 6자리 이상)" value="123445">
+                            <input id="member_pw" class="pw_input" type="password" title="비밀번호 입력(영문, 숫자 포함 6자리 이상)" value="1235">
+                            <span class="placeholder">비밀번호 입력(영문, 숫자 포함 6자리 이상)</span>  
                         </label>
                     </div> 
                     <div class="member_form">
                         <label for="member_pw_chk">
-                            <input id="member_pw_chk" class="pw_input" type="password" title="비밀번호 재입력" placeholder="비밀번호 재입력" value="123445">
+                            <input id="member_pw_chk" class="pw_input" type="password" title="비밀번호 재입력" value="1235">
+                            <span class="placeholder">비밀번호 재입력</span>  
                         </label>
                     </div> 
                 </fieldset>
                 <!--개인정보처리방침 동의-->
                 <div class="member_agree_area">
-                    <input id="member_agree" type="checkbox" class="checkbox" checked>
+                    <input id="member_agree" type="checkbox" class="checkbox">
                     <label for="member_agree"><span class="chk_set"></span><em>리얼하우스 이용약관</em> 및 <em>개인정보처리방침</em>에 동의합니다.</label>
                 </div>
                 <!--//개인정보처리방침 동의-->
@@ -74,6 +78,9 @@
         </div>
         <div class="member_btn">
             <button class="btn on">다음</button>
+            <!--버튼 활성화-->
+            <!-- <button class="btn on">다음</button> -->
+            <!--버튼 활성화-->
         </div>
     </div>
     <!--//이메일로 회원가입-->

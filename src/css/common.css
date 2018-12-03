@@ -181,7 +181,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .member_box .login_set li a{font-size: 14px; color: #5f5f5f;}
 .member_box .login_set li:last-child{float: right;}
 .member_section .login_btn_area {padding-top:35px;}
-.member_section .login_btn_area .btn{height: 55px; border-radius: 5px; font-size: 20px;}
+.member_section .login_btn_area .btn{height: 55px; border-radius: 5px; font-size: 20px; border:none;}
 .member_section .login_btn_area .btn_login{width:100%; margin-bottom: 14px; font-family: "Noto Sans KR Medium"; color:#fff; background-color:#ff5050;}
 .member_section .login_btn_area .btn_kakao{width:227px; margin-right: 10px; font-size: 17px; color: #000; background-color: #f7e506;}
 .member_section .login_btn_area .btn_email{width:227px; font-size: 17px; color: #fff; background-color: #0070c0;}
