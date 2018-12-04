@@ -54,6 +54,6 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
-    //매물검색
+
     
 });

@@ -139,13 +139,13 @@ button:focus{outline:none;}
 .requeset_section .items_list li .cover{position:absolute; bottom: 0; width: 100%; height:100%; padding-top:40px; font-size: 20px; font-family: "Noto Sans KR Medium"; color:#fff; background:rgba(0,0,0,.5);}
 .process{margin-bottom:65px;}
 .process .process_head{position: relative; margin-bottom:18px;}
-.process .select_area{position: absolute; top:9px; right:0;}
-.process .select_area:after{display: block; content:""; clear: both;}
+.process .select_right_area{position: absolute; top:9px; right:0;}
+.process .select_right_area:after{display: block; content:""; clear: both;}
+.process .select_right_area .select_area{float: left; position: relative; margin-top:-9px; margin-left: 8px;}
 .process .select_area.open .select_top{color: #373737; border:1px solid #373737;}
 .process .select_area .select_top{width: 150px; padding-right:32px; border:1px solid #e6e6e6; color: #666666; text-align: left;}
 .process .select_area .select_list{border:1px solid #373737;}
 .mysale_porcess .deal_type_select{right:162px;}
-.process .select_area>.select_area{float: left; position: relative; margin-top:-9px; margin-left: 8px;}
 .process .tab{border-bottom:1px solid #e6e6e6; text-align: center;}
 .process .tab:after{display:block; content:""; clear: both;}
 .process .tab li{float:left; width:185px; height:60px; background-color: #fff; border-top:1px solid #e6e6e6; border-right:1px solid #e6e6e6;}

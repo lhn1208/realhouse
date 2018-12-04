@@ -101,6 +101,7 @@ var $placeholder;
   var $email=$(".email_address");
   var $selectList_link=$selectList.find("a");
   var parent_selTop;
+  //selectTop클릭시 선택창 닫힘
   $selectTop.click(function(e){
     var parent_selTop=$(this).parents(".member_select_area");
     if(parent_selTop.hasClass("open")){
