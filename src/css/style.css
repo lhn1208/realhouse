@@ -137,21 +137,18 @@
 .select_visit_area .select_area .select_list .desc .txt_red2{font-size: 14px;}
 .select_visit_area .select_area .select_list a{font-size: 15px;}
 .select_visit_area .select_area .select_list a .sunday{color: #ff6161;}
-
 .select_visit_area .select_visit{position: relative;}
-.select_visit_area .select_visit.time_open{display: block;}
 .select_visit_area .select_visit .select_top{display: block; height: 40px; padding:0 25px 0 10px; line-height: 2.4; border:1px solid #e6e6e6; cursor: pointer;}
 .select_visit_area .select_visit .select_top:after{display: block; content:""; position: absolute; width:11px; height: 12px; top: 17px; bottom: 0; right: 13px;  background: url("../../images/common/ico_select.png") no-repeat;}
-
 .select_visit_area .select_visit .select_time{display: none; position: absolute; top:39px; width:348px; background-color: #fff; border:1px solid #373737; z-index: 5;}
 .select_visit.time_open .select_time{display: block;}
 .select_visit .select_time .header{padding-left:12px; line-height: 2.5; font-size: 14px; color:#fff; background-color:#0ec4bf;}
 .select_visit .select_time .radio_time +label .btn_radio{display: inline-block; width:60px; height: 30px; margin:5px 2px; line-height: 2.1; font-size: 14px; color: #5f5f5f; border:1px solid #e6e6e6; text-align: center; cursor: pointer;}
+
 .select_visit .select_time .btn_hour .radio_time +label:nth-of-type(5n+1){margin-left:6px;}
 .select_visit .select_time .radio_time:checked +label .btn_radio{color:#fff; background-color: #ff6161; border:none;}
 .select_visit .select_time .btn_minute .radio_time +label .btn_radio{width:50px;}
 .select_visit .select_time .btn_minute .radio_time +label:first-of-type{margin-left:2px;}
-
 
 .table_style1 .table td.style_btn{padding-bottom: 8px;}
 .table_style1 .table td.style_btn .btn_type1{margin-bottom:10px;}
@@ -179,15 +176,17 @@
 .mypresent .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}
 .mypresent .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
 .mypresent .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
-.mypresent .myagent_table .table th{border:1px solid #e6e6e6;}
-.mypresent .myagent_table .table td{color: #5f5f5f; border:1px solid #e6e6e6} */
+.mypresent .myagent_table .table th{border:1px solid #e6e6e6; background-color:#fdfdfd;}
+.mypresent .myagent_table .table tr:first-of-type th{background-color: #f9fcfd;}
+.mypresent .myagent_table .table td{color: #5f5f5f; border:1px solid #e6e6e6} 
 .mypresent .myagent_table .table td.info{color: #373737;}
+.mypresent .myagent_table .table .bg_right_blue{background-color: #f9fcfd;}
 .mypresent .myagent_table td .agency{display: inline-block; margin-right: 34px; color: #5f5f5f;}
 .mypresent .myagent_table td .state{display: inline-block; margin-right: 118px; color: #5f5f5f;}
 .mypresent .myagent_table .add_req .add_req_th{color: #fff; background-color: #0ec4bf;}
 .mypresent .myagent_table .btn_round .btn_grade{padding:0 24px; background-color: #0ec4bf}
 .mypresent .myagent_table .add_req .btn_add_req{margin-left: 14px;}
-
+.mypresent .myagent_table .table .btn_cancel_area{top:-10px;}
 
 .process .content_present{border:1px solid #e6e6e6; padding:56px 0;}
 .process .content_present .present_manage{width:868px; margin:0 auto;}
