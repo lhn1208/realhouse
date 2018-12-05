@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<include src="../../include/sub_header_sale.html"></include>
+<div class="header_section">
+    <div class="header_inner">
+        <div class="process_idx">
+            <em class="on">1</em><span>주소 입력</span>
+            <em>2</em>
+            <em>3</em>
+        </div>
+        <div class="btn_process">
+            <button class="btn btn_prev">이전</button>
+            <button class="btn btn_next">다음</button>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner">     
+            <div class="new_request">
+                <!--메물주소-->
+                <div class="content_section">
+                    <div class="content_head3">
+                        <h2 class="tit">매물주소</h2>
+                    </div>
+                    <div class="mysale_adress">
+                        <div class="table_style3">
+                            <table class="table" summary="주소검색,도로명,지번 테이블 입니다.">
+                                <caption>메물주소</caption>
+                                <colgroup>  
+                                    <col width="21%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2">주소검색</th>
+                                        <td class="btn_td">
+                                            <label for="sale_address">
+                                                <input type="text" id="sale_address" class="input_sale_address" placeholder="예) 잠실동 23-2, 송파구 잠실동">
+                                                <button class="btn_type1 on">주소검색</button>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info">
+                                             ※ 도로명, 지번, 건물명 등 통합검색이 가능합니다.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도로명</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>지명</th>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--지도영역-->
+                        <div class="mysale_map_area">
+                            <div class="mysale_map">
+                               주소를 검색하면
+                                <br>해당 위치의 주소가 지도에 표시됩니다.
+                        </div>
+                        <!--//지도영역-->
+                    </div>
+                </div>
+                <!--//메물주소-->
+                <!--이전 의뢰 부동산-->
+                <div class="content_head3">
+                    <h2 class="tit">이전 의뢰 부동산(<span class="txt_red2">3</span>)</h2>
+                </div>
+                <div class="history_property">
+                    <div class="right_area"><input type="checkbox" id="manage_chk" class="checkbox"><label for="manage_chk"><span class="chk_set"></span>부동산 관리</label></div>
+                    <div class="table_style2 type">                       
+                        <table class="table" summary="의뢰인 이름, 휴대전화, 방문시간 선택, 비공개 메모, 안내 테이블 입니다.">
+                            <caption>방문시간 선택</caption>
+                            <colgroup>  
+                                <col width="14%">
+                                <col width="*">
+                                <col width="12%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>아파트</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                                    </td>                   
+                                    <td class="btn_td"><button class="btn">선택</button></td>            
+                                </tr>
+                                <tr>
+                                    <th>단독주택</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321 102호
+                                    </td>     
+                                    <td class="btn_td"><button class="btn">선택</button></td>       
+                                </tr>
+                                <tr>
+                                    <th>아파트</th>
+                                    <td>
+                                        서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                                    </td>  
+                                    <td class="btn_td"><button class="btn">선택</button></td>          
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--//이전 의뢰 부동산-->
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../../include/footer.html"></include>
+</body>
+</html>
