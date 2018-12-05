@@ -240,8 +240,11 @@
 .mysale_adress{position: relative; margin-bottom: 50px;}
 .mysale_adress .table_style3 .table{width:750px; border-right: none;}
 .mysale_adress .table_style3 .input_sale_address{width:440px; margin-right:10px; border:1px solid #e6e6e6;}
+.mysale_adress .table_style3 .info{line-height: 1;}
 .mysale_adress .mysale_map_area{position: absolute; top:0; right:0px}
-.mysale_adress .mysale_map{width:400px; height:247px; line-height: 2; border:1px solid #e6e6e6; background-color: #fdfdfd; text-align: center; display: flex; align-items: center; justify-content:center; overflow: hidden;}
+.mysale_adress .mysale_map{position: relative; width:400px; height:229px; line-height: 2; border:1px solid #e6e6e6; background-color: #fdfdfd; text-align: center; overflow: hidden;}
+.mysale_adress .mysale_map .map_desc{padding-top:80px;}
+.mysale_adress .mysale_map .ico_locate{position: absolute; top:88px; left:182px;}
 .history_property{position: relative;}
 .history_property .table_style2.type .table th{color: #378cff;}
 .history_property .right_area{position: absolute; top:-35px; right:0;}
