@@ -48,7 +48,6 @@ button:focus{outline:none;}
 .btn_process .btn_next{padding-right:8px; color: #fff; background-color: #e6e6e6; border:none;}
 .btn_process .btn_next:after{top:14px; right:28px; background: url("../../images/common/ico_btn_next.png") no-repeat;}
 .btn_process .btn_green{color: #fff; background-color: #92d050;}
-
 /*라디오 버튼타입, 버튼*/
 .radio_btn +label,.btn_type1{display: inline-block; position: relative; width:105px; height: 40px; margin-right:4px; padding:7px 0; font-family: "Noto Sans KR Medium"; font-size: 14px; color: #9c9c9c; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
 .radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
@@ -240,7 +239,17 @@ button:focus{outline:none;}
 .table .btn_round.btn_grade,.table .btn_round.cancel{width:100px;}
 .table .btn_round.skyblue{background-color: #0ec4bf;}
 .table .btn_round.off{color: #fff; background-color: #e6e6e6; border:none;}
+.table .help_area{position: relative;}
 .table .help_ico{margin-left: 6px; vertical-align: 1px;}
+.table .tooltip_box{position: absolute; top:50px; left:264px; background-color: #fff; border:1px solid #e6e6e6; border-radius: 5px; z-index: 5;}
+.table .tooltip_box:before{display:block; content:""; position:absolute; top:-11px; left:104px; width:21px; height:11px; border:none; background:url("../../images/main/ico_member_box.jpg") no-repeat; z-index: 8;}
+.table .tooltip{padding:20px 20px 12px;}
+.table .tooltip_table{width:600px; background-color: #fff;}
+.table .tooltip_table{margin-bottom: 10px; border:1px solid #e6e6e6;}
+.table .tooltip_table thead th{background-color:#f9fcfd;}
+.table .tooltip_table tbody td{border:1px solid #e6e6e6;}
+.table .tooltip_table th,.table .tooltip_table td{padding-top:8px; padding-bottom: 8px;}
+.table .tooltip .tooltip_info{line-height: 2;  font-family: "Noto Sans KR Light"; color:#373737;}
 .table .chk_area{text-align: center;}
 .table .select_area:after{display:block; content:""; clear: both;}
 .table .select_area>.select_area{float: left; margin-left:8px;}
