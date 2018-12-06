@@ -239,7 +239,7 @@
 
 .mysale_adress{position: relative; margin-bottom: 50px;}
 .mysale_adress .table_style3 .table{width:750px; border-right: none;}
-.mysale_adress .table_style3 .input_sale_address{width:440px; margin-right:10px; border:1px solid #e6e6e6;}
+.mysale_adress .table_style3 .input_sale_address{width:440px; margin-right:10px;}
 .mysale_adress .table_style3 .info{line-height: 1;}
 .mysale_adress .mysale_map_area{position: absolute; top:0; right:0px}
 .mysale_adress .mysale_map{position: relative; width:400px; height:229px; line-height: 2; border:1px solid #e6e6e6; background-color: #fdfdfd; text-align: center; overflow: hidden;}
@@ -248,6 +248,12 @@
 .history_property{position: relative;}
 .history_property .table_style2.type .table th{color: #378cff;}
 .history_property .right_area{position: absolute; top:-35px; right:0;}
+.request_entry .table td .help_ico{margin-left: 20px; vertical-align:-6px;}
+.request_entry .table td .click_ev{display: inline-block}
+.request_entry .table td .info{display:inline-block; margin-left:28px; font-family: "Noto Sans KR Light"; color: #373737; }
+.request_entry .chk_set{margin-left:32px;}
+.request_entry .chk_set.tenent_chk{margin-left:0;}
+.request_entry  .table td .sale_input{width:170px; margin-right: 4px;}
 /*개인정보 설정*/
 .member_setting .table_style3{margin-bottom: 45px;}
 .member_setting .table_style3:last-of-type{margin-bottom: 0;}
