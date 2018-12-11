@@ -17,6 +17,7 @@
     <title>realhouse</title>
 </head>
 <body class="scroll_hidden">
+<!--header-->
 <header id="header">
     <div class="header_inner">
         <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
@@ -60,7 +61,7 @@
     <div class="search_header">
         <div class="tit">설정</div>
         <a href="#" class="locate_links">
-            <dl class="locate">
+            <dl class="locate active">
                 <dt class="city">서울시</dt>
                 <dd class="city_sub">송파구</dd>
                 <dd class="city_sub">잠실동</dd>
@@ -83,21 +84,54 @@
         <a href="#" class="reset">초기화</a>
     </div>
 </div>
+<!--//header-->
 <div class="wrapper">
     <div class="search_cover active"></div>
-    <!--금액레이어-->
-    <div class="layer_filter active">
-        <h2 class="tit">매매금액</h2>
-        <div class="deal_amount_filter">
-            <div class="select_amount">
-                <a href="#">5천 이하</a><a href="#">5천</a><a href="#">6천</a><a href="#">7천</a><a href="#">8천</a><a href="#">9천</a>
-                <a href="#">1억</a><a href="#">2억</a><a href="#">3억</a><a href="#">4억</a><a href="#">5억</a>
-                <a href="#">5천 이하</a><a href="#">5천</a><a href="#">6천</a><a href="#">7천</a><a href="#">8천</a><a href="#">9천</a>
-                <a href="#">1억</a><a href="#">2억</a><a href="#">3억</a><a href="#">4억</a><a href="#">5억</a>
+    <!--지역선택-->
+    <div class="layer_filter active">  
+        <div class="content_head">
+            <h2 class="tit">지역</h2>
+        </div>
+        <div class="layer_btn"><button class="btn red">서울시 전체보기</button></div>   
+        <div class="select_filter_area">
+            <div class="select_filter active">
+                <a href="#" class="select_top">서울시</a>
+            </div>
+            <div class="select_filter">
+                <a href="#" class="select_top">시군구</a>
+            </div>
+            <div class="select_filter">
+                <a href="#" class="select_top">읍면동</a>
+            </div>
+        </div>
+        <div class="layer_section">
+            <div class="links_area sub_locate">
+                <a href="#">강남구</a>
+                <a href="#">강동구</a>
+                <a href="#">강북구</a>
+                <a href="#">강동구</a>
+                <a href="#">강서구</a>
+                <a href="#">강동구</a>
+                <a href="#">강동구</a>
+                <a href="#">금천구</a>
+                <a href="#">도봉구</a>
+                <a href="#">강동구</a>
+                <a href="#">노원구</a>
+                <a href="#">강남구</a>
+                <a href="#">강동구</a>
+                <a href="#">강북구</a>
+                <a href="#">강동구</a>
+                <a href="#">강서구</a>
+                <a href="#">강동구</a>
+                <a href="#">강동구</a>
+                <a href="#">금천구</a>
+                <a href="#">도봉구</a>
+                <a href="#">강동구</a>
+                <a href="#">노원구</a>
             </div>
         </div>
     </div>
-    <!--//금액레이어-->
+    <!--//지역선택-->
     <div id=sub_container>
         <div class="offer_wrap" >
             <!--right:전체매물-->

@@ -24,7 +24,6 @@ input,select { vertical-align:middle;}
 legend {display:none;}
 input[type="checkbox"],input[type="radio"]{display: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 table caption{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
-
 form {position:relative}
 button {display:inline-block; zoom:1; position:relative; overflow:visible; margin:0px; padding:0px; border:0px; background:transparent; cursor:pointer; vertical-align:middle;}
 .blind{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
@@ -146,9 +145,9 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 /*로그인 및 회원가입*/
 .wrapper .main_cover,.wrapper .sub_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .wrapper .main_cover.active,.wrapper .sub_cover.active{display: block;}
-.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
-.layer_member.active{display: block;}
-.layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
+.layer,.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
+.layer.active,.layer_member.active{display: block;}
+.layer .close,.layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
 .layer_member .member_section{width:464px; margin:0 auto;}
 .layer_member .member_tit{padding:48px 0; font-size: 30px; font-family: "Noto Sans KR Medium"; color: #9c9c9c;}
 .layer_member .member_box{width:464px;}
@@ -209,6 +208,12 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .member_box .member_form .member_email{padding-right: 144px;}
 .member_box .member_form .member_info .btn_member.emial_certify{background-color: #3ec729;}
 .member_box .member_form .member_info .btn_member.pw_chg{background-color: #378cff;}
+
+.layer{width:900px; margin-left: -450px; padding:25px 0;}
+.layer .close{z-index: 5;}
+.layer .content_head3{text-align: left;}
+.layer .content_head3 .tit{padding-left:26px;}
+.layer_section{padding:0 30px;}
 /*footer*/  
 #footer, #footer_nav_section,#agent_footer_nav_section{position: relative; font-family: "Noto Sans KR Regular","돋움","Dotum",sans-serif; background:#fff;}
 #footer_nav_section .footer_nav_area, #agent_footer_nav_section .footer_nav_area{width:1150px; height: 64px; margin:0 auto; border-top:1px solid #e6e6e6;}

@@ -17,6 +17,7 @@
     <title>realhouse</title>
 </head>
 <body>
+<!--header-->
 <header class="sub_header">
     <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
     <div class="header_inner">
@@ -24,7 +25,7 @@
         <h2 class="header_tit">매도/임대 중개의뢰</h2>
     </div>   
 </header>
-
+<!--//header-->         
 <div class="header_section">
     <div class="header_inner">
         <div class="process_idx">
@@ -43,55 +44,53 @@
         <div class="container_inner">     
             <div class="new_request">
                 <!--메물주소-->
-                <div class="content_section">
-                    <div class="content_head3">
-                        <h2 class="tit">매물주소</h2>
+                <div class="content_head3">
+                    <h2 class="tit">매물주소</h2>
+                </div>
+                <div class="mysale_adress">
+                    <div class="table_style3">
+                        <table class="table" summary="주소검색,도로명,지번 테이블 입니다.">
+                            <caption>메물주소</caption>
+                            <colgroup>  
+                                <col width="21%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr class="pd_style">
+                                    <th rowspan="2">주소검색</th>
+                                    <td class="pd_r0">
+                                        <label for="sale_address">
+                                            <input type="text" id="sale_address" class="input_sale_address border" placeholder="예) 잠실동 23-2, 송파구 잠실동">
+                                            <button class="btn_type1 on">주소검색</button>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info">
+                                            ※ 도로명, 지번, 건물명 등 통합검색이 가능합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>도로명</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>지명</th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="mysale_adress">
-                        <div class="table_style3">
-                            <table class="table" summary="주소검색,도로명,지번 테이블 입니다.">
-                                <caption>메물주소</caption>
-                                <colgroup>  
-                                    <col width="21%">
-                                    <col width="*">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th rowspan="2">주소검색</th>
-                                        <td class="pd_style">
-                                            <label for="sale_address">
-                                                <input type="text" id="sale_address" class="input_sale_address border" placeholder="예) 잠실동 23-2, 송파구 잠실동">
-                                                <button class="btn_type1 on">주소검색</button>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="info">
-                                             ※ 도로명, 지번, 건물명 등 통합검색이 가능합니다.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>도로명</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>지명</th>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--지도영역-->
-                        <div class="mysale_map_area">
-                            <div class="mysale_map">
-                                <div class="map_desc">
-                                    주소를 검색하면
-                                     <br>해당 위치의 주소가 지도에 표시됩니다.
-                                </div>
+                    <!--지도영역-->
+                    <div class="mysale_map_area">
+                        <div class="mysale_map">
+                            <div class="map_desc">
+                                주소를 검색하면
+                                    <br>해당 위치의 주소가 지도에 표시됩니다.
                             </div>
                         </div>
-                        <!--//지도영역-->
                     </div>
+                    <!--//지도영역-->
                 </div>
                 <!--//메물주소-->
                 <!--이전 의뢰 부동산-->

@@ -23,6 +23,7 @@ $(document).ready(function(){
         $selectList=$selectArea.find(".select_list"),
         $selectList_link=$selectList.find("a"),
         selTop_parent;
+    //selectTop클릭시 선택창 닫힘
     $selectTop.click(function(){
         selTop_parent=$(this).parent(".select_area");
         if(selTop_parent.hasClass("open")){
@@ -54,6 +55,38 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
+    var $toolTip=$(".tooltip_box");
+    //툴팁
+    $(".help_ico").click(function(){
+        if($toolTip.hasClass("active")){
+            $toolTip.removeClass("active");
+        }else{
+            $toolTip.addClass("active");
+        }
+        return false;
+    })
+    $('html').click(function(e){  
+        if(!$(e.target).hasClass("active")){
+            $toolTip.removeClass("active");
+         } 
+    });
 
-    
+    var $popTarget=$(".visit");
+    $popTarget.click(function(){
+        $cover.addClass("active");
+        $layer.addClass("active");
+             return false;
+    })
+    //layer
+    var $layer=$(".layer");
+    var $cover= $(".sub_cover");
+    var $body=$('body');
+    $layer.find(".close").click(function(){
+        $cover.removeClass("active");
+        $layer.removeClass("active");
+             return false;
+      })
+    var layerH= $layer.outerHeight();
+    var top = Math.ceil((window.screen.height - layerH)/2)-70;
+     $layer.css("top",top+"px");
 });
