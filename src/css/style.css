@@ -368,5 +368,12 @@
 .layer .agent_info li{color:#5f5f5f;}
 .layer .agent_area .layer_btn{position: absolute; top:40px; right:0;}
 .layer .table_style3 .grade_area{padding-top:5px; padding-bottom: 5px;}
+/*추천매물,관심매물*/
+.header_inner .h_right_area {margin-right: 100px; padding-top:14px;}
+.header_inner .h_right_area .select_area{display: inline-block;}
+.header_inner .h_right_area .select_top{width:170px;}
 
-.all_offer.type .items_area{height: auto;}
+.all_offer.type .header.h_favor{position: relative;}
+.all_offer.type .offer_inner{overflow-y: scroll; height: 100%;}
+.all_offer.type .items_area{overflow-y: hidden; height: auto;}
+.all_offer.type .header.h_favor+.items_area .items_list{margin-top:0;}

@@ -43,7 +43,7 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .checkbox:checked +label .chk_set{border:none; background: url("../../images/common/ico_chek.png") #378cff no-repeat center; }
 .checkbox[disabled]:checked +label .chk_set{background: url("../../images/common/ico_chek_disable.png") #acacac no-repeat center;}
 /*header*/
-#header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 110; transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
+#header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 120; transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
 #header.active{box-shadow: 0px 6px 10px -5px #d6d6d6;}
 #header .header_inner{min-width: 1150px;; height: 69px; padding:0 35px;}
 #header .header_inner:after{display: block; content:""; clear: both;}
