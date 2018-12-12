@@ -55,21 +55,6 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
-    var $toolTip=$(".tooltip_box");
-    //툴팁
-    $(".help_ico").click(function(){
-        if($toolTip.hasClass("active")){
-            $toolTip.removeClass("active");
-        }else{
-            $toolTip.addClass("active");
-        }
-        return false;
-    })
-    $('html').click(function(e){  
-        if(!$(e.target).hasClass("active")){
-            $toolTip.removeClass("active");
-         } 
-    });
 
     var $popTarget=$(".visit");
     $popTarget.click(function(){

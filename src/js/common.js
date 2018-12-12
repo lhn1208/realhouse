@@ -17,7 +17,6 @@ $(document).ready(function(){
   var $nav_link=$("#nav li");
   $nav_link.click(function(){
     $(this).addClass("on").siblings().removeClass("on");
-    return false;
   });
 
   var $header= $("#header");

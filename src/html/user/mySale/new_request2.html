@@ -78,40 +78,8 @@
                                                         <a href="#">타운하우스</a>
                                                     </div>
                                                 </div>
-                                                <div class="help_area">
-                                                    <a href="#" class="help_ico"><img src="../../../../images/sub/ico_howto.png" alt="중개 현황 도움말"></a>
-                                                    <!--툴팁-->
-                                                    <div class="tooltip_box">
-                                                        <div class="tooltip">
-                                                            <table class="tooltip_table">
-                                                                <colgroup>
-                                                                    <col width="15%">
-                                                                    <col width="*">
-                                                                </colgroup>
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>매물구분</th>
-                                                                        <th>매물유형</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>일반주택</th>
-                                                                        <td>다가구주택, 상가주택, 원룸주택, 단독주택, 전원주택, 한옥주택,타운하우스</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>공동주택</th>
-                                                                        <td>아파트, 주상복합, 연립, 빌라, 도시형생활주택, 오피스텔</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <ul class="tooltip_info">
-                                                                <li>※ <span class="txt_red2">단독주택</span> 또는 <span class="txt_red2">전원주택</span>은 <span class="txt_red2">1가구(독채)인 경우</span>이며 <span class="txt_red2">2가구 이상은 다가구</span>로 선택하십시오.</li>
-                                                                <li>※ <span class="txt_red2">타운하우스</span>는 <span class="txt_red2">1가구(독채)인 경우</span>이며 <span class="txt_red2">2세대 이상은 연립</span>으로 선택하십시오. </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!--//툴팁-->
+                                                <div class="help_box">
+                                                    <a href="#" class="help_ico"><img src="../../../../images/sub/ico_howto.png" alt="매물구분 도움말"></a>
                                                 </div>
                                             </div>
                                         </td>
@@ -228,10 +196,10 @@
                                 <tr class="pd_style">
                                     <th>의뢰인 구분<span class="txt_red">*</span></th>
                                     <td colspan="3">
-                                        <div class="click_ev">
-                                            <button class="btn_type1 on">집주인 측</button>
-                                            <button class="btn_type1">세입자</button>
-                                        </div>
+                                        <input id="client_type1" type="radio" name="cleint" class="radio_btn" checked>
+                                        <label for="client_type1"><span class="btn_radio">집주인 측</span></label>
+                                        <input id="client_type2" type="radio" name="cleint" class="radio_btn">
+                                        <label for="client_type2"><span class="btn_radio">세입자</span></label>
                                     </td>                   
                                 </tr>
                                 <tr>
