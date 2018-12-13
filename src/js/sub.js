@@ -81,14 +81,14 @@ $(document).ready(function(){
      var $favor_header=$(".all_offer.type .header.h_favor");
      if($offer_header.length){
         var headerT=$recomm_header.offset().top;
-        var headerT_favor=$favor_header.offset().top -200;
+        var headerT_favor=$favor_header.offset().top -70;
         $(".all_offer.type .offer_inner").scroll(function(){
             var sct=$(".all_offer.type .offer_inner").scrollTop();
             if(headerT <= sct && headerT_favor>sct){
                 $recomm_header.css("position","fixed");
                 $favor_header.removeAttr("style");
             }else if(headerT_favor<=sct){
-                $favor_header.css({"position":"fixed","top":"130px"});
+                $favor_header.css({"position":"fixed","top":"69px"});
                 $recomm_header.css("position","relative");
             }
         })

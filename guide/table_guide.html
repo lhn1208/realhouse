@@ -25,53 +25,54 @@
         <div class="guide_box">
             <h1 class="guide_tit">Table Type1</h1>
             <div class="table_style1">
-                <table class="table" summary="거래구분,매물유형,안내 테이블 입니다.">
-                    <caption>의뢰구분 선택</caption>
+                <table class="table" summary="방문시간,안내 테이블 입니다.">
+                    <caption>방문시간 선택</caption>
                     <colgroup>  
                         <col width="14%">
                         <col width="*">
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th>거래구분</th>
-                            <td class="style_btn">
-                                <input id="deal_type1" type="radio" name="deal" class="radio_btn">
-                                <label for="deal_type1"><span class="btn_radio">전세</span></label>
-                                <input id="deal_type2" type="radio" name="deal" class="radio_btn">
-                                <label for="deal_type2"><span class="btn_radio">월세</span></label>
-                                <input id="deal_type3" type="radio" name="deal" class="radio_btn">
-                                <label for="deal_type3"><span class="btn_radio">매매</span></label>
-                                <input id="deal_type4" type="radio" name="deal" class="radio_btn" checked="">
-                                <label for="deal_type4"><span class="btn_radio layout">담기임대</span></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>매물유형</th>
-                            <td class="style_btn">
-                                <button class="btn_type1 on"><span>아파트</span></button>
-                                <button class="btn_type1"><span>주상복합</span></button>
-                                <button class="btn_type1"><span>연립/빌라</span></button>
-                                <button class="btn_type1"><span>오피스텔</span></button>
-                                <button class="btn_type1"><span>도시형</span></button>
-                                <br>
-                                <button class="btn_type1"><span>다가구주택</span></button>
-                                <button class="btn_type1"><span>상가주택</span></button>
-                                <button class="btn_type1"><span>원룸주택</span></button>
-                                <button class="btn_type1"><span>단독/전원</span></button>
-                                <button class="btn_type1"><span>한옥주택</span></button>
-                                <button class="btn_type1"><span>타운하우스</span></button>
+                            <th>방문시간 선택</th>
+                            <td>
+                                <div class="select_visit_area">
+                                    <div class="select_area">
+                                        <a href="#" class="select_top">방문일 선택</a>
+                                        <div class="select_list">
+                                            <div class="desc">금일포함 <span class="txt_red2">7일</span>까지 선택 가능</div>
+                                            <a href="#">2018.06.09(월)</a>
+                                            <a href="#">2018.06.10(화)</a>
+                                            <a href="#">2018.06.11(수)</a>
+                                            <a href="#">2018.06.12(목)</a>
+                                            <a href="#">2018.06.13(금)</a>  
+                                            <a href="#">2018.06.14(토)</a>
+                                            <a href="#">2018.06.15(<span class="sunday">일</span>)</a>
+                                        </div>
+                                    </div>
+                                    <div class="select_visit">
+                                        <a href="#" class="select_top">시간 선택</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <th>안내</th>
-                            <td class="info">※ 중개 의뢰할 거래구분과 매물유형을 선택하신 후 [다음]을 클릭하십시오.</td>
+                            <td class="info">
+                                <em class="txt_red">※ 중개사무소 방문일은 당일을 피하시는 것이 좋습니다.</em>
+                                <ul>
+                                    <li>1. 공인중개사가 전문가의 입장에서 좋은 매물을 추천합니다.</li>
+                                    <li>2. 추천매물을 확인 후, 마음에 드는 매물을 추가 방문요청하십시오.(나의 매수에서 추가 방문요청 가능)</li>
+                                    <li>3. 방문일시에 중개사무소를 방문하면 여러 개의 매물을 한번에 확인할 수 있어 빠르게 계약하실 수 있습니다.</li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </div>           
         </div>
         <div class="guide_box">
             <h1 class="guide_tit">Table Type2</h1>
+            <div class="comment">width:800px</div>
             <div class="table_style2">
                 <table class="table" summary="매물 유형,매물 용도,해당 동,전용/공급면적,총 동수,현관구조,총 세대수,방향,총 주차수,소재지 테이블 입니다.">
                     <caption>매물정보 테이블</caption>
@@ -117,10 +118,54 @@
             </div>
         </div>
         <div class="guide_box">
-            <h1 class="guide_tit">Table Type3</h1>
-            <div class="comment">* [case1] 테이블 안에 btn_area클래스 추가시 right 영역으로 aboluste 됨<br>
-                *[case2] 테이블 td에 btn_td클래스 추가시 td안의 패딩 위,아래 10px로 변경됨(기존 패딩 20px)
+            <h1 class="guide_tit">Table Type2_1</h1>
+            <div class="comment">width:1500px</div>
+            <div class="table_style2 type">
+                <table class="table" summary="매물 유형,매물 용도,해당 동,전용/공급면적,총 동수,현관구조,총 세대수,방향,총 주차수,소재지 테이블 입니다.">
+                    <caption>매물정보 테이블</caption>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="35%">
+                        <col width="15%">
+                        <col width="35%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>매물 유형</th>
+                            <td>공동주택 / 아파트</td>
+                            <th>매물 용도</th>
+                            <td>주거용</td>
+                        </tr>
+                        <tr>
+                            <th>해당 동</th>
+                            <td>102동</td>
+                            <th>전용/공급면적</th>
+                            <td>84.9㎡(25.7)/111.1㎡(33.6)</td>
+                        </tr>
+                        <tr>
+                            <th>총 동수</th>
+                            <td>3동</td>
+                            <th>현관구조</th>
+                            <td>계단식</td>
+                        </tr>
+                        <tr>
+                            <th>총 세대수</th>
+                            <td>계단식</td>
+                            <th>방향</th>
+                            <td>남향</td>
+                        </tr>
+                        <tr>
+                            <th>총 주차수</th>
+                            <td>300대(세대당 1대)</td>
+                            <th>소재지</th>
+                            <td>서울시 송파구 잠실동</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
+        <div class="guide_box">
+            <h1 class="guide_tit">Table Type3</h1>
             <div class="table_style3">
                 <table class="table" summary="이름,이메일,휴대전화,비밀번호 테이블입니다.">
                     <caption>개인정보 설정</caption>
@@ -132,11 +177,11 @@
                     <tbody>
                         <tr>
                             <th>이름</th>
-                            <td>홍길동 <div class="btn_area btn_round"><button class="btn">버튼영역</button></div></td>
+                            <td>홍길동</td>
                         </tr>
                         <tr>
                             <th>이메일</th>
-                            <td class="btn_td"> test@naver.com <div class="btn_round"><button class="btn">버튼영역</button></div></td>
+                            <td> test@naver.com</td>
                         </tr>
                         <tr>
                             <th>휴대전화</th>
@@ -149,14 +194,87 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div class="guide_box">
+            <h1 class="guide_tit">옵션</h1>
+            <div class="comment">* [case1] 버튼: 테이블 td에 position클래스명 추가시 relative 속성 적용.
+                div.btn_area 추가시 right 영역으로 aboluste 됨<br>               
+            </div>
+            <div class="table_style3">
+                <table class="table" summary="이름,이메일,휴대전화,비밀번호 테이블입니다.">
+                    <caption>개인정보 설정</caption>
+                    <colgroup>  
+                        <col width="14%">
+                        <col width="*">
+                        <col width="12%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>이름</th>
+                            <td class="position">홍길동
+                                <div class="btn_right"><button class="btn btn_setting">변경</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td class="position"> test@naver.com 
+                            <div class="btn_right"><button class="btn btn_setting">변경</button></div>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <xmp>
-                [case1]
-                <td>홍길동 <div class="btn_area btn_round"><button class="btn">버튼영역</button></div></td>
-                [case2]
-                <td class="btn_td"> test@naver.com <div class="btn_round"><button class="btn">버튼영역</button></div></td>
+                <td class="position">홍길동
+                    <div class="btn_right"><button class="btn btn_setting">변경</button></div>
+                </td>
+            </xmp>
+            
+            <div class="comment">* [case2] 테이블안에 버튼이 있는 경우 tr에 pd_style클래스 추가시 패딩 위 아래 10px로 변경 됨(기존 패딩 20px)              
+            </div>
+            <div class="table_style2 type">                       
+                <table class="table" summary="이전 의뢰 부동산 테이블 입니다.">
+                    <caption>이전 의뢰 부동산</caption>
+                    <colgroup>  
+                        <col width="14%">
+                        <col width="*">
+                        <col width="12%">
+                    </colgroup>
+                    <tbody>
+                        <tr class="pd_style">
+                            <th>아파트</th>
+                            <td>
+                                서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                            </td>                   
+                            <td><button class="btn">선택</button></td>            
+                        </tr>
+                        <tr class="pd_style">
+                            <th>단독주택</th>
+                            <td>
+                                서울시 송파구 잠실동 321 102호
+                            </td>     
+                            <td><button class="btn">선택</button></td>       
+                        </tr>
+                        <tr class="pd_style">
+                            <th>아파트</th>
+                            <td>
+                                서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                            </td>  
+                            <td><button class="btn">선택</button></td>          
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <xmp>
+                <tr class="pd_style">
+                    <th>아파트</th>
+                    <td>
+                        서울시 송파구 잠실동 321(잠실삼익그린아파트) 301동 102호
+                    </td>                   
+                    <td><button class="btn">선택</button></td>            
+                </tr>
             </xmp>
         </div>
 
-        </div>
     </body>
 </html>

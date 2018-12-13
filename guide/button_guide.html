@@ -6,6 +6,19 @@
         <link rel="stylesheet" href="../src/css/common.css">
         <link rel="stylesheet" href="../src/css/style.css">
         <link rel="stylesheet" href="../src/css/layout.css">
+        <script src="../dist/js/3.3.1.min.js"></script>
+        <script>
+        $(function(){
+            var $btn=$(".click_ev .btn_type1");
+            $btn.click(function(){
+                if($(this).hasClass("on")){
+                    $(this).removeClass("on")
+                }else{
+                    $(this).addClass("on")
+                }
+            })
+        })
+        </script>
         <title></title>
         <style>
           * {margin:0; padding:0; font-size:16px;}
@@ -25,60 +38,62 @@
         <div class="guide_box">
             <h1 class="guide_tit">Button Type1</h1>
             <div class="comment">* font-size: 14px; font-family: "Noto Sans KR Medium";</div>
-            <br>
-            <div class="comment">클릭이벤트 버튼</div>
-            <button class="btn_type1 on"><span>도시형</span></button><button class="btn_type1"><span>오피스텔</span></button>
+            <br>            
+            <div class="comment">[case1] 기본 버튼</div> 
+            <button class="btn">변경</button>
             <xmp>
-                <button class="btn_type1 on"><span>도시형</span></button>
-                <button class="btn_type1"><span>오피스텔</span></button>
+                <button class="btn">변경</button>
             </xmp>
-            <div class="comment">기본 버튼</div> 
-            <button class="btn_type2">변경</button></td>
-            <xmp>
-                <button class="btn_type2">변경</button></td>
-            </xmp>
-            <div class="comment">process 버튼</div>
+            <div class="comment">[case2] process 버튼</div>
             <div class="btn_process" style="position:relative">
                 <button class="btn">취소</button><button class="btn on">확인</button>
                 <br><br>
                 <button class="btn btn_prev">이전</button><button class="btn btn_next">다음</button><button class="btn btn_next on">다음</button>
             </div>
             <br><br>
-            <div class="comment">선택 버튼</div>
-            <button class="btn_type1 check">선택</button> <button class="btn_type1 check on">선택</button>
+            <div class="comment">[case3] 클릭 버튼: div.click_ev추가</div>
+            <div class="click_ev"><button class="btn_type1">선택</button> <button class="btn_type1 on">선택</button></div>
             <xmp>
-                <button class="btn_type1 check">선택</button>
-                <button class="btn_type1 check on">선택</button>
+                <div class="click_ev">
+                    <button class="btn_type1">선택</button>
+                    <button class="btn_type1 on">선택</button>
+                </div>
             </xmp>
+            <div class="comment">[case4] 기타 버튼</div>
+            <button class="btn red">변경</button>
+            <button class="btn skyblue">변경</button>
+            <button class="btn off">변경</button>
+            <button class="btn check">수정/삭제</button>
             
         </div>
         <div class="guide_box">
             <h1 class="guide_tit">Button Type2</h1>
             <div class="comment">[case1] 라운드 하얀색 버튼:width:157px; height:53px;</div>
-            <div class="btn_white"><button href="#" class="btn">중개수수료 결제</button> <button href="#" class="btn">포인 내역</button></div>
+            <div class="btn_round_white"><button href="#" class="btn">중개수수료 결제</button> <button href="#" class="btn">포인 내역</button></div>
             <xmp>
-                <div class="btn_white">
+                <div class="btn_round_white">
                     <button href="#" class="btn">중개수수료 결제</button> 
                     <button href="#" class="btn">포인 내역</button>
                 </div>
             </xmp>
             <div class="comment">[case2] 라운드 하얀색 버튼:width:130px; height:53px;</div>
-            <div class="btn_white type"><button href="#" class="btn">설정</button></div>
+            <div class="btn_round_white type"><button href="#" class="btn">설정</button></div>
             <xmp>
-                <div class="btn_white type">
+                <div class="btn_round_white type">
                     <button href="#" class="btn">설정</button>
                 </div>
             </xmp>
             <div class="comment">[case3] 라운드 컬러 버튼</div>
-            <div class="btn_round" style="display:inline-block"><button class="btn">방문 요청</button></div>
-            <div class="btn_round" style="display:inline-block"><button class="btn btn_sky">신규 중개의뢰</button></div>
+            <div style="display:inline-block"><button class="btn_round">방문 요청</button></div>
+            <div style="display:inline-block"><button class="btn_round skyblue">신규 중개의뢰</button></div>
             <xmp>
-                <div class="btn_round">
-                    <button class="btn">신규 중개의뢰</button>
-                </div>
-                <div class="btn_round">
-                    <button class="btn btn_sky">신규 중개의뢰</button>
-                </div>
+                <button class="btn_round">방문 요청</button> or <div class="btn_round_green"><button class="btn">방문 요청</button></div>
+                <button class="btn_round skyblue">신규 중개의뢰</button>
+            </xmp>
+            <div class="comment">[case4] 라운드 작은 버튼</div>
+            <div class="btn_round_white small"><button href="#" class="btn">중개수수료 결제</button></div>
+            <xmp>
+                <div class="btn_round_white small"><button href="#" class="btn">중개수수료 결제</button></div>
             </xmp>
         </div>
         <div class="guide_box">

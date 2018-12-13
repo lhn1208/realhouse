@@ -156,9 +156,9 @@
 .myhome .myspace .set_btn{position: absolute; top:114px; right:105px;}
 .myhome .event_area{position: relative; margin-bottom:50px;}
 .myhome .event_area .box_border_wrap{padding:16px 26px 12px;}
-.myhome .event_area .tit{font-size:20px; color: #ff5050;}
+.myhome .event_area .tit{font-size:20px; font-family: "Noto Sans KR Medium"; color: #ff5050;}
 .myhome .event_area .content{padding-top:8px; line-height: 2; font-size:16px;}
-.myhome .event_area .ev_btn{position: absolute; top:42px; right:23px;}
+.myhome .event_area .ev_btn{position: absolute; top:38px; right:23px;}
 .myhome .inquiry{margin-bottom: 40px;}
 .myhome .inquiry .sectoin_box1{padding:16px 22px 18px 26px;}
 .myhome .inquiry .sectoin_box1 .content{font-size: 16px;}
@@ -172,8 +172,8 @@
 .mypoint_area strong{float: left; font-size: 30px; font-weight: 500; color: #ff5050}
 .mypoint_area .mypoint{float: right; padding-right: 588px; font-size: 30px; font-weight: 500; color:#000;}
 .mypoint_area .mypoint em{font-size: 30px; font-weight: 500; color: #378cff}
-.mypoint_area .btn_area{position: absolute; top:33px; right:28px; text-align: center;}
-.mypoint_area .btn_area .btn{display: inline-block; margin-left: 18px; line-height: 3;}
+.myhome .btn_area{position: absolute; top:33px; right:28px; text-align: center;}
+.myhome .btn_area .btn{display: inline-block; margin-left: 18px; line-height: 3;}
 /*나의 매수.매도*/
 .myrequest{position: relative; padding:110px 0 54px 54px}
 .myrequest .tit{margin-bottom:8px; font-size:30px; font-family: "Noto Sans KR Medium"; color: #ff5050;}
@@ -221,7 +221,7 @@
 .mypresent .req_btn .btn{width:200px; font-size: 20px;}
 .mypresent .myagent_area{margin-bottom: 55px;}
 .mypresent .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
-.mypresent .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; border-radius: 50px; overflow: hidden;}
+.mypresent .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; overflow: hidden;}
 .mypresent .myagent .agent_info{margin-left: 206px;}
 .mypresent .myagent .agent_info:after{display: block; content: ""; clear: both;}
 .mypresent .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}
@@ -361,7 +361,7 @@
 .layer .request_select .select_area{padding-bottom: 10px;}
 .layer .request_select .select_area .select_top{background-color: #f9f9f9;}
 .layer .agent_area{position: relative;}
-.layer .agent_img{position: absolute; top:-10px; left:0; width:105px; height:105px; border:1px solid #e6e6e6; border-radius: 50px; overflow: hidden;}
+.layer .agent_img{position: absolute; top:-10px; left:0; width:105px; height:105px; border:1px solid #e6e6e6; border-radius: 50%; overflow: hidden;}
 .layer .agent_info{margin:10px 0 0 120px;}
 .layer .agent_info strong{display: block; margin-bottom: 6px; font-size: 18px;}
 .layer .agent_info {line-height: 1.6;}
@@ -372,8 +372,41 @@
 .header_inner .h_right_area {margin-right: 100px; padding-top:14px;}
 .header_inner .h_right_area .select_area{display: inline-block;}
 .header_inner .h_right_area .select_top{width:170px;}
-
+.offer_detail_wrap.type{margin-top:0;}
 .all_offer.type .header.h_favor{position: relative;}
 .all_offer.type .offer_inner{overflow-y: scroll; height: 100%;}
 .all_offer.type .items_area{overflow-y: hidden; height: auto;}
 .all_offer.type .header.h_favor+.items_area .items_list{margin-top:0;}
+
+/*중개사*/
+.agent_myspace .myspace{position: relative; padding-bottom:60px;}
+.agent_myspace .myspace .agent_img{position: absolute; top:95px; left:118px; width:120px; height: 120px; border:2px solid #e6e6e6; }
+.agent_myspace .myspace .identify{margin-left: 150px;}
+.myhome.agent .agent_info{position: relative; margin-bottom:35px; padding:45px 0; border:1px solid #e6e6e6; border-radius: 5px;}
+.agent_info .company{margin:0 155px 0 160px; font-size: 20px; font-family: "Noto Sans KR Medium"; color: #373737;}
+.agent_info .account,.agent_info .grade{display: inline-block; margin-right:60px; font-size: 20px; font-family: "Noto Sans KR Medium"; color: #373737;}
+.agent_info .account span,.agent_info .grade span{font-size: 20px; font-family: "Noto Sans KR Medium";}
+.agent_info .account .state{color: #0ec4bf;}
+.agent_info .grade .point{color:#ff6161;}
+.agent_info .btn_area {top:43px;}
+.agent_info .btn_agent_info.btn{color: #6d6d6d;}
+.myhome.agent .event_area{margin-bottom: 35px;}
+.myhome.agent .schedule{position: relative; padding:36px 0; margin-bottom: 35px; border:1px solid #e6e6e6; border-radius: 5px;}
+.schedule dt,.schedule dd{display: inline-block; font-family: "Noto Sans KR Medium";}
+.schedule dt{margin:0 284px 0 75px; font-size: 30px; color: #5f5f5f;}
+.schedule dd{margin-right:25px; font-size: 18px;}
+.schedule dd .cnt{font-size: 18px; color: #ff6161;}
+.schedule .btn_area{top:43px;}
+.schedule .btn_sch.btn{width:140px; height: 40px; line-height: 2.6; color: #5f5f5f ; font-size: 14px;}
+.myhome.agent .req_history{position: relative; margin-bottom:50px; padding:16px 26px 12px; border:1px solid #e6e6e6; border-radius: 5px;}
+.myhome.agent .req_history .tit{font-size:20px; font-family: "Noto Sans KR Medium"; color: #373737; }
+.myhome.agent .req_history .cnt{font-size: 20px; color: #ff6161;}
+.myhome.agent .req_history .content{padding-top:8px; line-height: 2; font-size:16px;}
+.myhome.agent .req_history .btn_area{top:44px;}
+.myhome.agent .req_history .btn_confirm{color: #fff; background-color: #ff6161}
+.today_box{margin-bottom:35px;}
+.today_box .table_style2.type .table{border-collapse: separate; border: 1px solid #e6e6e6; border-radius: 5px;}
+.today_box .table_style2.type thead th{padding-top:18px; padding-bottom:18px; font-size: 16px; font-family: "Noto Sans KR Medium"; background-color:#f9fcfd; text-align: left; border-bottom:1px solid #e6e6e6; border-radius: 5px 5px 0 0;}
+.today_box .table_style2.type thead th .cnt{font-size: 16px; color: #ff6161;}
+.today_box .table_style2.type tbody th,.today_box .table_style2.type tbody td{ont-size:16px; color:#5f5f5f; border-bottom:1px solid #e6e6e6; text-align: left;}
+.today_box .table_style2.type tfoot td{padding-top:18px; padding-bottom:18px; font-size: 16px; font-family: "Noto Sans KR Light"; background-color:#fffbfb; text-align: center; border-radius: 0 0 5px 5px;}
