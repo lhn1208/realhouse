@@ -124,7 +124,7 @@ button:focus{outline:none;}
 
 .offer_wrap{position: relative;}
 .all_offer{position: absolute; top:0; right:0; bottom:0; width:460px; z-index: 110; background:#fff;}
-.all_offer .items_area{height: 100%; overflow-x: hidden; overflow-y: scroll;}
+.all_offer .items_area{height: 780px; overflow-x: hidden; overflow-y: scroll;}
 .offer_detail_wrap{margin-right: 460px; height: 880px; margin-top:130px; padding-bottom:130px; overflow-x:hidden; overflow-y:scroll;}
 .offer_none_wrap,.all_offer .offer_none_wrap{height: auto; min-height: 820px;}
 .offer_wrap .offer_none{padding-top:250px; text-align: center;}
@@ -298,3 +298,11 @@ button:focus{outline:none;}
 .star_grade li span{float: left; height:43px; background:url("../../images/sub/grade_star_on.png") repeat-x;}
 
 .agent_img{position: absolute; top:95px; left:118px; border-radius: 50%; border:1px solid #e6e6e6; overflow: hidden; text-align: center;}
+
+.agent_box{margin-bottom:35px;}
+.agent_box .table_style2.type .table{border-collapse: separate; border: 1px solid #e6e6e6; border-radius: 5px;}
+.agent_box .table_style2.type thead th{padding-top:18px; padding-bottom:18px; font-size: 16px; font-family: "Noto Sans KR Medium"; background-color:#f9fcfd; text-align: left; border-bottom:1px solid #e6e6e6; border-radius: 5px 5px 0 0;}
+.agent_box .table_style2.type thead th .cnt{font-size: 16px; color: #ff6161;}
+.agent_box .table_style2.type tbody th,.agent_box .table_style2.type tbody td{font-size:16px; color:#5f5f5f; border-bottom:1px solid #e6e6e6; text-align: left;}
+.agent_box .table_style2.type tfoot td{padding-top:18px; padding-bottom:18px; font-size: 16px; font-family: "Noto Sans KR Light"; background-color:#fffbfb; text-align: center; border-radius: 0 0 5px 5px;}
+.agent_box .table_style2.type td.no_today{color: #9c9c9c; text-align: center;}

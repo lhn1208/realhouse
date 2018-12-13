@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <include src="../include/set_css.html"></include>
-    <include src="../include/set_js.html"></include>
+    <include src="../../include/folder_include/set_css.html"></include>
+    <include src="../../include/folder_include/set_js.html"></include>
     <title>realhouse</title>
 </head>
 <body>
-<include src="../include/agent_header.html"></include>
+<include src="../../include/agent_header.html"></include>
 <div class="wrapper">
     <div id=sub_container class="sub_container">  
         <div class="container_inner">     
@@ -57,7 +57,7 @@
                  </div>
                  <!--//일정관리-->
                  <!--요청내역-->
-                 <div class="req_history">
+                 <div class="myhome_box">
                     <h3 class="tit">요청 내역(<span class="cnt">4</span>)</h3>
                     <div class="content">
                         온라인 중개의뢰, 매물확인요청을 확인하십시오.
@@ -67,7 +67,7 @@
                 </div>
                 <!--//요청내역-->
                 <!--금일 의뢰인 방문-->
-                <div class="today_box">
+                <div class="agent_box">
                    <div class="table_style2 type">
                        <table class="table" summary="금일 의뢰인 방문테이블 입니다.">
                            <caption>금일 의뢰인 방문</caption>
@@ -105,13 +105,78 @@
                    </div>
                 </div>
                 <!--//금일 의뢰인 방문-->
-                <!--앱 다운로드-->
-                <div class="app_download">
+                <!--금일 매물 안내-->
+                <div class="agent_box">
+                    <div class="table_style2 type">
+                        <table class="table" summary="금일 매물 안내테이블 입니다.">
+                            <caption>금일 매물 안내</caption>
+                            <colgroup>
+                                 <col width="14%"> 
+                                 <col width="20%"> 
+                                 <col width="*"> 
+                                 <col width="13%"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">금일 매물 안내(<span class="cnt">4</span>)</th>
+                                 </tr>
+                           </thead>                           
+                            <tbody>
+                                <tr class="pd_style">
+                                     <th>요청번호: 02<span class="txt_red2">21</span></th>
+                                     <td>현장방문 예상시간: <span class="txt_red2">15시 10분</span></td>
+                                     <td>서울시 송파구 잠실동 231-1(잠실주공1단지아파트) 103동 301호</td>
+                                     <td><div class="btn_round_white small"><button class="btn">방문현황</button></div></td>
+                                </tr>
+                                <tr class="pd_style">
+                                     <th>요청번호: 02<span class="txt_red2">21</span></th>
+                                     <td>현장방문 예상시간: <span class="txt_red2">15시 10분</span></td>
+                                     <td>서울시 송파구 잠실동 231-1(잠실주공1단지아파트) 103동 301호</td>
+                                     <td><div class="btn_round_white small"><button class="btn">방문현황</button></div></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                     <td colspan="4">※ 매수측 중개사가 방문하면 방문현황에서 방문완료로 처리하십시오.</td>
+                                 </tr>
+                             </tfoot>
+                        </table>
+                    </div>
+                 </div>
+                 <!--//금일 매물 안내-->
+                 <div class="agent_info_area">
+                    <dl>
+                        <dt>관심매물</dt>
+                        <dd><span class="cnt">3</span>개</dd>
+                    </dl>
+                    <dl>
+                        <dt>소속직원</dt>
+                        <dd><span class="cnt">3</span>명</dd>
+                    </dl>
+                    <dl class="policy">
+                        <dt>리얼하우스 운영정책</dt>
+                    </dl>
+                 </div>
+                <!--포인트-->
+                <div class="mypoint_area">
+                    <div class="box_border_wrap">
+                        <strong>포인트</strong>
+                        <span class="mypoint"><em>100,000</em>원</span>
+                        <div class="btn_area btn_round_white">
+                            <button href="#" class="btn">결제 내역</button>
+                            <button href="#" class="btn">포인트 출금요청</button>
+                            <button href="#" class="btn">이용 안내  </button>
+                        </div>
+                    </div>
+                </div>
+                <!--//포인트-->
+                 <!--앱 다운로드-->
+                 <div class="app_download">
                     <div class="box box_border_wrap">
-                        <p class="txt">리얼하우스 앱을 다운받으세요!!!</p>
+                        <p class="txt">리얼하우스 <span class="txt_red2">프로</span>(중개사) 앱을 다운받으세요!!!</p>
                         <div class="app_area">
-                            <a href="#" class="app"><img src="../../../images/main/app_google.png"></a>
-                            <a href="#" class="app"><img src="../../../images/main/app_appstore.png"></a>
+                            <a href="#" class="app"><img src="../../../../images/main/app_google.png"></a>
+                            <a href="#" class="app"><img src="../../../../images/main/app_appstore.png"></a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +185,7 @@
         </div>
     </div>
 </div>
-<include src="../include/agent_footer_nav.html"></include>
-<include src="../include/footer.html"></include>
+<include src="../../include/agent_footer_nav.html"></include>
+<include src="../../include/footer.html"></include>
 </body>
 </html>
