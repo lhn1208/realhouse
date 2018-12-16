@@ -17,49 +17,17 @@
     <title>realhouse</title>
 </head>
 <body>
-<header id="header">
+<header class="sub_header header_shadow">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
     <div class="header_inner">
-        <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
-        <div class="h_right">
-            <nav id="nav">
-                <ul class="nav_menu">
-                    <li><a href="#">마이홈</a></li>
-                    <li><a href="#">매물검색</a></li>
-                    <li><a href="#">나의 매수</a></li>
-                    <li><a href="#">나의 매도</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="h_btn">알림2</a>
-            <a href="#" class="h_btn type">공인중개사</a>
-            <div class="member_area">
-                <!--로그인 전-->
-                <div class="member" id="member_login">
-                    <a href="#" class="choose">
-                        로그인 · 회원가입
-                    </a>
-                </div>
-                <!--//로그인 전-->
-                <!--로그인시-->
-                <!-- <div class="member">
-                    <a href="#" class="name">
-                        홍길동님
-                    </a>
-                    <div class="login_layout">
-                        <ul>
-                            <li><a href="">내 계정 설정</a></li>
-                            <li><a href="">로그아웃</a></li>
-                        </ul>
-                    </div> 
-                </div> -->
-                <!--//로그인시-->
-            </div>
-        </div>
-    </div>
+        <button class="btn_close"><span class="blind">닫기</span></button>
+    </div>    
 </header>
+
 <div class="wrapper">
     <div id=sub_container class="sub_container">  
         <div class="container_inner">     
-            <div class="mybuying">                
+            <div class="request_history">                
                 <div class="sub_intro">
                     <h3 class="tit">요청 내역</h3>
                     <div class="txt">온라인 중개의뢰 요청, 매물 확인요청, 현장 방문요청 내역을 확인하실 수 있습니다.</div>
@@ -166,47 +134,90 @@
                                 <tr>
                                     <td colspan="2">현장방문 예상시간: <span class="txt_red2">방문시간 협의 후, 매수측 중개사에게 현장도착 예상시간 입력을 요청하십시오.</span></td>
                                 </tr>
+                                <tr class="pd_style">
+                                    <th>요청번호</th>
+                                    <td class="no_consult"><span class="state">미협의</span></td>
+                                    <td class="align_right"><div class="btn_round_white small"><button class="btn">매물현황</button></div></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">05<span class="txt_blue">25</span></th>
+                                    <td>홍길동(은성공인중개사무소) 010-0000-0000/의뢰인: 김길동</td>
+                                    <td>요청일: 18.09.03 21:30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">전세/월세 | 아파트 | 서울시 송파구 잠실동 <span class="txt_red2">321</span>(잠실주공1단지) <span class="txt_red2">102동 103호</span> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">현장방문 예상시간: <span class="txt_red2"> 18.09.09(수) 14시 30분</span><em>(다소 차이가 있을 수 있음)</em></td>
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>요청번호</th>
+                                    <td class="consult_finish"><span class="state">협의완료:</span>18.09.06 13:20</td>
+                                    <td class="align_right"><div class="btn_round_white small"><button class="btn">매물현황</button></div></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">07<span class="txt_blue">24</span></th>
+                                    <td>홍길동(은성공인중개사무소) 010-0000-0000/의뢰인: 김길동</td>
+                                    <td>요청일: 18.09.03 21:30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">전세/월세 | 아파트 | 서울시 송파구 잠실동 <span class="txt_red2">321</span>(잠실주공1단지) <span class="txt_red2">102동 103호</span> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">현장방문 예상시간: <span class="txt_red2"> 18.09.09(수) 14시 30분</span><em>(방문완료)</em></td>
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>요청번호</th>
+                                    <td class="visit_finish"><span class="state">방문완료:</span>18.09.06 13:20</td>
+                                    <td class="align_right"><div class="btn_round_white small"><button class="btn">매물현황</button></div></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">01<span class="txt_blue">23</span></th>
+                                    <td>홍길동(은성공인중개사무소) 010-0000-0000/의뢰인: 김길동</td>
+                                    <td>요청일: 18.09.03 21:30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">전세/월세 | 아파트 | 서울시 송파구 잠실동 <span class="txt_red2">321</span>(잠실주공1단지) <span class="txt_red2">102동 103호</span> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">현장방문 예상시간: <span class="txt_red2"> 18.09.09(수) 14시 30분</span><em>(방문취소)</em></td>
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>요청번호</th>
+                                    <td class="visit_cancel"><span class="state">방문취소:</span>18.09.06 13:20</td>
+                                    <td class="align_right"><div class="btn_round_white small"><button class="btn">매물현황</button></div></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3">05<span class="txt_blue">22</span></th>
+                                    <td>홍길동(은성공인중개사무소) 010-0000-0000/의뢰인: 김길동</td>
+                                    <td>요청일: 18.09.03 21:30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">전세/월세 | 아파트 | 서울시 송파구 잠실동 <span class="txt_red2">321</span>(잠실주공1단지) <span class="txt_red2">102동 103호</span> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">현장방문 예상시간: <span class="txt_red2"> 18.09.09(수) 14시 30분</span><em>(거래완료)</em></td>
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>요청번호</th>
+                                    <td class="deal_finish"><span class="state">거래완료:</span>18.09.06 13:20</td>
+                                    <td class="align_right"><div class="btn_round_white small"><button class="btn">매물현황</button></div></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
+                    <div class="more_info">
+                        <a href="#" class="link_more">더 보기</a>
+                    </div>
                     <div class="detail_view">
-                        ※ 중개의뢰 요청의 빠른 답변에 따라 평점이 증감됩니다. <a href="#" class="link_style">상세보기</a>
+                        ※ 매수측 중개사가 문의할 경우 요청번호를 확인하십시오.(방문요청 내역은 2개월간 보관됩니다.)
                     </div>
                  </div>
                 <!--//현장 방문요청-->
-                <!--하단info-->
-                <div class="info_box">
-                    <em>※ 매수/임차 중개의뢰방법 </em>
-                    <ul>
-                        <li>1. 매물을 검색 후 <span class="txt_red">마음에 드는 매물을 관심매물로 등록</span>합니다.</li>
-                        <li>2. <span class="txt_blue">[신규의뢰 요청]</span>이나 매물정보 페이지에 있는 <span class="txt_blue">[방문요청]</span>을 클릭합니다.</li>
-                        <li>3. 관심매물 중 <span class="txt_red">방문하고 싶은 매물을 선택</span>하고 <span class="txt_red">평점을 보고 마음에 드는 중개사를 선택</span> 후 <span class="txt_red">중개업소 방문시간을 선택</span>하면 중개의뢰가 완료됩니다.</li>
-                        <li>4. 중개사가 승인 후 확인 차 바로 전화를 드리며 방문일에 방문하시면 요청한 모든 매물을 방문하실 수 있습니다.</li>
-                    </ul>
-                </div>
-                 <!--//하단info-->
             </div>
         </div>
     </div>
 </div>
-<footer id="footer_nav_section">
-    <div class="footer_nav_area">
-        <div class="footer_inner">
-            <h1 class="logo"><a href="#"><img src="../../../../images/common/footer_logo.png" alt="리얼하우스 로고"></a></h1>
-            <nav id="footer_nav">
-                <a  href="#">회사소개</a>
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">1대1 문의</a>
-                <a href="#" class="type">리얼하우스프로 바로가기</a>
-            </nav>
-            <div class="sns_links">
-                <a href="#" class="link"><img src="../../../../images/main/ico_facebook.png"></a>
-                <a href="#" class="link"><img src="../../../../images/main/ico_naver.png"></a>
-            </div>
-        </div>
-    </div>
-</footer>
 <footer id="footer">
     <div class="footer_content">
         <div class="footer_inner">

@@ -17,15 +17,44 @@
     <title>realhouse</title>
 </head>
 <body>
-<!--header-->
-<header class="sub_header">
-    <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+<header id="header" class="agent_header">
     <div class="header_inner">
-        <button class="btn_close"><span class="blind">닫기</span></button>
-        <h2 class="header_tit">매수/임차 중개의뢰</h2>
-    </div>   
+        <h1 class="logo"><a href="#"><img src="../../../../images/common/agent_logo.png" alt="리얼하우스 로고"></a></h1>
+        <div class="h_right">
+            <nav id="nav">
+                <ul class="nav_menu">
+                    <li><a href="#">마이홈</a></li>
+                    <li><a href="#">매물검색</a></li>
+                    <li><a href="#">나의 매수</a></li>
+                    <li><a href="#">나의 매도</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="h_btn">알림2</a>
+            <div class="member_area">
+                <!--로그인 전-->
+                <div class="member" id="member_login">
+                    <a href="#" class="choose">
+                        로그인 · 회원가입
+                    </a>
+                </div>
+                <!--//로그인 전-->
+                <!--로그인시-->
+                <!-- <div class="member">
+                    <a href="#" class="name">
+                        홍길동님
+                    </a>
+                    <div class="login_layout">
+                        <ul>
+                            <li><a href="">내 계정 설정</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div> 
+                </div> -->
+                <!--//로그인시-->
+            </div>
+        </div>
+    </div>
 </header>
- <!--header-->   
 <div class="wrapper">
     <div id=sub_container class="sub_container">  
         <div class="container_inner">     
@@ -33,7 +62,7 @@
                 <div class="myrequest">
                     <h3 class="tit">나의매수</h3>
                     <div class="txt">매수/임차 중개의뢰를 통해 보다 좋은 매물을 빠르게 계약하실 수 있습니다.</div>
-                    <div class="req_btn btn_round_green"><button class="btn">중개의뢰 등록(무료)</button></div>
+                  <div class="req_btn btn_round_green"><button class="btn">중개의뢰 등록(무료)</button></div>
                 </div>
                 <!--매수현황-->
                 <div class="process">
@@ -59,7 +88,7 @@
                         <ul class="process_list">
                             <li>
                                 <a href="#">
-                                    <strong class="data">홍길동(은성공인중개사사무소)</strong><span class="icon_type1">미승인</span>
+                                    <strong class="data">홍길동(은성공인중개사사무소)</strong><span class="icon_type1">미등록</span>
                                     <p>전세 | 아파트, 단독주택, 다가구</p>
                                     <p>추천매물: <span class="txt_blue">20</span> / 방문요청: <span class="txt_blue">10</span> / 미협의: <span class="txt_blue">5</span> / 협의완료: <span class="txt_blue">3</span> / 방문완료: <span class="txt_blue">2</span> / 거래완료: <span class="txt_blue">3</span></p>
                                     <p>중개업소 방문 예정일: <span class="txt_red">18.08.09(화) 15:30</span></p>
@@ -90,19 +119,20 @@
                         <div class="none">
                             <p class="style">진행중인 매수/임차 중개의뢰가 없습니다.</p>
                         </div>
+    
                     </div> -->
                     <!--//중개의뢰가 없을경우-->
                 </div>
                 <!--//매수현황-->
                 <!--하단info-->
                 <div class="info_box">
-                    <em>※ 매수/임차 중개의뢰방법 </em>
                     <ul>
-                        <li>1. 매물을 검색 후 <span class="txt_red">마음에 드는 매물을 관심매물로 등록</span>합니다.</li>
-                        <li>2. <span class="txt_blue">[신규의뢰 요청]</span>이나 매물정보 페이지에 있는 <span class="txt_blue">[방문요청]</span>을 클릭합니다.</li>
-                        <li>3. 관심매물 중 <span class="txt_red">방문하고 싶은 매물을 선택</span>하고 <span class="txt_red">평점을 보고 마음에 드는 중개사를 선택</span> 후 <span class="txt_red">중개업소 방문시간을 선택</span>하면 중개의뢰가 완료됩니다.</li>
-                        <li>4. 중개사가 승인 후 확인 차 바로 전화를 드리며 방문일에 방문하시면 요청한 모든 매물을 방문하실 수 있습니다.</li>
+                        <li>1. <span class="txt_red"> 고객의 이름과 전화번호만 입력하면 매수/임차 중개의뢰가 등록</span>됩니다.</li>
+                        <li>2. 중개의뢰를 등록하면 <span class="txt_red"> 해당 고객 전화번호로 문자가 전송되어 고객이 리얼하우스 앱을 설치</span>할 수 있습니다.</li>
+                        <li>3. 고객이 앱을 설치 후 회원가입하고 매수/임차 중개의뢰 관리요청을 수락하면 <span class="txt_red">중개사님이 추천한 매물을 확인</span>할 수 있으며 <span class="txt_red">별도의 비용은 발생하지 않습니다.</span></li>
+                        <li>4. <span class="txt_red2">고객은 리얼하우스의 모든 매물을 중개사님에게 방문요청할 수 있어 고객이 다른 중개사무소를 찾지 않게 됩니다.</span></li>
                     </ul>
+                    <p>※ 고객이 관리요청을 승인하면 <span class="txt_red2">시스템평점이 10점이 지급</span>됩니다.</p>
                 </div>
                  <!--//하단info-->
             </div>

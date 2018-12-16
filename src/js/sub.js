@@ -93,4 +93,21 @@ $(document).ready(function(){
             }
         })
     }
+
+    $(".custom_cont li a").click(function() {
+        var $reqArea=$(this).next(".request_area");
+        $reqArea.slideToggle();
+        return false;
+    });
+
+    $(".detail_view .link_style").click(function() {
+        var $DetailBox=$(this).parent().next(".detail_box");
+        $DetailBox.slideToggle();
+        return false;
+    });
+    $(".agent_box .btn_close").click(function(){
+        $(this).parent().slideUp();
+        return false;
+    })
+   
 });

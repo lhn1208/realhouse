@@ -94,7 +94,8 @@
 .inner_option .btn_type1{width:86px; margin-bottom: 8px;}
 .layer_filter .filter_reset_area{margin-bottom: 10px; margin-right:30px;  text-align: right;}
 
-.offer_detail{width:800px; margin:0 auto; padding-top:56px;}
+.offer_detail{position: relative; width:800px; margin:0 auto; padding-top:56px;}
+.offer_detail .btn_close{position: fixed; top:130px; right:478px; width:59px; height: 59px; background:url("../../images/sub/ico_close_w59.jpg") no-repeat; z-index:100;}
 .offer_main{width: 800px; margin-bottom: 50px;}
 .offer_main .view_list{position: relative; margin-bottom:70px;}
 .offer_main .view_list li{width:260px; height:174px; margin-left:540px; box-sizing: border-box; overflow: hidden;}
@@ -214,7 +215,7 @@
 .table_style2.table_agent .table td .radio_btn.check+label{color:#6d6d6d;}
 .table_style2.table_agent .table td .radio_btn.check:checked+label{color:#fff;}
 .table_agent .more_info{height:80px; line-height: 5; font-family: "Noto Sans KR Medium"; background-color: #f9fcfd; border:1px solid #e6e6e6; border-top:none; text-align: center;}
-.table_agent .more_info .link_more{padding-right:28px; color: #ff6161; background: url("./../../images/sub/arr_more_info.png") no-repeat 60px 6px;}
+.more_info .link_more{padding-right:28px; color: #ff6161; background: url("./../../images/sub/arr_more_info.png") no-repeat 60px 6px;}
 .mypresent .req_btn .btn{width:200px; font-size: 20px;}
 .mypresent .myagent_area{margin-bottom: 55px;}
 .mypresent .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
@@ -225,6 +226,8 @@
 .mypresent .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
 .mypresent .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
 .mypresent .myagent_table {position: relative;}
+.mypresent .myagent_table .table thead th,.mypresent .myagent_table thead td{border-bottom: none;}
+.mypresent .myagent_table .table thead th{text-align: center;}
 .mypresent .myagent_table .table th{border:1px solid #e6e6e6; background-color:#fdfdfd;}
 .mypresent .myagent_table .table tr:first-of-type th{background-color: #f9fcfd;}
 .mypresent .myagent_table .table td{color: #5f5f5f; border:1px solid #e6e6e6} 
@@ -263,19 +266,17 @@
 .present_manage li .head{position: absolute; top:0; left:0; width:46px; height:46px; line-height: 2; font-size: 22px; color:#fff; background-color: #ff9900; border-radius:50px; text-align: center;}
 .present_manage li .build_address{display: block; margin-bottom:6px; font-size: 18px; color: #378cff;}
 .present_manage li .build_address a{display: inline-block; padding-right: 22px; font-size: 18px; color: #378cff; background:url("./../../images/sub/ico_close.png") right no-repeat;}
-.present_manage li .state{margin-bottom: 6px; font-size: 18px; color: #9c9c9c;}
+.present_manage .state{margin-bottom: 6px; font-size: 18px;}
+.present_manage .no_consult .state{color: #9c9c9c;}
 .present_manage li .req_num{color: #373737;}
 .present_manage li .visit{display: inline-block; padding:0 10px;}
 .present_manage li:last-child{padding-bottom: 0;}
 .present_manage li:last-child:before{background: none;}
 .present_manage .no_consult .head{background-color: #acacac;}
 .present_manage .consult_finish .head{background-color: #3399ff;}
-.present_manage .consult_finish .state{color: #378cff;}
 .present_manage .visit_finish .head{background-color: #0ec4bf;}
-.present_manage .visit_finish .state{color: #0ec4bf;}
 .present_manage .time_error .head,.present_manage .deal_finish .head,.present_manage .offer_report .head,.present_manage .visit_cancel .head{background-color:#ff6161;}
-.present_manage .time_error .state,.present_manage .deal_finish .state,.present_manage .offer_report .state, .present_manage .visit_cancel  .state{color: #ff6161;}
-.present_manage .slide_open{padding-bottom: 34px;}
+.present_manage .slide_open{padding-bottom: 12px;}
 .present_manage .slide_open:before{height: 330px;}
 .present_manage .slide_open .build_address a{color: #ff6161; background:url("./../../images/sub/ico_open.png") right no-repeat;}
 .present_manage .table_style3{margin-top:10px; margin-left:54px;}
@@ -292,17 +293,16 @@
 .client_manage .manage_table .check.off{color: #fff; background-color: #ebebeb;}
 .client_manage .manage_table .btn_type1.check.on:after{top:16px; left: 17px;}
 .client_regist .manage_table .table td{text-align: center;}
+.client_regist.no_act .manage_table .table td{color: #5f5f5f;}
 .client_regist .manage_table .table .input_name, .client_regist .manage_table .table .input_phone{width:190px; height: 40px; border:1px solid #e6e6e6;}
 .client_regist .manage_table .table th,.client_regist .manage_table .table td{padding:10px 5px;}
 .client_regist .manage_table .table th{border-bottom: none;}
 .client_regist .manage_table .table .select_phone{position: relative; top:0; text-align: left;}
 .client_regist .manage_table .table .select_phone .select_top{width:84px; height: 40px;}
-.client_regist .manage_table .table .hipen{margin:0 4px;}
 .client_regist .manage_table .table .btn_type1{color: #5f5f5f;}
 .present_manage .present_table .table th{background-color: #fdfdfd;}
 .present_manage .present_table .table tr:nth-child(2n) th,
 .present_manage .present_table .table tr:nth-child(2n) td{background-color: #f9fcfd;}
-.present_manage .present_table .table .no_consult .state{color: #ff6161;}
 
 .mysale_adress{position: relative; margin-bottom: 50px;}
 .mysale_adress .table_style3 .table{border-right: none;}
@@ -415,3 +415,16 @@
 .agent_info_area dd{padding-left:216px; font-size: 16px; vertical-align: -2px;}
 .agent_info_area dd .cnt{font-size: 30px; color:#ff6161;}
 .agent_info_area .policy{text-align: center;}
+
+.process.agent .present_manage .slide_open:before{height: 388px;}
+.agent_box .item_table .items_list{margin-top:0;}
+.agent_box .item_table tbody td{padding:8px 10px 2px 0; text-align: center;}
+.agent_box .item_table .items{text-align: left;}
+.agent_box .item_table .items .img_area{top:2px;}
+.agent_box .item_table .items .tit{margin-bottom:10px;}
+.agent_box .no_recomm .item_table tbody td{padding:20px; line-height: 2; color: #6d6d6d;}
+
+.present_manage.agent .present_table tr:nth-child(2n) th,.present_manage.agent .present_table tr:nth-child(2n) td{background-color: #fff;}
+.present_manage.agent .present_table tr:nth-child(3n) th,.present_manage.agent .present_table tr:nth-child(3n) td{background-color: #f9fcfd;}
+.present_manage.agent .present_table tbody td{color: #5f5f5f;}
+.present_manage.agent .present_table tbody .desc{color: #373737;}

@@ -30,6 +30,7 @@
             h4.guide_tit {color:#ff0000; font-weight:bold; font-size:13px; margin-bottom:5px; font-family:'Noto Sans KR Regular'; }
             .comment {color:#000; margin-bottom:14px; font-size:13px; font-family:'Noto Sans KR Regular';}
             .comment .txt_red{color:#ff0000;}
+            .guide_section{margin-bottom: 20px;}
             .radio_btn +label .btn_radio{vertical-align: -3px;}
             xmp {font-size:12px; font-family:'Noto Sans KR Regular';}
         </style>
@@ -40,73 +41,96 @@
             <div class="comment">* font-size: 14px; font-family: "Noto Sans KR Medium";</div>
             <br>            
             <div class="comment">[case1] 기본 버튼</div> 
-            <button class="btn">변경</button>
-            <xmp>
+            <div class="guide_section">
                 <button class="btn">변경</button>
-            </xmp>
-            <div class="comment">[case2] process 버튼</div>
-            <div class="btn_process" style="position:relative">
-                <button class="btn">취소</button><button class="btn on">확인</button>
-                <br><br>
-                <button class="btn btn_prev">이전</button><button class="btn btn_next">다음</button><button class="btn btn_next on">다음</button>
+                <xmp>
+                    <button class="btn">변경</button>
+                </xmp>
             </div>
-            <br><br>
-            <div class="comment">[case3] 클릭 버튼: div.click_ev추가</div>
-            <div class="click_ev"><button class="btn_type1">선택</button> <button class="btn_type1 on">선택</button></div>
-            <xmp>
-                <div class="click_ev">
-                    <button class="btn_type1">선택</button>
-                    <button class="btn_type1 on">선택</button>
+            <div class="comment">[case2] process 버튼</div>
+            <div class="guide_section">
+                <div class="btn_process" style="position:relative">
+                    <button class="btn">취소</button><button class="btn on">확인</button>
+                    <br><br>
+                    <button class="btn btn_prev">이전</button><button class="btn btn_next">다음</button><button class="btn btn_next on">다음</button>
                 </div>
-            </xmp>
+            </div>
+            <div class="comment">[case3] 클릭 버튼: div.click_ev추가</div>
+            <div class="guide_section">
+                <div class="click_ev"><button class="btn_type1">선택</button> <button class="btn_type1 on">선택</button></div>
+                <xmp>
+                    <div class="click_ev">
+                        <button class="btn_type1">선택</button>
+                        <button class="btn_type1 on">선택</button>
+                    </div>
+                </xmp>
+            </div>
             <div class="comment">[case4] 기타 버튼</div>
-            <button class="btn red">변경</button>
-            <button class="btn skyblue">변경</button>
-            <button class="btn off">변경</button>
-            <button class="btn check">수정/삭제</button>
-            
+            <div class="guide_section">
+                <button class="btn red">변경</button>
+                <button class="btn skyblue">변경</button>
+                <button class="btn off">변경</button>
+                <button class="btn check">수정/삭제</button>
+            </div>
+            <div class="comment">[case5] 취소,확인  버튼</div>
+            <div class="guide_section">
+                <div class="btn_submit">
+                    <button class="btn_cancel btn">취소</button>
+                    <button class="btn_confirm btn off">확인</button>
+                </div>
+            </div>
         </div>
         <div class="guide_box">
             <h1 class="guide_tit">Button Type2</h1>
             <div class="comment">[case1] 라운드 하얀색 버튼:width:157px; height:53px;</div>
-            <div class="btn_round_white"><button href="#" class="btn">중개수수료 결제</button> <button href="#" class="btn">포인 내역</button></div>
-            <xmp>
-                <div class="btn_round_white">
-                    <button href="#" class="btn">중개수수료 결제</button> 
-                    <button href="#" class="btn">포인 내역</button>
-                </div>
-            </xmp>
-            <div class="comment">[case2] 라운드 하얀색 버튼:width:130px; height:53px;</div>
-            <div class="btn_round_white type"><button href="#" class="btn">설정</button></div>
-            <xmp>
-                <div class="btn_round_white type">
-                    <button href="#" class="btn">설정</button>
-                </div>
-            </xmp>
+            <div class="guide_section">
+                <div class="btn_round_white"><button href="#" class="btn">중개수수료 결제</button> <button href="#" class="btn">포인 내역</button></div>
+                <xmp>
+                    <div class="btn_round_white">
+                        <button href="#" class="btn">중개수수료 결제</button> 
+                        <button href="#" class="btn">포인 내역</button>
+                    </div>
+                </xmp>
+            </div>
+            <div class="guide_section">
+                <div class="comment">[case2] 라운드 하얀색 버튼:width:130px; height:53px;</div>
+                <div class="btn_round_white type"><button href="#" class="btn">설정</button></div>
+                <xmp>
+                    <div class="btn_round_white type">
+                        <button href="#" class="btn">설정</button>
+                    </div>
+                </xmp>
+            </div>
             <div class="comment">[case3] 라운드 컬러 버튼</div>
-            <div style="display:inline-block"><button class="btn_round">방문 요청</button></div>
-            <div style="display:inline-block"><button class="btn_round skyblue">신규 중개의뢰</button></div>
-            <xmp>
-                <button class="btn_round">방문 요청</button> or <div class="btn_round_green"><button class="btn">방문 요청</button></div>
-                <button class="btn_round skyblue">신규 중개의뢰</button>
-            </xmp>
+            <div class="guide_section">
+                <div style="display:inline-block"><button class="btn_round">방문 요청</button></div>
+                <div style="display:inline-block"><button class="btn_round skyblue">신규 중개의뢰</button></div>
+                <xmp>
+                    <button class="btn_round">방문 요청</button> or <div class="btn_round_green"><button class="btn">방문 요청</button></div>
+                    <button class="btn_round skyblue">신규 중개의뢰</button>
+                </xmp>
+            </div>
             <div class="comment">[case4] 라운드 작은 버튼</div>
-            <div class="btn_round_white small"><button href="#" class="btn">중개수수료 결제</button></div>
-            <xmp>
+            <div class="guide_section">
                 <div class="btn_round_white small"><button href="#" class="btn">중개수수료 결제</button></div>
-            </xmp>
+                <xmp>
+                    <div class="btn_round_white small"><button href="#" class="btn">중개수수료 결제</button></div>
+                </xmp>
+            </div>
         </div>
         <div class="guide_box">
             <h1 class="guide_tit">Icon Type</h1>
             <div class="comment">[case1]</div>
-            <span class="icon_type1" style="padding:3px 8px; font-size: 12px;">미승인</span> <span class="icon_type1 green" style="padding:3px 8px; font-size: 12px;">그린</span><span class="icon_type1 green2" style="padding:3px 8px; font-size: 12px;">그린2</span><span class="icon_type1 skyblue" style="padding:3px 8px; font-size: 12px;">스카이블루</span><span class="icon_type1 grey" style="padding:3px 8px; font-size: 12px;">그레이</span>
-            <xmp>
-                <span class="icon_type1">미승인</span> 
-                <span class="icon_type1 green">그린</span>
-                <span class="icon_type1 green2">그린2</span>
-                <span class="icon_type1 skyblue">스카이블루</span>
-                <span class="icon_type1 grey">그레이</span>
-            </xmp>
+            <div class="guide_section">
+                <span class="icon_type1" style="padding:3px 8px; font-size: 12px;">미승인</span> <span class="icon_type1 green" style="padding:3px 8px; font-size: 12px;">그린</span><span class="icon_type1 green2" style="padding:3px 8px; font-size: 12px;">그린2</span><span class="icon_type1 skyblue" style="padding:3px 8px; font-size: 12px;">스카이블루</span><span class="icon_type1 grey" style="padding:3px 8px; font-size: 12px;">그레이</span>
+                <xmp>
+                    <span class="icon_type1">미승인</span> 
+                    <span class="icon_type1 green">그린</span>
+                    <span class="icon_type1 green2">그린2</span>
+                    <span class="icon_type1 skyblue">스카이블루</span>
+                    <span class="icon_type1 grey">그레이</span>
+                </xmp>
+            </div>
             <div class="comment">[case2]</div>
             <span class="icon_type2" style="padding:3px 8px; font-size: 12px;">미승인</span>
         </div>
