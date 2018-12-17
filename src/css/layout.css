@@ -265,6 +265,8 @@ button:focus{outline:none;}
 .table input[type="text"],.table .input_name,.table textarea{display: inline-block; padding:0 12px; height: 36px; border:none; font-family: "Noto Sans KR Regular"; color: #373737;}
 .table input.border{border:1px solid #e6e6e6;}
 .table input[type="text"]:focus,.table textarea:focus{border:1px solid #373737;outline:none;z-index:1}
+.table label:first-of-type input[type="text"]{margin-left: 0;}
+.table input[type="text"]{margin-left: 12px;}
 .table .input_name{width:200px;}
 .table .select_area.select_phone{display: inline-block; width:84px; vertical-align: middle;}
 .table .select_area.select_phone .select_top{width:84px; height: 36px;}
@@ -290,7 +292,7 @@ button:focus{outline:none;}
 .table .checkbox+label{margin-left:12px;}
 .table td.style_btn{padding-bottom: 8px;}
 .table td.style_btn .btn_type1{margin-bottom:10px;}
-.table .right_area{position: absolute; right: 20px;}
+.table .right_area{position: absolute; top:18px; right: 20px;}
 .table .hipen{margin:0 4px;}
 
 .layer .table{width:842px;}
@@ -303,7 +305,7 @@ button:focus{outline:none;}
 .help_area{position: relative;}
 .help_ico{margin-left: 6px; vertical-align: 1px;}
 .tooltip_box{display: none; position: absolute; top:50px; left:264px; background-color: #fff; border:1px solid #e6e6e6; border-radius: 5px; z-index: 5;}
-.tooltip_box.active{display: block;}
+.tooltip_box.open{display: block;}
 .tooltip_box:before{display:block; content:""; position:absolute; top:-11px; left:104px; width:21px; height:11px; border:none; background:url("../../images/main/ico_member_box.jpg") no-repeat; z-index: 8;}
 .tooltip{padding:20px 20px 12px;}
 .tooltip_table{width:600px; background-color: #fff;}

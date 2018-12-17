@@ -25,14 +25,24 @@ $(document).ready(function(){
         selTop_parent;
     //selectTop클릭시 선택창 닫힘
     $selectTop.click(function(){
-        selTop_parent=$(this).parent(".select_area");
-        if(selTop_parent.hasClass("open")){
-            selTop_parent.removeClass("open");
+        $(".tooltip_box").removeClass("open");
+        if($(this).parents('.select_area').hasClass("disabled")){
+            return false;
         }else{
-            $(this).parent().addClass("open");
+            selTop_parent=$(this).parent(".select_area");
+            $(".select_area").removeClass("open");
+
+            if(selTop_parent.hasClass("open")){
+                selTop_parent.removeClass("open");
+            }else{
+                $(this).parent().addClass("open");
+            }
         }
         return false;
+        
     })
+
+
     $selectList_link.click(function(){
         var $btnVal=$(this).text();
         $(this).parent().siblings($selectTop).text($btnVal);
@@ -40,12 +50,7 @@ $(document).ready(function(){
         selTop_parent.removeClass("open");
         return false;
     });
-    $('html').click(function(e){  
-        if(!$(e.target).hasClass("open")){
-            $selectArea.removeClass("open");
-         } 
-    });
-
+   
     //button
     var $btn=$(".click_ev .btn_type1");
     $btn.click(function(){
@@ -93,6 +98,26 @@ $(document).ready(function(){
             }
         })
     }
+    //도움말
+    $(".help_ico").click(function(){
+        $(".select_area").removeClass("open");
+        var $tooltipBox= $(this).next(".tooltip_box");
+        if($tooltipBox.hasClass("open")){
+            $tooltipBox.removeClass("open");
+        }else{
+            $tooltipBox.addClass("open");
+        }
+        return false;
+    })
+    
+    $('html').click(function(e){  
+        if(!$(e.target).hasClass("open")){
+            $selectArea.removeClass("open");
+            $(".tooltip_box").removeClass("open");
+         } 
+    });
+
+
     //1대1문의
     $(".request_area").hide();
     $(".custom_cont li a").click(function(){

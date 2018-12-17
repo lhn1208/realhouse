@@ -143,6 +143,4 @@ var $placeholder;
         $selectArea.removeClass("open");
       } 
   });
-  
-
 });
