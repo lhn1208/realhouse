@@ -56,8 +56,8 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .nav_menu li.on a{color:#378cff; border-bottom:2px solid #378cff;}
 .h_btn{display: inline-block; float: left; margin-top: 22px; margin-right: 20px; padding:5px 20px 7px ; line-height: 1; font-size: 13px; color:#fff; border-radius: 15px; background-color: #ff5050;}
 .h_btn.type{background-color:#378cff;}
-.member_area{float: left; position: relative; width:100px; margin-left:10px; margin-top:24px;}
-.member_area a.choose{display: block; color: #6c6c6c; font-size: 13px;}
+.member_area{float: left; position: relative; width:100px; margin-left:10px; margin-top:23px;}
+.member_area a{display: inline-block; color: #6c6c6c; font-size: 13px;}
 .member_area .member{position: relative;}
 .member_area .member a.name{display: block; margin-right:12px; padding-left:10px; font-size: 15px; color: #373737; font-family: "Noto Sans KR Medium"; background:url("../../images/common/ico_member_name.png") no-repeat right;}
 .member_area .member .login_layout{display: none; position: absolute; top:46px; left:-92px; z-index: 10000;}

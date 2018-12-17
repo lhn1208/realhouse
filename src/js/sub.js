@@ -93,20 +93,23 @@ $(document).ready(function(){
             }
         })
     }
-
-    $(".custom_cont li a").click(function() {
+    //1대1문의
+    $(".request_area").hide();
+    $(".custom_cont li a").click(function(){
         var $reqArea=$(this).next(".request_area");
-        $reqArea.slideToggle();
+        $reqArea.slideToggle(300);
+        $(".custom_cont li a").not(this).next(".request_area").slideUp(500);
         return false;
     });
+
 
     $(".detail_view .link_style").click(function() {
         var $DetailBox=$(this).parent().next(".detail_box");
-        $DetailBox.slideToggle();
+        $DetailBox.slideToggle(300);
         return false;
     });
     $(".agent_box .btn_close").click(function(){
-        $(this).parent().slideUp();
+        $(this).parent().slideUp(300);
         return false;
     })
    
