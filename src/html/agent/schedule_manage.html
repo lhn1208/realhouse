@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <include src="../include/set_css.html"></include>
+    <include src="../include/set_js.html"></include>
+    <title>realhouse</title>
+</head>
+<body>
+<include src="../include/agent_sub_header2.html"></include>
+<div class="wrapper">
+    <div id=sub_container class="sub_container">          
+        <div class="container_inner"> 
+            <div class="schedule_manage">    
+                <div class="sub_intro">
+                    <h3 class="tit blue">일정 관리</h3>
+                    <div class="txt">매물 또는 매수/임차 중개의뢰의 메모에 일정을 등록하시면 일정 관리에서 확인하실 수 있습니다.</div>
+                    <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+                </div>
+                <div class="tab_head">
+                    <ul class="tab">
+                        <li class="active"><a href="#">현재일정</a></li>
+                        <li><a href="#">과거일정</a></li>
+                    </ul>
+                    <div class="tab_right_btn"><button class="btn orange">문의 등록</button></div>
+                </div>
+                <!--현재일정-->
+                <div class="content_section">
+                    <div class="table_style3">
+                        <table class="table" summary="일정,제목,내용테이블 입니다.">
+                            <caption>현재일정</caption>
+                            <colgroup>
+                                <col width="14%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>    
+                                    <th>일정</th>
+                                    <td>
+                                        <div class="select_visit_area">
+                                            <div class="select_area">
+                                                <a href="#" class="select_top">일자 선택</a>
+                                                <div class="select_list">
+                                                    <div class="desc">금일포함 <span class="txt_red2">7일</span>까지 선택 가능</div>
+                                                    <a href="#">2018.06.09(월)</a>
+                                                    <a href="#">2018.06.10(화)</a>
+                                                    <a href="#">2018.06.11(수)</a>
+                                                    <a href="#">2018.06.12(목)</a>
+                                                    <a href="#">2018.06.13(금)</a>  
+                                                    <a href="#">2018.06.14(토)</a>
+                                                    <a href="#">2018.06.15(<span class="sunday">일</span>)</a>
+                                                </div>
+                                            </div>
+                                            <div class="select_visit time_open">
+                                                <a href="#" class="select_top">시간 선택</a>
+                                                <!-- <div class="select_time">
+                                                    <div class="btn_hour">
+                                                        <div class="header">시간 선택</div>
+                                                        <input id="hour_type1" type="radio" name="hour" class="radio_time" value="7시" checked="">
+                                                        <label for="hour_type1"><span class="btn_radio">7시</span></label>
+                                                        <input id="hour_type2" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type2"><span class="btn_radio">8시</span></label>
+                                                        <input id="hour_type3" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type3"><span class="btn_radio">9시</span></label>
+                                                        <input id="hour_type4" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type4"><span class="btn_radio">10시</span></label>
+                                                        <input id="hour_type5" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type5"><span class="btn_radio">11시</span></label>
+                                                        <input id="hour_type6" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type6"><span class="btn_radio">12시</span></label>
+                                                        <input id="hour_type7" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type7"><span class="btn_radio">13시</span></label>
+                                                        <input id="hour_type8" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type8"><span class="btn_radio">14시</span></label>
+                                                        <input id="hour_type9" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type9"><span class="btn_radio">15시</span></label>
+                                                        <input id="hour_type10" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type10"><span class="btn_radio">16시</span></label>
+                                                        <input id="hour_type11" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type11"><span class="btn_radio">17시</span></label>
+                                                        <input id="hour_type12" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type12"><span class="btn_radio">18시</span></label>
+                                                        <input id="hour_type13" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type13"><span class="btn_radio">19시</span></label>
+                                                        <input id="hour_type14" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type14"><span class="btn_radio">20시</span></label>
+                                                        <input id="hour_type15" type="radio" name="hour" class="radio_time">
+                                                        <label for="hour_type15"><span class="btn_radio">21시</span></label>
+                                                    </div>
+                                                    <div class="btn_minute">
+                                                        <div class="header">분 선택</div>
+                                                        <input id="minute_type1" type="radio" name="minute" class="radio_time" checked="">
+                                                        <label for="minute_type1"><span class="btn_radio">00분</span></label>
+                                                        <input id="minute_type2" type="radio" name="minute" class="radio_time">
+                                                        <label for="minute_type2"><span class="btn_radio">10분</span></label>
+                                                        <input id="minute_type3" type="radio" name="minute" class="radio_time">
+                                                        <label for="minute_type3"><span class="btn_radio">20분</span></label>
+                                                        <input id="minute_type4" type="radio" name="minute" class="radio_time">
+                                                        <label for="minute_type4"><span class="btn_radio">30분</span></label>
+                                                        <input id="minute_type5" type="radio" name="minute" class="radio_time">
+                                                        <label for="minute_type5"><span class="btn_radio">40분</span></label>
+                                                        <input id="minute_type6" type="radio" name="minute" class="radio_time">
+                                                        <label for="minute_type6"><span class="btn_radio">50분</span></label>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="select_area">
+                                                <a href="#" class="select_top">30분 전 알림</a>
+                                                <div class="select_list">
+                                                    <a href="#">10분 전 알림</a>
+                                                    <a href="#">1시간 전 알림</a>
+                                                    <a href="#">1일 전 알림</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>    
+                                    <th>제목</th>
+                                    <td>
+                                        <label for="request_tit">
+                                            <input id="request_tit" type="text" class="input_request_tit" placeholder="제목을 입력하십시오.">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td class="pd_r20">
+                                        <textarea class="text_area request_textarea" placeholder="내용을 상세하게 기재하십시오."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn_submit">
+                        <button class="btn_cancel btn">취소</button>
+                        <button class="btn_confirm btn off">확인</button>
+                    </div>
+                </div>
+                <div class="schedule_box">
+                    <ul class="custom_cont">
+                        <li><a href="#">
+                                <strong class="sch_type">개인 일정</strong>
+                                <span class="tit">개인 일정 제목이 나타납니다.<span class="icon_type1 green">오늘</span></span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                            <div class="sch_area">
+                                <div class="sch_cont">
+                                    개인일정 내용이 나타납니다.
+                                    <br>개인일정 내용이 나타납니다.
+                                    <br>개인일정 내용이 나타납니다.
+                                    <br>개인일정 내용이 나타납니다.
+                                </div>
+                                <div class="sch_history">
+                                    <span class="write_date">작성일: 2018.09.02 19:20</span>
+                                    <button class="btn">삭제</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type"><span class="txt_blue">매물 현장안내</span></strong>
+                                <span class="tit">전세 | 아파트 | 서울시 송파구 잠실동 321-1(잠실주공아파트) 102동 201동<span class="icon_type1 green">오늘</span></span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                            <div class="sch_area">
+                                <div class="sch_cont">
+                                    전세 | 아파트 | 서울시 송파구 잠실동 321-1(잠실주공아파트) 102동 201동
+                                    <br>담당 의뢰인: 홍길동 010-0000-0000
+                                    <br>추가 의뢰인: 홍길순 010-0000-0000/김길남(세입자) 010-0000-0000
+                                    <div class="visit_area">
+                                    현장방문 공인중개사: 홍길동(은성공인중개사사무소) 010-0000-0000
+                                    <br>현장방문 예상일시: 2018.03.05(월) 15:30
+                                    </div>
+                                </div>
+                                <div class="sch_history">
+                                    <span class="write_date">작성일: 2018.09.02 19:20</span>
+                                    <button class="btn">매물현황 보기</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type"><span class="txt_red2">의뢰인 방문</span></strong>
+                                <span class="tit">홍길동 010-0000-000</span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                            <div class="sch_area">
+                                <div class="sch_cont">
+                                    의뢰 구분: 전세/주거용/단독주택, 아파트
+                                    <br>담당 의뢰인: 홍길동 010-0000-0000
+                                    <div class="visit_area">방문 시간: 2018.03.09 11:20</div>
+                                </div>
+                                <div class="sch_history">
+                                    <span class="write_date">작성일: 2018.09.02 19:20</span>
+                                    <button class="btn">의뢰현황 보기</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type">메모 일정</strong>
+                                <span class="tit"><span class="txt_blue">[임대]</span> 매물 확인을 위한 현장방문 일정입니다.</span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                            <div class="sch_area">
+                                <div class="sch_cont">
+                                    의뢰 구분: 전세/주거용/단독주택, 아파트
+                                    <br>담당 의뢰인: 홍길동 010-0000-0000
+                                    <div class="memo">
+                                        메모내용이 나타납니다.
+                                        <br>메모내용이 나타납니다.
+                                    </div>
+                                </div>
+                                <div class="sch_history">
+                                    <span class="write_date">작성일: 2018.09.02 19:20</span>
+                                    <button class="btn">의뢰현황 보기</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type">메모 일정</strong>
+                                <span class="tit"><span class="txt_blue">[매도]</span> 메모 제목이 나타납니다.</span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type">메모 일정</strong>
+                                <span class="tit"><span class="txt_red2">[임차]</span> 메모 제목이 나타납니다.</span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <strong class="sch_type">메모 일정</strong>
+                                <span class="tit"><span class="txt_red2">[매수]</span> 메모 제목이 나타납니다.</span>
+                                <span class="date">2018.09.06 10:30</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//현재일정-->
+            </div>
+        </div>           
+    </div>
+</div>
+<include src="../include/footer.html"></include>
+</body>
+</html>

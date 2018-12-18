@@ -23,23 +23,22 @@ $(document).ready(function(){
         $selectList=$selectArea.find(".select_list"),
         $selectList_link=$selectList.find("a"),
         selTop_parent;
-    //selectTop클릭시 선택창 닫힘
+
     $selectTop.click(function(){
         $(".tooltip_box").removeClass("open");
+        selTop_parent=$(this).parent(".select_area");
         if($(this).parents('.select_area').hasClass("disabled")){
             return false;
         }else{
-            selTop_parent=$(this).parent(".select_area");
-            $(".select_area").removeClass("open");
-
+            //selectTop클릭시 선택창 닫힘
             if(selTop_parent.hasClass("open")){
                 selTop_parent.removeClass("open");
             }else{
+                $selectArea.removeClass("open");
                 $(this).parent().addClass("open");
             }
         }
         return false;
-        
     })
 
     $selectList_link.click(function(){
@@ -117,9 +116,10 @@ $(document).ready(function(){
     });
 
     //1대1문의
-    $(".request_area").hide();
+    var targetArea= $(".request_area,.sch_area");
+    targetArea.hide();
     $(".custom_cont li a").click(function(){
-        var $reqArea=$(this).next(".request_area");
+        var $reqArea=$(this).next(targetArea);
         $reqArea.slideToggle(300);
         $(".custom_cont li a").not(this).next(".request_area").slideUp(500);
         return false;

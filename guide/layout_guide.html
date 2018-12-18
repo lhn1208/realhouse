@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="../src/css/style.css">
         <link rel="stylesheet" href="../src/css/layout.css">
         <title></title>
+        <script src="../dist/js/3.3.1.min.js"></script>
+        <script src="../dist/js/sub.min.js"></script>
         <style>
           * {margin:0; padding:0; font-size:16px;}
             body {margin:10px; background-color:#f8f8f8;}
@@ -32,6 +34,18 @@
             <br><br>
             <div class="comment">[case2] color:#9c9c9c</div>
             <span class="date" style="color:#9c9c9c">&nbsp;&nbsp; 18.06.09</span>
+            <br><br>
+            <div class="comment">[case3] 텍스트 컬러</div>
+            <span class="txt_red">레드1</span>
+            <span class="txt_red2">레드2</span>
+            <span class="txt_blue">블루</span>
+            <span class="txt_yellow">엘로우</span>
+            <xmp>
+                <span class="txt_red">레드1</span>
+                <span class="txt_red2">레드2</span>
+                <span class="txt_blue">블루</span>
+                <span class="txt_yellow">엘로우</span>
+            </xmp>
         </div>
         <div class="guide_box">
             <h1 class="guide_tit">title Type</h1>
@@ -46,6 +60,31 @@
             <div class="comment">[case3]</div>
             <div class="content_head3">
                 <h2 class="tit">매물정보</h2>
+            </div>
+        </div>
+        <div class="guide_box">
+            <h1 class="guide_tit">sub_title</h1>
+            <div class="comment">[case1]</div>
+            <div class="sub_intro">
+                <h3 class="tit">일정 관리</h3>
+                <div class="txt">매물 또는 매수/임차 중개의뢰의 메모에 일정을 등록하시면 일정 관리에서 확인하실 수 있습니다.</div>
+                <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+            </div>
+            <div class="comment">[case2]</div>
+            <div class="sub_intro">
+                <h3 class="tit blue">일정 관리</h3>
+                <div class="txt">매물 또는 매수/임차 중개의뢰의 메모에 일정을 등록하시면 일정 관리에서 확인하실 수 있습니다.</div>
+                <div class="right_btn btn_round_white btn_close"><button class="btn">닫기</button></div>
+            </div>
+        </div>
+        <div class="guide_box">
+            <h1 class="guide_tit">tab style</h1>
+            <div class="tab_head">
+                <ul class="tab">
+                    <li class="active"><a href="#">현재일정</a></li>
+                    <li><a href="#">과거일정</a></li>
+                </ul>
+                <div class="tab_right_btn"><button class="btn orange">문의 등록</button></div>
             </div>
         </div>
         <div class="guide_box">
@@ -76,6 +115,17 @@
             <div class="comment">[case2] 체크박스</div>
             <input type="checkbox" id="dong_chk" class="checkbox" checked="">
             <label for="dong_chk"><span class="chk_set"></span>동 없음</label>
+            <br><br>
+            <div class="comment">[case3]셀렉트 박스</div>
+            <div class="select_area select_w170">
+                <a href="#" class="select_top">셀렉트박스</a>
+                <div class="select_list">
+                    <a href="#">내용1</a>
+                    <a href="#">내용2</a>
+                    <a href="#">내용3</a>
+                    <a href="#">내용4</a>
+                </div>
+            </div>
         </div>        
     </body>
 </html>
