@@ -185,6 +185,7 @@
 .new_request{margin-top:130px; padding-top:52px; min-height: 675px;}
 .new_request .box_border_wrap{margin-bottom:50px; background: #fffbfb;}
 
+.select_visit_area:after{display: block; content:""; clear: both;}
 .select_visit_area .select_area, .select_visit_area .select_visit{float:left; margin-right: 14px;}
 .select_visit_area .select_area .select_top,.select_visit_area .select_visit .select_top{width:200px; color: #5f5f5f; font-size: 15px; text-align: left;}
 .select_visit_area .select_area .select_list{width:200px; border:1px solid #373737;}
@@ -358,6 +359,7 @@
 .layer .agent_area .layer_btn{position: absolute; top:40px; right:0;}
 .layer .table_style3 .grade_area{padding-top:5px; padding-bottom: 5px;}
 .layer .btn_submit{margin-top:0;}
+.layer .visit_timeset .select_visit_area{margin-left:0;}
 /*추천매물,관심매물*/
 .header_inner .h_right_area {margin-right: 100px; padding-top:14px;}
 .header_inner .h_right_area .select_area{display: inline-block;}

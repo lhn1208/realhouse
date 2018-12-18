@@ -197,12 +197,12 @@ button:focus{outline:none;}
 .process .process_list li a p{font-size: 15px;}
 .process .process_list li a .txt_red{font-size: 15px;}
 .process .process_list li .date{position: absolute; top:25px; right: 34px; font-size: 15px; color:#9c9c9c;}
-.process .content .paging{text-align: center;}
-.process .content .paging button{margin:0 8px; padding:5px 13px 6px; color: #9c9c9c; border:1px solid #d6d6d6; border-radius:30px; font-family: "Noto Sans KR Medium";}
-.process .content .paging button:hover:not(.prev):not(.next),.process .content .paging .active{padding:6px 14px 7px; color: #fff; background:#378cff; border: none;}
-.process .content .paging .prev,.process .content .paging .next{margin:0; padding:17px 17px; background-repeat: no-repeat; background-position: center;}
-.process .content .paging .prev{margin-right:8px; background-image:url("../../images/sub/arr_paging_prev.png");}
-.process .content .paging .next{margin-left: 8px; background-image:url("../../images/sub/arr_paging_next.png");}
+.paging{margin-top:60px; text-align: center;}
+.paging button{margin:0 8px; padding:5px 13px 6px; color: #9c9c9c; border:1px solid #d6d6d6; border-radius:30px; font-family: "Noto Sans KR Medium";}
+.paging button:hover:not(.prev):not(.next),.paging .active{padding:6px 14px 7px; color: #fff; background:#378cff; border: none;}
+.paging .prev,.paging .next{margin:0; padding:17px 17px; background-repeat: no-repeat; background-position: center;}
+.paging .prev{margin-right:8px; background-image:url("../../images/sub/arr_paging_prev.png");}
+.paging .next{margin-left: 8px; background-image:url("../../images/sub/arr_paging_next.png");}
 .process .content .none{padding:140px 0 80px; text-align: center;}
 .process .content .none .style{color: #9c9c9c; margin-bottom: 40px;}
 /*하단 info*/
@@ -306,6 +306,13 @@ button:focus{outline:none;}
 .layer .table_style3 .info{line-height: 1;}
 .layer .layer_btn{text-align: right;}
 .layer .layer_btn .btn{width:150px;}
+.layer_list_area{width:842px;}
+.layer .select_visit_area{margin-left: 10px; display: inline-block; vertical-align: -15px;}
+.layer .select_top{background-color: #fff;}
+.layer_list_area .list_header{padding:10px; border:1px solid #e6e6e6; background-color: #f9fcfd; text-align: left;}
+.layer_list_area .list_box{height: 240px;; overflow-y:scroll; border:1px solid #e6e6e6; border-top:none;}
+.layer_list_area .layer_list li{position: relative; padding:18px 10px; border-bottom:1px solid #e6e6e6; text-align: left;}
+.layer_list_area .layer_list li .btn{position: absolute; top:10px; right:20px;}
 
 .help_area{position: relative;}
 .help_ico{margin-left: 6px; vertical-align: 1px;}
