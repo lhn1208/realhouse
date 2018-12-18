@@ -38,10 +38,11 @@
 
 .wrapper .search_cover{display: none; position: fixed; top:130px; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .wrapper .search_cover.active{display: block;}
+.layer .content_head{text-align: left; padding:0 20px 8px;}
 .layer_filter{display: none; position: absolute; top:140px; left:114px; width:903px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
 .layer_filter.active{display: block;}
-.layer_filter .content_head{text-align: left; margin: 25px 0 8px 28px;}
-.layer_filter .content_head .tit{display: inline-block; font-size: 24px; font-family: "Noto Sans KR Medium"; color: #373737;}
+.layer_filter .content_head {text-align: left; margin: 25px 0 8px 28px;}
+.layer_filter .content_head .tit,.layer .content_head .tit{display: inline-block; font-size: 24px; font-family: "Noto Sans KR Medium"; color: #373737;}
 .layer_filter .layer_section{margin-bottom:30px;}
 .layer_filter .table_style3 .table{width:845px;}
 .layer_filter .table_style3 .table td{padding-top:10px; padding-bottom:10px;}
@@ -93,6 +94,8 @@
 .inner_option{margin-bottom: 10px; padding:10px 25px 20px; border-bottom:1px solid #e6e6e6; text-align: left;}
 .inner_option .btn_type1{width:86px; margin-bottom: 8px;}
 .layer_filter .filter_reset_area{margin-bottom: 10px; margin-right:30px;  text-align: right;}
+.select_area.visit_req_select{padding-bottom:16px;}
+.select_area.visit_req_select .select_top{width:682px; color:#6d6d6d; background-color: #f9f9f9;}
 
 .offer_detail{position: relative; width:800px; margin:0 auto; padding-top:56px;}
 .offer_detail .btn_close{position: fixed; top:130px; right:478px; width:59px; height: 59px; background:url("../../images/sub/ico_close_w59.jpg") no-repeat; z-index:100;}

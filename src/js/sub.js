@@ -42,7 +42,6 @@ $(document).ready(function(){
         
     })
 
-
     $selectList_link.click(function(){
         var $btnVal=$(this).text();
         $(this).parent().siblings($selectTop).text($btnVal);
@@ -116,7 +115,6 @@ $(document).ready(function(){
             $(".tooltip_box").removeClass("open");
          } 
     });
-
 
     //1대1문의
     $(".request_area").hide();
