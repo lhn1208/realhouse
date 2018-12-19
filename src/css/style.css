@@ -461,3 +461,16 @@
 .custom_cont .sch_history .btn{position: absolute; top:10px; right:20px;}
 .custom_cont .sch_area .visit_area{padding-top:30px;}
 .custom_cont .sch_area .memo{padding:30px 0;}
+
+.all_offer.recomm_offer .header{position: relative; color: #fff; cursor: pointer;  background:url("../../images/sub/bg_items_header.png") no-repeat #0ec4bf 422px 25px;}
+.all_offer.recomm_offer .header.active{background-color: #3399ff; background-image: none;}
+.all_offer.recomm_offer .items_area{height: auto;}
+.all_offer.recomm_offer .items_list{margin-top:0;}
+.all_offer.recomm_offer .items_area:last-of-type .items_list{padding-bottom: 5px;}
+
+.alarm_list li:first-child{border-top:1px solid #e6e6e6;}
+.alarm_list li{height: 86px;; padding:14px; line-height: 1.8; border:1px solid #e6e6e6; border-top:none; background: url("../../images/sub/bg_alarm.png") no-repeat right 20px center;}
+.alarm_list .alarm_type{color: #373737; font-size: 16px;}
+.alarm_list .date{margin-left: 15px;}
+.alarm_list .alarm_cont{font-family: "Noto Sans KR Light"; }
+.alarm_manage.no_items{line-height:5; color: #9c9c9c; border:1px solid #e6e6e6; text-align: center;}

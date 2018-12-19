@@ -169,8 +169,11 @@ button:focus{outline:none;}
 .items_list .item_info .locate{text-overflow:ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
 .items_list li .item_head{position: relative; padding:15px 18px; font-size: 20px; color: #000; background-color: #fdc689;}
 .items_list li .item_head .desc{position:absolute; top:20px; right: 10px; color: #373737;}
+.items_list li .item_head.bg_style{background-color:#f7941d; color: #fff;}
+.items_list li .item_head.bg_style .desc{color: #fff;}
 .items_list li .item_info.no_img{padding-left: 10px;}
 .items_list .item_info.no_img .mark{width:auto;}
+.items_list li .item_info.no_img .locate{padding-bottom: 10px;}
 .all_offer .items_list li:hover{background-color:#fdfdfd;}
 .items_list li .item_box{display: block; position: relative; padding:3px 5px 10px 8px;}
 .items_list li .visit_req{position: relative; height: 56px;; padding-left: 8px; line-height: 3.3; color: #373737; background-color: #f9fcfd; border-top:1px solid #e6e6e6;}
@@ -379,4 +382,3 @@ button:focus{outline:none;}
 .custom_cont li .date{float:right; color: #9c9c9c;}
 .custom_cont .request_area,.custom_cont .sch_area{line-height: 2;}
 .custom_cont .request_cont,.custom_cont .sch_cont{padding:45px 18px; border-top:1px solid #e6e6e6; }
-

@@ -115,25 +115,46 @@ $(document).ready(function(){
          } 
     });
 
-    //1대1문의
+    //1대1문의,일정관리 슬라이드
     var targetArea= $(".request_area,.sch_area");
+    var speed=300;
     targetArea.hide();
     $(".custom_cont li a").click(function(){
         var $reqArea=$(this).next(targetArea);
-        $reqArea.slideToggle(300);
+        $reqArea.slideToggle(speed);
         $(".custom_cont li a").not(this).next(".request_area").slideUp(500);
         return false;
     });
-
-
+    //요청내역 슬라이드
     $(".detail_view .link_style").click(function() {
         var $DetailBox=$(this).parent().next(".detail_box");
-        $DetailBox.slideToggle(300);
+        $DetailBox.slideToggle(speed);
         return false;
     });
     $(".agent_box .btn_close").click(function(){
-        $(this).parent().slideUp(300);
+        $(this).parent().slideUp(speed);
         return false;
+    })
+
+    //추천매물
+    var $itemsArea= $(".recomm_offer .items_area");
+    $itemsArea.hide();
+    $(".recomm_offer .header").click(function(){
+        var items=$(this).next(".items_area");
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            items.slideUp(speed);
+        }else{
+            $(this).addClass("active");
+            items.slideDown(speed);
+        }
+    })
+    var item;
+    $itemsArea.each(function(i){
+        itemH=$(this).outerHeight();
+       if(itemH>600){
+           $(this).css("height","600px");
+       }
     })
    
 });
