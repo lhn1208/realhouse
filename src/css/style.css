@@ -450,9 +450,9 @@
 .offer_picture ul li .img_area a{display: inline-block; position: absolute; width:24px; height:24px; background-repeat: no-repeat;}
 .offer_picture ul li .img_area .delete{top:0; right:0; background-image: url("../../images/sub/pick_delete.png");}
 .offer_picture ul li .img_area .reset{left:0; bottom:0; background-image: url("../../images/sub/pick_reset.png");}
+/* 일정관리 */
 .schedule_box .tit{color: #5f5f5f;}
 .schedule_box .icon_type1{padding:2px 18px; line-height: 1.3; text-align: center;}
-
 .schedule_box .custom_cont .sch_cont{padding:15px 20px;}
 .custom_cont .reply_cont{padding:15px 18px;}
 .custom_cont .reply_cont_head:after{display: block; content:""; clear: both;}
@@ -461,16 +461,27 @@
 .custom_cont .sch_history .btn{position: absolute; top:10px; right:20px;}
 .custom_cont .sch_area .visit_area{padding-top:30px;}
 .custom_cont .sch_area .memo{padding:30px 0;}
-
+/* 추천매물 상세페이지 */
 .all_offer.recomm_offer .header{position: relative; color: #fff; cursor: pointer;  background:url("../../images/sub/bg_items_header.png") no-repeat #0ec4bf 422px 25px;}
 .all_offer.recomm_offer .header.active{background-color: #3399ff; background-image: none;}
 .all_offer.recomm_offer .items_area{height: auto;}
 .all_offer.recomm_offer .items_list{margin-top:0;}
 .all_offer.recomm_offer .items_area:last-of-type .items_list{padding-bottom: 5px;}
-
+/* 알림 */
 .alarm_list li:first-child{border-top:1px solid #e6e6e6;}
 .alarm_list li{height: 86px;; padding:14px; line-height: 1.8; border:1px solid #e6e6e6; border-top:none; background: url("../../images/sub/bg_alarm.png") no-repeat right 20px center;}
 .alarm_list .alarm_type{color: #373737; font-size: 16px;}
 .alarm_list .date{margin-left: 15px;}
 .alarm_list .alarm_cont{font-family: "Noto Sans KR Light"; }
 .alarm_manage.no_items{line-height:5; color: #9c9c9c; border:1px solid #e6e6e6; text-align: center;}
+
+.offer_notify .table .text_area{height: 260px;}
+/* 오픈이벤트 */
+.member_event_info{margin-bottom: 44px;}
+.member_event_info .table thead th, .member_event_info .table thead td{padding:30px 20px; font-size: 18px;}
+.member_event_info .table tbody th, .member_event_info .table tbody td{padding:20px;}
+.member_event_info .table thead td .txt_blue,.member_event_info .table thead td .txt_red2{font-size: 18px;}
+.member_event_info .table .member_info th,.member_event_info .table .member_info td{background-color: #fffbfb;}
+.member_event_info .table .name{font-size: 20px;}
+.event_present .table_style1.type .table th,.event_present .table_style1.type .table td{text-align: center; border:none;}
+.event_present .table_style1.type .table tfoot td{text-align: right; background-color:#fffbfb}
