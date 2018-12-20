@@ -110,7 +110,7 @@ button:focus{outline:none;}
 .view_area .slide_box .item .box_border_wrap{padding:10px;}
 .view_area .slide_box .item:hover .box_border_wrap{box-shadow: 1px 1px 8px 1px #d6d6d6;}
 .view_area .item .img_area{display: block; width:249px; height: 151px; margin-bottom: 10px; overflow: hidden;}
-.view_area .item .tit{display: block; margin-bottom:4px; font-size:22px; font-weight: bold; color: #000;}
+.view_area .item .tit{display: block; margin-bottom:4px; font-size:22px; font-weight: 500; color: #000;}
 .view_area .item .desc{font-size: 14px;}
 .view_area .item .info{font-size: 14px; color: #5f5f5f;}
 .view_area .item .mark{width:270px; height: 20px; margin:8px 0; overflow: hidden;}
@@ -162,7 +162,7 @@ button:focus{outline:none;}
 .items_list .item_info{position: relative; padding-left: 175px; font-size: 14px; color: #5f5f5f;}
 .items_list .favor_ico{position: absolute; top:5px; right:5px; width:26px; height: 24px; background:url("../../images/sub/ico_favor_off.png") no-repeat; cursor: pointer;}
 .items_list .favor_ico.pick{ background:url("../../images/sub/ico_favor_on.png") no-repeat;}
-.items_list .item_info .tit{display: block; margin-bottom:4px; font-size:22px; font-weight: bold; color: #000;}
+.items_list .item_info .tit{display: block; margin-bottom:4px; font-size:22px; font-weight: 500; color: #000;}
 .items_list .item_info .mark{width:270px; height: 20px; margin:7px 0; overflow: hidden;}
 .items_list .item_info .mark span{display: inline-block; padding:0 10px; margin-right:5px; line-height: 1.6; font-size: 12px; color: #000; background-color:#e6e6e6; border-radius: 10px; vertical-align: top;}
 .items_list .item_info .mark span.type{font-weight: 500; background-color:#fdc689;}
@@ -215,11 +215,14 @@ button:focus{outline:none;}
 .info_box li{text-indent: -12px; padding-left: 12px; font-weight: 300;}
 .info_box .info_list li{text-indent: -8px; padding-left: 8px;}
 /*테이블*/
-.table_style1 .table{width:1150px; background:#fff; border: 1px solid #e6e6e6;}
-.table_style1 .table tr{border-top:1px solid #e6e6e6;}
-.table_style1 .table:first-child{border-top:none;}
-.table_style1 .table th,.table_style1 .table td{padding-top:18px; padding-bottom:18px; color: #373737;}
-.table_style1 .table th{font-size: 15px; background-color: #fdfdfd; border-left:1px solid #e6e6e6;  border-right:1px solid #e6e6e6; text-align: center;}
+.table_style1 .table{width:1150px; background:#fff;}
+.table_style1 .table thead th, .table_style1 .table thead td{border:1px solid #e6e6e6; border-bottom: none;}
+.table_style1 .table tbody tr th,.table_style1 .table tbody tr td{border:1px solid #e6e6e6; border-top: none;}
+.table_style1 .table tr{border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;}
+
+.table_style1 .table tr:first-child{border-top:1px solid #e6e6e6;;}
+.table_style1 .table th,.table_style1 .table td{padding-top:18px; padding-bottom:18px; color: #5f5f5f;}
+.table_style1 .table th{font-size: 15px; background-color: #fdfdfd; text-align: center;}
 .table_style1 .table td{padding-left:20px;}
 .table_style1 .bg_right_blue{background-color: #f9fcfd;}
 .table_style1 .table thead th,.table_style1 .table thead td,.table_style1.type thead tr th,.table_style1.type thead tr td{background-color: #f9fcfd;}
@@ -255,21 +258,21 @@ button:focus{outline:none;}
 .table td .btn_right .btn:first-of-type{margin-left: 0;}
 .table td .btn_right .btn{margin-left:8px;}
 .table input::placeholder,
-.table input::-webkit-input-placeholder,.table textarea::-webkit-input-placeholder{font-weight: 400; font-family: "Noto Sans KR",sans-serif; color: #9c9c9c;}
-.table input:-ms-input-placeholder,.table textarea:-ms-input-placeholder{font-weight: 400; font-family: "Noto Sans KR",sans-serif; color: #9c9c9c;}
-.table td.info{line-height: 2; font-size: 15px; font-weight: 300; font-family: "Noto Sans KR",sans-serif; color: #373737; background-color: #fffbfb;}
+.table input::-webkit-input-placeholder,.table textarea::-webkit-input-placeholder{font-weight: 400; color: #9c9c9c;}
+.table input:-ms-input-placeholder,.table textarea:-ms-input-placeholder{font-weight: 400; color: #9c9c9c !important;}
+.table td.info{line-height: 2; font-size: 15px; font-weight: 300;  color: #373737; background-color: #fffbfb;}
 .table td.info li{font-size: 15px; color: #373737;}
 .table td.info .txt_red{font-size: 15px; font-weight: 300;}
 .table td.info .txt_box1{padding:45px 0; font-weight: 300;}
 .table td.info .txt_box2{padding-top:12px; border-top:1px dashed #373737;}
-.table td.info{line-height: 2; font-size: 15px; font-weight: 300; font-family: "Noto Sans KR",sans-serif; color: #373737; background-color: #fffbfb;}
+.table td.info{line-height: 2; font-size: 15px; font-weight: 300;  color: #373737; background-color: #fffbfb;}
 .table td.info li{font-size: 15px; font-weight: 300; padding-left: 16px; text-indent: -16px;}
 .table td.info .txt_red{font-size: 15px; font-weight: 400;}
 .table td.info .txt_box1{padding:45px 0;}
 .table td.info .txt_box2{padding-top:12px; font-weight: 300; border-top:1px dashed #373737;}
 .table td.info .mar_t45{margin-top:45px;}
 .table td.info .desc_point{color: #ff6161; font-weight: 300; font-family: "Noto Sans KR",sans-serif;}
-.table .position{position: relative; display: block;}
+.table .position{position: relative;}
 .table input[type="text"],.table .input_name,.table textarea{display: inline-block; padding:0 12px; height: 36px; border:none; font-weight: 400; font-family: "Noto Sans KR",sans-serif; color: #373737;}
 .table input.border{border:1px solid #e6e6e6;}
 .table input[type="text"]:focus,.table textarea:focus{border:1px solid #373737;outline:none;z-index:1}
@@ -330,11 +333,6 @@ button:focus{outline:none;}
 .table .tooltip_table th,.table .tooltip_table td{padding-top:8px; padding-bottom: 8px;}
 .table td{text-align: left;}
 .table td.align_right{text-align: right;}
-<<<<<<< HEAD
-=======
-
-.tooltip .tooltip_info{line-height: 2;  font-family: "Noto Sans KR Light"; color:#373737;}
->>>>>>> parent of 9644181... no message
 
 .tooltip .tooltip_info{line-height: 2; font-family: "Noto Sans KR",sans-serif; color:#373737;}
 .tooltip .tooltip_info li{font-weight: 300;}
