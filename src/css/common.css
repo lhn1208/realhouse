@@ -4,11 +4,7 @@
 
 * {margin:0px; padding:0px; font-weight:normal; font-size:15px;}
 html {height:100%;}
-<<<<<<< HEAD
-body{height:100%; font-size: 16px; line-height: normal; color:#5f5f5f; font-family: "Noto Sans KR","돋움","Dotum"; font-weight: 400;}
-=======
 body{height:100%; font-size: 16px; line-height: normal; color:#5f5f5f; font-family: "Noto Sans KR",sans-serif,"돋움","Dotum"; font-weight: 400;}
->>>>>>> origin/master
 body *{box-sizing: border-box; }
 /*Reset*/
 h1, h2, h3, h4, h5, h6 ,h7 {font-weight:normal;}
