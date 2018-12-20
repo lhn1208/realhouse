@@ -330,6 +330,11 @@ button:focus{outline:none;}
 .table .tooltip_table th,.table .tooltip_table td{padding-top:8px; padding-bottom: 8px;}
 .table td{text-align: left;}
 .table td.align_right{text-align: right;}
+<<<<<<< HEAD
+=======
+
+.tooltip .tooltip_info{line-height: 2;  font-family: "Noto Sans KR Light"; color:#373737;}
+>>>>>>> parent of 9644181... no message
 
 .tooltip .tooltip_info{line-height: 2; font-family: "Noto Sans KR",sans-serif; color:#373737;}
 .tooltip .tooltip_info li{font-weight: 300;}
