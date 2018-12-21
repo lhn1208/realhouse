@@ -13,7 +13,7 @@
     "gulp-file-include": "^2.0.1",
     "gulp-html-tag-include": "^1.0.1",
     "gulp-minify-css": "^1.2.4",
-    "gulp-plumber": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1",
     "gulp.spritesmith": "^6.9.0"

@@ -134,7 +134,7 @@
 .offer_detail .offer_info{margin-bottom: 50px;}
 .offer_detail .offer_explain {margin-bottom:65px;}
 .offer_detail .offer_explain .explain_area{padding:15px; line-height: 2.1;}
-.offer_locate{margin-bottom: 80px;}
+.offer_locate{padding-bottom: 80px;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
 .offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
 .offer_locate .locate_box .map{position: relative; width:798px; height: 468px; overflow: hidden;}
@@ -422,6 +422,8 @@
 .agent_box .item_table .items .img_area{top:2px;}
 .agent_box .item_table .items .tit{margin-bottom:10px;}
 .agent_box .no_recomm .item_table tbody td{padding:20px; line-height: 2; color: #6d6d6d;}
+.agent_box .table .select_area:after,.agent_box .select_visit_area:after{display: none;}
+.agent_box .select_visit_area{overflow: hidden;}
 
 .present_manage.agent .present_table tr:nth-child(2n) th,.present_manage.agent .present_table tr:nth-child(2n) td{background-color: #fdfdfd;}
 .present_manage.agent .present_table tr:nth-child(3n) th,.present_manage.agent .present_table tr:nth-child(3n) td{background-color: #f9fcfd;}

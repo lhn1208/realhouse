@@ -156,5 +156,11 @@ $(document).ready(function(){
            $(this).css("height","600px");
        }
     })
-   
+    var agent = navigator.userAgent.toLowerCase();
+    console.log(agent);
+    if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+         //alert("인터넷익스플로러 브라우저입니다.");
+    
+    }
+        
 });
