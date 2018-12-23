@@ -9,6 +9,7 @@
         <title></title>
         <style>
           * {margin:0; padding:0; font-size:16px;}
+          .txt_red2{font-size: 12px;}
             body {margin:10px; background-color:#f8f8f8;}
             .guide_box{margin-bottom: 60px;}
             h1.guide_tit {padding:10px 25px; margin-bottom: 20px; font-size:18px; color:#000; font-family:'Noto Sans KR Regular'; background:#eee; border-top:2px solid #000; border-bottom:2px solid #000;font-weight:bold;}
@@ -260,9 +261,10 @@
                 </table>
             </div>
         </div>
+        <!--옵션-->
         <div class="guide_box">
             <h1 class="guide_tit">옵션</h1>
-            <div class="comment">* [case1] 버튼: 테이블 td에 position클래스명 추가시 relative 속성 적용.
+            <div class="comment">* [case1_1] 버튼: 테이블 td에 position클래스명 추가시 relative 속성 적용.
                 div.btn_area 추가시 right 영역으로 aboluste 됨<br>               
             </div>
             <div class="table_style3">
@@ -294,12 +296,98 @@
                     <div class="btn_right"><button class="btn btn_setting">변경</button></div>
                 </td>
             </xmp>
-            
+            <div class="comment">* [case1_2] 버튼: 테이블 thead에 th or td안 div.position클래스명 추가시 relative 속성 적용.
+                div.btn_area 추가시 right 영역으로 aboluste 됨. thead일 경우 th_right클래스 추가
+                <p class="txt_red2">- thead에 th or td에 position:relative적용시 테이블 border가 정상적으로 적용이 안됨. 
+                 th or td안 div.psition적용해야 함.</p>              
+            </div>
+            <div class="table_style1 type">
+                <table class="table" summary="">
+                    <colgroup>  
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td colspan="5">
+                                <div class="position">
+                                     테이블 헤더
+                                    <div class="btn_right th_right">
+                                        <button class="btn_round cancel">계약 해지</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <xmp>
+                <td colspan="5">
+                    <div class="position">
+                        테이블 헤더
+                        <div class="btn_right th_right">
+                            <button class="btn_round cancel">계약 해지</button>
+                        </div>
+                    </div>
+                </td>
+            </xmp>
+            <div class="comment">* [case1_3] 링크 or 텍스트: 테이블 td에 position클래스명 추가시 relative 속성 적용.
+                div.right_area 추가시 right 영역으로 aboluste 됨<br>               
+            </div>
+            <div class="table_style3">
+                <table class="table" summary="이름,이메일,휴대전화,비밀번호 테이블입니다.">
+                    <colgroup>  
+                        <col width="14%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="position">이름
+                                <div class="right_area">오른쪽 영역</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <xmp>
+                <td class="position">이름
+                    <div class="right_area">오른쪽 영역</div>
+                </td>
+            </xmp>
+            <div class="comment">* [case1_4] 링크 or 텍스트: 테이블 thead에 th or td안 div.position클래스명 추가시 relative 속성 적용.
+                div.right_area 추가시 right 영역으로 aboluste 됨. thead일 경우 th_txt_right클래스 추가
+                <p class="txt_red2">- thead에 th or td에 position:relative적용시 테이블 border가 정상적으로 적용이 안됨. 
+                 th or td안 div.psition적용해야 함.</p>              
+            </div>
+            <div class="table_style1 type">
+                <table class="table" summary="">
+                    <colgroup>  
+                        <col width="14%">
+                        <col width="*">
+                        <col width="12%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td>
+                                <div class="position">
+                                    테이블 헤더
+                                    <div class="right_area th_txt_right">오른쪽 영역</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <xmp>
+                <td>
+                    <div class="position">
+                        테이블 헤더
+                        <div class="right_area th_txt_right">오른쪽 영역</div>
+                    </div>
+                </td>
+            </xmp>
             <div class="comment">* [case2] 테이블안에 버튼이 있는 경우 tr에 pd_style클래스 추가시 패딩 위 아래 10px로 변경 됨(기존 패딩 20px)              
             </div>
             <div class="table_style2 type">                       
-                <table class="table" summary="이전 의뢰 부동산 테이블 입니다.">
-                    <caption>이전 의뢰 부동산</caption>
+                <table class="table">
                     <colgroup>  
                         <col width="14%">
                         <col width="*">
@@ -376,6 +464,7 @@
                     </table>
                 </div>
             </div>
+           
         </div>
 
     </body>

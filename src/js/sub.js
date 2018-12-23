@@ -79,20 +79,25 @@ $(document).ready(function(){
      $layer.css("top",top+"px");
 
      //매물header
-     var $offer_header=$(".all_offer.type .header");
-     var $recomm_header=$(".all_offer.type .header:first-of-type");
-     var $favor_header=$(".all_offer.type .header.h_favor");
+     var $offer_header=$(".all_offer.pick_offer .header");
+     var $recomm_header=$(".all_offer.pick_offer .header:first-of-type");
+     var $favor_header=$(".all_offer.pick_offer .header.h_favor");
      if($offer_header.length){
-        var headerT=$recomm_header.offset().top;
-        var headerT_favor=$favor_header.offset().top -70;
-        $(".all_offer.type .offer_inner").scroll(function(){
-            var sct=$(".all_offer.type .offer_inner").scrollTop();
-            if(headerT <= sct && headerT_favor>sct){
+        var headerT=$recomm_header.offset().top;//추천매물헤더
+        var headerT_favor=$favor_header.offset().top -70;//관심매물헤더
+        $(".all_offer.pick_offer .offer_inner").scroll(function(){
+            var sct=$(".all_offer.pick_offer .offer_inner").scrollTop();
+            if(headerT < sct && headerT_favor>sct){
                 $recomm_header.css("position","fixed");
                 $favor_header.removeAttr("style");
+                $(".pick_offer .items_area:first-of-type .items_list").css("padding-top","60px")
             }else if(headerT_favor<=sct){
                 $favor_header.css({"position":"fixed","top":"69px"});
                 $recomm_header.css("position","relative");
+            }
+            if(sct==0){
+                $recomm_header.css("position","relative");
+                $(".pick_offer .items_area:first-of-type .items_list").removeAttr("style");
             }
         })
     }
@@ -136,11 +141,11 @@ $(document).ready(function(){
         return false;
     })
 
-    //추천매물
-    var $itemsArea= $(".recomm_offer .items_area");
-    $itemsArea.hide();
+    //추천매물 슬라이드
+    var $itemsArea= $(".recomm_offer .slide_box");
+    $itemsArea.slideUp();
     $(".recomm_offer .header").click(function(){
-        var items=$(this).next(".items_area");
+        var items=$(this).next(".slide_box");
         if($(this).hasClass("active")){
             $(this).removeClass("active");
             items.slideUp(speed);
@@ -149,18 +154,21 @@ $(document).ready(function(){
             items.slideDown(speed);
         }
     })
-    var item;
-    $itemsArea.each(function(i){
-        itemH=$(this).outerHeight();
-       if(itemH>600){
-           $(this).css("height","600px");
-       }
+    //매물높이 계산
+    $itemsArea.each(function(i,j){
+        itemH=$(this).find(".items_list").outerHeight();
+        $(this).find(".items_box").css("height",itemH);
+        if(itemH>550){
+            $(this).find(".items_area").css("height","100%");
+        }
     })
+    //브라우저 체크 ie아닐때
     var agent = navigator.userAgent.toLowerCase();
-    console.log(agent);
-    if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
-         //alert("인터넷익스플로러 브라우저입니다.");
-    
+    if(! ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) ){
+        $(".all_offer.recomm_offer .slide_box:nth-of-type(1) .box_inner").css("bottom","120px");
+        $(".all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner").css("bottom","180px");
+        $(".all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner").css("bottom","430px");
+        $(".all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner").css("bottom","120px");
     }
-        
+
 });

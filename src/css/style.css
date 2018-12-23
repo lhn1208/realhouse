@@ -97,7 +97,9 @@
 .select_area.visit_req_select{padding-bottom:16px;}
 .select_area.visit_req_select .select_top{width:682px; color:#6d6d6d; background-color: #f9f9f9;}
 
-.offer_detail{position: relative; width:800px; margin:0 auto; padding-top:56px;}
+.option .ico_offer_aera{display: none;}
+.offer_detail{position: relative;  height: 100%; overflow-x:hidden; overflow-y:scroll;}
+.offer_detail_inner{width:800px; margin:0 auto; padding-top:56px;}
 .offer_detail .btn_close{position: fixed; top:130px; right:478px; width:59px; height: 59px; background:url("../../images/sub/ico_close_w59.jpg") no-repeat; z-index:100;}
 .offer_main{width: 800px; margin-bottom: 50px;}
 .offer_main .view_list{position: relative; margin-bottom:70px;}
@@ -327,7 +329,7 @@
 .request_entry .table td .info .txt_red2{font-weight: 300;}
 .request_entry .chk_set{margin-left:32px;}
 .request_entry .chk_set.tenent_chk{margin-left:0;}
-.request_entry  .table td .sale_input{width:170px; margin-right: 4px;}
+.request_entry  .table td .sale_input{width:170px; margin-right: 4px; margin-left:0;}
 .request_entry  .table td .money_input{width:130px;}
 /*개인정보 설정*/
 .member_setting .table_style3{margin-bottom: 45px;}
@@ -367,11 +369,12 @@
 .header_inner .h_right_area {margin-right: 100px; padding-top:14px;}
 .header_inner .h_right_area .select_area{display: inline-block;}
 .header_inner .h_right_area .select_top{width:170px;}
-.offer_detail_wrap.type{margin-top:0;}
-.all_offer.type .header.h_favor{position: relative;}
-.all_offer.type .offer_inner{overflow-y: scroll; height: 100%;}
-.all_offer.type .items_area{overflow-y: hidden; height: auto;}
-.all_offer.type .header.h_favor+.items_area .items_list{margin-top:0;}
+.offer_detail_wrap.type{margin-top:0; padding-bottom: 69px;}
+.all_offer.pick_offer{bottom:73px;}
+.all_offer.pick_offer .header.h_favor{position: relative;}
+.all_offer.pick_offer .offer_inner{overflow-y: scroll; height: 100%;}
+.all_offer.pick_offer .items_area{overflow-y: hidden; height: auto;}
+.all_offer.pick_offer .header.h_favor+.items_area .items_list{margin-top:0;}
 
 /*중개사*/
 .agent_myspace .myspace{position: relative; padding-bottom:60px;}
@@ -467,11 +470,18 @@
 .custom_cont .sch_area .visit_area{padding-top:30px;}
 .custom_cont .sch_area .memo{padding:30px 0;}
 
+.recomm_offer_area{position: absolute; top:0; right:0; width:460px; height: 100%; z-index: 110; background:#fff;}
+.recomm_offer_area .all_offer{position: relative; width:454px; height: 100%;}
+.all_offer.recomm_offer .items_box{position: relative;}
+.all_offer.recomm_offer .items_box .box_inner{position: absolute; top:0px; right:0; bottom:200px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner{bottom:260px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner{bottom:510px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner{bottom:190px;}
+.all_offer.recomm_offer .items_area{height: auto;}
 .all_offer.recomm_offer .header{position: relative; color: #fff; cursor: pointer;  background:url("../../images/sub/bg_items_header.png") no-repeat #0ec4bf 422px 25px;}
 .all_offer.recomm_offer .header.active{background-color: #3399ff; background-image: none;}
-.all_offer.recomm_offer .items_area{height: auto;}
-.all_offer.recomm_offer .items_list{margin-top:0;}
-.all_offer.recomm_offer .items_area:last-of-type .items_list{padding-bottom: 5px;}
+.all_offer.recomm_offer .items_list{width:437px;}
+.all_offer.recomm_offer .items_list li{height: 185px;}
 
 .alarm_list li:first-child{border-top:1px solid #e6e6e6;}
 .alarm_list li{height: 86px;; padding:14px; line-height: 1.8; border:1px solid #e6e6e6; border-top:none; background: url("../../images/sub/bg_alarm.png") no-repeat right 20px center;}
@@ -479,3 +489,56 @@
 .alarm_list .date{margin-left: 15px;}
 .alarm_list .alarm_cont{font-family: "Noto Sans KR Light"; }
 .alarm_manage.no_items{line-height:5; color: #9c9c9c; border:1px solid #e6e6e6; text-align: center;}
+
+/* 오픈이벤트 */
+.member_event_info{margin-bottom: 44px;}
+.member_event_info .table thead th, .member_event_info .table thead td{padding:30px 20px; font-size: 18px;}
+.member_event_info .table tbody th, .member_event_info .table tbody td{padding:20px;}
+.member_event_info .table thead td .txt_blue,.member_event_info .table thead td .txt_red2{font-size: 18px;}
+.member_event_info .table .member_info th,.member_event_info .table .member_info td{background-color: #fffbfb;}
+.member_event_info .table .name{font-size: 20px;}
+.member_event_info.no_login .table .txt_blue,.member_event_info.no_login .table .txt_red2{vertical-align: 1px;}
+.event_present .table_style1.type2 .table th,.event_present .table_style1.type2 .table td{color: #373737;}
+.event_present .table_style1.type2 .table tfoot{border-bottom: 1px solid #e6e6e6;}
+.event_present .table_style1.type2 .table tfoot td{padding-right:80px; color:#373737; background-color:#fffbfb; text-align: right; }
+.event_present .table_style1.type2_1 .table th,.event_present .table_style1.type2_1 .table td{color:#373737;}
+.event_present.recomm .table_style1.type2_1 .table .desc,.event_present.recomm .table_style1.type2_1 .table .date{color: #5f5f5f;}
+
+.event_confirm {width:900px; margin:0 auto; padding-top:20%;}
+.event_confirm .ev_tit{display: inline-block; padding-left: 26px; font-size: 20px; color: #373737; vertical-align: -2px;}
+.event_confirm .event_box{height: 150px; margin-top:20px; padding:30px 0; line-height: 2; font-size: 16px; color: #373737; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; }
+.event_confirm .event_box.type{padding:58px 0;}
+.event_confirm .event_box strong{display: block; font-size: 20px; color:#373737;}
+.event_confirm .login_area{padding:44px 0;}
+.event_confirm .login_area .btn{width:285px; height:54px; margin:0 16px; font-size: 20px;}
+/*직원현황*/
+.point_table,.employer_table,.request_manage{margin-bottom:70px;}
+.employer_table .table_style1.type2_1 th,.employer_table .table_style1.type2_1 td{color:#373737;}
+.employer_table .table_style1.type2_1 .date{color:#5f5f5f; text-align: center;}
+
+.pop_calendar .table tr.pd_style th,.pop_calendar .table tr.pd_style td{padding:18px;}
+.pop_calendar .table tr th,.pop_calendar .table tr td{padding:14px 18px;}
+.pop_calendar .cal_area{position: relative; width:652px; margin:0 auto; box-sizing: border-box;}
+.pop_calendar .cal_area:after{display: block; content:"";}
+.pop_calendar .cal_area a{float:left; width:48px; height:30px; margin:0 3px; line-height: 2.1; font-size: 13px; color:#5f5f5f; border:1px solid #e6e6e6; text-align: center;}
+.pop_calendar .cal_area .control_btn{color:#fff; }
+.pop_calendar .cal_area .prev{padding-left:10px; background:url("../../images/sub/ico_cal_prev.png") 8px 9px #f7941d no-repeat;}
+.pop_calendar .cal_area .next{padding-right:10px; background:url("../../images/sub/ico_cal_next.png") 36px 9px #f7941d no-repeat;}
+.pop_calendar .cal_area .on{color:#fff; background-color: #92d050;}
+.pop_calendar .cal_area.day a{width:57px; margin:4px 4px;}
+.pop_calendar .cal_area.day .holiday{color: #ff6161;}
+.fee_pay_table .right_area.desc{top:26px; font-weight: 300;}
+.fee_pay_table tbody .pay_amt[type="text"]{width:200px; margin-right: 4px; text-align: right; color:#6d6d6d;}
+.fee_pay_table .table tbody .agent_select{padding:0; background-color:#ebebeb;}
+.fee_pay_table .table .control_btn{width:60px; height:40px; margin:0 2px; border:1px solid #e6e6e6; border-radius: 5px; background:url("../../images/sub/ico_control_up.png") 50% no-repeat;}
+.fee_pay_table .table .control_btn.down{background:url("../../images/sub/ico_control_down.png") 50% no-repeat;}
+.fee_pay_table tbody .agent_list{height:178px; overflow-y: scroll;}
+.fee_pay_table tbody .agent_list li:first-child{border-top:none;}
+.fee_pay_table tbody .agent_list li{ padding:18px 20px; position: relative; background-color: #fff; border-top:1px solid #e6e6e6;}
+.fee_pay_table tbody .agent_list li .btn{width:83px;}
+.fee_pay_table tbody .agent_list li .btn:after{top:14px; left:20px;}
+.fee_pay_table .table tbody td.info li{padding-left: 10px; text-indent: -15px;}
+.withdrawal_table .table .select_area,.withdrawal_table .table .select_top{width:310px;}
+.withdrawal_table .table  .account_num{width:310px;}
+.withdrawal_table .table_style3 .table th,.withdrawal_table .table_style3 .table td{padding-top:14px; padding-bottom:14px;}
+.withdrawal_table .table .btn_round{width:162px; margin-right: 6px;}
