@@ -473,10 +473,10 @@
 .recomm_offer_area{position: absolute; top:0; right:0; width:460px; height: 100%; z-index: 110; background:#fff;}
 .recomm_offer_area .all_offer{position: relative; width:454px; height: 100%;}
 .all_offer.recomm_offer .items_box{position: relative;}
-.all_offer.recomm_offer .items_box .box_inner{position: absolute; top:0px; right:0; bottom:200px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner{bottom:260px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner{bottom:510px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner{bottom:190px;}
+.all_offer.recomm_offer .items_box .box_inner{position: absolute; top:0px; right:0; bottom:126px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner{bottom:186px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner{bottom:436px;}
+.all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner{bottom:116px;}
 .all_offer.recomm_offer .items_area{height: auto;}
 .all_offer.recomm_offer .header{position: relative; color: #fff; cursor: pointer;  background:url("../../images/sub/bg_items_header.png") no-repeat #0ec4bf 422px 25px;}
 .all_offer.recomm_offer .header.active{background-color: #3399ff; background-image: none;}
