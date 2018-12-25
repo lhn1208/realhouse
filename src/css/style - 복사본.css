@@ -3,7 +3,8 @@
 .app_download{padding-top: 95px; background:url("../../images/main/app_bg.png") no-repeat 854px 0;}
 .app_download:after{display: block; content:""; clear: both;}
 .app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
-.app_download .txt{float: left; padding-top:8px;  font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 24px; color:#373737;}
+.app_download .txt{float: left; padding-top:8px; font-weight:500; font-size: 24px; color:#373737;}
+.app_download .desc,.app_download .desc .txt_red2{font-size: 20px; font-weight:500; }
 .app_download .app_area{float: right;}
 .app_download .app_area .app{display:inline-block;}
 .app_download .txt_red2{font-size: 24px;}
@@ -15,7 +16,7 @@
 .search_header:before{left:92px;}
 .search_header:after{right:100px;}
 .search_header .tit{position:absolute; top:12px; left:30px; font-size: 20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #010101;}
-.search_header .locate_links{float: left; display: inline-block; margin-left: 112px;}
+.search_header .locate_links{float:left; margin-left: 112px;}
 .search_header .locate{margin:10px; border:1px solid #e6e6e6; border-radius: 5px;}
 .search_header .locate .city,.search_header .locate .city_sub{position: relative; display: inline-block; padding:8px 18px 8px 24px; font-size: 15px; color: #373737;}
 .search_header .locate .city{padding-left: 26px; background: url("../../images/sub/ico_locate.png") 8px 9px no-repeat;}
