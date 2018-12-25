@@ -84,7 +84,7 @@
                 <div class="content_head3">
                     <h2 class="tit">의뢰정보</h2>
                 </div>
-                <div class="table_style3">
+                <div class="table_style3 request_entry">
                     <table class="table" summary="의뢰인 이름, 휴대전화, 방문시간 선택, 비공개 메모, 안내 테이블 입니다.">
                         <caption>방문시간 선택</caption>
                         <colgroup>  
@@ -96,8 +96,8 @@
                         <tbody>
                              <tr class="pd_style">
                                 <th><label for="client_name">의뢰인 이름<span class="txt_red">*</span></label></th>
-                                <td>
-                                    <input id="client_name" type="text" class="input_name" placeholder="이름 입력" value="홍길동">
+                                <td class="input_area">
+                                    <input id="client_name" type="text" class="input_name" placeholder="이름 입력">
                                 </td>
                                 <th>휴대전화<span class="txt_red">*</span></th>
                                 <td>
@@ -182,10 +182,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>비공개 메모</th>
-                                <td colspan="3">
-                                    <textarea class="text_area" placeholder="비공개 메모를 등록하시면 중개의뢰 현황의 메모에 나타납니다.&#13;&#10;&#13;&#10;비공개 메모는 등록자만 확인 가능합니다.">전세와 함께 월세도 알아봐 달라고 함</textarea>
-
+                                <th><label for="secret_memo">비공개 메모</label></th>
+                                <td colspan="3" class="input_area">
+                                    <div class="text_area_box">
+                                        <textarea class="text_area" id="secret_memo" placeholder="비공개 메모를 등록하시면 중개의뢰 현황의 메모에 나타납니다.&#13;&#10;&#13;&#10;비공개 메모는 등록자만 확인 가능합니다.">전세와 함께 월세도 알아봐 달라고 함</textarea>
+                                    </div>
                                 </td>
                             </tr>
                             <tr class="pd_style">

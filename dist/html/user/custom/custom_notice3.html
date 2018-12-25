@@ -40,7 +40,7 @@
                         <li class="active"><a href="#">1대1 문의</a></li>
                     </ul>
                 </div>
-                <div class="table_style3">
+                <div class="table_style3 ask_table">
                     <table class="table" summary="문의제목,문의 내용테이블 입니다.">
                         <caption>1대1 문의</caption>
                         <colgroup>
@@ -49,7 +49,7 @@
                         </colgroup>
                         <tbody>
                             <tr>    
-                                <th>문의 제목</th>
+                                <th><label for="request_tit">문의 제목</label></th>
                                 <td>
                                     <label for="request_tit">
                                         <input id="request_tit" type="text" class="input_request_tit" placeholder="문의 제목을 입력하십시오.">
@@ -57,9 +57,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>문의 내용</th>
-                                <td class="pd_r20">
-                                    <textarea class="text_area request_textarea" placeholder="문의 내용을 상세하게 기재하십시오."></textarea>
+                                <th><label for="request_cont">문의 내용</label></th>
+                                <td>
+                                    <div class="textarea_box">
+                                        <textarea id="request_cont" class="text_area request_textarea" placeholder="문의 내용을 상세하게 기재하십시오."></textarea>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
