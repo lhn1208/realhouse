@@ -41,13 +41,13 @@
                 </div>
                 <!--현재일정-->
                 <div class="content_section">
-                    <div class="table_style3">
+                    <div class="table_style3 schedule_entry">
                         <table class="table" summary="일정,제목,내용테이블 입니다.">
                             <caption>현재일정</caption>
                             <colgroup>
                                 <col width="14%">
                                 <col width="*">
-                            </colgroup>
+                            </colgroup> 
                             <tbody>
                                 <tr>    
                                     <th>일정</th>
@@ -132,14 +132,16 @@
                                 </tr>
                                 <tr>    
                                     <th><label for="schedule_tit">제목</label></th>
-                                    <td>
+                                    <td class="input_area">
                                         <input id="schedule_tit" type="text" class="input_request_tit" placeholder="제목을 입력하십시오.">
                                     </td>
                                 </tr>
                                 <tr>
                                     <th><label for="schedule_cont">내용</label></th>
-                                    <td class="pd_r20">
-                                        <textarea id="schedule_cont" class="text_area request_textarea" placeholder="내용을 상세하게 기재하십시오."></textarea>
+                                    <td class="pd_r20 input_area">
+                                        <div class="text_area_box">
+                                            <textarea id="schedule_cont" class="text_area request_textarea" placeholder="내용을 상세하게 기재하십시오."></textarea>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

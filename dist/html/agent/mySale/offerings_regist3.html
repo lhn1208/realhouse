@@ -192,8 +192,8 @@
                                             <label for="rent_type1"><span class="btn_radio">전세</span></label>
                                             <input id="rent_type2" type="radio" name="rent_type" class="radio_btn">
                                             <label for="rent_type2"><span class="btn_radio">월세</span></label>
-                                            <input id="rent_type2" type="radio" name="rent_type" class="radio_btn">
-                                            <label for="rent_type2"><span class="btn_radio">단기임대</span></label>
+                                            <input id="rent_type3" type="radio" name="rent_type" class="radio_btn">
+                                            <label for="rent_type3"><span class="btn_radio">단기임대</span></label>
                                             <div class="right_area">※ 거래구분 2종류 선택 가능(전세/단기임대 불가)   ※ 월세 금액조절은 총 3개</div>
                                         </td>                   
                                     </tr>
@@ -648,7 +648,7 @@
                                 </colgroup>
                                 <tbody>
                                     <th rowspan="2"><label for="offer_explain">매물 설명<span class="txt_red">*</span></label></th>
-                                    <td>
+                                    <td class="input_area">
                                         <textarea id="offer_explain" class="text_area offer_textarea" placeholder="매물에 대한 추가 설명을 적어주세요."></textarea>
                                         <div class="textarea_desc">
                                             ※ 500자 까지 작성하실 수 있습니다.
@@ -662,8 +662,10 @@
                                     </tr>
                                     <tr>
                                         <th><label for="secret_memo">비공개 메모</label></th>
-                                        <td>
-                                            <textarea id="secret_memo" class="text_area" placeholder="비공개 메모를 등록하시면 중개의뢰 현황의 메모에 나타납니다.&#13;&#10;&#13;&#10;비공개 메모는 등록자만 확인 가능합니다."></textarea>
+                                        <td class="input_area">
+                                            <div class="text_area_box">
+                                                <textarea id="secret_memo" class="text_area" placeholder="비공개 메모를 등록하시면 중개의뢰 현황의 메모에 나타납니다.&#13;&#10;&#13;&#10;비공개 메모는 등록자만 확인 가능합니다."></textarea>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
