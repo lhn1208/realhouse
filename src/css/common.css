@@ -44,6 +44,12 @@ button {display:inline-block; zoom:1; position:relative; overflow:visible; margi
 .checkbox +label .chk_set{display: inline-block; width:22px; height: 22px; margin-right:6px; border:2px solid #e6e6e6; border-radius: 5px; vertical-align: -5px;}
 .checkbox:checked +label .chk_set{border:none; background: url("../../images/common/ico_chek.png") #378cff no-repeat center; }
 .checkbox[disabled]:checked +label .chk_set{background: url("../../images/common/ico_chek_disable.png") #acacac no-repeat center;}
+/*radio checkbox style*/
+.chk_radio +label{font-size: 15px;}
+.chk_radio +label .chk_set{display: inline-block; width:22px; height: 22px; margin-right:6px; border:2px solid #e6e6e6; border-radius: 5px; vertical-align: -5px;}
+.chk_radio:checked +label .chk_set{border:none; background: url("../../images/common/ico_chek.png") #378cff no-repeat center; }
+.chk_radio[disabled]:checked +label .chk_set{background: url("../../images/common/ico_chek_disable.png") #acacac no-repeat center;}
+
 /*header*/
 #header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 120; transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
 #header.active{box-shadow: 0px 6px 10px -5px #d6d6d6;}

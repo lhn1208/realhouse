@@ -311,8 +311,8 @@ button:focus{outline:none;}
 .table .select_area>.select_area:first-of-type{margin-left: 0;}
 .table .select_area .select_top{color:#5f5f5f;}
 .table .pd_style td.pd_r0{padding-right:0;}
-.table .checkbox:first-of-type +label{margin-left:0;}
-.table .checkbox+label{margin-left:12px;}
+.table .checkbox:first-of-type +label,.table .chk_radio:first-of-type +label{margin-left:0;}
+.table .checkbox+label,.table .chk_radio +label{margin-left:12px;}
 .table td.style_btn{padding-bottom: 8px;}
 .table td.style_btn .btn_type1{margin-bottom:10px;}
 .table .right_area{position: absolute; top:18px; right: 20px;}
