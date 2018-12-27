@@ -118,8 +118,16 @@ $(document).ready(function(){
             $selectArea.removeClass("open");
             $(".tooltip_box").removeClass("open");
          } 
+        
     });
-
+    //필터 창 닫힘
+    // $("#header,.search_header:not(.select_filter),.wrapper .search_cover").click(function(){ 
+    //     if($(".layer_filter").hasClass("active")){
+    //         $(".wrapper .search_cover,.layer_filter").removeClass("active");
+    //     }
+    // })
+    
+    
     //1대1문의,일정관리 슬라이드
     var targetArea= $(".request_area,.sch_area");
     var speed=300;
@@ -154,72 +162,32 @@ $(document).ready(function(){
             items.slideDown(speed);
         }
     })
-    //매물높이 계산
-    $itemsArea.each(function(i,j){
-        itemH=$(this).find(".items_list").outerHeight();
-        $(this).find(".items_box").css("height",itemH);
-        if(itemH>550){
-            $(this).find(".items_area").css("height","100%");
-        }
-    })
-    //브라우저 체크 ie아닐때
-    var agent = navigator.userAgent.toLowerCase();
-    if(! ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) ){
-        $(".all_offer.recomm_offer .slide_box:nth-of-type(1) .box_inner").css("bottom","120px");
-        $(".all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner").css("bottom","180px");
-        $(".all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner").css("bottom","430px");
-        $(".all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner").css("bottom","120px");
-    }
 
     //평점
-        var $grade_list=$('.star_grade li');
-        /* 1. Visualizing things on Hover - See next part for action on click */
-         $grade_list.on('mouseover', function(){
-          var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
-         
-          // Now highlight all the stars that's not after the current hovered star
-          $(this).parent().children('li.star').each(function(e){
-            if (e < onStar) {
-              $(this).addClass('hover');
-            }
-            else {
-              $(this).removeClass('hover');
-            }
-          });
-          
-        }).on('mouseout', function(){
-          $(this).parent().children('li.star').each(function(e){
-            $(this).removeClass('hover');
-          });
-        });
-        
-        
-        /* 2. Action to perform on click */
-         $grade_list.on('click', function(){
-          var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-          var stars = $(this).parent().children('li.star');
-          
-          for (i = 0; i < stars.length; i++) {
-            $(stars[i]).removeClass('selected');
-          }
-          
-          for (i = 0; i < onStar; i++) {
-            $(stars[i]).addClass('selected');
-          }
-          
-          // JUST RESPONSE (Not needed)
-          var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
-          var msg = "";
-          if (ratingValue > 1) {
-              msg = "Thanks! You rated this " + ratingValue + " stars.";
-          }
-          else {
-              msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
-          }
-        });
-        
-        
-      
+        $('.star_grade span').on('click', function(){
+        $(this).parent().children('span').removeClass('on');
+        $(this).addClass('on').prevAll('span').addClass('on');
+        return false;
+    });
+
+
+    //매물높이 계산
+    // $itemsArea.each(function(i,j){
+    //     itemH=$(this).find(".items_list").outerHeight();
+    //     $(this).find(".items_box").css("height",itemH);
+    //     if(itemH>550){
+    //         $(this).find(".items_area").css("height","100%");
+    //     }
+    // })
+    //브라우저 체크 ie아닐때
+    // var agent = navigator.userAgent.toLowerCase();
+    // if(! ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) ){
+    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(1) .box_inner").css("bottom","120px");
+    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner").css("bottom","180px");
+    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner").css("bottom","430px");
+    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner").css("bottom","120px");
+    // }
+
       
     
 });

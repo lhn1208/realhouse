@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.app_download{padding-top: 95px; background:url("../../images/main/app_bg.png") no-repeat 854px 0;}
+.app_download{padding-top: 95px; background:url("../../images/main/app_bg.png") no-repeat 895px 0;}
 .app_download:after{display: block; content:""; clear: both;}
 .app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
 .app_download .txt{float: left; padding-top:8px;  font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 24px; color:#373737;}
@@ -78,6 +78,7 @@
 .control_area .control label{float:left; height: 40px; border-top:1px solid #e6e6e6;  border-bottom:1px solid #e6e6e6;}
 .control_area .control .input_control{float:left; width:136px; height:38px; border:none; text-align: center; }
 .control_area .control .input_control:disabled{background: #fff; color:#9c9c9c;}
+.control_area .control .input_control:focus{border:1px solid #373737;outline:none;z-index:1}
 .control_area .control.max{margin-left: 45px;}
 .control_area:before{display: block; content:""; position: absolute; top:20px; left:233px; width:12px; height:4px; background:url("../../images/sub/bg_filter.png") no-repeat;}
 .control_area .control_reset_area{position: absolute; top:0; right:2px;}
@@ -133,15 +134,17 @@
 .offer_main .info_area .info_head .icon_type1{padding:2px 10px 4px; margin-left: 5px; font-size: 15px; font-weight: 400; font-family: "Noto Sans KR"; background-color: #ff6161;}
 .offer_main .info_area .info_head .visit{display: inline-block; padding-right:23px; line-height: 1.8; background:url("../../images/sub/ico_howto.png") no-repeat right;}
 .offer_main .info_area .info_head .btn_area{display: inline-block;}
-.offer_main .info_area .info_head .btn_area .btn{margin-left: 8px; padding:9px 10px 11px 38px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161; border:none;}
+.offer_main .info_area .info_head .btn_area .btn{margin-left: 8px; padding:8px 10px 11px 36px; font-size:15px; color:#fff; border-radius:5px; background: url("../../images/sub/ico_btn_visit.png") no-repeat 10px #ff6161; border:none;}
 .offer_main .info_area .info_head .btn_area .type{background: url("../../images/sub/ico_btn_favor_off.png") no-repeat 10px #378cff;}
-.offer_main .info_area .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #378cff;}
+/* .offer_main .info_area .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #378cff;} */
+.offer_main .info_area .info_head .btn_area .type.on{color: #373737; background: url("../../images/sub/ico_btn_favor_on.png") 10px no-repeat; border:1px solid #ccc;}
+.offer_main .info_area .info_head .btn_area .btn.req_btn{color:#ff6161;  background: url("../../images/sub/ico_btn_complete.png") no-repeat 10px ; border:1px solid #ccc;}
 .offer_detail .offer_info{margin-bottom: 50px;}
 .offer_detail .offer_explain {margin-bottom:65px;}
 .offer_detail .offer_explain .explain_area{padding:15px; line-height: 2.1;}
 .offer_locate{padding-bottom: 80px;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
-.offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
+.offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #aaa2a2;}
 .offer_locate .locate_box .map{position: relative; width:798px; height: 468px; overflow: hidden;}
 .offer_locate .locate_box .ico_area{position: absolute; top:194px; left:50%; width: 90px; height: 90px; margin-left:-44px; padding-top: 30px; color: #fff; background:url("../../images/sub/ico_map_location.png") no-repeat; z-index: 50; text-align: center;}
 .offer_locate .locate_box .btn_map_area{position: absolute; bottom:10px; right:14px;}
@@ -263,8 +266,10 @@
 .mypresent .myagent_table .grade{float: left; margin-left:190px;}
 .mypresent .myagent_table .grade em{float: left;}
 .mypresent .myagent_table .grade .star_grade {float:right; padding-top:4px;}
-.mypresent .myagent_table .grade .star_grade li{width:14px; height:13px; margin-left: 4px; background: url("../../images/sub/grade_star_small.png") no-repeat;}
-.mypresent .myagent_table .grade .star_grade li span{height: 13px; background: url("../../images/sub/grade_star_small_on.png") no-repeat;}
+
+
+.mypresent .myagent_table .grade .star_grade span{width:14px; height: 13px; margin-left: 4px; background: url("../../images/sub/grade_star_small.png") no-repeat;}
+.mypresent .myagent_table .grade .star_grade span.on{background: url("../../images/sub/grade_star_small_on.png") no-repeat;}
 
 .mypresent .pop_help{display: none; position: absolute; top:175px; left:0; z-index: 140;}
 .mypresent .pop_help.active{display: block;}
@@ -399,7 +404,7 @@
 .header_inner .h_right_area .select_top{width:170px;}
 .offer_detail_wrap.type{margin-top:0; padding-bottom: 69px;}
 .all_offer.pick_offer{bottom:73px;}
-.all_offer.pick_offer .header.h_favor{position: relative; background-color:#bae68b;}
+.all_offer.pick_offer .header.h_favor{position: relative; background-color:#92d050;}
 .all_offer.pick_offer .offer_inner{overflow-y: scroll; height: 100%;}
 .all_offer.pick_offer .items_area{overflow-y: hidden; height: auto;}
 .all_offer.pick_offer .header.h_favor+.items_area .items_list{margin-top:0;}
