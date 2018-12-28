@@ -148,7 +148,7 @@ button:focus{outline:none;}
 .all_offer .items_area{position: relative; height: 100%; overflow-x: hidden; overflow-y: scroll;}
 .offer_detail_wrap{height: 100%; margin-right: 460px; margin-top:130px; padding-bottom:130px;}
 .offer_none_wrap,.all_offer .offer_none_wrap{height: auto; }
-.offer_wrap .offer_none{padding-top:250px; min-height: 820px; text-align: center;}
+.offer_wrap .offer_none{padding:250px 0 560px; min-height: 820px; text-align: center;}
 .all_offer .header{width:100%; padding:18px; font-size: 16px; font-weight:500; color: #fff; background:#0ec4bf; z-index: 100;}
 .all_offer .header .cnt{font-size: 16px; color: #ff6161;}
 .all_offer .header .desc{margin-left:16px; font-size: 15px; font-weight: 400; color: #000;}

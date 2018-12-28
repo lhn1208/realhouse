@@ -120,14 +120,22 @@ $(document).ready(function(){
          } 
         
     });
+
     //필터 창 닫힘
-    // $("#header,.search_header:not(.select_filter),.wrapper .search_cover").click(function(){ 
-    //     if($(".layer_filter").hasClass("active")){
-    //         $(".wrapper .search_cover,.layer_filter").removeClass("active");
-    //     }
-    // })
-    
-    
+    $("#header,.wrapper .search_cover").click(function(){ 
+        if($(".layer_filter").hasClass("active")){
+            $(".wrapper .search_cover,.layer_filter").removeClass("active");
+        }
+    })
+
+    $(".search_header").click(function(e){
+        //console.log(e.target.className);
+        if(!((e.target.className=='select_top') || (e.target.className=='city_sub') || (e.target.className=='city')
+        || (e.target.className=='offer_type') || (e.target.className=='deal_type') || (e.target.className=='reset')))
+        { $(".wrapper .search_cover,.layer_filter").removeClass("active");}
+       
+    })
+
     //1대1문의,일정관리 슬라이드
     var targetArea= $(".request_area,.sch_area");
     var speed=300;
