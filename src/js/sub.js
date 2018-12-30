@@ -77,29 +77,82 @@ $(document).ready(function(){
     var layerH= $layer.outerHeight();
     var top = Math.ceil((window.screen.height - layerH)/2)-70;
      $layer.css("top",top+"px");
+    
+    
+    function headerChg(target){
+        $offer_header.text(target.text());
+        var bgColor=target.css("background-color");
+        $offer_header.css("background-color",bgColor);
+    }
 
-     //매물header
-     var $offer_header=$(".all_offer.pick_offer .header");
-     var $recomm_header=$(".all_offer.pick_offer .header:first-of-type");
-     var $favor_header=$(".all_offer.pick_offer .header.h_favor");
-     if($offer_header.length){
-        var headerT=$recomm_header.offset().top;//추천매물헤더
-        var headerT_favor=$favor_header.offset().top -70;//관심매물헤더
-        $(".all_offer.pick_offer .offer_inner").scroll(function(){
-            var sct=$(".all_offer.pick_offer .offer_inner").scrollTop();
-            if(headerT < sct && headerT_favor>sct){
-                $recomm_header.css("position","fixed");
-                $favor_header.removeAttr("style");
-                $(".pick_offer .items_area:first-of-type .items_list").css("padding-top","60px")
-            }else if(headerT_favor<=sct){
-                $favor_header.css({"position":"fixed","top":"69px"});
-                $recomm_header.css("position","relative");
-            }
-            if(sct==0){
-                $recomm_header.css("position","relative");
-                $(".pick_offer .items_area:first-of-type .items_list").removeAttr("style");
-            }
-        })
+   //추가 방문 요청 함수
+   function visit_headerChg($h_tit,$h_desc,target){
+    $offer_h_tit.text($h_tit.text());
+    $offer_h_desc.text($h_desc.text());
+    var bgColor=target.css("background-color");
+    $offer_header.css("background-color",bgColor);
+    }
+
+    //매물header
+    var $offer_header=$(".all_offer.pick_offer>.header"),
+    $pickOffer=$(".all_offer.pick_offer .offer_inner"),
+    $items_f_header=$pickOffer.find(".header:first-of-type"),
+    $items_header=$pickOffer.find(".header");
+    
+    var cal_num=120, bottom=192;
+
+    //추가 방문 요청
+    var $offer_h_tit=$offer_header.find(".h_tit"),
+        $offer_h_desc=$offer_header.find(".h_desc"),
+        $h_tit=$items_f_header.find(".h_tit"),
+        $h_desc=$items_f_header.find(".h_desc");
+
+    if($(".all_offer.pick_offer").hasClass("favor")==true){
+        //추가 방문 요청일때만
+        cal_num=0,bottom=134;
+    }
+    if($items_header.length){
+        $pickOffer.scroll(function(){
+            var sct=$pickOffer.scrollTop();
+            $offer_header.css("display","block");
+            $(".all_offer.pick_offer").css("bottom",bottom+"px");
+            $items_header.each(function(i){
+                var prevAll_items_h;
+                
+                var items_h=$(this).next().outerHeight();
+                //해당 헤더 이전  전체 높이 값
+                if(!i==0){
+                    prevAll_items_h=0;
+                    $(this).prevAll().each(function(i){
+                        prevAll_items_h += $(this).outerHeight();
+                    });
+                    prevAll_items_h=prevAll_items_h-cal_num;
+                }
+                else{prevAll_items_h=0}
+
+                var header_t=$(this).offset().top+prevAll_items_h;
+                if(header_t<=sct){
+                    //헤더변경
+                    //아이템갯수가 한개 이상일때 헤더 변경
+                    if(items_h>0){
+                        if($(".all_offer.pick_offer").hasClass("favor")==true){
+                            //추가 방문 요청일때만
+                            $h_tit=$(this).find(".h_tit"),
+                            $h_desc=$(this).find(".h_desc");
+                            visit_headerChg($h_tit,$h_desc,$(this));
+                        }else{ 
+                            headerChg($(this));
+                        }
+                    
+                    }//items_h>0
+                   
+                } else if(sct<60){
+                    $offer_header.removeAttr("style");
+                    $(".all_offer.pick_offer").removeAttr("style");
+                }
+            })
+        });
+        
     }
     //도움말
     $(".help_ico").click(function(){
@@ -127,7 +180,6 @@ $(document).ready(function(){
             $(".wrapper .search_cover,.layer_filter").removeClass("active");
         }
     })
-
     $(".search_header").click(function(e){
         //console.log(e.target.className);
         if(!((e.target.className=='select_top') || (e.target.className=='city_sub') || (e.target.className=='city')
@@ -156,21 +208,6 @@ $(document).ready(function(){
         $(this).parent().slideUp(speed);
         return false;
     })
-
-    //추천매물 슬라이드
-    var $itemsArea= $(".recomm_offer .slide_box");
-    $itemsArea.slideUp();
-    $(".recomm_offer .header").click(function(){
-        var items=$(this).next(".slide_box");
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-            items.slideUp(speed);
-        }else{
-            $(this).addClass("active");
-            items.slideDown(speed);
-        }
-    })
-
     //평점
         $('.star_grade span').on('click', function(){
         $(this).parent().children('span').removeClass('on');

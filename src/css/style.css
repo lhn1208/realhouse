@@ -144,7 +144,7 @@
 .offer_detail .offer_explain .explain_area{padding:15px; line-height: 2.1;}
 .offer_locate{padding-bottom: 80px;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
-.offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #aaa2a2;}
+.offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
 .offer_locate .locate_box .map{position: relative; width:798px; height: 468px; overflow: hidden;}
 .offer_locate .locate_box .ico_area{position: absolute; top:194px; left:50%; width: 90px; height: 90px; margin-left:-44px; padding-top: 30px; color: #fff; background:url("../../images/sub/ico_map_location.png") no-repeat; z-index: 50; text-align: center;}
 .offer_locate .locate_box .btn_map_area{position: absolute; bottom:10px; right:14px;}
@@ -160,11 +160,11 @@
 .offer_map .ico_offer_aera .cnt.on{position: relative; color: #ff5050; background-color: #fff;}
 .offer_map .ico_offer_aera .cnt.on:after{display:block; content:""; position: absolute; top:0; left:0; width:100%; height:100%; box-shadow: 0 0 0 4px #ff5050; border-radius: 50px;}
 .offer_map .ico_offer_aera .address{display: inline-block; padding:0 25px 0 12px; height: 36px; line-height:2.4; font-size:14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #464646; background-color: #fff; vertical-align: 4px; border-radius: 50px;}
-.map_control{position:absolute; top:35px; right:495px; background-color: #fff; border:1px solid #e6e6e6; border-radius: 5px;}
+.offer_map .map_control{top:35px; right:495px;}
+.map_control{position:absolute; top:14px; right:12px; background-color: #fff; border:1px solid #e6e6e6; border-radius: 5px;}
 .map_control button{display: block; width:57px; height: 54px; background-image:url("../../images/sub/bg_zoom_plus.png"); background-repeat:no-repeat; background-position: 20px 18px}
 .map_control .minus{position:relative; background-image:url("../../images/sub/bg_zoom_minus.png");}
 .map_control .minus:before{display:block; content:""; position:absolute; top:0; left:19px; width:20px; height:1px; background:#e6e6e6;}
-.offer_locate .map .map_control{top:14px; right:12px;}
 
 /*마이홈*/
 .myhome .myspace{position: relative; padding:107px 0 54px 110px}
@@ -200,7 +200,7 @@
 .new_request .request_entry .input_area{padding:0}
 .new_request .request_entry .input_name{width:100%; height: 60px;}
 .new_request .request_entry .text_area_box{height:120px;}
-.new_request .request_entry .input_name,.new_request .request_entry .text_area{padding:18px;}
+.new_request .request_entry .input_name{padding:18px;}
 
 .select_visit_area:after{display: block; content:""; clear: both;}
 .select_visit_area .select_area, .select_visit_area .select_visit{float:left; margin-right: 14px;}
@@ -239,13 +239,6 @@
 .more_info .link_more{padding-right:28px; color: #ff6161; background: url("./../../images/sub/arr_more_info.png") no-repeat 60px 6px;}
 .mypresent .req_btn .btn{width:200px; font-size: 20px;}
 .mypresent .myagent_area{margin-bottom: 55px;}
-.mypresent .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
-.mypresent .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; overflow: hidden;}
-.mypresent .myagent .agent_info{margin-left: 206px;}
-.mypresent .myagent .agent_info:after{display: block; content: ""; clear: both;}
-.mypresent .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}
-.mypresent .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
-.mypresent .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
 .mypresent .myagent_table {position: relative;}
 .mypresent .myagent_table .table thead th,.mypresent .myagent_table thead td{border-bottom: none; background-color: #f9fcfd;}
 .mypresent .myagent_table .table thead th{text-align: center}
@@ -261,12 +254,6 @@
 .mypresent .myagent_table .btn_round .btn_grade{padding:0 24px; background-color: #0ec4bf}
 .mypresent .myagent_table .add_req .btn_add_req{margin-left: 14px;}
 .mypresent .myagent_table .table .btn_cancel_area{top:-10px;}
-.mypresent .myagent_table .grade_area{overflow: hidden;}
-.mypresent .myagent_table .grade:first-of-type{margin-left:0;}
-.mypresent .myagent_table .grade{float: left; margin-left:190px;}
-.mypresent .myagent_table .grade em{float: left;}
-.mypresent .myagent_table .grade .star_grade {float:right; padding-top:4px;}
-
 
 .mypresent .myagent_table .grade .star_grade span{width:14px; height: 13px; margin-left: 4px; background: url("../../images/sub/grade_star_small.png") no-repeat;}
 .mypresent .myagent_table .grade .star_grade span.on{background: url("../../images/sub/grade_star_small_on.png") no-repeat;}
@@ -375,7 +362,6 @@
 .pop_info .btn_pro{width:600px; line-height:2.75; font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 20px; color:#fff; background-color:#92d050; border-radius: 5px;}
 .notice_area .right_btn.btn_close .btn{width:200px; font-size: 20px;}
 .notice_area .table .textarea_box,.notice_area .table .request_textarea{height: 170px;}
-.notice_area .table .request_textarea{padding:18px;}
 .notice_area .icon_type1{margin-left: 8px;}
 .notice_area .input_request_tit{width:100%;}
 .notice_area .btn_request_area{margin:15px 0; text-align: right;}
@@ -402,12 +388,15 @@
 .header_inner .h_right_area {margin-right: 100px; padding-top:14px;}
 .header_inner .h_right_area .select_area{display: inline-block;}
 .header_inner .h_right_area .select_top{width:170px;}
+.header_inner .client{float: left; line-height: 4.2; margin-left:38px; font-size: 16px; color: #378cff;}
 .offer_detail_wrap.type{margin-top:0; padding-bottom: 69px;}
-.all_offer.pick_offer{bottom:73px;}
+.all_offer.pick_offer{bottom:68px;}
+.all_offer.pick_offer>.header{display: none;}
 .all_offer.pick_offer .header.h_favor{position: relative; background-color:#92d050;}
-.all_offer.pick_offer .offer_inner{overflow-y: scroll; height: 100%;}
+.all_offer.pick_offer .offer_inner{overflow-y: scroll; height: 100%; background-color: #fff;}
 .all_offer.pick_offer .items_area{overflow-y: hidden; height: auto;}
 .all_offer.pick_offer .header.h_favor+.items_area .items_list{margin-top:0;}
+.all_offer.pick_offer.favor .offer_none{padding:55px 0; min-height: auto;}
 
 /*중개사*/
 .agent_box{margin-bottom:35px;}
@@ -457,7 +446,6 @@
 .schedule_manage .schedule_entry .input_area{padding:0;}
 .schedule_manage .schedule_entry .input_request_tit{width:100%; height:60px; padding:18px;}
 .schedule_manage .schedule_entry .text_area_box{height:120px;}
-.schedule_manage .schedule_entry .text_area{padding:18px;}
 .myhome.agent .myhome_box{position: relative; margin-bottom:35px; padding:16px 26px 12px; border:1px solid #e6e6e6; border-radius: 5px;}
 .myhome.agent .myhome_box .tit{font-size:20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #373737; }
 .myhome.agent .myhome_box .cnt{font-size: 20px; color: #ff6161;}
@@ -537,16 +525,19 @@
 
 .recomm_offer_area{position: absolute; top:0; right:0; width:460px; height: 100%; z-index: 110; background:#fff;}
 .recomm_offer_area .all_offer{position: relative; width:454px; height: 100%;}
-.all_offer.recomm_offer .items_box{position: relative;}
-.all_offer.recomm_offer .items_box .box_inner{position: absolute; top:0px; right:0; bottom:126px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner{bottom:186px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner{bottom:436px;}
-.all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner{bottom:116px;}
-.all_offer.recomm_offer .items_area{height: auto;}
-.all_offer.recomm_offer .header{position: relative; color: #fff; cursor: pointer;  background:url("../../images/sub/bg_items_header.png") no-repeat #0ec4bf 422px 25px;}
-.all_offer.recomm_offer .header.active{background-color: #3399ff; background-image: none;}
-.all_offer.recomm_offer .items_list{width:437px;}
-.all_offer.recomm_offer .items_list li{height: 185px;}
+.all_offer.recomm{bottom: 133px;}
+.all_offer.recomm .header{position: relative;}
+.all_offer.recomm .header.h_type1{background-color: #92d050;}
+.all_offer.recomm .header.h_type2{background-color: #ff6161;}
+.all_offer.recomm .header.h_type3{background-color: #378cff;}
+.all_offer.recomm .items_box{position: relative;}
+.all_offer.recomm .items_box .box_inner{position: absolute; top:0px; right:0; bottom:126px;}
+.all_offer.recomm .slide_box:nth-of-type(2) .box_inner{bottom:186px;}
+.all_offer.recomm .slide_box:nth-of-type(3) .box_inner{bottom:436px;}
+.all_offer.recomm .slide_box:nth-of-type(4) .box_inner{bottom:116px;}
+.all_offer.recomm .items_area{height: auto;}
+.all_offer.recomm .items_list{width:437px;}
+.all_offer.recomm .no_items{padding-top:240px; font-size: 18px; color: #6d6d6d; text-align: center;}
 
 .alarm_list li:first-child{border-top:1px solid #e6e6e6;}
 .alarm_list li{height: 86px;; padding:14px; line-height: 1.8; border:1px solid #e6e6e6; border-top:none; background: url("../../images/sub/bg_alarm.png") no-repeat right 20px center;}
@@ -608,3 +599,39 @@
 .amt_table .table  .account_num{width:310px;}
 .amt_table .table_style3 .table th,.amt_table .table_style3 .table td{padding-top:14px; padding-bottom:14px;}
 .amt_table .table .btn_round{width:162px; margin-right: 6px;}
+
+.offer_notify .text_area_box,.offer_notify .text_area_box .text_area{height: 275px;}
+.offer_notify .table .input_area{padding:0;}
+
+.locate_area{padding-top:50px;}
+.map_locate{border:1px solid #e6e6e6;}
+.map_locate .address{line-height: 4; padding:0 20px; color:#373737; border-bottom:1px solid #e6e6e6;}
+.map_locate .map{position: relative;}
+.map_locate .map .ico{position: absolute; top:350px; left:350px;}
+.offer_info_area .offer_detail_inner{padding-top:20px;}
+
+.grade_area{padding-top:50px;}
+.grade_area .agent_grade{position: relative; margin-bottom: 20px; border:1px solid #e6e6e6; border-radius: 5px;} 
+.agent_grade .total{position: relative; border-bottom: 1px solid #e6e6e6;}
+.agent_grade .total:after{display: block; content: ""; clear: both;}
+.agent_grade .agent_img{top:16px; left: 45px;;}
+.agent_grade .total .company{float:left; margin-left: 182px; padding:35px 0; font-size: 20px; color: #373737;}
+.agent_grade .total .address{margin-top: 16px; color: #5f5f5f;} 
+.agent_grade .total .score_list{float: right; position: relative; overflow: hidden; width:420px; padding-top:42px; padding-right: 18px; text-align: right;}
+.agent_grade .total .score_list li:first-child{position: absolute; top:50px; left:0; margin-left: 0; font-size: 25px;}
+.agent_grade .total .score_list li:first-child .point{font-size: 25px;}
+.agent_grade .total .score_list li{position: relative; margin-left: 105px; font-size: 20px; color: #373737;}
+.agent_grade .total .score_list li .point{font-size: 20px; color: #ff6161;}
+.agent_grade .grade_box{background-color: #fffbfb; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.grade_box .garde_list{text-align: center;}
+.grade_box .garde_list li:first-child{margin-left: 0;}
+.grade_box .garde_list li{display: inline-block; margin-left: 254px; line-height: 3; color: #373737; font-size: 16px;}
+.grade_box .garde_list li .point{font-size: 20px; color: #ff6161;}
+
+.tb_grade_area .grade.type{margin-left: 18px;}
+.tb_grade_area .grade.type .star_grade{padding-top:2px;}
+.tb_grade_area .grade.type .star_grade span{margin-left: 6px;}
+.grade_area +.info_box{margin-top: 65px;}
+.grade_table .table .mark{display: block; color: #373737;}
+.grade_table .table .point{font-size: 20px; color: #ff6161;}
+.grade_table .table .point.blue{color: #378cff;}
