@@ -214,25 +214,6 @@ $(document).ready(function(){
         $(this).addClass('on').prevAll('span').addClass('on');
         return false;
     });
-
-
-    //매물높이 계산
-    // $itemsArea.each(function(i,j){
-    //     itemH=$(this).find(".items_list").outerHeight();
-    //     $(this).find(".items_box").css("height",itemH);
-    //     if(itemH>550){
-    //         $(this).find(".items_area").css("height","100%");
-    //     }
-    // })
-    //브라우저 체크 ie아닐때
-    // var agent = navigator.userAgent.toLowerCase();
-    // if(! ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) ){
-    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(1) .box_inner").css("bottom","120px");
-    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(2) .box_inner").css("bottom","180px");
-    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(3) .box_inner").css("bottom","430px");
-    //     $(".all_offer.recomm_offer .slide_box:nth-of-type(4) .box_inner").css("bottom","120px");
-    // }
-
       
     
 });
