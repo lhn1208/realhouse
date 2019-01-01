@@ -66,7 +66,7 @@ button:focus{outline:none;}
 .radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
 .radio_btn.check:checked +label{padding-left: 16px; background-color: #ff6161;}
 .radio_btn.check:checked +label:after{display: block; content:""; clear: both; position: absolute; top:14px; left:32px; width: 11px; height:10px; background: url("../../images/sub/bg_chked.png") no-repeat;}
-
+.radio_btn.green:checked +label{background-color: #92d050;}
 /*header*/
 .sub_header{position: fixed; width:100%; background:#fff; border-bottom:1px solid #e6e6e6; z-index: 120;}
 .sub_header .header_inner,.header_section .header_inner{width:1150px; min-width: 1150px; height: 68px; margin:0 auto;}

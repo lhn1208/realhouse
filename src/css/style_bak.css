@@ -139,9 +139,9 @@
 /* .offer_main .info_area .info_head .btn_area .type.on{background: url("../../images/sub/ico_btn_favor_on.png") no-repeat 10px #378cff;} */
 .offer_main .info_area .info_head .btn_area .type.on{color: #373737; background: url("../../images/sub/ico_btn_favor_on.png") 10px no-repeat; border:1px solid #ccc;}
 .offer_main .info_area .info_head .btn_area .btn.req_btn{color:#ff6161;  background: url("../../images/sub/ico_btn_complete.png") no-repeat 10px ; border:1px solid #ccc;}
-.offer_detail .offer_info{margin-bottom: 50px;}
-.offer_detail .offer_explain {margin-bottom:65px;}
-.offer_detail .offer_explain .explain_area{padding:15px; line-height: 2.1;}
+.offer_detail_inner .offer_info{margin-bottom: 50px;}
+.offer_detail_inner .offer_explain {margin-bottom:65px;}
+.offer_detail_inner .offer_explain .explain_area{padding:15px; line-height: 2.1;}
 .offer_locate{padding-bottom: 80px;}
 .offer_locate .locate_box{border:1px solid #e6e6e6;}
 .offer_locate .locate_box .locate_header{padding: 20px 32px; border-bottom:1px solid #e6e6e6;}
@@ -357,9 +357,11 @@
 .member_box .agent_picture .picture{display: inline-block; width:159px; height: 159px; border-radius: 80px; border:2px solid #e6e6e6; overflow: hidden; text-align: center;}
 .pop_info{width:700px;padding-bottom:40px;}
 .pop_info .tit_info{padding: 40px 0; font-size: 22px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #ff6161;}
-.pop_info .txt_info{margin-bottom: 52px; line-height:2; font-size: 16px; color: #373737;}
+.pop_info .txt_info{margin-bottom: 52px; padding:0 40px; line-height:2; font-size: 16px; color: #373737;}
 .pop_info .txt_info .txt_red2,.pop_info .txt_info .txt_blue{font-size: 16px;}
 .pop_info .btn_pro{width:600px; line-height:2.75; font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 20px; color:#fff; background-color:#92d050; border-radius: 5px;}
+.pop_notify .tit_info{font-size:30px; color: #9c9c9c;}
+.pop_notify .txt_info{text-align: left;}
 .notice_area .right_btn.btn_close .btn{width:200px; font-size: 20px;}
 .notice_area .table .textarea_box,.notice_area .table .request_textarea{height: 170px;}
 .notice_area .icon_type1{margin-left: 8px;}

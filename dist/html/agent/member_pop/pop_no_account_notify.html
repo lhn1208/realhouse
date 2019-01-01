@@ -3,33 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <include src="../include/set_css.html"></include>
-    <include src="../include/set_js.html"></include>
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/cycle2.min.js"></script>	
+
     <title>realhouse</title>
 </head>
 <body class="scroll_hidden">
-<include src="../include/header.html"></include>
+<header id="header">
+    <div class="header_inner">
+        <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+        <div class="h_right">
+            <nav id="nav">
+                <ul class="nav_menu">
+                    <li><a href="#">마이홈</a></li>
+                    <li><a href="#">매물검색</a></li>
+                    <li><a href="#">나의 매수</a></li>
+                    <li><a href="#">나의 매도</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="h_btn">알림2</a>
+            <a href="#" class="h_btn type">공인중개사</a>
+            <div class="member_area">
+                <!--로그인 전-->
+                <div class="member" id="member_login">
+                    <a href="#" class="login">로그인</a> · 
+                    <a href="#" class="join">회원가입</a>
+                </div>
+                <!--//로그인 전-->
+                <!--로그인시-->
+                <!-- <div class="member">
+                    <a href="#" class="name">
+                        홍길동님
+                    </a>
+                    <div class="login_layout">
+                        <ul>
+                            <li><a href="">내 계정 설정</a></li>
+                            <li><a href="">로그아웃</a></li>
+                        </ul>
+                    </div> 
+                </div> -->
+                <!--//로그인시-->
+            </div>
+        </div>
+    </div>
+</header>
 <div class="wrapper">
     <div class="main_cover active"></div>
-    <!---오픈-->
-    <div class="layer_member pop_info active">
+    <!--출금계좌 미등록 안내-->
+    <div class="layer_member pop_info pop_notify active">
         <a href="#" class="member_close"><span class="blind">닫기</span></a>
-        <h2 class="tit_info">2019년 5월 01일 [리얼하우스 정식 오픈]!!!</h2>
+        <h2 class="tit_info">출금계좌 미등록 안내</h2>
         <div class="txt_info">
-            정식 오픈일에 리얼하우스가 오픈되며 중개사님은 
-            <br>관리자 홈페이지 <span class="txt_blue">[리얼하우스 프로]</span>에서 회원가입, 매물등록, 공동중개 등
-            <br><span class="txt_red2">지금부터 모든 기능을 사용</span>하실 수 있습니다.
+            출금계좌가 <span class="txt_red2">미등록 상태</span>입니다.
+            <br>2019.05.01 정식오픈일 전까지 출금계좌를 등록하시기 바랍니다.
+            <br><br>정식오픈일부터 출금계좌가 미등록인 경우 <span class="txt_red2">매수/임차 및 매도/임대 온라인 중개의뢰</span>를 요청 
+            <br>받을 수 없으며 <span class="txt_red2">매물 등록 및 매수/임차 중개의뢰</span>를 등록하실 수 없습니다.
         </div>
-        <button class="btn_pro">리얼하우스프로 바로가기</button>
+        <button class="btn_pro">출금계좌 등록</button>
     </div>
-    <!---//오픈-->
+    <!--//출금계좌 미등록 안내-->
     <div id=main_container class="main_container">  
         <!--visual-->       
         <header class="main_visual">
             <div class="cycle-slideshow" data-cycle-slides=">div" data-cycle-fx="fadeout" data-cycle-timeout="4000" data-cycle-random="true">
-                <div class="slide" style="background-image:url(../../../images/main/visual1.jpg)"></div>
-                <div class="slide" style="background-image:url(../../../images/main/visual2.jpg)"></div>
-                <div class="slide" style="background-image:url(../../../images/main/visual3.jpg)"></div>                
+                <div class="slide" style="background-image:url(../../../../images/main/visual1.jpg)"></div>
+                <div class="slide" style="background-image:url(../../../../images/main/visual2.jpg)"></div>
+                <div class="slide" style="background-image:url(../../../../images/main/visual3.jpg)"></div>                
             </div>
             <div class="inner">  
                 <div class="content">
@@ -126,7 +173,7 @@
                         <div class="slide_box">
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">매매 3억5000</strong>
                                         <p class="desc">3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -137,7 +184,7 @@
                             </a>
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">전세 3억5000</strong>
                                         <p class="desc">3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -148,7 +195,7 @@
                             </a>
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">전세/월세 3억5000</strong>
                                         <p class="desc">3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -159,7 +206,7 @@
                             </a>
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">월세 1억5000/100</strong>
                                         <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -172,7 +219,7 @@
                         <div class="slide_box">
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">매매 3억5000</strong>
                                         <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -183,7 +230,7 @@
                             </a>
                             <a href="#" class="item">
                                 <div class="box_border_wrap">
-                                    <span class="img_area"><img src="../../../images/main/offering_img1.jpg"></span>
+                                    <span class="img_area"><img src="../../../../images/main/offering_img1.jpg"></span>
                                     <div class="info">
                                         <strong class="tit">매매 3억5000</strong>
                                         <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
@@ -262,8 +309,8 @@
                 <div class="box box_border_wrap">
                     <p class="txt">리얼하우스 앱을 다운받으세요!!!</p>
                     <div class="app_area">
-                        <a href="#" class="app"><img src="../../../images/main/app_google.png"></a>
-                        <a href="#" class="app"><img src="../../../images/main/app_appstore.png"></a>
+                        <a href="#" class="app"><img src="../../../../images/main/app_google.png"></a>
+                        <a href="#" class="app"><img src="../../../../images/main/app_appstore.png"></a>
                     </div>
                 </div>
             </div>
@@ -271,7 +318,42 @@
         </div>
     </div>
 </div>
-<include src="../include/footer_nav.html"></include>
-<include src="../include/footer.html"></include>
+<footer id="footer_nav_section">
+    <div class="footer_nav_area">
+        <div class="footer_inner">
+            <h1 class="logo"><a href="#"><img src="../../../../images/common/footer_logo.png" alt="리얼하우스 로고"></a></h1>
+            <nav id="footer_nav">
+                <a  href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">1대1 문의</a>
+                <a href="#" class="type">리얼하우스프로 바로가기</a>
+            </nav>
+            <div class="sns_links">
+                <a href="#" class="link"><img src="../../../../images/main/ico_facebook.png"></a>
+                <a href="#" class="link"><img src="../../../../images/main/ico_naver.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="footer">
+    <div class="footer_content">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
+</footer>
 </body>
 </html>
