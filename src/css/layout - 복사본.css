@@ -247,7 +247,7 @@ button:focus{outline:none;}
 .table_style2 .table{width:800px;  background:#fff; border:1px solid #e6e6e6;}
 .table_style2 .table tr{border-top:1px solid #e6e6e6;}
 .table_style2 .table:first-child{border-top:none;}
-.table_style2 .table th,.table_style2 .table td{font-size: 15px; padding-top:14px; padding-bottom:14px;}
+.table_style2 .table th,.table_style2 .table td{font-size: 15px; padding-top:18px; padding-bottom:18px;}
 .table_style2 .table th{padding-left: 20px; font-size: 16px; color: #9c9c9c; text-align: right;}
 .table_style2 .table td{padding-left:15px; color: #373737;}
 .table_style2.type .table{width:1150px;}
