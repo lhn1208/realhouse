@@ -215,5 +215,34 @@ $(document).ready(function(){
         return false;
     });
       
+    //매물사진
+    var $gallery = $('.slide_container');
+    var slideCount = null;
+    $gallery.slick({
+        dots: true,
+        focusOnSelect: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: true,
+        variableWidth: false,
+        swipe:false
+      });
     
+    var total=$(".slick-dots li").length;
+    var $el = $('.slide-count-wrap').find('.total');
+    $el.text(total);
+    
+    $gallery.on('init', function(event, slick){
+        slideCount = slick.slideCount;
+        setCurrentSlideNumber(slick.currentSlide);
+    });
+    $gallery.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        setCurrentSlideNumber(nextSlide);
+    });
+    function setCurrentSlideNumber(currentSlide) {
+        var $el = $('.slide-count-wrap').find('.current');
+        $el.text(currentSlide + 1);
+    }
+      
 });

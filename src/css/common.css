@@ -214,7 +214,7 @@ textarea{resize: none;}
 /*아이디/비밀번호찾기*/
 .member_box.find_user{margin-bottom:32px;}
 .member_box .member_form .member_info{height: 55px; padding-left:10px; padding-right: 100px; line-height: 3.8; font-size: 15px; font-weight: 300; background-color: #fffbfb; color:#373737; text-align: left;}
-.member_box .member_form .member_info .btn_member{position: absolute; top:10px; right:12px; width:90px; height: 36px; padding:0; line-height: 2.8; font-size: 12px; color:#fff; background-color: #ff5050; border-radius: 5px; text-align: center;}
+.member_box .member_form .member_info .btn_member{position: absolute; top:10px; right:12px; min-width:90px; height: 36px; padding:0; line-height: 2.8; font-size: 12px; color:#fff; background-color: #ff5050; border-radius: 5px; text-align: center;}
 .layer_member .member_btn.type .btn.on{background-color: #378cff;}
 .member_box .member_form .member_email{padding-right: 144px;}
 .member_box .member_form .member_info .btn_member.emial_certify{background-color: #3ec729;}

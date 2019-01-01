@@ -13,6 +13,8 @@
     <script src="../../../js/common.min.js"></script>	
     <script src="../../../js/sub.min.js"></script>	
     <script src="../../../js/plugin/cycle2.min.js"></script>	
+    <script src="../../../js/plugin/slick.min.js"></script>	
+
 
     <title>realhouse</title>
 </head>
@@ -444,8 +446,13 @@
                                     <tr class="pd_style">
                                         <th>사진선택</th>
                                         <td>
-                                            <button class="btn green">사진 선택</button>
-                                           <span class="desc"> ※ 사진 선택을 클릭 후, 여러 장의 사진을 선택해 등록하실 수 있습니다.</span>
+                                            <div class="position">
+                                                <div class="filebox"> 
+                                                    <label for="file_upload">파일 첨부</label> 
+                                                    <input type="file" id="file_upload" multiple> 
+                                                </div>
+                                                <span class="upload_desc"> ※ 사진 선택을 클릭 후, 여러 장의 사진을 선택해 등록하실 수 있습니다.</span>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
