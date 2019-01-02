@@ -21,7 +21,7 @@
 .txt_red2{color:#ff6161;}
 .txt_blue{color:#378cff;}
 .txt_yellow{color: #f7941d;}
-.link_style{display: inline-block; margin-left:10px; padding-right: 12px; font-size: 14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff;  background:url("../../images/sub/arr_link2.png") no-repeat right;}  
+.link_style{display: inline-block; margin-left:10px; padding-right: 12px; font-size: 14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff;  background:url("../../images/common/arr_link2.png") no-repeat right;}  
 /*버튼*/
 button:focus{outline:none;}
 .btn_round_green .btn,.btn_round{display: inline-block; height: 53px; line-height: 2.6; padding:0 32px;font-size: 20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #fff; border-radius:30px; background-color: #3ec729;}
@@ -133,7 +133,7 @@ button:focus{outline:none;}
 .view_area .button.next{right:-20px; background-position: 0px 0px;}
 .view_area .button.prev{left:-20px; background-position: -56px 0px;}
 .view_area .button.prev.disabled,.view_area .button.next.disabled{display: none;}
-.view_area .view_all{display: block; position: absolute; top:-64px; right:8px; padding-right: 18px; font-size: 16px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff; background:url("../../images/sub/arr_link.png") no-repeat 97px 6px;}
+.view_area .view_all{display: block; position: absolute; top:-64px; right:8px; padding-right: 18px; font-size: 16px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff; background:url("../../images/common/arr_link.png") no-repeat 97px 6px;}
 
 .view_cont_area .offer_none .txt_box{display: inline-block; margin-left: 18px; }
 .view_cont_area .offer_none .txt_box:first-of-type{margin-left:0;}
