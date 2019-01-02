@@ -63,11 +63,11 @@ gulp.task('compile_html', function(){
 
 // image sprite
 gulp.task('sprite', function(){
-    var spriteData = gulp.src('./images/**/*.png')
+    var spriteData = gulp.src('./images/sub/slide/*.png')
     .pipe(spritesmith({
-        imgName: 'sp_all.png',
+        imgName: 'sp_slide.png',
         padding: 4,
-        cssName: 'sp_all.css'
+        cssName: 'sp_slide.css'
     }));
     spriteData.img.pipe(gulp.dest('./images'));
     spriteData.css.pipe(gulp.dest('./src/sp_css'));

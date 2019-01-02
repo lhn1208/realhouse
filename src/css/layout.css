@@ -129,9 +129,9 @@ button:focus{outline:none;}
 .view_area .item .mark span.type{background-color:#fdc689;}
 .view_area .item .locate{font-size: 14px; text-overflow:ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
 .view_area .view_cont_area{position: relative;}
-.view_area .button{position: absolute; top:128px; width:52px; height:52px; background-size: auto; z-index: 102;}
-.view_area .button.next{right:-20px; background-image:url("../../images/sub/arr_slide_next.png");}
-.view_area .button.prev{left:-20px; background-image:url("../../images/sub/arr_slide_prev.png");}
+.view_area .button{position: absolute; top:128px; width:52px; height:52px; background-image: url("../../images/sub/sp_slide.png"); background-size: auto; z-index: 102;}
+.view_area .button.next{right:-20px; background-position: 0px 0px;}
+.view_area .button.prev{left:-20px; background-position: -56px 0px;}
 .view_area .button.prev.disabled,.view_area .button.next.disabled{display: none;}
 .view_area .view_all{display: block; position: absolute; top:-64px; right:8px; padding-right: 18px; font-size: 16px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff; background:url("../../images/sub/arr_link.png") no-repeat 97px 6px;}
 
@@ -417,4 +417,4 @@ button:focus{outline:none;}
 .myagent_area .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
 .myagent_area .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
 
-.wrapper .sub_cover.slide_cover{background-color: rgba(0,0,0,.9)};
+.wrapper .sub_cover.slide_cover{background-color: rgba(0,0,0,.8)};

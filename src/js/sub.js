@@ -72,7 +72,7 @@ $(document).ready(function(){
     $layer.find(".close").click(function(){
         $cover.removeClass("active");
         $layer.removeClass("active");
-             return false;
+        return false;
       })
     var layerH= $layer.outerHeight();
     var top = Math.ceil((window.screen.height - layerH)/2)-70;
@@ -216,6 +216,9 @@ $(document).ready(function(){
     });
       
     //매물사진
+    $(".layer_picture .close").click(function(){
+        $(".layer_picture").removeClass("active");
+    })
     var $gallery = $('.slide_container');
     var slideCount = null;
     $gallery.slick({
