@@ -183,7 +183,7 @@
 .myhome .inquiry .tit .num{font-size: 20px; color: #ff5050;}
 .myhome .inquiry .sectoin_box2{border-top:1px solid #e6e6e6;}
 .myhome .inquiry .sectoin_box2 .link{position: relative; padding-left: 25px; padding-right: 20px; line-height: 3.7; font-size: 16px; font-weight:500;  color:#378cff;}
-.myhome .inquiry .sectoin_box2 .link:after{display:block; content:""; clear:both; position: absolute; width:9px; height:17px; top:6px; right:0; background:url("../../images/sub/arr_link.png") no-repeat;}
+.myhome .inquiry .sectoin_box2 .link:after{display:block; content:""; clear:both; position: absolute; width:9px; height:17px; top:6px; right:0; background:url("../../images/common/arr_link.png") no-repeat;}
 .mypoint_area {position: relative; margin-bottom:54px; font-weight:500;}
 .mypoint_area .box_border_wrap{overflow: hidden; padding:32px 0 40px 75px;}
 .mypoint_area strong{float: left; font-size: 30px; font-weight: 500; color: #ff5050}
@@ -229,7 +229,7 @@
 .table_style2.table_agent .table td{color: #5f5f5f;}
 .table_style2.table_agent .table td.grade_area{padding-right: 68px; text-align: right;}
 .table_style2.table_agent .table td .grade{color: #ff6161;}
-.table_style2.table_agent .table td .link{padding:0 15px; font-size: 14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff; background: url("./../../images/sub/arr_link2.png") no-repeat right;}
+.table_style2.table_agent .table td .link{padding:0 15px; font-size: 14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff; background: url("./../../images/common/arr_link2.png") no-repeat right;}
 .table_style2.table_agent .table td .distance{color: #373737;}
 .table_style2.table_agent .table td .company{padding-bottom:4px; color: #373737;}
 .table_style2.table_agent .table td .locate{font-size: 14px; color: #9c9c9c;}
