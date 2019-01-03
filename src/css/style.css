@@ -248,7 +248,7 @@
 .mypresent .myagent_table .table td.info{color: #373737;}
 .mypresent .myagent_table .table td .icon_type1{padding:1px 8px; line-height: 1.4;}
 .mypresent .myagent_table .table .bg_right_blue{background-color: #f9fcfd;}
-.mypresent .myagent_table td .agency{display: inline-block; margin-right: 34px; color: #5f5f5f;}
+.mypresent .myagent_table td .agency{display: inline-block; width:115px; color: #5f5f5f;}
 .mypresent .myagent_table td .state{display: inline-block; position: relative; padding-right: 118px; color: #5f5f5f;}
 .mypresent .myagent_table .add_req .add_req_th{color: #fff; background-color: #0ec4bf;}
 .mypresent .myagent_table .btn_round .btn_grade{padding:0 24px; background-color: #0ec4bf}
@@ -443,12 +443,13 @@
 .agent_info .btn_area {top:43px;}
 .agent_info .btn_agent_info.btn{color: #6d6d6d;}
 .myhome.agent .event_area{margin-bottom: 35px;}
-.myhome.agent .schedule{position: relative; padding:36px 0; margin-bottom: 35px; border:1px solid #e6e6e6; border-radius: 5px;}
+.myhome.agent .schedule{position: relative; padding:45px 0; margin-bottom: 35px; border:1px solid #e6e6e6; border-radius: 5px;}
+.schedule dl{text-align: right; margin-right:352px;}
 .schedule dt,.schedule dd{display: inline-block; font-weight:500; font-family: "Noto Sans KR",sans-serif;}
-.schedule dt{margin:0 284px 0 75px; font-size: 30px; color: #373737;}
+.schedule dt{position: absolute; top:32px; left:75px; font-size: 30px; color: #373737;}
 .schedule dd{margin-right:25px; font-size: 18px;}
 .schedule dd .cnt{font-size: 18px; color: #ff6161;}
-.schedule .btn_area{top:43px;}
+.schedule .btn_area{top:38px;}
 .schedule .btn_sch.btn{width:140px; height: 40px; line-height: 2.6; color: #5f5f5f ; font-size: 14px;}
 .schedule_manage .schedule_entry .input_area{padding:0;}
 .schedule_manage .schedule_entry .input_request_tit{width:100%; height:60px; padding:18px;}
@@ -586,7 +587,7 @@
 .pop_calendar .cal_area a{float:left; width:48px; height:30px; margin:0 3px; line-height: 2.1; font-size: 13px; color:#5f5f5f; outline:1px solid #e6e6e6; text-align: center;}
 .pop_calendar .cal_area .control_btn{color:#fff; outline:1px solid #f7941d;}
 .pop_calendar .cal_area .prev{padding-left:10px; background:url("../../images/sub/ico_cal_prev.png") 8px 9px #f7941d no-repeat;}
-.pop_calendar .cal_area .next{padding-right:10px; background:url("../../images/sub/ico_cal_next.png") 36px 9px #f7941d no-repeat;}
+.pop_calendar .cal_area .next{width:49px; padding-right:10px; background:url("../../images/sub/ico_cal_next.png") 36px 9px #f7941d no-repeat;}
 .pop_calendar .cal_area .on{color:#fff; background-color: #92d050; outline: 1px solid #92d050;}
 .pop_calendar .cal_area.day a{width:57px; margin:4px 4px;}
 .pop_calendar .cal_area.day .holiday{color: #ff6161;}
@@ -617,14 +618,15 @@
 .map_locate .map .ico{position: absolute; top:350px; left:350px;}
 .offer_info_area .offer_detail_inner{padding-top:20px;}
 
-.grade_area dl{position: relative; margin-bottom: 28px; padding:25px 36px; color: #373737; border:1px solid #e6e6e6; border-radius: 5px; background-color: #fffbfb; text-align: right;}
-.grade_area dl:after{display: block; content:""; clear: both;}
-.grade_area .point{color: #ff6161;}
-.grade_area dt,.grade_area dt .point{font-size: 22px; font-weight: 500;}
-.grade_area dd,.grade_area dd .point{font-size: 20px; font-weight: 400;}
-.grade_area dt{position: absolute; top:22px;}
-.grade_area dd:first-of-type{margin-left: 0;}
-.grade_area dd{display: inline-block; margin-left: 50px;}
+.score_area{margin-bottom: 75px;}
+.score_area dl{position: relative; margin-bottom: 28px; padding:25px 36px; color: #373737; border:1px solid #e6e6e6; border-radius: 5px; background-color: #fffbfb; text-align: right;}
+.score_area dl:after{display: block; content:""; clear: both;}
+.score_area .point{color: #ff6161;}
+.score_area dt,.score_area dt .point{font-size: 22px; font-weight: 500;}
+.score_area dd,.score_area dd .point{font-size: 20px; font-weight: 400;}
+.score_area dt{position: absolute; top:22px;}
+.score_area dd:first-of-type{margin-left: 0;}
+.score_area dd{display: inline-block; margin-left: 50px;}
 .grade_table .cate{margin-left: 16px; font-size: 16px; color: #373737;}
 .grade_table .table_style1 .table{width:800px;}
 .grade_table .table_style1.type2_1 td, .grade_table .table_style1.type2_1 th{padding-left:20px; padding-right: 0px;}
@@ -633,6 +635,10 @@
 .grade_table .cate:first-of-type{margin-left: 0;}
 .grade_table .table .tb_grade_area .grade:first-of-type{margin-left: 0;}
 .grade_table .table .tb_grade_area .grade{margin-left: 32px;}
+.grade_table .table .mark{display: block; color:#373737;}
+.grade_table .table td.point_area{text-align: right; padding-right:20px;}
+.grade_table .table .point_area .point{font-size: 20px;}
+.grade_table .table .point_area .point.blue{color: #378cff;}
 
 /*소속 중개사무소*/
 .myoffice_area{margin-top:130px; padding-top:52px; min-height: 675px;}
