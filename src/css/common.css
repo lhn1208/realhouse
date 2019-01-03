@@ -152,6 +152,7 @@ textarea{resize: none;}
 #main_container .container_inner{padding-bottom: 70px;}
 #main_container .container_inner, #sub_container .container_inner{width: 1150px; margin:0 auto;}
 #sub_container .container_inner{padding-bottom:60px; min-height: 700px;}
+#sub_container .container_inner.w800{width:800px; margin:0 auto; padding-top: 50px;}
 .scroll_hidden{overflow-y: hidden;}
 /*로그인 및 회원가입*/
 .wrapper .main_cover,.wrapper .sub_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}

@@ -327,7 +327,7 @@ button:focus{outline:none;}
 .table td.style_btn .btn_type1{margin-bottom:10px;}
 .table .right_area{position: absolute; top:18px; right: 20px;}
 .table .hipen{margin:0 4px;}
-.no_items .table td{color: #9c9c9c !important; text-align: center;}
+.no_items .table tbody td{color: #9c9c9c !important; text-align: center;}
 .table thead .num{font-size: 16px; color: #ff6161;}
 /*레이어 팝업*/
 .layer .table{width:842px;}
@@ -408,7 +408,7 @@ button:focus{outline:none;}
 .custom_cont li .date{float:right; color: #9c9c9c;}
 .custom_cont .request_area,.custom_cont .sch_area{line-height: 2;}
 .custom_cont .request_cont,.custom_cont .sch_cont{padding:45px 18px; border-top:1px solid #e6e6e6; }
-
+/*중개사 정보*/
 .myagent_area .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
 .myagent_area .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; overflow: hidden;}
 .myagent_area .myagent .agent_info{margin-left: 206px;}
