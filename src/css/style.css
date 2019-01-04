@@ -587,7 +587,7 @@
 .pop_calendar .cal_area a{float:left; width:48px; height:30px; margin:0 3px; line-height: 2.1; font-size: 13px; color:#5f5f5f; outline:1px solid #e6e6e6; text-align: center;}
 .pop_calendar .cal_area .control_btn{color:#fff; outline:1px solid #f7941d;}
 .pop_calendar .cal_area .prev{padding-left:10px; background:url("../../images/sub/ico_cal_prev.png") 8px 9px #f7941d no-repeat;}
-.pop_calendar .cal_area .next{width:49px; padding-right:10px; background:url("../../images/sub/ico_cal_next.png") 36px 9px #f7941d no-repeat;}
+.pop_calendar .cal_area .next{padding-right:10px; background:url("../../images/sub/ico_cal_next.png") 36px 9px #f7941d no-repeat;}
 .pop_calendar .cal_area .on{color:#fff; background-color: #92d050; outline: 1px solid #92d050;}
 .pop_calendar .cal_area.day a{width:57px; margin:4px 4px;}
 .pop_calendar .cal_area.day .holiday{color: #ff6161;}
