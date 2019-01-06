@@ -21,13 +21,12 @@ blockquote, q { quotes: none; }
 hr { display: none; }
 a {text-decoration:none; color:#000;}
 input,select { vertical-align:middle;}
-legend {display:none;}
 input[type="checkbox"],input[type="radio"]{display: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 table caption{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
 form {position:relative}
-button {display:inline-block; zoom:1; position:relative; overflow:visible; margin:0px; padding:0px; border:0px; background:transparent; cursor:pointer; vertical-align:middle;}
+button {display:inline-block; zoom:1; position:relative; overflow:visible; margin:0px; padding:0px; font-family: "Noto Sans KR",sans-serif; border:0px; background:transparent; cursor:pointer; vertical-align:middle;}
 textarea{resize: none;}
-.blind{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
+.blind,.legend{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
 .wrapper.type{height: 100%;}
 .wrapper{position: relative; overflow: hidden; min-width: 1180px; }
 /*select box*/

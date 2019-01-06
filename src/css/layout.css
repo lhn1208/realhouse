@@ -24,12 +24,12 @@
 .link_style{display: inline-block; margin-left:10px; padding-right: 12px; font-size: 14px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #378cff;  background:url("../../images/common/arr_link2.png") no-repeat right;}  
 /*버튼*/
 button:focus{outline:none;}
-.btn_round_green .btn,.btn_round{display: inline-block; height: 53px; line-height: 2.6; padding:0 32px;font-size: 20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #fff; border-radius:30px; background-color: #3ec729;}
-.btn_round_white .btn{display: inline-block; min-width:157px; height:53px; line-height: 2.6; font-size: 16px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color:#373737; border:1px solid #e6e6e6; border-radius:30px; background-color: #fff;}
+.btn_round_green .btn,.btn_round{display: inline-block; height: 53px; line-height: 2.6; padding:0 32px;font-size: 20px; font-weight:500; color: #fff; border-radius:30px; background-color: #3ec729;}
+.btn_round_white .btn{display: inline-block; min-width:157px; height:53px; line-height: 2.6; font-size: 16px; font-weight:500; color:#373737; border:1px solid #e6e6e6; border-radius:30px; background-color: #fff;}
 .btn_round_white.type .btn{min-width: 130px; font-size: 20px;}
 .btn_round_white.small .btn,.btn_round.small{height:40px; padding:0 30px; line-height: 2.6; font-size: 14px; color: #5f5f5f;}
 .btn_round_green .btn{border:none;}
-.btn{display: inline-block; position: relative; min-width:105px; height: 40px; font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 14px; color: #5f5f5f; border:1px solid #e6e6e6; border-radius: 5px; text-align: center;}
+.btn{display: inline-block; position: relative; min-width:105px; height: 40px; font-weight:500; font-size: 14px; color: #5f5f5f; border:1px solid #e6e6e6; border-radius: 5px; text-align: center;}
 .btn.small{min-width:44px; height: 28px; line-height: 2;}
 .btn.off,.btn_type1.off{color: #fff; background-color: #e6e6e6; border:none;}
 .btn.red{color:#fff; background-color: #ff6161; border: none;}
