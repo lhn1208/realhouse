@@ -363,6 +363,7 @@ button:focus{outline:none;}
 .table td{text-align: left;}
 .table td.align_left{text-align: left;}
 .table td.align_right{text-align: right;}
+.table td.align_center{text-align: center;}
 .table .reg_no{text-align: center;}
 .table .reg_no1{width:80px;}
 .table .reg_no2{width:60px;}
@@ -418,5 +419,11 @@ button:focus{outline:none;}
 .myagent_area .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}
 .myagent_area .myagent .agent_info li:nth-child(2n){float: right; width: 304px;}
 .myagent_area .myagent .agent_info li strong{display: inline-block; width:75px; margin-right:10px; color: #9c9c9c; text-align: right;}
-
-.wrapper .sub_cover.slide_cover{background-color: rgba(0,0,0,.8)};
+.wrapper .sub_cover.slide_cover{background-color: rgba(0,0,0,.8);}
+/*금액조절*/
+.amt_control{position: relative; margin-bottom: 64px; height: 60px; line-height: 3.7; border:1px solid #e6e6e6; border-radius: 5px;}
+.amt_control dt{position: absolute; top:0; left:0; width:124px; height: 58px; padding-left: 30px; font-weight: 500; font-size: 16px; color: #fff; background-color: #f7941d; border-top-left-radius:5px; border-bottom-left-radius:5px;}
+.amt_control dt:after{display: block; content:""; position: absolute; top:0; right:0; width:10px; height:58px; background:url("../../images/sub/bar_amount.jpg") no-repeat right}
+.amt_control:after{display: block; content:""; clear: both;}
+.amt_control dd:first-of-type{margin-left: 140px;}
+.amt_control dd{float:left; margin-left: 10px; font-size: 16px;}

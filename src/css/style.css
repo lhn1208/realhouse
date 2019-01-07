@@ -444,7 +444,7 @@
 .agent_info .btn_agent_info.btn{color: #6d6d6d;}
 .myhome.agent .event_area{margin-bottom: 35px;}
 .myhome.agent .schedule{position: relative; padding:45px 0; margin-bottom: 35px; border:1px solid #e6e6e6; border-radius: 5px;}
-.schedule dl{text-align: right; margin-right:352px;}
+.schedule dl{text-align: right; margin-right:238px;}
 .schedule dt,.schedule dd{display: inline-block; font-weight:500; font-family: "Noto Sans KR",sans-serif;}
 .schedule dt{position: absolute; top:32px; left:75px; font-size: 30px; color: #373737;}
 .schedule dd{margin-right:25px; font-size: 18px;}
@@ -526,7 +526,7 @@
 .custom_cont .reply_cont{padding:15px 18px;}
 .custom_cont .reply_cont_head:after{display: block; content:""; clear: both;}
 .custom_cont .reply_cont_head{line-height: 4; padding:0 18px; color: #373737; background-color: #fffbfb; border-top:1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;}
-.custom_cont .sch_history{position: relative; padding:15px; border-top:1px solid #e6e6e6;}
+.custom_cont .sch_history{position: relative; padding:15px; border-top:1px solid #e6e6e6; background-color:#fdfdfd;}
 .custom_cont .sch_history .btn{position: absolute; top:10px; right:20px;}
 .custom_cont .sch_area .visit_area{padding-top:30px;}
 .custom_cont .sch_area .memo{padding:30px 0;}
@@ -674,6 +674,11 @@
 .slide-count-wrap{position:absolute; top:0; left:50%; margin-left:-25px; font-size: 25px; font-weight: 500; color: #fff;}
 .slide-count-wrap .current,.slide-count-wrap .total{font-size: 25px; font-weight: 500;}
 .pictures_box .slick-dots{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
+
+.favor_cover{display: none; position: fixed; top:69px; left:0; right:462px; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
+.favor_cover.active{display: block;}
+.favor_cover .deal_complete{position: absolute; top:474px; left:50%; width:462px; height: 96px; margin-left: -180px; line-height: 2; padding-top:18px; color: #373737; background: #fff; border-radius: 50px; text-align: center;}
+
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}

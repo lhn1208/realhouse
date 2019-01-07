@@ -3,54 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <include src="../include/set_css.html"></include>
-    <include src="../include/set_js.html"></include>
+    <link href="../../../css/font.min.css" rel="stylesheet">
+    <link href="../../../css/common.min.css" rel="stylesheet">
+    <link href="../../../css/style.min.css" rel="stylesheet">
+    <link href="../../../css/layout.min.css" rel="stylesheet">
+
+
+    <script src="../../../js/3.3.1.min.js"></script>	
+    <script src="../../../js/common.min.js"></script>	
+    <script src="../../../js/sub.min.js"></script>	
+    <script src="../../../js/plugin/cycle2.min.js"></script>	
+    <script src="../../../js/plugin/slick.min.js"></script>	
+
+
     <title>realhouse</title>
 </head>
 <body class="scroll_hidden">
 <!--header-->
-<include src="../include/header.html"></include>
-<div class="header_section">
-    <div class="search_header">
-        <div class="tit">설정</div>
-        <a href="#" class="locate_links">
-            <dl class="locate">
-                <dt class="city">서울시</dt>
-                <dd class="city_sub">송파구</dd>
-                <dd class="city_sub">잠실동</dd>
-            </dl>
-        </a>
-        <div class="select_filter_area">
-            <div class="select_filter">
-                <a href="#" class="select_top"><span class="deal_type">월세</span> <i class="bar"></i> <span>아파트, 오피스텔</span></a>
+<header class="sub_header">
+    <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+    <div class="header_inner inner2">
+        <button class="btn_close"><span class="blind">닫기</span></button>
+        <h2 class="header_tit">관심매물</h2>
+        <div class="h_right_area">
+            <div class="select_area">
+                <a href="#" class="select_top">거래구분 선택</a>
+                <div class="select_list">
+                    <a href="#">전체</a>
+                    <a href="#">매매</a>
+                    <a href="#">전세</a>
+                    <a href="#">월세</a>
+                    <a href="#">단기임대</a>
+                </div>
             </div>
-            <div class="select_filter">
-                <a href="#" class="select_top">금액</a>
+            <div class="select_area">
+                <a href="#" class="select_top">매물유형 선택</a>
+                <div class="select_list">
+                    <a href="#">전체</a>
+                    <a href="#">아파트</a>
+                    <a href="#">주상복합</a>
+                    <a href="#">연립/빌라</a>
+                    <a href="#">오피스텔</a>
+                    <a href="#">도시형생활주택</a>
+                </div>
             </div>
-            <div class="select_filter">
-                <a href="#" class="select_top">면적</a>
-            </div>
-            <div class="select_filter">
-                <a href="#" class="select_top">필터</a>
-            </div>  
         </div>
-        <a href="#" class="reset">초기화</a>
-    </div>
-</div>
+    </div>   
+</header>
 <!--header-->
 <div class="wrapper type">
+    <!--거래 완료-->
+    <div class="favor_cover active">
+        <div class="deal_complete">
+            2018.05.02
+            <br>거래 완료된 매물입니다.
+        </div>
+    </div>
+    <!--//거래 완료-->
     <div id=sub_container>
-        <div class="offer_wrap option">
+        <div class="offer_wrap" >
             <!--right:전체매물-->
-            <aside class="all_offer">
-                <header class="header">전체매물: 21</header>
+            <aside class="all_offer type">
+                <header class="header">
+                    관심매물: 4/5
+                    <div class="btn_right">
+                        <button class="btn red">전체 삭제</button>
+                        <button class="btn red">거래완료 삭제</button>
+                    </div>
+                </header>
                 <div class="items_area">
                     <ul class="items_list">
                         <li class="target">
                             <a href="#">
                                 <span class="img_area">
-                                    <span class="seen">SEEN</span>
-                                    <img src="../../../images/sub/offering_item_img.jpg">
+                                     <!--cover--><span class="cover">거래완료</span>
+                                    <img src="../../../../images/sub/offering_item_img.jpg">
                                 </span>
                                 <div class="item_info">
                                     <i class="favor_ico"></i>
@@ -63,7 +90,7 @@
                         </li>
                         <li>
                             <a href="#">
-                               <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                               <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
                                 <div class="item_info">
                                     <i class="favor_ico pick"></i>
                                     <strong class="tit">전세/월세 3억5000</strong>
@@ -74,8 +101,32 @@
                             </a>
                         </li> 
                         <li>
+                                <a href="#">
+                                   <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                    <div class="item_info">
+                                        <i class="favor_ico pick"></i>
+                                        <strong class="tit">전세/월세 3억5000</strong>
+                                        <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                        <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                        <p class="locate">잠실주공1단지 104동잠실 </p>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                    <a href="#">
+                                       <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
+                                        <div class="item_info">
+                                            <i class="favor_ico pick"></i>
+                                            <strong class="tit">전세/월세 3억5000</strong>
+                                            <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
+                                            <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
+                                            <p class="locate">잠실주공1단지 104동잠실 </p>
+                                        </div>
+                                    </a>
+                                </li> 
+                        <li>
                             <a href="#">
-                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
                                 <div class="item_info">
                                     <i class="favor_ico"></i>
                                     <strong class="tit">단기임대 50/50</strong>
@@ -87,7 +138,7 @@
                         </li> 
                         <li>
                             <a href="#">
-                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
+                                <span class="img_area"><img src="../../../../images/sub/offering_item_img.jpg"></span>
                                 <div class="item_info">
                                     <i class="favor_ico"></i>
                                     <strong class="tit">월세 5000/50</strong>
@@ -97,69 +148,22 @@
                                 </div>
                             </a>
                         </li> 
-                        <li>
-                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
-                            <a href="#">
-                                <span class="img_area"><img src="../../../images/sub/offering_item_img.jpg"></span>
-                                <div class="item_info">
-                                    <i class="favor_ico"></i>
-                                    <strong class="tit">월세 5000/50</strong>
-                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span></p>
-                                    <p class="locate">잠실주공1단지 104동잠실 </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="">
-                            <div class="item_head">사진 미등록 <span class="desc">※ 사진 5개 미만 매물</span></div>
-                            <a href="#">
-                                <div class="item_info no_img">
-                                    <i class="favor_ico"></i>
-                                    <strong class="tit">월세 5000/50</strong>
-                                    <p>3룸 | 3층 | 82㎡(25)/100㎡(33)</p>
-                                    <p class="mark"><span class="type">아파트</span><span>욕실수리</span><span>도배</span><span>확장형</span><span>장판교체</span><span>풀장</span><span>올수리</span></p>
-                                    <p class="locate">잠실주공1단지 104동잠실 </p>
-                                </div>
-                            </a>
-                        </li>
                     </ul> 
                 </div>                
             </aside>
+            <!--//전체매물-->
             <!--매물상세-->
-
-            <!--지도-->
-            <div class="offer_map">
-                <!--매물개수-->
-                <div class="ico_offer_aera position1 dis_ico">
-                    <i class="cnt">1</i><span class="address">신천동</span>
-                </div>
-                <div class="ico_offer_aera position2 dis_ico">
-                    <i class="cnt">120</i>
-                </div>
-                <div class="ico_offer_aera position3 dis_ico">
-                    <i class="cnt">21</i><span class="address">잠실동</span>
-                </div>
-                <div class="ico_offer_aera position4 dis_ico">
-                    <i class="cnt on">120</i>
-                </div>
-                <!--//매물개수-->
-                <!--샘플이미지-->
-                <!-- <img src="../../../images/sub/sample/searchhose_main_map.jpg" width="1500px"> -->
-            </div>
-            <!--//지도-->
-            
-            <div class="offer_detail_wrap">
+            <div class="offer_detail_wrap type">
                 <div class="offer_detail">
                     <div class="offer_detail_inner">
-                        <button class="btn_close"><span class="blind">닫기</span></button>
                         <div class="offer_main">
                             <ul class="view_list">
-                                <li class="main"><a href="#"><img src="../../../images/sub/offering_main_img.jpg"></a></li>
-                                <li><a href="#"><img src="../../../images/sub/offering_img1.jpg"></a></li>
+                                <li class="main"><a href="#"><img src="../../../../images/sub/offering_main_img.jpg"></a></li>
+                                <li><a href="#"><img src="../../../../images/sub/offering_img1.jpg"></a></li>
                                 <li>                                
                                     <a href="#">
                                             <div class="cover"><span class="cnt">15개</span> 사진 전체보기</div>
-                                        <img src="../../../images/sub/offering_img2.jpg">
+                                        <img src="../../../../images/sub/offering_img2.jpg">
                                     </a>
                                 </li>
                             </ul>
@@ -173,7 +177,7 @@
                             <div class="offer_mark">
                                 <dl>
                                     <dt>월세보증금/월세</dt>
-                                    <dd><span class="icon_type1 yellow offer_ico">단기</span> 1억1000/50</dd>
+                                    <dd><span class="icon_type1 yellow offer_ico">월세</span> 1억1000/50</dd>
                                 </dl>
                                 <dl>
                                     <dt>전용면적</dt>
@@ -184,14 +188,6 @@
                                     <dd>원룸(개방형)/1개</dd>
                                 </dl>
                             </div>
-                            <!--금액 조절-->
-                            <div class="amt_control"> 
-                                <dt>금액 조절</dt>
-                                <dd><span class="txt_red2">월세:</span> 1억5000/30</dd>
-                                <dd><span class="txt_red2">월세:</span> 1억8000/20</dd>
-                                <dd><span class="txt_red2">단기임대:</span> 100/100</dd>
-                            </div>
-                            <!--//금액 조절-->
                             <div class="info_area">
                                 <div class="info_head">
                                     <div class="left">
@@ -200,25 +196,7 @@
                                         <span class="icon_type1">급매</span>
                                     </div>
                                     <div class="right">
-                                        <a href="#" class="visit">방문요청 방법</a>
                                         <div class="btn_area">
-                                            <button class="btn">방문요청</button>
-                                            <button class="btn type">관심등록</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--요청완료 버튼,관심취소 버튼-->
-                                <div class="info_head">
-                                    <div class="left">
-                                        <em class="type">아파트</em>
-                                        잠실주공1단지 102동
-                                        <span class="icon_type1">급매</span>
-                                    </div>
-                                    <div class="right">
-                                        <a href="#" class="visit">방문요청 방법</a>
-                                        <div class="btn_area">
-                                            <button class="btn req_btn">요청완료</button>
-                                            <!-- 관심등록 했을경우-->
                                             <button class="btn type on">관심취소</button>
                                         </div>
                                     </div>
@@ -287,8 +265,8 @@
                             <div class="content_head2">
                                 <h2 class="tit">매물정보</h2>
                             </div>
-                                <!--매물 테이블-->
-                                <div class="table_style2">
+                            <!--매물 테이블-->
+                            <div class="table_style2">
                                 <table class="table">
                                     <colgroup>
                                         <col width="15%">
@@ -343,7 +321,6 @@
                                 <br>공인중개사가 작성한 설명이 나타납니다. 
                                 <br>공인중개사가 작성한 설명이 나타납니다. 
                                 <br>공인중개사가 작성한 설명이 나타납니다. 
-                                <br>공인중개사가 작성한 설명이 나타납니다.
                             </div>
                         </div>
                         <!--//매물설명-->
@@ -364,7 +341,7 @@
                                     </div>
                                     <div class="btn_map_area"><button class="btn_map road_view">로드뷰</button></div>
                                     <!--지도 샘플이미지-->
-                                    <img src="../../../images/sub/sample/searchhose_map.jpg">
+                                    <img src="../../../../images/sub/sample/searchhose_map.jpg">
                                     <!--//지도 샘플이미지-->
                                 </div>
                             </div>
@@ -383,7 +360,7 @@
                                 <div class="map">                              
                                     <div class="btn_map_area"><button class="btn_map">지도</button></div>
                                     <!--로드뷰 샘플이미지-->
-                                    <img src="../../../images/sub/sample/img_road_view.jpg">
+                                    <img src="../../../../images/sub/sample/img_road_view.jpg">
                                     <!--//로드뷰 샘플이미지-->
                                 </div>
                             </div>

@@ -156,6 +156,7 @@ textarea{resize: none;}
 /*로그인 및 회원가입*/
 .wrapper .main_cover,.wrapper .sub_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .wrapper .main_cover.active,.wrapper .sub_cover.active{display: block;}
+
 .layer,.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
 .layer.active,.layer_member.active{display: block;}
 .layer .close,.layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
