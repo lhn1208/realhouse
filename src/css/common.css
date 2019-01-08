@@ -16,7 +16,7 @@ fieldset {border:0px;}
 legend {display:none;}
 frameset {border:0px;}
 iframe {width:100%; border:0px;}
-em, address {font-style:normal;}
+em, address,i {font-style:normal;}
 blockquote, q { quotes: none; }
 hr { display: none; }
 a {text-decoration:none; color:#000;}

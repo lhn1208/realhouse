@@ -18,7 +18,7 @@ $(document).ready(function(){
         }
     });
     //select
-    var $selectArea=$(".select_area"),
+    var $selectArea=$(".select_area:not('.none')"),
         $selectTop= $selectArea.find(".select_top"),
         $selectList=$selectArea.find(".select_list"),
         $selectList_link=$selectList.find("a"),
@@ -192,12 +192,35 @@ $(document).ready(function(){
     var targetArea= $(".request_area,.sch_area");
     var speed=300;
     targetArea.hide();
-    $(".custom_cont li a").click(function(){
+    var cont_link= $(".custom_cont li a");
+
+    //일정관리
+    $(".schedule_box").find(cont_link).click(function(){
         var $reqArea=$(this).next(targetArea);
-        $reqArea.slideToggle(speed);
-        $(".custom_cont li a").not(this).next(".request_area").slideUp(500);
+        if(!$(this).hasClass('on')){
+            $reqArea.slideDown(speed);
+            $(this).addClass('on');
+        }else{
+            $reqArea.slideUp(speed);
+            $(this).removeClass('on');
+        }
         return false;
-    });
+    })
+    //1대1문의
+    $(".notice_area").find(cont_link).click(function(){
+        var $reqArea=$(this).next(targetArea);
+        if(!$(this).hasClass('on')){
+            $(this).addClass('on').parent().siblings().find('a').removeClass('on');
+            $reqArea.slideDown(speed);
+        }else{
+            $reqArea.slideUp(speed);
+            $(this).removeClass('on');
+        }
+        cont_link.not(this).next(".request_area").slideUp(500);
+        return false;
+    })
+
+
     //요청내역 슬라이드
     $(".detail_view .link_style").click(function() {
         var $DetailBox=$(this).parent().next(".detail_box");

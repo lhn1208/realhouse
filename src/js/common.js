@@ -86,7 +86,6 @@ var $placeholder;
     $placeholder= $(this).siblings(".placeholder");
     $placeholder.css("display","none")
     if($(this).val()!=""){
-      console.log($(this).val());
       $placeholder.css("display","none");
     }else{
       $placeholder.css("display","block");

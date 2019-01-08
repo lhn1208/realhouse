@@ -454,6 +454,7 @@
 .schedule_manage .schedule_entry .input_area{padding:0;}
 .schedule_manage .schedule_entry .input_request_tit{width:100%; height:60px; padding:18px;}
 .schedule_manage .schedule_entry .text_area_box{height:120px;}
+.schedule_manage .schedule_entry .select_visit_area .text_style{color: #9c9c9c;}
 .myhome.agent .myhome_box{position: relative; margin-bottom:35px; padding:16px 26px 12px; border:1px solid #e6e6e6; border-radius: 5px;}
 .myhome.agent .myhome_box .tit{font-size:20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #373737; }
 .myhome.agent .myhome_box .cnt{font-size: 20px; color: #ff6161;}
@@ -489,7 +490,8 @@
 .agent_box .table .select_area:after,.agent_box .select_visit_area:after{display: none;}
 
 
-.present_manage.agent .present_table tr:nth-child(2n) th,.present_manage.agent .present_table tr:nth-child(2n) td{background-color: #fdfdfd;}
+.present_manage.agent .present_table tr:nth-child(2n) th{background-color: #fdfdfd;}
+.present_manage.agent .present_table tr:nth-child(2n) td{background-color: #fff;}
 .present_manage.agent .present_table tr:nth-child(3n) th,.present_manage.agent .present_table tr:nth-child(3n) td{background-color: #f9fcfd;}
 .present_manage.agent .present_table tbody td{color: #5f5f5f;}
 .present_manage.agent .present_table tbody .desc{color: #373737;}
@@ -533,7 +535,7 @@
 
 .recomm_offer_area{position: absolute; top:0; right:0; width:460px; height: 100%; z-index: 110; background:#fff;}
 .recomm_offer_area .all_offer{position: relative; width:454px; height: 100%;}
-.all_offer.recomm{bottom: 133px; width:466px;}
+.all_offer.recomm{bottom: 133px;}
 .all_offer.recomm .header{position: relative;}
 .all_offer.recomm .header.h_type1{background-color: #92d050;}
 .all_offer.recomm .header.h_type2{background-color: #ff6161;}
@@ -595,8 +597,6 @@
 
 .amt_table .right_area.desc{top:26px; font-weight: 300;}
 .amt_table tbody .pay_amt[type="text"]{width:200px; margin-right: 4px; text-align: right; color:#6d6d6d;}
-.amt_table .table .control_btn{width:60px; height:40px; margin:0 2px; border:1px solid #e6e6e6; border-radius: 5px; background:url("../../images/sub/ico_control_up.png") 50% no-repeat;}
-.amt_table .table .control_btn.down{background:url("../../images/sub/ico_control_down.png") 50% no-repeat;}
 .amt_table tbody .agent_list{height:178px; overflow-y: scroll;}
 .amt_table tbody .agent_list li:first-child{border-top:none;}
 .amt_table tbody .agent_list li{ padding:18px 20px; position: relative; background-color: #fff; border-top:1px solid #e6e6e6;}
@@ -677,8 +677,20 @@
 
 .favor_cover{display: none; position: fixed; top:69px; left:0; right:462px; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .favor_cover.active{display: block;}
-.favor_cover .deal_complete{position: absolute; top:474px; left:50%; width:462px; height: 96px; margin-left: -180px; line-height: 2; padding-top:18px; color: #373737; background: #fff; border-radius: 50px; text-align: center;}
+.favor_cover .deal_complete{position: absolute; top:434px; left:50%; width:462px; height: 96px; margin-left: -180px; line-height: 2; padding-top:18px; color: #373737; background: #fff; border-radius: 50px; text-align: center;}
 
+.agent_cont .myagent_area .myagent.type_w800 .agent_info li{float: none; width:100%;}
+.agent_select.all_offer .header{background-color: #ff6161;}
+.agent_select .header.h_type1{background-color: #0ec4bf;}
+.agent_select .header.h_type2{background-color: #92d050;}
+.agent_select .agent_info{padding:10px; line-height: 1.8;}
+.agent_select .agent_info:after{display: block; content:""; clear: both;}
+.agent_select .agent_info dt,.agent_select .agent_info .address{float: left; width:50%; text-align: left;}
+.agent_select .agent_info dd{float: right; width:50%; text-align: right; font-size: 16px; color: #646464;}
+.agent_select .agent_info dd .point{color:#ff6161;}
+.agent_select .agent_info dd .distance{color:#378cff;}
+.agent_select .agent_info dt{font-size: 20px; font-weight: 500; color: #000;}
+.agent_select .items_list .visit_req .right_area{position: absolute; top:0; right:10px;}
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}

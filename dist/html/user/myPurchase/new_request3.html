@@ -18,16 +18,16 @@
 
     <title>realhouse</title>
 </head>
-<body>
+<body class="scroll_hidden">
 <!--header-->
 <header class="sub_header">
-    <h1 class="logo"><a href="#"><img src="../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
+    <h1 class="logo"><a href="#"><img src="../../../../../images/common/logo.png" alt="리얼하우스 로고"></a></h1>
     <div class="header_inner">
         <button class="btn_close"><span class="blind">닫기</span></button>
         <h2 class="header_tit">매수/임차 중개의뢰</h2>
-    </div>   
+    </div>  
 </header>
-<!--//header-->   
+<!--//header-->
 <div class="header_section">
     <div class="header_inner">
         <div class="process_idx">
@@ -43,178 +43,299 @@
         </div>
     </div>
 </div>  
-<div class="wrapper">
-    <div id=sub_container class="sub_container">           
-        <div class="container_inner">     
-            <div class="new_request">
-                <div class="box_border_wrap">
-                    <div class="box_section">
-                        · 평점과 거리를 보고 의뢰할 중개사를 선택하시고 다음을 클릭하십시오.
-                        <br>· 거리는 방문요청한 매물과 중개사무소의 거리입니다.
+<div class="wrapper type">
+    <div id=sub_container>
+        <div class="offer_wrap" >
+            <!--right:전체매물-->
+            <aside class="all_offer pick_offer agent_select">
+                <header class="header"></header>
+                <div class="offer_inner">
+                    <!--추천 중개사-->
+                    <header class="header">추천 중개사</header>
+                    <div class="items_area">
+                        <ul class="items_list">
+                            <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk1" type="checkbox" class="checkbox">
+                                    <label for="agent_chk1"><span class="chk_set"></span>중개사 선택</label>
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>  
+                    <!--//추천 중개사-->  
+                   <!--과거 의뢰 중개사-->
+                   <header class="header h_type1">과거 의뢰 중개사</header>
+                   <div class="items_area">
+                       <ul class="items_list">
+                            <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk2_1" type="checkbox" class="checkbox">
+                                    <label for="agent_chk2_1"><span class="chk_set"></span>중개사 선택</label>
+                                    <div class="right_area"><button class="btn">삭제</button></div>
+                                </div>
+                            </li>
+                           <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk2_2" type="checkbox" class="checkbox">
+                                    <label for="agent_chk2_2"><span class="chk_set"></span>중개사 선택</label>
+                                    <div class="right_area"><button class="btn">삭제</button></div>
+                                </div>
+                            </li>
+                       </ul>                 
+                   </div>  
+                   <!--//과거 의뢰 중개사--> 
+                   <!--매물 주변 중개사-->
+                   <header class="header h_type2">매물 주변 중개사</header>
+                   <div class="items_area">
+                        <ul class="items_list">
+                            <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk3_1" type="checkbox" class="checkbox">
+                                    <label for="agent_chk3_1"><span class="chk_set"></span>중개사 선택</label>
+                                    <div class="right_area date">18.06.09</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk3_2" type="checkbox" class="checkbox">
+                                    <label for="agent_chk3_2"><span class="chk_set"></span>중개사 선택</label>
+                                    <div class="right_area date">18.06.09</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="agent_info">
+                                    <dt class="name">홍길동</dt>
+                                    <dd>평점: <span class="point">1,392</span>점</dd>
+                                    <dd>매물과의 거리: <span class="distance">0.5</span>Km</dd>
+                                    <dd class="address">은성공인중개사사무소</dd>
+                                </div>
+                                <div class="visit_req">
+                                    <input id="agent_chk3_3" type="checkbox" class="checkbox">
+                                    <label for="agent_chk3_3"><span class="chk_set"></span>중개사 선택</label>
+                                    <div class="right_area date">18.06.09</div>
+                                </div>
+                            </li>
+                        </ul>                  
+                   </div>  
+                   <!--//매물 주변 중개사--> 
+                </div>
+            </aside>
+            <!--//전체매물-->
+            <!--//left-->
+            <div class="offer_detail_wrap">
+                <div class="offer_detail">
+                    <div class="offer_detail_inner">
+                        
+                        <div class="agent_cont">  
+                            <!--중개정보-->
+                            <div class="myagent_area">                
+                               <div class="myagent type_w800">
+                                       <span class="agent_img"><img src="../../../../images/sub/sample/img_agent.png"></span>
+                                   <ul class="agent_info">
+                                       <li><strong>중개사</strong> 홍길동(대표공인중개사)</li>
+                                       <li><strong>중개사무소</strong> 중개법인잠실은성공인우개사사무소</li>
+                                       <li><strong>주소</strong> 서울시 송파구 잠실동 321-1(대성빌딩) 301호</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <!--//중개정보-->
+                           <div class="tab_head">
+                               <ul class="tab">
+                                   <li class="active"><a href="#">중개사 평점</a></li>
+                                   <li><a href="#">중개사무소 위치</a></li>
+                               </ul>
+                           </div>
+                           <div class="score_area">
+                               <dl class="agent_grade">
+                                   <dt>평점 <span class="point">1,329</span>점</dt>
+                                   <dd>고객평점 <span class="point">623</span></dd>
+                                   <dd>시스템평점 <span class="point">423</span></dd>
+                               </dl>
+                               <!--고객 평점-->
+                               <div class="grade_table">
+                                   <div class="table_style1 type2_1">
+                                       <table class="table" summary="고객 평점 테이블 입니다.">
+                                           <caption>고객 평점</caption>
+                                           <colgroup>
+                                                   <col width="10%"> 
+                                                   <col width="16%"> 
+                                                   <col width="*"> 
+                                           </colgroup>
+                                           <thead>
+                                               <tr class="pd_style">
+                                                   <th colspan="2">고객 평점(<span class="num">4</span>)</th>
+                                                   <td>
+                                                       <div class="position">
+                                                           <span class="cate">전문성: <sapn class="point">6.5</sapn>/10</span>
+                                                           <span class="cate">적극성: <sapn class="point">6.5</sapn>/10</span>
+                                                           <span class="cate">만족도: <sapn class="point">6.5</sapn>/10</span>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                           </thead>                           
+                                           <tbody>
+                                               <tr>
+                                                   <th class="align_left"><span class="txt_blue">계약완료</span></th>
+                                                   <td>18.08.19</td>
+                                                   <td class="tb_grade_area">
+                                                       <div class="grade type">
+                                                           <em>전문성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>적극성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>만족도: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>                                            
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <th class="align_left"><span class="txt_blue">계약완료</span></th>
+                                                   <td>18.08.19</td>
+                                                   <td class="tb_grade_area">
+                                                       <div class="grade type">
+                                                           <em>전문성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>적극성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>만족도: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>                                            
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <th class="align_left"><span class="txt_red">의뢰종료</span></th>
+                                                   <td>18.08.19</td>
+                                                   <td class="tb_grade_area">
+                                                       <div class="grade type">
+                                                           <em>전문성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>적극성: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>
+                                                       </div>
+                                                       <div class="grade type">
+                                                           <em>만족도: </em>
+                                                           <div class="star_grade">
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span class="on"></span>
+                                                               <span></span>
+                                                               <span></span>
+                                                           </div>                                            
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                           </tbody>
+                                       </table>
+                                   </div>
+                                   <div class="paging">
+                                       <button class="prev"></button>
+                                       <button class="active">1</button>
+                                       <button>2</button>
+                                       <button>3</button>
+                                       <button>4</button>
+                                       <button class="next"></button>
+                                   </div>
+                               </div>
+                                <!--//고객 평점-->
+                           </div>
+                       </div>
+
+
+
                     </div>
                 </div>
-                <!--추천 중개사-->
-                <div class="content_head3">
-                    <h2 class="tit">추천 중개사</h2>
-                </div>
-                <div class="table_style2 table_agent">
-                    <table class="table" summary="추천 중개사의 이름, 평점, 중개사무소, 위치 테이블 입니다.">
-                        <caption>추천 중개사</caption>
-                        <colgroup>  
-                            <col width="14%">
-                            <col width="24%">
-                            <col width="14%">
-                            <col width="*">
-                            <col width="12%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>홍길동</th>
-                                <td class="grade_area">
-                                    평점: <span class="grade">1,385</span>점
-                                    <a href="#" class="link">평점보기</a>
-                                </td>
-                                <td><span class="distance">0.1Km</span></td>
-                                <td>
-                                    <p class="company">은성공인중개사사무소</p>
-                                    <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
-                                </td>
-                                <td>
-                                    <input id="chk_type1" type="radio" name="check" class="radio_btn check">
-                                    <label for="chk_type1"><span class="btn_radio">선택</span></label>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                 <!--//추천 중개사-->
-                 <!--과거 의뢰 중개사-->
-                <div class="content_head3">
-                    <h2 class="tit">과거 의뢰 중개사</h2>
-                </div>
-                <div class="table_style2 table_agent">
-                    <table class="table" summary="과거 의뢰 중개사의 이름, 평점, 중개사무소, 위치 테이블 입니다.">
-                        <caption>과거 의뢰 중개사</caption>
-                        <colgroup>  
-                            <col width="14%">
-                            <col width="24%">
-                            <col width="14%">
-                            <col width="*">
-                            <col width="12%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>홍길동</th>
-                                <td class="grade_area">
-                                    평점: <span class="grade">85</span>점
-                                    <a href="#" class="link">평점보기</a>
-                                </td>
-                                <td><span class="distance">0.1Km</span></td>
-                                <td>
-                                    <p class="company">은성공인중개사사무소</p>
-                                    <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
-                                </td>
-                                <td>
-                                    <input id="chk_type2" type="radio" name="check" class="radio_btn check">
-                                    <label for="chk_type2"><span class="btn_radio">선택</span></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>김길동</th>
-                                <td class="grade_area">
-                                    평점: <span class="grade">10,385</span>점
-                                    <a href="#" class="link">평점보기</a>
-                                </td>
-                                <td><span class="distance">0.1Km</span></td>
-                                <td>
-                                    <p class="company">은성공인중개사사무소</p>
-                                    <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
-                                </td>
-                                <td>
-                                    <input id="chk_type3" type="radio" name="check" class="radio_btn check">
-                                    <label for="chk_type3"><span class="btn_radio">선택</span></label>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!--//과거 의뢰 중개사-->
-                <!--매물 주변 중개사-->
-                <div class="content_head3">
-                    <h2 class="tit">매물 주변 중개사</h2>
-                </div>
-                <div class="table_style2 table_agent">
-                    <table class="table" summary="매물 주변 중개사의 이름, 평점, 중개사무소, 위치 테이블 입니다.">
-                        <caption>매물 주변 중개사</caption>
-                        <colgroup>  
-                            <col width="14%">
-                            <col width="24%">
-                            <col width="14%">
-                            <col width="*">
-                            <col width="12%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>남궁길동</th>
-                                <td class="grade_area">
-                                    평점: <span class="grade">5</span>점
-                                    <a href="#" class="link">평점보기</a>
-                                </td>
-                                <td><span class="distance">0.1Km</span></td>
-                                <td>
-                                    <p class="company">은성공인중개사사무소</p>
-                                    <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
-                                </td>
-                                <td>
-                                    <input id="chk_type4" type="radio" name="check" class="radio_btn check">
-                                    <label for="chk_type4"><span class="btn_radio">선택</span></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>김길동</th>
-                                <td class="grade_area">
-                                    평점: <span class="grade">10,385</span>점
-                                    <a href="#" class="link">평점보기</a>
-                                </td>
-                                <td><span class="distance">0.1Km</span></td>
-                                <td>
-                                    <p class="company">은성공인중개사사무소</p>
-                                    <div class="locate">서울시 송파구 잠실동 <a href="#" class="link">위치확인</a></div>
-                                </td>
-                                <td>
-                                    <input id="chk_type5" type="radio" name="check" class="radio_btn check">
-                                    <label for="chk_type5"><span class="btn_radio">선택</span></label>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="more_info">
-                        <a href="#" class="link_more">더 보기</a>
-                    </div>
-                </div>
-                <!--//매물 주변 중개사-->
             </div>
-        </div>           
-    </div>
-</div>
-<footer id="footer">
-    <div class="footer_content">
-        <div class="footer_inner">
-            <p class="company">(주)아이비소프트</p>
-            <address>
-                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
-                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
-                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
-            </address>
-            <div class="custorm">
-                <span class="tit">고객센터</span>
-                <span class="number">02.427.7088</span>
-                고객지원 시간 09:00~18:00
-                <br>(토요일, 일요일, 공휴일 휴무) 
-            </div>
+            <!--left-->
         </div>
     </div>
-    <address class="copyright">Ibsoft, Inc. All rights reserved.</address>
-</footer>
+</div>
 </body>
 </html>

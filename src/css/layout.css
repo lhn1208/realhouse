@@ -47,6 +47,11 @@ button:focus{outline:none;}
 .btn_submit:after{display: block; content:""; clear: both;}
 .btn_submit .btn_cancel{float:left;}
 .btn_submit .btn_confirm,.btn_submit .btn_right{float:right;}
+.control_btn{width:60px; height:40px; margin:0 2px; border:1px solid #e6e6e6; border-radius: 5px; background:url("../../images/sub/ico_control_up.png") 50% no-repeat;}
+.control_btn.down{background:url("../../images/sub/ico_control_down.png") 50% no-repeat;}
+.control_btn.off{background:url("../../images/sub/ico_control_up_off.png") 50% no-repeat #e6e6e6;}
+.control_btn.down.off{background:url("../../images/sub/ico_control_down_off.png") 50% no-repeat #e6e6e6;}
+
 
 .area_style:after{display: block; content:""; clear: both;}
 .area_style .area{float:left; position: relative; width:563px; overflow: hidden; border:1px solid #e6e6e6; border-radius: 5px;}
@@ -406,9 +411,12 @@ button:focus{outline:none;}
 .custom_cont li{line-height: 4; border:1px solid #e6e6e6; border-top:none;}
 .custom_cont li:hover{background-color: #fdfdfd;}
 .custom_cont li a{display: block; padding:0 20px; color: #373737;}
+.custom_cont li a.on{background: #f9fcfd;}
+
 .custom_cont li .sch_type{float: left; width:218px; text-align: center;}
 .custom_cont li .tit{float: left;}
 .custom_cont li .date{float:right; color: #9c9c9c;}
+.custom_cont.no_items li{padding:0 20px; color: #9c9c9c;}
 .custom_cont .request_area,.custom_cont .sch_area{line-height: 2;}
 .custom_cont .request_cont,.custom_cont .sch_cont{padding:45px 18px; border-top:1px solid #e6e6e6; }
 /*중개사 정보*/
