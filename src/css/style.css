@@ -679,6 +679,7 @@
 .favor_cover.active{display: block;}
 .favor_cover .deal_complete{position: absolute; top:434px; left:50%; width:462px; height: 96px; margin-left: -180px; line-height: 2; padding-top:18px; color: #373737; background: #fff; border-radius: 50px; text-align: center;}
 
+.all_offer.agent_select{bottom:133px;}
 .agent_cont .myagent_area .myagent.type_w800 .agent_info li{float: none; width:100%;}
 .agent_select.all_offer .header{background-color: #ff6161;}
 .agent_select .header.h_type1{background-color: #0ec4bf;}
@@ -691,6 +692,8 @@
 .agent_select .agent_info dd .distance{color:#378cff;}
 .agent_select .agent_info dt{font-size: 20px; font-weight: 500; color: #000;}
 .agent_select .items_list .visit_req .right_area{position: absolute; top:0; right:10px;}
+.agent_cont.info_area{margin:250px 0; padding:30px 0; line-height: 2; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; }
+
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}
