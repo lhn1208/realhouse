@@ -693,6 +693,7 @@
 .agent_select .agent_info dt{font-size: 20px; font-weight: 500; color: #000;}
 .agent_select .items_list .visit_req .right_area{position: absolute; top:0; right:10px;}
 .agent_cont.info_area{margin:250px 0; padding:30px 0; line-height: 2; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; }
+.agent_cont .map_locate{margin-bottom: 60px;}
 
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
