@@ -695,7 +695,12 @@
 .agent_select .items_list .visit_req .right_area .btn{line-height: 1;}
 .agent_select .items_list .visit_req .date{position: absolute; top:0; right:10px;}
 .agent_cont.info_area{margin:250px 0; padding:30px 0; line-height: 2; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; }
+<<<<<<< HEAD
 .agent_cont .map_locate{margin-bottom:60px;}
+=======
+.agent_cont .map_locate{margin-bottom: 60px;}
+
+>>>>>>> ad9216f32e227a45134021681a9ffbf741c9bb61
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}
