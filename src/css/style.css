@@ -100,7 +100,7 @@
 .select_area.visit_req_select .select_top{width:682px; color:#6d6d6d; background-color: #f9f9f9;}
 
 .option .dis_ico{display: none;}
-.offer_detail{position: relative;  height: 100%; overflow-x:hidden; overflow-y:scroll;}
+.offer_detail{position: relative; height: 100%; overflow-x:hidden; overflow-y:scroll; border-right:1px solid #e6e6e6;}
 .offer_detail_inner{width:800px; margin:0 auto; padding-top:56px;}
 .offer_detail .btn_close{position: fixed; top:130px; right:478px; width:59px; height: 59px; background:url("../../images/sub/ico_close_w59.jpg") no-repeat; z-index:100;}
 .offer_main{width: 800px; margin-bottom: 50px;}
@@ -691,9 +691,11 @@
 .agent_select .agent_info dd .point{color:#ff6161;}
 .agent_select .agent_info dd .distance{color:#378cff;}
 .agent_select .agent_info dt{font-size: 20px; font-weight: 500; color: #000;}
-.agent_select .items_list .visit_req .right_area{position: absolute; top:0; right:10px;}
+.agent_select .items_list .visit_req .right_area{position: absolute; top:-2px; right:10px;}
+.agent_select .items_list .visit_req .right_area .btn{line-height: 1;}
+.agent_select .items_list .visit_req .date{position: absolute; top:0; right:10px;}
 .agent_cont.info_area{margin:250px 0; padding:30px 0; line-height: 2; border: 1px solid #e6e6e6; border-radius: 5px; text-align: center; }
-
+.agent_cont .map_locate{margin-bottom:60px;}
 @media screen and (max-width: 1500px){
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}
