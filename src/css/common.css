@@ -39,6 +39,7 @@ textarea{resize: none;}
 .select_area .select_list a:hover{color: #fff; background-color: #378cff;}
 .select_area.open .select_list{display: block;}
 .select_area.disabled .select_top{background-color: #ebebeb;}
+.select_area.scroll .select_list{max-height:300px; overflow-y:scroll;}
 /*chekbox*/
 .checkbox +label{font-size: 15px;}
 .checkbox +label .chk_set{display: inline-block; width:22px; height: 22px; margin-right:6px; border:2px solid #e6e6e6; border-radius: 5px; vertical-align: -5px;}
