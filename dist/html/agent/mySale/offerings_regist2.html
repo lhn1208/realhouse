@@ -102,8 +102,18 @@
                                         <th>거래구분<span class="txt_red">*</span></th>
                                         <td>
                                             <div class="click_ev">
-                                                <button class="btn_type1">임대</button>
+                                                <button class="btn_type1 on">임대</button>
                                                 <button class="btn_type1">매매</button>
+                                            </div>
+                                            <span class="info">※ 현재 <span class="txt_red2">일반주택</span>은 <span class="txt_red2">임대만 가능</span>하며 <span class="txt_red2">공동주택은 임대와 매매가 모두 가능</span>합니다.</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="pd_style">
+                                        <th>거래구분<span class="txt_red">*</span></th>
+                                        <td>
+                                            <div class="click_ev">
+                                                <button class="btn_type1 off">임대</button>
+                                                <button class="btn_type1 off">매매</button>
                                             </div>
                                             <span class="info">※ 현재 <span class="txt_red2">일반주택</span>은 <span class="txt_red2">임대만 가능</span>하며 <span class="txt_red2">공동주택은 임대와 매매가 모두 가능</span>합니다.</span>
                                         </td>
@@ -136,7 +146,16 @@
                                         <label for="client_type1"><span class="btn_radio">집주인 측</span></label>
                                         <input id="client_type2" type="radio" name="cleint" class="radio_btn">
                                         <label for="client_type2"><span class="btn_radio">세입자</span></label>
-                                    </td>                   
+                                    </td> 
+                                </tr>
+                                <tr class="pd_style">
+                                    <th>의뢰인 구분<span class="txt_red">*</span></th>
+                                    <td colspan="3">
+                                        <input id="client_type1" type="radio" name="cleint" class="radio_btn" disabled>
+                                        <label for="client_type1"><span class="btn_radio">집주인 측</span></label>
+                                        <input id="client_type2" type="radio" name="cleint" class="radio_btn" disabled>
+                                        <label for="client_type2"><span class="btn_radio">세입자</span></label>
+                                    </td> 
                                 </tr>
                                 <tr class="pd_style">
                                     <th><label for="client_name">의뢰인 이름</label></th>

@@ -54,6 +54,8 @@ $(document).ready(function(){
     $btn.click(function(){
         if($(this).hasClass("on")){
             $(this).removeClass("on")
+        }else if($(this).hasClass("off")){
+            return false;
         }else{
             $(this).addClass("on")
         }

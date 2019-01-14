@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../src/css/font.css">
-        <link rel="stylesheet" href="../src/css/common.css">
-        <link rel="stylesheet" href="../src/css/style.css">
-        <link rel="stylesheet" href="../src/css/layout.css">
+        <link rel="stylesheet" href="../dist/css/font.min.css">
+        <link rel="stylesheet" href="../dist/css/common.min.css">
+        <link rel="stylesheet" href="../dist/css/style.min.css">
+        <link rel="stylesheet" href="../dist/css/layout.min.css">
         <script src="../dist/js/3.3.1.min.js"></script>
         <script>
         $(function(){
@@ -13,6 +13,8 @@
             $btn.click(function(){
                 if($(this).hasClass("on")){
                     $(this).removeClass("on")
+                }else if($(this).hasClass("off")){
+                    return false;
                 }else{
                     $(this).addClass("on")
                 }
@@ -65,27 +67,23 @@
                     </div>
                 </xmp>
             </div>
-            <div class="comment">[case4] 기타 버튼</div>
+            <div class="comment">[case3_1]클릭 버튼: 비활성화</div>
             <div class="guide_section">
-                <button class="btn red">변경</button>
-                <button class="btn skyblue">변경</button>
-                <button class="btn orange">오렌지</button>
-                <button class="btn off">변경</button>
-                <button class="btn check type">수정/삭제</button>
+                <div class="click_ev"><button class="btn_type1 off">선택</button></div>
+                <xmp>
+                    <div class="click_ev">
+                        <button class="btn_type1 off">선택</button>
+                    </div>
+                </xmp>
             </div>
-            <div class="comment">[case5] 취소,확인  버튼</div>
-            <div class="guide_section">
-                <div class="btn_submit">
-                    <button class="btn_cancel btn">취소</button>
-                    <button class="btn_confirm btn off">확인</button>
-                </div>
-            </div>
-            <div class="comment">[case6] 라디오 버튼</div>
+            <div class="comment">[case4] 라디오 버튼</div>
             <div class="guide_section">
                 <input id="offer_type1_1" type="radio" name="elevator" class="radio_btn">
                 <label for="offer_type1_1"><span class="btn_radio">있음</span></label>
                 <input id="offer_type2_1" type="radio" name="elevator" class="radio_btn">
                 <label for="offer_type2_1"><span class="btn_radio">없음</span></label>
+                <input id="offer_type2_2" type="radio" name="elevator" class="radio_btn" disabled>
+                <label for="offer_type2_2"><span class="btn_radio">비활성화</span></label>
             </div>
             <div class="guide_section">
                 <input type="radio" id="sale_deal1" name="deal_chk1" class="chk_radio">
@@ -93,7 +91,40 @@
                 <input type="radio" id="sale_deal2" name="deal_chk1" class="chk_radio" checked="">
                 <label for="sale_deal2"><span class="chk_set"></span>주거용 중개불가</label>
             </div>
-            <div class="comment">[case7] 조정 버튼</div>
+
+            <div class="comment">[case5] 체크 버튼</div>
+            <div class="guide_section">
+                <input id="check1" type="checkbox" class="chk_btn">
+                <label for="check1"><span class="btn_radio">있음</span></label>
+                <input id="check2" type="checkbox" class="chk_btn">
+                <label for="check2"><span class="btn_radio">없음</span></label>
+                <input id="" type="checkbox" class="chk_btn" disabled>
+                <label for=""><span class="btn_radio">비활성화</span></label>
+            </div>
+            <div class="guide_section">
+                <input type="checkbox" id="dong_chk1" class="checkbox" checked="">
+                <label for="dong_chk1"><span class="chk_set"></span>동 없음</label>
+                <input type="checkbox" id="dong_chk2" class="checkbox" disabled>
+                <label for="dong_chk2"><span class="chk_set"></span>동 없음</label>
+                <input type="checkbox" id="dong_chk3" class="checkbox" checked="" disabled>
+                <label for="dong_chk3"><span class="chk_set"></span>동 없음</label>
+            </div>
+            <div class="comment">[case6] 기타 버튼</div>
+            <div class="guide_section">
+                <button class="btn red">변경</button>
+                <button class="btn skyblue">변경</button>
+                <button class="btn orange">오렌지</button>
+                <button class="btn off">변경</button>
+                <button class="btn check type">수정/삭제</button>
+            </div>
+            <div class="comment">[case7] 취소,확인  버튼</div>
+            <div class="guide_section">
+                <div class="btn_submit">
+                    <button class="btn_cancel btn">취소</button>
+                    <button class="btn_confirm btn off">확인</button>
+                </div>
+            </div>
+            <div class="comment">[case8] 조정 버튼</div>
             <div class="guide_section">
                 <button class="control_btn"><span class="blind">결제금액 업</span></button>
                 <button class="control_btn down"><span class="blind">결제금액 다운</span></button>

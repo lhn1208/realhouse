@@ -68,8 +68,9 @@ button:focus{outline:none;}
 .btn_process .btn_next:after{top:14px; right:28px; background: url("../../images/common/ico_btn_next.png") no-repeat;}
 .btn_process .btn_green{color: #fff; background-color: #92d050; border:none;}
 /*라디오 버튼타입, 버튼*/
-.radio_btn +label,.btn_type1{display: inline-block; position: relative; min-width:105px; height: 40px; margin-right:4px; padding:7px 5px; font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 14px; color: #9c9c9c; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
-.radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
+.chk_btn+label,.radio_btn +label,.btn_type1{display: inline-block; position: relative; min-width:105px; height: 40px; line-height: 1.6; margin-right:4px; padding:7px 5px; font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 14px; color: #9c9c9c; border:1px solid #e6e6e6; border-radius: 5px; text-align: center; cursor: pointer; vertical-align: middle;}
+.chk_btn:checked+label,.radio_btn:checked +label,.btn_type1.on{color: #fff; background-color: #0ec4bf; border:none;}
+.chk_btn:disabled+label,.radio_btn:disabled +label,.btn_type1.off{line-height: 1.6; color: #fff; background-color: #e6e6e6; border:none;}
 .radio_btn.check:checked +label{padding-left: 16px; background-color: #ff6161;}
 .radio_btn.check:checked +label:after{display: block; content:""; clear: both; position: absolute; top:14px; left:32px; width: 11px; height:10px; background: url("../../images/sub/bg_chked.png") no-repeat;}
 .radio_btn.green:checked +label{background-color: #92d050;}
