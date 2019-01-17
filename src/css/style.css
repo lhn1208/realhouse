@@ -502,7 +502,7 @@
 .table_style3 .table .maintenance_chk .checkbox+label{margin-right: 8px;}
 .table .maintenance_chk .checkbox[disabled] +label .chk_set{background-color: #ebebeb;}
 .request_entry .table .radio_btn+label,.request_entry .table .btn{width:86px;}
-.request_entry .table .btn_type1{width:88px; margin:4px 2px;}
+.request_entry .table .btn_type1,.request_entry .table .radio_btn+label{width:88px; margin:4px 2px;}
 .request_entry .table .move_time_date{display: inline-block; margin-left: 6px;}
 .request_entry .table .move_time_date .date{color: #373737;}
 .request_entry .table .move_time_date .chk_set{margin-left: 10px;}
