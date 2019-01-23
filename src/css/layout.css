@@ -334,7 +334,7 @@ button:focus{outline:none;}
 .table td.style_btn{padding-bottom: 8px;}
 .table td.style_btn .btn_type1{margin-bottom:10px;}
 .table .right_area{position: absolute; top:18px; right: 20px;}
-.table .hipen{margin:0 4px;}
+.table .hipen{margin:0 5px;}
 .no_items .table tbody td{color: #9c9c9c !important; text-align: center;}
 .table thead .num{font-size: 16px; color: #ff6161;}
 /*레이어 팝업*/
@@ -400,7 +400,7 @@ button:focus{outline:none;}
 .tb_grade_area .grade .star_grade span{width:17px; height: 16px; margin-left: 4px; background: url("../../images/sub/grade_star_small2.png") no-repeat;}
 .tb_grade_area .grade .star_grade span.on{background: url("../../images/sub/grade_star_small2_on.png") no-repeat;}
 
-.agent_img{position: absolute; top:95px; left:118px; border-radius: 50%; border:1px solid #e6e6e6; overflow: hidden; text-align: center;}
+.agent_img{position: absolute; top:95px; left:118px; border-radius: 50%; overflow: hidden; text-align: center;}
 
 .btn_left_area .btn{margin-right:16px;}
 .time_error .state, .deal_finish .state, .offer_report .state,  .visit_cancel  .state, .no_consult .state,.no_consult .state.red{color: #ff6161;}
@@ -422,7 +422,7 @@ button:focus{outline:none;}
 .custom_cont .request_cont,.custom_cont .sch_cont{padding:45px 18px; border-top:1px solid #e6e6e6; }
 /*중개사 정보*/
 .myagent_area .myagent{position: relative; margin-bottom:40px; padding:20px; border:1px solid #e6e6e6; border-radius: 5px;}
-.myagent_area .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; border:1px solid #e6e6e6; overflow: hidden;}
+.myagent_area .myagent .agent_img{position: absolute; top:16px; left:45px; width:105px; height:105px; overflow: hidden;}
 .myagent_area .myagent .agent_info{margin-left: 206px;}
 .myagent_area .myagent .agent_info:after{display: block; content: ""; clear: both;}
 .myagent_area .myagent .agent_info li{float: left; width:596px; color: #373737; line-height: 2.3;}

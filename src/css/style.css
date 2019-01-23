@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+#sub_container .container_inner.height_type{min-height: auto;}
+.height_type .myoffice_area{min-height: auto;}
+
 .app_download{padding-top: 95px; background:url("../../images/main/app_bg.png") no-repeat 895px 0;}
 .app_download:after{display: block; content:""; clear: both;}
 .app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
