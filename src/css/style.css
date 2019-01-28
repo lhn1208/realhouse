@@ -407,7 +407,7 @@
 .all_offer.pick_offer .items_area{overflow-y: hidden; height: auto;}
 .all_offer.pick_offer .header.h_favor+.items_area .items_list{margin-top:0;}
 .all_offer.pick_offer.favor .offer_none{padding:55px 0; min-height: auto;}
-
+.offer_wrap .items_area.all_pic .offer_none{padding:250px 0 560px; min-height: 820px; text-align: center;}
 /*중개사*/
 .agent_box{margin-bottom:35px;}
 .agent_box .table_style2.type .table{ border: 1px solid #e6e6e6;}
