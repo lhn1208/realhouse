@@ -29,6 +29,17 @@ $(document).ready(function(){
     }
   });
 
+  var $logout_layout= $('.login_layout.dis_none')
+  $logout_layout.find('li a').click(function(){
+      if((!logout_layout.hasClass('lay_open'))){
+        $logout_layout.addClass('lay_open')
+        $logout_layout.css('display','none')
+      }else{
+        $logout_layout.removeClass('lay_open')
+        $logout_layout.css('display','block')
+      }
+  })
+
   //로그인시
   var $member=$("#header .member");
   var $loginLayout=$member.find(".login_layout");
