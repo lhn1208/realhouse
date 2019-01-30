@@ -418,11 +418,7 @@
 .agent_box .visit_req_table tbody th,.agent_box .visit_req_table tbody td{background-color: #fff;}
 .agent_box .visit_req_table tbody th,.agent_box .visit_req_table tbody th .txt_blue{font-size:20px; font-weight: 500;}
 .agent_box .visit_req_table tbody tr.req_num th,.agent_box .visit_req_table tbody tr.req_num td{font-size: 15px; font-weight: 400; background-color: #fdfdfd;}
-<<<<<<< HEAD
-.agent_box .visit_req_table td.info{line-height: 1.4; background-color: #fffbfb}
-=======
 .agent_box .visit_req_table td.info{line-height: 1.4; background-color: #fffbfb;}
->>>>>>> 3c33f1e6ce1e1cf88b6f0edce0ec3999f00e7633
 .agent_box.border .table_style2.type .table{border-collapse: separate; border-radius: 5px;}
 .agent_box.border .table_style2.type thead th{border-bottom:1px solid #e6e6e6; border-radius: 5px 5px 0 0;}
 .agent_box thead th .cnt{font-size: 16px; color: #ff6161;}
