@@ -21,6 +21,8 @@ blockquote, q { quotes: none; }
 hr { display: none; }
 a {text-decoration:none; color:#000;}
 input,select { vertical-align:middle;}
+input[type="text"]::-ms-clear{width:36px;}
+input[type="password"]::-ms-reveal{width:44px;}
 input[type="checkbox"],input[type="radio"]{display: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 table caption{position: absolute; left:-9999px; font-size: 0; height: 1px; width:1px; line-height: 0; text-indent: -9999px;}
 form {position:relative}

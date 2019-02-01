@@ -90,8 +90,8 @@ button:focus{outline:none;}
 .sub_header .logo{float: left; padding:20px 10px 0 28px;}
 .sub_header .btn_close{position: absolute; top:0; right: 0; width:68px; height: 68px;; background:url("../../images/sub/ico_close_w68.jpg") no-repeat; z-index: 10;}
 .sub_header .header_tit{float: left; line-height: 3.4; font-size: 20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #373737;}
-.header_section{position: fixed; top:69px; width: 100%; border-bottom:1px solid #e6e6e6; background:#fff; background:#fff; z-index: 103;}
-.header_section.dis_none{position: relative; z-index: -9999;;}
+.header_section{position: absolute; top:69px; width: 100%; border-bottom:1px solid #e6e6e6; background:#fff; background:#fff; z-index: 103;}
+.header_section.dis_none{position: absolute; opacity: 0;}
 .header_section .header_inner{position: relative; height: 60px;}
 .header_shadow{transition: box-shadow 400ms ease-in-out; -webkit-transition: box-shadow 400ms ease-in-out;}
 .header_shadow.active{box-shadow: 0px 6px 10px -5px #d6d6d6;}
