@@ -3,14 +3,27 @@
 #sub_container .container_inner.height_type{min-height: auto;}
 .height_type .myoffice_area{min-height: auto;}
 
+.app_download_area{margin-bottom: 60px;}
 .app_download{padding-top: 95px; background:url("../../images/main/app_bg.png") no-repeat 895px 0;}
 .app_download:after{display: block; content:""; clear: both;}
-.app_download .box{height: 118px; padding: 30px 25px 30px 75px;}
-.app_download .txt{float: left; padding-top:8px;  font-weight:500; font-family: "Noto Sans KR",sans-serif; font-size: 24px; color:#373737;}
+.app_download .box{height: 118px; padding: 30px 25px 30px 56px;}
+.app_download .txt{float: left; position: relative; padding-left:76px; padding-top:12px; font-weight:500; font-size: 24px; color:#373737;}
+.app_download .txt .ico_area{position: absolute; top:0; left:0;}
+.app_download .txt .txt_desc{color:#9c9c9c;}
 .app_download .desc,.app_download .desc .txt_red2{font-size: 20px; font-weight:500; }
-.app_download .app_area{float: right;}
-.app_download .app_area .app{display:inline-block;}
+.app_download .send_link{float: right; position: relative;}
+.app_download .send_link:after{display: block; content:""; clear: both;}
+.app_download .send_link .phone{width: 314px; height: 55px; margin-right: 150px; border:1px solid #e6e6e6;}
+.app_download .send_link .select_phone{float: left; width: 84px;}
+.app_download .send_link .select_phone .select_top{width:84px; height: 55px; line-height: 3.5; color: #373737; border:none;}
+.app_download .send_link .select_phone .select_top:after{top:22px;}
+.app_download .send_link label{float: left; }
+.app_download .send_link .input_phone{width:228px; height: 53px; padding:0 10px; color: #373737; border:none;}
+.app_download .send_link .input_phone:focus{outline:none;}
+.app_download .send_link .btn_send{position: absolute; top:0; right:0; width:120px; height:55px; font-size: 18px;}
+.app_download.agent .txt{padding-top: 0;}
 .app_download .txt_red2{font-size: 24px;}
+.app_download_area .desc{text-align: right; padding-top:4px; font-size: 13px; color: #9c9c9c;}
 /*매물검색*/
 .wrapper.sch_house{min-width: 1300px;}
 .header_section .search_header{min-width: 1150px; height: 60px;;}
@@ -436,7 +449,7 @@
 
 
 .agent_myspace .myspace{position: relative; padding-bottom:60px;}
-.agent_myspace .myspace .agent_img{position: absolute; top:95px; left:118px; width:120px; height: 120px; border:2px solid #e6e6e6; }
+.agent_myspace .myspace .agent_img{position: absolute; top:95px; left:118px; width:120px; height: 120px;}
 .agent_myspace .myspace .identify{margin-left: 150px;}
 .myhome.agent .agent_info{position: relative; margin-bottom:35px; padding:45px 0; border:1px solid #e6e6e6; border-radius: 5px;}
 .agent_info .company{margin:0 155px 0 160px; font-size: 20px; font-weight:500; font-family: "Noto Sans KR",sans-serif; color: #373737;}
