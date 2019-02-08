@@ -127,8 +127,8 @@
 .offer_main .view_list li a{display: block; position: relative; width: 100%; }
 .offer_main .view_list li .cover{display: block; position: absolute; top:0; left:0; width:100%; height:100%; padding-top:100px; font-size: 18px; color: #fff; background: url("../../images/sub/ico_img_more.png") no-repeat 105px 50px rgba(0,0,0,.7); text-align: center; font-weight:500; font-family: "Noto Sans KR",sans-serif; z-index: 100;}
 .offer_main .view_list li .cover .cnt{font-size: 18px;}
-.offer_main .view_list.no_img li{display: block; padding-top:80px; font-size: 12px; border:1px solid #e6e6e6; background-color: #fafafa; text-align: center;}
-.offer_main .view_list.no_img li:first-child{padding-top:174px;}
+.offer_main .view_list li.no_img{display: block; padding-top:80px; font-size: 12px; border:1px solid #e6e6e6; background-color: #fafafa; text-align: center;}
+.offer_main .view_list li.no_img:first-child{padding-top:174px;}
 .offer_main .offer_mark{margin-bottom:55px;text-align: right;}
 .offer_main .offer_mark:after{display: block; content:""; clear: both;}
 .offer_main .offer_mark dl{float: left; width:310px; padding-right:20px; line-height: 1.8; border-right:1px solid #e6e6e6;}
