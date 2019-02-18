@@ -334,6 +334,7 @@ button:focus{outline:none;}
 .table .checkbox+label,.table .chk_radio +label{margin-left:12px;}
 .table td.style_btn{padding-bottom: 8px;}
 .table td.style_btn .btn_type1{margin-bottom:10px;}
+.table td.style_btn .radio_btn+label{margin-bottom:10px;}
 .table .right_area{position: absolute; top:18px; right: 20px;}
 .table .hipen{margin:0 5px;}
 .no_items .table tbody td{color: #9c9c9c !important; text-align: center;}

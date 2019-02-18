@@ -175,20 +175,39 @@ $(document).ready(function(){
          } 
         
     });
+    //필터
 
+    $(".select_top.link_top").click(function(){
+       var t=$(this);
+       if(!t.parent().hasClass("active")){
+            $(t.attr('href')).css('display','block').siblings('.layer_filter').css('display','none');
+            $(t.attr('href')).addClass('active')
+            $('.search_cover').addClass('active');
+            //select_top의 필터 block
+            $(this).parent().addClass('active');
+            $(this).parent().siblings('.select_filter').removeClass('active');
+       }else{
+        lyaer_remove();
+       }
+        return false;
+     })
     //필터 창 닫힘
     $("#header,.wrapper .search_cover").click(function(){ 
         if($(".layer_filter").hasClass("active")){
-            $(".wrapper .search_cover,.layer_filter").removeClass("active");
+            lyaer_remove();
         }
     })
     $(".search_header").click(function(e){
         //console.log(e.target.className);
-        if(!((e.target.className=='select_top') || (e.target.className=='city_sub') || (e.target.className=='city')
+        if(!((e.target.className=='select_filter') || (e.target.className=='city_sub') || (e.target.className=='city')
         || (e.target.className=='offer_type') || (e.target.className=='deal_type') || (e.target.className=='reset')))
-        { $(".wrapper .search_cover,.layer_filter").removeClass("active");}
+        { lyaer_remove();}
        
     })
+    function lyaer_remove(){
+        $(".wrapper .search_cover,.search_header .select_filter").removeClass("active")
+        $("div[id^=layer_filter]").removeClass("active").css('display','none');
+    }
 
     //1대1문의,일정관리 슬라이드
     var targetArea= $(".request_area,.sch_area");
