@@ -35,15 +35,16 @@
 .search_header .reset{position: absolute; top:20px; right:20px; padding-left: 24px; color: #6d6d6d; background:url("../../images/sub/ico_reset.png") no-repeat left;}
 .select_filter_area:after{display: block; content:""; clear: both;}
 .select_filter_area{float: left; margin-top:11px; margin-left: 112px;}
-.search_header .select_filter_area .select_filter:first-of-type .select_top{width:278px; border:none;}
+.search_header .select_filter_area .select_filter:first-of-type{margin-left: 10px;}
+.search_header .select_filter_area .select_filter:first-of-type .select_top{min-width:178px; width: auto; padding: 0; border:none;}
 .search_header .select_filter_area .select_filter:first-of-type .select_top:after{display: none;}
 .search_header .select_filter_area .select_filter .locate{ border:1px solid #e6e6e6; border-radius: 5px; height: 40px;;}
 .search_header .select_filter_area .select_filter .locate .city,.search_header .select_filter_area .select_filter .locate .city_sub{position: relative; display: inline-block; padding:0 18px 0 24px; font-size: 15px; color: #373737;}
 .search_header .select_filter_area .select_filter .locate .city{padding-left: 26px; background: url("../../images/sub/ico_locate.png") 8px 9px no-repeat;}
 .search_header .select_filter_area .select_filter .locate .city_sub{background:url("../../images/sub/bar_locate.jpg") no-repeat;}
-.select_filter_area .select_filter.offer_sytle .select_top{width:222px;}
+.select_filter_area .select_filter.offer_sytle .select_top{min-width:222px;}
 .select_filter_area .select_filter{float: left; margin-right:4px}
-.select_filter_area .select_filter .select_top{display: inline-block; position: relative; width:100px; height:40px; padding:0 4px 0 10px; line-height: 2.6; border:1px solid #e6e6e6; border-radius: 5px}
+.select_filter_area .select_filter .select_top{display: inline-block; position: relative; min-width:100px; height:40px; padding:0 28px 0 10px; line-height: 2.6; border:1px solid #e6e6e6; border-radius: 5px}
 .select_filter_area .select_filter .select_top:after{display: inline-block; content:""; position: absolute; width:11px; height: 12px; top: 14px; bottom: 0; right: 12px;  background: url("../../images/common/ico_select.png") no-repeat;}
 .select_filter_area .select_filter.active .select_top{color:#fff; background:#378cff;border:none;}
 .select_filter_area .select_filter.active .select_top:after {background: url("../../images/common/ico_select_active.png") no-repeat;}
@@ -67,13 +68,15 @@
 .layer_filter .table_style3 .table td.style_btn .radio_btn+label{margin-bottom:10px;}
 .layer_filter .table_style3 .table td.style_btn{padding-bottom: 0px;}
 .layer_filter .table_style3 .table td.style_btn .btn_type1{margin-bottom:10px;}
-.layer_filter .select_filter_area{position: absolute; top:8px; left:84px;}
+.layer_filter .select_filter_area{position: absolute; top:8px; left:-30px;}
 .layer_filter .select_filte{position: relative;}
 .layer_filter .select_filter:first-of-type:before{margin:0; background: none;}
 .layer_filter .select_filter:before{display: inline-block; content:""; width:9px; height:17px; margin:-2px 8px 0 6px; background:url("../../images/sub/bar_locate_sub.png") no-repeat;}
-.layer_filter .select_filter:first-of-type .select_top{width:100px;}
+.layer_filter .select_filter:first-of-type .select_top{min-width:100px;}
 .layer_filter .select_filter .select_top{color:#9c9c9c; text-align: left;}
-.layer_filter .select_filter.active .select_top{background:#92d050; color:#fff; border:none;}
+.layer_filter .select_filter .select_top:after{background: url("../../images/common/ico_select_off.png") no-repeat;}
+.layer_filter .select_filter.active .select_top{color: #373737; background: none; border:1px solid #e6e6e6;}
+.layer_filter .select_filter.active .select_top:after{background: url("../../images/common/ico_select.png") no-repeat;}
 .layer_filter .layer_btn{position: absolute; top:18px; right:30px;}
 .layer_filter .layer_btn .btn{width:auto; padding:0 10px;}
 .layer_filter .links_area{margin:0 auto; border-top:1px solid #e6e6e6; border-left:1px solid #e6e6e6;}
