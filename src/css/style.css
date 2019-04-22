@@ -732,3 +732,20 @@
     .pictures_box .slide_container .slick-prev{left:0;}
     .pictures_box .slide_container .slick-next{right:0;}
 }
+
+/*동영상 추가*/
+.ad_movie{display:none; position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,.8); z-index: 10000;}
+.ad_movie.active{display:block;}
+.ad_movie .close{position: absolute; top:20px; right:20px; width:32px; height: 32px; background: url("../../images/sub/sp_slide.png") 0 -56px no-repeat;}
+.ad_movie .movie_tab{margin-bottom:20px;}
+.ad_movie .movie_tab ul:after{display:block; content:""; clear:both;}
+.ad_movie .movie_tab ul{width:1280px; margin:0 auto;}
+.ad_movie .movie_tab li{float:left; width:426px; text-align:center;}
+.ad_movie .movie_tab li button{width:100%; color: #fff; font-size:18px;}
+.ad_movie .movie_tab li button.on:after{background-color: #ff6161;}
+.ad_movie .movie_tab li button:after{display: block; content:""; width:100%; height:2px; margin-top:18px; background-color: #e1e1e1;}
+.ad_movie .movie_cont{width: 1280px; margin:120px auto 0;}
+.ad_movie .movie_cont.ad{margin-top:160px;}
+.ad_movie .movie_cont .movie li{display:none;}
+.ad_movie .movie_cont .movie li:first-child{display:block;}
+.ad_movie .movie_cont iframe{width:1280px; height: 720px;}

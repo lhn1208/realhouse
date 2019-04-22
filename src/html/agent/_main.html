@@ -10,8 +10,17 @@
 <body>
 <include src="../include/agent_header.html"></include>
 <div class="wrapper">
-    <div id=main_container class="main_container">  
-        <div class="container_inner">         
+    <div id=main_container class="main_container agent_main">  
+        <div class="container_inner">                    
+             <!--top-->
+             <div class="agent_top">
+                <div class="left">                    
+                    <span class="logo"><img src="../../../images/common/agent_logo.png" alt="리얼하우스 로고"></span>
+                    <strong class="main_tit">중개사 관리자</strong>
+                </div>  
+                    <a href="#" class="link">리얼하우스 홈 바로가기</a>
+            </div>
+            <!--//top-->
             <div class="agent_intro">
                 <div href="#" class="area">
                     <div class="content">
@@ -22,12 +31,10 @@
                         <div class="intro_btn"><button class="btn_round skyblue">리얼하우스 소개</button></div>
                     </div>
                     <div class="content event">
-                        <h2 class="intro_tit txt_red">오픈 추천이벤트</h2>
-                        10억원 지급 오픈 이벤트가 1달간(18.01.28까지) 진행됩니다. 
-                        <div class="intro_btn btn_round_green"><button class="btn">이벤트 안내/참여</button></div>
+                        <h2 class="intro_tit txt_red">리얼하우스 홍보동영상</h2>
+                        <div class="intro_btn btn_round_green"><button class="btn">동영상 보기</button></div>
                     </div>
                 </div>
-
                 <div href="#" class="area type">
                     <div class="content">
                         <div class="content_inner">
@@ -42,69 +49,28 @@
                     </div>
                 </div>
             </div>
-            
-            <!--공지사항/뉴스-->
-            <div class="notice area_style">
-                <div class="content_head1">
-                    <h3 class="tit">공지사항/뉴스</h3>
-                </div>
-                <div class="area">
-                    <h4 class="area_tit">공지사항</h4>
-                    <ul class="board">
-                        <li><a href="#"><span>공지사항이 나타납니다.<i class="icon_type1">NEW</i></span><span class="date">18.11.16</span></a></li>
-                        <li><a href="#"><span>공지사항이 나타납니다.</span><span class="date">18.11.16</span></a></li>
-                        <li><a href="#"><span>공지사항이 나타납니다.</span><span class="date">18.11.16</span></a></li>
-                    </ul>
-                    <a class="more" href="#">더보기</a>
-                </div>
-                <div class="area type2">
-                    <h4 class="area_tit">뉴스</h4>
-                    <ul class="board">
-                        <li><a href="#"><span>뉴스가 나타납니다.<i class="icon_type1">NEW</i></span><span class="date">18.11.16</span></a></li>
-                        <li><a href="#"><span>뉴스가 나타납니다.</span><span class="date">18.11.16</span></a></li>
-                        <li><a href="#"><span>뉴스가 나타납니다.</span><span class="date">18.11.16</span></a></li>
-                    </ul>
-                    <a class="more" href="#">더보기</a>
-                </div>
-            </div>
-            <!--//공지사항/뉴스-->
-            <!--앱 다운로드-->
-            <div class="app_download_area">
-                <div class="app_download agent">
-                    <div class="box box_border_wrap">
-                        <div class="txt">
-                            <span class="ico_area"><img src="../../../images/main/ico_pro_app.png"></span>
-                            리얼하우스 앱을 다운받으세요!!!
-                            <p class="txt_desc">리얼하우스프로 앱은 <span class="txt_red">안드로이드 폰만 가능</span>합니다.</p>
-                        </div>
-                        <div class="send_link">
-                            <div class="phone">
-                                <div class="select_area select_phone">
-                                    <a href="#" class="select_top">010</a>
-                                    <div class="select_phone select_list">
-                                        <a href="#">010</a>
-                                        <a href="#">011</a>
-                                        <a href="#">016</a>
-                                        <a href="#">017</a>
-                                        <a href="#">018</a>
-                                        <a href="#">019</a>
-                                    </div>
-                                </div>
-                                <label for="input_phone">
-                                    <input type="text" class="input_phone" id="input_phone" placeholder="휴대전화번호 입력">
-                                </label>
-                            </div>
-                            <button class="btn_send btn green">앱 링크 전송</button>
-                        </div>
-                    </div>
-                </div>
-                <p class="desc">※ 휴대전화번호는 발송목적 이외에 사용되지 않습니다.</p>
-            </div>
-            <!--//앱 다운로드-->
         </div>
     </div>
 </div>
-<include src="../include/agent_footer_nav.html"></include>
-<include src="../include/footer.html"></include>
+<!--footer-->
+<footer id="footer">
+    <div class="footer_content agent_footer">
+        <div class="footer_inner">
+            <p class="company">(주)아이비소프트</p>
+            <address>
+                <span class="pd_r">대표: 김종진</span> 사업자등록번호: 212-26-83050
+                <br>주소: 서울시 강동구 양재대로 1334(성내동 429-3) 동부빌딩 406호
+                <br><span class="pd_r">사업 제휴문의: biz@realhouse.cc</span> 통신판매업 신고번호: 제2019-서울강동-0000호
+            </address>
+            <div class="custorm">
+                <span class="tit">고객센터</span>
+                <span class="number">02.427.7088</span>
+                고객지원 시간 09:00~18:00
+                <br>(토요일, 일요일, 공휴일 휴무) 
+            </div>
+        </div>
+    </div>
+</footer>
+<!--//footer-->
 </body>
 </html>

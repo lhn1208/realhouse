@@ -292,4 +292,15 @@ $(document).ready(function(){
         $el.text(currentSlide + 1);
     }
       
+    //동영상
+    $('.movie_tab li').click(function(){
+        var idx=$(this).index();
+        $('.movie_tab li').find('button').removeClass('on');
+        $(this).find('button').addClass('on');
+        $('.movie li').eq(idx).css('display','block').siblings().css('display','none');
+    })
+    $('.ad_movie .close').click(function(){
+        $('.ad_movie').removeClass('active');
+        $('body').removeClass('scroll_hidden');
+    })
 });
