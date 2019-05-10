@@ -1,0 +1,160 @@
+﻿
+<asp:Content ID="ContentHead" ContentPlaceHolderID="ContentPlaceHead" runat="server">
+    <link rel="stylesheet" type="text/css" href="/LiveBooking/Css/Air5/common.css" />
+    <link rel="stylesheet" type="text/css" href="/LiveBooking/Css/Air5/RealtimeSearch.css" />
+
+<link rel="stylesheet" href="/Include/css/EventTemplate.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/singihae/Webfonts/master/style.css" />
+<style type="text/css">
+	/*full 공통*/
+	.blind {position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+	.follow_section.aside,
+	#divQuickTop{ display:none !important; }
+	#Containerwrap,
+	#EventwarpBody { margin:0 !important; width:100% !important; }
+	#EventwarpBody {position:relative; min-width:1150px; margin:0 auto;}
+	#footer{padding-top:0;}
+	/*//full 공통*/
+
+	.event_wrap{min-width: 1100px; margin:0 auto;text-align: center}
+	.event_wrap .cover_mv{display: none; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,.5); z-index: 999;;}
+	.event_wrap .pop_movie{display: none; position: absolute; top:195px; left:50%; margin-left: -345px; z-index: 1000;}
+	.event_wrap .pop_movie .close_mv{position: absolute; top:0; right:-91px; width:91px; height:91px; background: url("http://img.modetour.com/promotion/10013/pc/videoCloseBtn.jpg") no-repeat; z-index: 1000;}
+	.event_wrap .pop_movie iframe{border:5px solid #e7e7e9;}
+	.event_wrap .main{position: relative;  background: url("http://img.modetour.com/promotion/05_mega/air/bg_main.jpg") no-repeat center 0; }	
+	.event_wrap .main .obj{position: absolute; animation-duration: 0.8s; animation-delay: 0.8s; z-index: 1; top: 140px; left:50%; margin-left:-217px;}
+	.main .movie_link{position: absolute; top:432px; left:50%; margin-left: 440px; width:190px; height:264px;}
+	.event_wrap .cont1{background: url("http://img.modetour.com/promotion/05_mega/air/bg_cont1.jpg") no-repeat center 0;}
+	.event_wrap .cont2{background: url("http://img.modetour.com/promotion/05_mega/air/bg_cont2.jpg") no-repeat center 0;}
+	.event_wrap .cont3{background: url("http://img.modetour.com/promotion/05_mega/air/bg_cont3.jpg") no-repeat center 0;}
+	.event_wrap .cont4{position: relative; background: url("http://img.modetour.com/promotion/05_mega/air/bg_cont4.jpg") no-repeat center 0;}
+	/*문자보내기*/
+	.tel_form{position: absolute; top:741px; left:50%; margin-left: -67px; }
+	.tel_form input{width:122px; height:60px; margin-left:18px; padding:0 8px; font-size: 18px; background-color: #9dbcd1; border:0;}
+	.tel_form input:focus{outline:none;}
+	.tel_form input:first-of-type{margin-left: 0;}
+	.cont4 .btn_sms{position: absolute; top:734px; left:50%; margin-left: 356px; width:150px; height: 70px;}
+	.cont4 .tit_commend{position: absolute; top:1832px; left:50%; margin-left: -197px;}
+	/*댓글 게시판*/
+	.event_wrap .cont4 .board_area{width: 1100px; margin: 0px auto;}
+	.event_wrap .cont4 .comment_area{ min-height: 403px; background: #FFF; }
+	.event_wrap .cont4 .comment{padding:30px;width:868px;margin:0 auto;background:#fff;}
+	.event_wrap .cont4 .comment_area .reply-section{position: relative;}
+	.event_wrap .cont4 .comment .textarea{margin-bottom:80px;overflow:hidden;}
+	.event_wrap .cont4 .comment .textarea p textarea {padding:10px;width:100%;height:60px;background:#e9e9e9;border:none;overflow:auto; resize: none;}
+	.event_wrap .cont4 .comment .textarea p.btn {position:static;float:right;*margin-top:1px;}
+	.event_wrap .cont4 .comment .textarea p.btn input { width:160px; height:66px;cursor:pointer; background:url(http://img.modetour.co.kr/modeevent/2015/1020_fairair/btn_regist.gif) no-repeat;border:none;}
+	.event_wrap .cont4 .comment .list_page { width:868px;border-top:1px solid #343434;}
+	.event_wrap .cont4 .comment .list_page th { padding:10px; font:bold 12px Gulim; color:#666; border-bottom:1px solid #dfdfdf;  }
+	.event_wrap .cont4 .comment .list_page tbody td { padding:10px; font:12px Gulim; color:#666; border-bottom:1px solid #dfdfdf; }
+	.event_wrap .cont4 .comment .list_page tbody td.name { font:12px Gulim; color:#666; text-align:center; }
+	.event_wrap .cont4 .comment .list_page tbody td.date { font:12px Gulim; color:#666; text-align:center; }
+	.event_wrap .cont4 .comment .list_page tbody td a { color:#666; text-decoration:none; }
+	.event_wrap .cont4 .comment .list_page tbody td a:hover {text-decoration:underline; }
+	.event_wrap .cont4 .comment .list_page tfoot td {font:11px Dotum; color:#666;}
+	.event_wrap .cont4 .comment .list_page tfoot td.pagenate { padding:20px 0 10px;color:#666; text-align:center; }
+	.event_wrap .cont4 .comment .list_page tfoot td.pagenate a { color:#666; text-decoration:none; }
+	.event_wrap .cont4 .comment .list_page tfoot td.pagenate a:hover { font-weight:bold; color:#666; text-decoration:none; }
+	.event_wrap .btn_board{ position:absolute; top: 124px; left:50%; margin-left:-65px; display:block; width:130px; height:90px; background:url('//img.modetour.com/modeEvent/2016/0121_anniversary/obj_cont07_btn.gif') no-repeat; }
+</style>
+</asp:Content>
+<asp:Content ID="ContentBody" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+<div id="EventwarpBody">
+	<!-- [S]: 기획전 시작 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<div class="event_wrap">
+		<!--movie-->
+		<div class="cover_mv"></div>
+		<div class="pop_movie">			
+			<a href="#" class="close_mv"></a>
+			<iframe width="683" height="391" src="https://www.youtube.com/embed/oJSW4roE3w8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+		</div>
+		<!--//movie-->
+		<div class="main">
+			<img src="http://img.modetour.com/promotion/05_mega/air/img_main.jpg" alt="">
+			<div class="obj animated flipInX"><img src="http://img.modetour.com/promotion/05_mega/air/main_tit.png" alt=""></div>
+			<a href="#" class="movie_link"><img src="http://img.modetour.com/promotion/05_mega/air/ban_mv.png" alt=""></a>
+		</div>
+		<div class="cont1">
+			<img src="http://img.modetour.com/promotion/05_mega/air/img_cont1.jpg" alt="" usemap="#map1">
+			<map name="map1" id="map1">
+				<area shape="rect" coords="100,962,540,1074" href="/event/plan/detail.aspx?mloc=07&eidx=8924" target="_blank" alt="카드/항공사 자세히보기">
+				<area shape="rect" coords="563,962,996,1074" href="http://www.modetour.com/flight/AirBooking/Main.aspx?MLoc=03" target="_blank" alt="실시간 항공 예약하기">
+			</map>
+		</div>	
+		<div class="cont2">
+			<img src="http://img.modetour.com/promotion/05_mega/air/img_cont2.jpg" alt="" usemap="#map2">
+			<map name="map2" id="map2">
+				<area shape="rect" coords="270,523,834,642" href="/event/plan/detail.aspx?mloc=07&eidx=10036" target="_blank" alt="해외호텔 자세히 보기">
+			</map>
+		</div>	
+		<div class="cont3">
+			<img src="http://img.modetour.com/promotion/05_mega/air/img_cont3.jpg" alt="" usemap="#map3">
+			<map name="map3" id="map3">
+				<area shape="rect" coords="270,1053,834,1163" href="/event/plan/detail.aspx?mloc=07&eidx=7788" target="_blank" alt="패스/입장권 자세히 보기">
+			</map>
+		</div>			
+		<div class="cont4">
+			<img src="http://img.modetour.com/promotion/05_mega/air/img_cont4.jpg" alt="">
+			<!-- [s]: 문자보내기 -->
+			<form class="tel_form">				    
+				<input type="text" maxlength="3" class="tel"><i></i>
+				<input type="text" maxlength="4" class="tel"><i></i>
+				<input type="text" maxlength="4" class="tel">
+			</form>
+			<a href="#" class="btn_sms" target="_blank" title="문자보내기 버튼"></a>
+			<!-- [E]: 문자보내기 -->
+			<span class="tit_commend"><img src="http://img.modetour.com/promotion/05_mega/air/tit_comment.png" alt=""></span>
+			<!-- [s]: 게시판 영역 -->
+			<div class="board_area">
+					<!-- [s]: 댓글영역 시작 -->
+						<div class="comment_area">
+							<div class="reply-section">
+								<div class="comment">
+									<form name="frmMemo2" method="post">
+										<div class="textarea"> 
+											<p class="text"><textarea name="contents" cols="50" rows="4" onfocus="if(this.value=='댓글을 입력해 주세요.'){this.value='';}" onclick="MemoCheck(2878);" title="내용 입력란">댓글을 입력해 주세요.</textarea></p>
+										</div>
+										<UC2:Template id="TempView" runat="server" TP_GubunNo="2878" TP_Type="type_C_2" TP_Count="10" TP_Width="868"></UC2:Template>
+	
+										<input type="submit" style="display:none;" />        
+										<input type="hidden" name="gubun" />
+										<input type="hidden" name="index" />
+										<input type="hidden" name="idx" value="2878"/>
+									</form>
+								</div>
+								<iframe name="noframe" id="noframe" width="0" height="0" frameborder="0" title="스크랩 등록 프레임"></iframe>
+								<a class="btn_board" href="#top" title="댓글달기 페이지로 이동"><span class="blind">댓글 달기</span></a>
+							</div>
+						</div><!-- comment_area -->
+					<!-- [e]: 댓글영역 끝 -->
+				</div>
+				<!-- [e]: 게시판 영역 -->
+		</div>
+
+				
+	</div>
+	<!-- [E]: 기획전 끝 -->
+</div>
+<script type="text/javascript" src="http://js.modetour.com/jquery/ver/1.11.3.min.js"></script>
+<script type="text/javascript" src="//js.modetour.com/Common/String.js?var=0.0.1"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+		$('.movie_link').click(function(){
+			$('.cover_mv').css('display','block');
+			$('.pop_movie').css('display','block');
+			return false;
+		})
+
+		$('.close_mv').click(function(){
+			$('.cover_mv').css('display','none');
+			$('.pop_movie').css('display','none');
+			return false;
+		})
+
+	});
+
+	
+</script>
+
+</asp:Content>

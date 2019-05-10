@@ -303,4 +303,10 @@ $(document).ready(function(){
         $('.ad_movie').removeClass('active');
         $('body').removeClass('scroll_hidden');
     })
+    
+    //퀵
+    $('.btn_top').click(function(){
+        $('html, body').stop().animate({scrollTop: 0},800);
+        return false;
+    })
 });
