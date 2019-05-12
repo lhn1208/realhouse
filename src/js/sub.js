@@ -309,4 +309,16 @@ $(document).ready(function(){
         $('html, body').stop().animate({scrollTop: 0},800);
         return false;
     })
+
+    //진행현황 리스트 슬라이드
+    $('.content_present .present_manage li').click(function(){
+        if(!$(this).hasClass('slide_open')){
+            $(this).addClass('slide_open');
+            $(this).find('.table_style3').slideDown();
+        }else{
+           $(this).removeClass('slide_open');
+           $(this).find('.table_style3').slideUp();
+        }
+        return false;
+    })
 });

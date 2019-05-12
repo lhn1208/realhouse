@@ -163,8 +163,39 @@ textarea{resize: none;}
 .wrapper .main_cover,.wrapper .sub_cover{display: none; position: fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); z-index: 130;}
 .wrapper .main_cover.active,.wrapper .sub_cover.active{display: block;}
 
-.layer,.layer_member{display: none; position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
-.layer.active,.layer_member.active{display: block;}
+.layer,.layer_member{position: absolute; left:50%; margin-left:-280px; width:560px; background:#fff; border-radius:5px; z-index: 150; text-align: center;}
+/* .layer.active,.layer_member.active{display: block;} */
+.layer_member.blowup{
+    animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.layer_member.out{
+    animation: blowUpModalTwo .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+@keyframes blowUpModal {
+    0% {
+        transform:scale(0);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+  
+@keyframes blowUpModalTwo {
+    0% {
+        transform:scale(1);
+        opacity:1;
+    }
+    100% {
+        transform:scale(0);
+        opacity:0;
+    }
+}
+
+  
+  
+
+
 .layer .close,.layer_member .member_close{position: absolute; top:20px; right: 20px; width:22px; height: 27px; background:url("../../../images/main/btn_login_close.png") no-repeat;}
 .layer_member .member_section{width:464px; margin:0 auto;}
 .layer_member .member_tit{padding:48px 0; font-size: 30px; font-weight: 500; font-family: "Noto Sans KR",sans-serif; color: #9c9c9c;}

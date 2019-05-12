@@ -61,15 +61,23 @@ $(document).ready(function(){
   var $body=$('body');
   $("#member_login").click(function(){
     $cover.addClass("active");
-    $layerLogin.addClass("active");
+    //$layerLogin.addClass("active");
+    $layerLogin.removeClass('out').addClass('blowup');
     $body.addClass("scroll_hidden");
   })
+
+   //레이어 animation
+   $layerLogin.removeClass('out').addClass('blowup');
+
+   
   //layer
   $layerLogin.find(".member_close").click(function(){
     $cover.removeClass("active");
-    $layerLogin.removeClass("active");
+    $layerLogin.addClass('out');
     $body.removeClass("scroll_hidden");	
-	 	return false;
+    
+     
+    return false;
   })
   var layerH=$(".layer_member").outerHeight();
   var top = Math.ceil((window.screen.height - layerH)/2)-70;
@@ -144,4 +152,6 @@ var $placeholder;
         $selectArea.removeClass("open");
       } 
   });
+
+
 });

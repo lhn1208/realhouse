@@ -327,13 +327,17 @@
 .present_manage .slide_open{padding-bottom: 12px;}
 .present_manage .slide_open:before{height: 330px;}
 .present_manage .slide_open .build_address a{color: #ff6161; background:url("./../../images/sub/ico_open.png") right no-repeat;}
-.present_manage .table_style3{margin-top:10px; margin-left:54px;}
+.present_manage  li .table_style3{display:none; margin-top:10px; margin-left:54px;}
+.present_manage  .slide_open .table_style3 {display:block;}
 .present_manage .table_style3 .table{width:814px;}
 .present_manage .table_style3 .table .visit_time{color: #ff6161;}
 .present_manage .table_style3 .table .visit_desc{color: #373737;}
 .present_manage .table_style3 .table .req_num,.present_manage .table_style3 .table .right_area{position: absolute; display: inline-block; right:18px;}
 .present_manage .table_style3 .table .btn_type2{width:100px; margin-right: 6px;}
 .present_manage .table_style3 .table .btn_type2.btn{color: #5f5f5f;}
+.present_manage  li .visit{display:block; }
+.present_manage  .slide_open .visit{display:none;}
+
 .no_present li:first-child{padding:0; min-height: auto;}
 .process .client_manage{margin-bottom:40px;}
 .client_manage .manage_table .table th{background-color: #fff; border-right: none;}
